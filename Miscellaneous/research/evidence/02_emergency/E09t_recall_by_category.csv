@@ -1,0 +1,7 @@
+emergency_category,emergencies,caught,recall
+CRIME_IN_PROGRESS,3,3,1.0
+FIRE,3,3,1.0
+GAS_LEAK,2,2,1.0
+LIFE_SAFETY_HAZARD,3,3,1.0
+MEDICAL,6,6,1.0
+VIOLENCE_OR_THREAT,2,2,1.0

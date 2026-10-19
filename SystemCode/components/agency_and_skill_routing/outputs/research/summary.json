@@ -1,0 +1,637 @@
+{
+  "catalog": {
+    "catalog_rows": 34,
+    "catalog_columns": [
+      "request_type_code",
+      "citizen_label",
+      "complaint_family",
+      "complaint_type",
+      "descriptor_regex",
+      "agency",
+      "required_skill",
+      "default_urgency",
+      "est_service_minutes",
+      "dispatchable"
+    ],
+    "distinct_codes": 34,
+    "duplicate_codes": [],
+    "conflicting_codes": [],
+    "malformed_codes": [],
+    "missing_agency_codes": [],
+    "missing_skill_codes": [],
+    "multi_skill_codes": [],
+    "every_code_uniquely_determined": true,
+    "catalog_agencies": [
+      "DEP",
+      "DOB",
+      "DOHMH",
+      "DOT",
+      "DPR",
+      "DSNY",
+      "HPD",
+      "NYPD"
+    ],
+    "catalog_skills": [
+      "BUILDING_INSPECTION",
+      "FORESTRY",
+      "HOUSING_INSPECTION",
+      "NOISE_PATROL",
+      "PARKING_ENFORCEMENT",
+      "PEST_CONTROL",
+      "ROAD_REPAIR",
+      "SANITATION_COLLECTION",
+      "SEWER_DRAINAGE",
+      "SIDEWALK_REPAIR",
+      "SNOW_ICE",
+      "STREET_CLEANING",
+      "STREET_LIGHTING",
+      "TRAFFIC_SIGNALS",
+      "VEHICLE_REMOVAL",
+      "WATER_MAINS"
+    ],
+    "agencies_match_shared_reference": true,
+    "skills_match_shared_reference": true,
+    "dispatchable_values": [
+      "TRUE"
+    ],
+    "matrix_family_rows": 23,
+    "matrix_glossary_rows": 19,
+    "matrix_multi_agency_families": [
+      "Abandoned vehicles",
+      "Bar, restaurant, or business noise",
+      "Blocked street or sidewalk",
+      "Animal facility, nuisance, or stray-animal complaints",
+      "Child-care and child-welfare complaints"
+    ],
+    "matrix_agencies_not_in_catalog": [
+      "ACC",
+      "ACS",
+      "CCHR",
+      "DCWP",
+      "DHS",
+      "DOE",
+      "DOF",
+      "DSS/HRA",
+      "FDNY",
+      "NYCHA",
+      "TLC"
+    ],
+    "catalog_agencies_missing_from_glossary": [],
+    "relationship_counts": {
+      "CONSISTENT": 21,
+      "MULTI_AGENCY_CONTEXTUAL": 8,
+      "CONSISTENT_WITH_BLOCKED_STREET_OVERLAP": 2,
+      "NOT_EXPLICIT": 2,
+      "CONSISTENT_CAUSE_DEPENDENT": 1
+    },
+    "catalog_agency_not_named_in_matrix": [
+      "RT045"
+    ],
+    "multi_agency_contextual_codes": [
+      "RT043",
+      "RT080",
+      "RT081",
+      "RT082",
+      "RT083",
+      "RT084",
+      "RT121",
+      "RT124"
+    ],
+    "context_available_in_co1": [
+      "NO"
+    ]
+  },
+  "historical": {
+    "records": 49558,
+    "columns": 52,
+    "split_counts": {
+      "train": 34690,
+      "val": 7434,
+      "test": 7434
+    },
+    "split_boundaries": {
+      "train": [
+        "2025-09-24 04:00:17",
+        "2026-05-20 06:43:24"
+      ],
+      "val": [
+        "2026-05-20 06:44:36",
+        "2026-07-17 19:53:36"
+      ],
+      "test": [
+        "2026-07-17 19:54:00",
+        "2026-09-16 01:48:51"
+      ]
+    },
+    "splits_strictly_ordered": true,
+    "source_values": {
+      "REAL_311": 49558
+    },
+    "synthetic_rows": 0,
+    "duplicate_unique_keys": 0,
+    "distinct_rt_codes": 34,
+    "catalog_codes_in_history": 34,
+    "catalog_codes_missing_from_history": [],
+    "history_codes_not_in_catalog": [],
+    "historical_agencies": {
+      "NYPD": 23570,
+      "HPD": 10357,
+      "DSNY": 5212,
+      "DOT": 5000,
+      "DEP": 2317,
+      "DPR": 1639,
+      "DOB": 1054,
+      "DOHMH": 407,
+      "NYC311-PRD": 2
+    },
+    "overall_agreement": 49556,
+    "overall_agreement_rate": 0.99996,
+    "disagreement_count": 2,
+    "disagreements": [
+      {
+        "unique_key": "68182920",
+        "split": "train",
+        "request_type_code": "RT003",
+        "catalog_agency_csv": "DOT",
+        "agency": "NYC311-PRD",
+        "descriptor": "Blocked - Construction",
+        "outcome_class": "UNFOUNDED"
+      },
+      {
+        "unique_key": "68603321",
+        "split": "train",
+        "request_type_code": "RT006",
+        "catalog_agency_csv": "DOT",
+        "agency": "NYC311-PRD",
+        "descriptor": "Blocked - Construction",
+        "outcome_class": "UNFOUNDED"
+      }
+    ],
+    "multi_agency_codes": [
+      "RT003",
+      "RT006"
+    ],
+    "embedded_catalog_agency_matches_csv": true,
+    "rt_reconstruction_exact": 49208,
+    "rt_reconstruction_mismatch": 350,
+    "complaint_types": 34,
+    "complaint_types_with_multiple_agencies": {
+      "Sidewalk Condition": 2,
+      "Street Condition": 2
+    },
+    "agreement_by_split": {
+      "test": 1.0,
+      "train": 0.999942,
+      "val": 1.0
+    },
+    "codes_present_in_all_splits": 33,
+    "rare_codes_under_1pct": [
+      {
+        "request_type_code": "RT061",
+        "total": 473,
+        "share_pct": 0.954
+      },
+      {
+        "request_type_code": "RT100",
+        "total": 407,
+        "share_pct": 0.821
+      },
+      {
+        "request_type_code": "RT141",
+        "total": 385,
+        "share_pct": 0.777
+      },
+      {
+        "request_type_code": "RT023",
+        "total": 314,
+        "share_pct": 0.634
+      },
+      {
+        "request_type_code": "RT002",
+        "total": 301,
+        "share_pct": 0.607
+      },
+      {
+        "request_type_code": "RT021",
+        "total": 286,
+        "share_pct": 0.577
+      },
+      {
+        "request_type_code": "RT025",
+        "total": 251,
+        "share_pct": 0.506
+      },
+      {
+        "request_type_code": "RT062",
+        "total": 251,
+        "share_pct": 0.506
+      },
+      {
+        "request_type_code": "RT045",
+        "total": 240,
+        "share_pct": 0.484
+      },
+      {
+        "request_type_code": "RT022",
+        "total": 141,
+        "share_pct": 0.285
+      }
+    ],
+    "codes_under_30_in_val_or_test": [
+      {
+        "request_type_code": "RT044",
+        "val": 0,
+        "test": 0
+      },
+      {
+        "request_type_code": "RT025",
+        "val": 30,
+        "test": 3
+      },
+      {
+        "request_type_code": "RT022",
+        "val": 28,
+        "test": 50
+      }
+    ],
+    "rare_descriptor_rows_under_5": 56,
+    "borough_values": {
+      "BRONX": 9983,
+      "BROOKLYN": 9980,
+      "QUEENS": 9975,
+      "MANHATTAN": 9907,
+      "STATEN ISLAND": 9713
+    },
+    "location_type_missing": 6623,
+    "status_values": {
+      "Closed": 47868,
+      "Open": 743,
+      "In Progress": 723,
+      "Pending": 103,
+      "Assigned": 89,
+      "Started": 28,
+      "Unspecified": 4
+    },
+    "outcome_class_values": {
+      "UNFOUNDED": 18306,
+      "GENUINE": 9718,
+      "SUBSIDED": 7788,
+      "ADMINISTRATIVE": 5740,
+      "NO_ACCESS": 3479,
+      "DUPLICATE": 2912,
+      "REFERRED": 1164,
+      "NO_NOTE": 451
+    }
+  },
+  "referrals": {
+    "referred_records": 1164,
+    "referred_by_split": {
+      "train": 719,
+      "val": 241,
+      "test": 204
+    },
+    "referral_rate_overall": 0.0235,
+    "verified_outcome_of_referred": {
+      "INCONCLUSIVE": 1164
+    },
+    "status_of_referred": {
+      "Closed": 1101,
+      "Pending": 63
+    },
+    "structured_destination_column_exists": false,
+    "text_author_identified": 1164,
+    "text_author_equals_agency_rate": 1.0,
+    "referred_agency_equals_catalog_rate": 1.0,
+    "destination_classes": {
+      "EXPLICIT_CATALOG_AGENCY": 548,
+      "UNSPECIFIED_OTHER_AGENCY": 397,
+      "NO_DESTINATION_STATED": 144,
+      "INTERNAL_UNIT_SAME_AGENCY": 63,
+      "EXPLICIT_NON_CATALOG_AGENCY": 12
+    },
+    "destination_agencies": {
+      "DEP": 278,
+      "NYPD": 219,
+      "DOT": 87,
+      "DSNY": 15,
+      "DPR": 9,
+      "NYCHA": 6,
+      "MTA": 6,
+      "DOB": 3
+    },
+    "explicit_destination_records": 560,
+    "codes_with_referrals": 26,
+    "top_codes": [
+      {
+        "request_type_code": "RT043",
+        "records": 533,
+        "referred": 214,
+        "referral_rate": 0.4015
+      },
+      {
+        "request_type_code": "RT002",
+        "records": 301,
+        "referred": 186,
+        "referral_rate": 0.6179
+      },
+      {
+        "request_type_code": "RT124",
+        "records": 1292,
+        "referred": 105,
+        "referral_rate": 0.0813
+      },
+      {
+        "request_type_code": "RT003",
+        "records": 531,
+        "referred": 103,
+        "referral_rate": 0.194
+      },
+      {
+        "request_type_code": "RT123",
+        "records": 8971,
+        "referred": 99,
+        "referral_rate": 0.011
+      },
+      {
+        "request_type_code": "RT042",
+        "records": 1322,
+        "referred": 69,
+        "referral_rate": 0.0522
+      },
+      {
+        "request_type_code": "RT001",
+        "records": 1529,
+        "referred": 61,
+        "referral_rate": 0.0399
+      },
+      {
+        "request_type_code": "RT120",
+        "records": 6215,
+        "referred": 60,
+        "referral_rate": 0.0097
+      }
+    ],
+    "rate_stability": {
+      "pearson_train_val": 0.9706,
+      "pearson_train_test": 0.9568,
+      "spearman_train_test": 0.7609,
+      "codes_compared": 33
+    },
+    "matrix_verdicts": {
+      "UNRESOLVED_NO_DESTINATION_RECORDED": 17,
+      "UNRESOLVED_PARTIAL_EVIDENCE": 6,
+      "EXPLAINED_BY_MATRIX_MULTI_AGENCY_FAMILY": 1,
+      "EXPLAINED_BY_MATRIX_CAUSE_DEPENDENT": 1,
+      "NOT_AN_AGENCY_CHANGE": 1
+    },
+    "matrix_explained_codes": [
+      "RT043",
+      "RT002"
+    ],
+    "unresolved_codes": [
+      "RT124",
+      "RT003",
+      "RT123",
+      "RT042",
+      "RT120",
+      "RT060",
+      "RT041",
+      "RT025",
+      "RT006",
+      "RT020",
+      "RT022",
+      "RT061",
+      "RT062",
+      "RT021",
+      "RT122",
+      "RT140",
+      "RT023",
+      "RT121",
+      "RT100",
+      "RT141",
+      "RT044",
+      "RT045",
+      "RT024"
+    ],
+    "high_referral_codes": [
+      "RT043",
+      "RT002",
+      "RT124",
+      "RT003",
+      "RT123",
+      "RT042",
+      "RT001",
+      "RT120",
+      "RT060",
+      "RT041",
+      "RT025",
+      "RT006",
+      "RT020"
+    ]
+  },
+  "method_comparison": {
+    "agency_comparison": [
+      {
+        "split": "val",
+        "approach": "A_catalog_lookup",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 1.0,
+        "determinable_final_records": 7339,
+        "agree_final_agency_determinable": 0.98106,
+        "differs_from_catalog": 0
+      },
+      {
+        "split": "val",
+        "approach": "C1_majority_by_code",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 1.0,
+        "determinable_final_records": 7339,
+        "agree_final_agency_determinable": 0.98106,
+        "differs_from_catalog": 0
+      },
+      {
+        "split": "val",
+        "approach": "C2_majority_by_code_borough",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 1.0,
+        "determinable_final_records": 7339,
+        "agree_final_agency_determinable": 0.98106,
+        "differs_from_catalog": 0
+      },
+      {
+        "split": "val",
+        "approach": "C3_final_agency_majority",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 0.989911,
+        "determinable_final_records": 7339,
+        "agree_final_agency_determinable": 0.986102,
+        "differs_from_catalog": 75
+      },
+      {
+        "split": "test",
+        "approach": "A_catalog_lookup",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 1.0,
+        "determinable_final_records": 7343,
+        "agree_final_agency_determinable": 0.985564,
+        "differs_from_catalog": 0
+      },
+      {
+        "split": "test",
+        "approach": "C1_majority_by_code",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 1.0,
+        "determinable_final_records": 7343,
+        "agree_final_agency_determinable": 0.985564,
+        "differs_from_catalog": 0
+      },
+      {
+        "split": "test",
+        "approach": "C2_majority_by_code_borough",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 1.0,
+        "determinable_final_records": 7343,
+        "agree_final_agency_determinable": 0.985564,
+        "differs_from_catalog": 0
+      },
+      {
+        "split": "test",
+        "approach": "C3_final_agency_majority",
+        "records": 7434,
+        "coverage": 1.0,
+        "agree_initial_agency": 0.991391,
+        "determinable_final_records": 7343,
+        "agree_final_agency_determinable": 0.989105,
+        "differs_from_catalog": 64
+      }
+    ],
+    "learned_vs_catalog_changes": [
+      {
+        "approach": "C3",
+        "request_type_code": "RT002",
+        "catalog_agency": "DOT",
+        "learned_agency": "DEP"
+      }
+    ],
+    "c3_affected_codes": [
+      {
+        "split": "val",
+        "request_type_code": "RT002",
+        "determinable_records": 75,
+        "final_is_catalog_agency": 19,
+        "final_is_learned_agency": 56,
+        "excluded_undeterminable": 0
+      },
+      {
+        "split": "test",
+        "request_type_code": "RT002",
+        "determinable_records": 64,
+        "final_is_catalog_agency": 19,
+        "final_is_learned_agency": 45,
+        "excluded_undeterminable": 0
+      }
+    ],
+    "risk_selected_model": "RT+borough",
+    "risk_selected_m_rt": 5,
+    "risk_selected_m_cell": 100,
+    "risk_uses_borough": true,
+    "risk_best_rt_val": {
+      "split": "val",
+      "model": "RT",
+      "m_rt": 5,
+      "m_cell": null,
+      "log_loss": 0.09398,
+      "brier": 0.02343,
+      "auc": 0.895
+    },
+    "risk_best_rtborough_val": {
+      "split": "val",
+      "model": "RT+borough",
+      "m_rt": 5,
+      "m_cell": 100,
+      "log_loss": 0.09241,
+      "brier": 0.02322,
+      "auc": 0.9048
+    },
+    "risk_rt_vs_rtborough_val_logloss": [
+      0.09398,
+      0.09241
+    ],
+    "risk_rel_gain_borough": 0.01671,
+    "risk_val_best": {
+      "split": "val",
+      "model": "RT+borough",
+      "m_rt": 5,
+      "m_cell": 100,
+      "log_loss": 0.09241,
+      "brier": 0.02322,
+      "auc": 0.9048
+    },
+    "risk_test": [
+      {
+        "split": "test",
+        "model": "constant_prior",
+        "m_rt": null,
+        "m_cell": null,
+        "log_loss": 0.12674,
+        "brier": 0.02673,
+        "auc": 0.5
+      },
+      {
+        "split": "test",
+        "model": "RT",
+        "m_rt": 5,
+        "m_cell": null,
+        "log_loss": 0.0872,
+        "brier": 0.02116,
+        "auc": 0.8829,
+        "selected": false
+      },
+      {
+        "split": "test",
+        "model": "RT+borough",
+        "m_rt": 5,
+        "m_cell": 100,
+        "log_loss": 0.08623,
+        "brier": 0.02113,
+        "auc": 0.8936,
+        "selected": true
+      }
+    ],
+    "advisory_threshold": 0.15,
+    "advisory_val": {
+      "split": "val",
+      "threshold": 0.15,
+      "flag_rate": 0.0363,
+      "precision": 0.4667,
+      "recall": 0.5228,
+      "f1": 0.4932,
+      "flagged": 270,
+      "tp": 126
+    },
+    "advisory_test": {
+      "split": "test",
+      "threshold": 0.15,
+      "flag_rate": 0.037,
+      "precision": 0.3455,
+      "recall": 0.4657,
+      "f1": 0.3967,
+      "flagged": 275,
+      "tp": 95
+    },
+    "elevated_codes": [
+      "RT002",
+      "RT003",
+      "RT043"
+    ],
+    "insufficient_codes": [],
+    "knowledge_artifact": "data/reference/referral_knowledge.json"
+  }
+}

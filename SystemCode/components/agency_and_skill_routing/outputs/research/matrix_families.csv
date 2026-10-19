@@ -1,0 +1,24 @@
+matrix_family,agencies,n_agencies
+"Apartment maintenance; heat or hot water; mold, pests, leaks, plumbing, or electrical conditions in private residential buildings",HPD,1
+Public-housing maintenance,NYCHA,1
+"Illegal construction, unsafe buildings, façades, scaffolds, cranes, excavations, elevators, or escalators",DOB,1
+"Illegal parking, blocked driveways, neighbor/street/vehicle noise",NYPD,1
+Abandoned vehicles,DSNY|NYPD,2
+"Construction, machinery, commercial-equipment, air, smoke, fumes, or odor complaints",DEP,1
+"Bar, restaurant, or business noise",NYPD|DEP,2
+"Potholes, street defects, sidewalks, streetlights, signals, signs, or transportation infrastructure",DOT,1
+Blocked street or sidewalk,DOT|DSNY|DOB|NYPD,4
+"Missed collection, dirty sidewalk/street, illegal dumping, trash storage, snow or ice",DSNY,1
+"Street water leaks, sewers, catch basins, flooding, or water-quality/pressure complaints",DEP,1
+"Restaurant sanitation, food poisoning, rodents, mosquitoes, standing water, smoking or vaping",DOHMH,1
+"Animal facility, nuisance, or stray-animal complaints",DOHMH|NYPD|ACC,3
+"Street trees, fallen branches, parks, or playground maintenance",DPR,1
+"Consumer, store, pricing, receipt, refund, scale, deceptive-practice, or workplace complaints",DCWP,1
+"Taxi, car-service, or for-hire vehicle complaints and lost property",TLC,1
+Homeless outreach or shelter complaints,DHS,1
+Public-school complaints,DOE,1
+Child-care and child-welfare complaints,DOHMH|ACS,2
+"Benefits, SNAP, Medicaid, or cash-assistance complaints",DSS/HRA,1
+Discrimination complaints,CCHR,1
+"Parking tickets, property tax, or City payment issues",DOF,1
+Fire-safety and fire-code complaints,FDNY|911,1

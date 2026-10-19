@@ -1,0 +1,678 @@
+{
+  "component_version": "1.1.0",
+  "catalog_version": "776e339e4b10",
+  "referral_knowledge": "ACTIVE",
+  "environment": {
+    "python": "3.14.7",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "cpu_count": 24
+  },
+  "functional": {
+    "scenarios": 57,
+    "per_approach": {
+      "A_direct_lookup": {
+        "status_correct": 37,
+        "status_correct_pct": 64.912,
+        "unsafe_dispatches": 11,
+        "explained_pct": 0.0
+      },
+      "B_catalog_rules": {
+        "status_correct": 57,
+        "status_correct_pct": 100.0,
+        "unsafe_dispatches": 0,
+        "explained_pct": 100.0
+      },
+      "B+R14_advisory": {
+        "status_correct": 57,
+        "status_correct_pct": 100.0,
+        "unsafe_dispatches": 0,
+        "explained_pct": 100.0
+      },
+      "B+R14_review_policy": {
+        "status_correct": 54,
+        "status_correct_pct": 94.737,
+        "unsafe_dispatches": 0,
+        "explained_pct": 100.0
+      }
+    },
+    "per_scenario": [
+      {
+        "scenario": "valid_RT001",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT002",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT003",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT004",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT005",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT006",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT020",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT021",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT022",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT023",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT024",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT025",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT040",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT041",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT042",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT043",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT044",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT045",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT060",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT061",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT062",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT080",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT081",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT082",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT083",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT084",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT100",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT120",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT121",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT122",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT123",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT124",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT140",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "valid_RT141",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "unknown_code",
+        "expected": "UNRESOLVED",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "UNRESOLVED",
+        "B_eligible": false
+      },
+      {
+        "scenario": "missing_request_type",
+        "expected": "INVALID",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "malformed_request_type",
+        "expected": "INVALID",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "confidence_above_one",
+        "expected": "INVALID",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "confidence_wrong_type",
+        "expected": "INVALID",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "low_confidence_default_config",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "not_ready_to_submit",
+        "expected": "HELD",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "HELD",
+        "B_eligible": false
+      },
+      {
+        "scenario": "needs_human",
+        "expected": "HELD",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "HELD",
+        "B_eligible": false
+      },
+      {
+        "scenario": "stop_call_911",
+        "expected": "BLOCKED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "BLOCKED",
+        "B_eligible": false
+      },
+      {
+        "scenario": "confirm_with_citizen",
+        "expected": "HELD",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "HELD",
+        "B_eligible": false
+      },
+      {
+        "scenario": "contradiction_emergency_continue",
+        "expected": "HELD",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "HELD",
+        "B_eligible": false
+      },
+      {
+        "scenario": "contradiction_stop_not_emergency",
+        "expected": "BLOCKED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "BLOCKED",
+        "B_eligible": false
+      },
+      {
+        "scenario": "unknown_emergency_action",
+        "expected": "INVALID",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "label_emergency",
+        "expected": "BLOCKED",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "BLOCKED",
+        "B_eligible": false
+      },
+      {
+        "scenario": "label_emergency_contradictory",
+        "expected": "BLOCKED",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "BLOCKED",
+        "B_eligible": false
+      },
+      {
+        "scenario": "label_other",
+        "expected": "HELD",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "HELD",
+        "B_eligible": false
+      },
+      {
+        "scenario": "label_smalltalk",
+        "expected": "HELD",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "HELD",
+        "B_eligible": false
+      },
+      {
+        "scenario": "missing_location",
+        "expected": "ASSIGNED",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "emergency_category_wrong_type",
+        "expected": "INVALID",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "string_boolean",
+        "expected": "INVALID",
+        "A_status": "ASSIGNED",
+        "A_eligible": true,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "not_an_object",
+        "expected": "INVALID",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "INVALID",
+        "B_eligible": false
+      },
+      {
+        "scenario": "lowercase_code_normalised",
+        "expected": "ASSIGNED",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "ASSIGNED",
+        "B_eligible": true
+      },
+      {
+        "scenario": "held_and_unknown",
+        "expected": "HELD",
+        "A_status": "UNRESOLVED",
+        "A_eligible": false,
+        "B_status": "HELD",
+        "B_eligible": false
+      }
+    ],
+    "synthetic_stream": {
+      "A_direct_lookup": {
+        "requests": 10000,
+        "dispatch_eligible_pct": 94.97,
+        "review_pct": 5.03,
+        "unresolved_pct": 5.03,
+        "invalid_pct": 0.0,
+        "explained_pct": 0.0
+      },
+      "B_catalog_rules": {
+        "requests": 10000,
+        "dispatch_eligible_pct": 85.0,
+        "review_pct": 15.0,
+        "unresolved_pct": 2.28,
+        "invalid_pct": 2.44,
+        "explained_pct": 100.0
+      },
+      "B+R14_advisory": {
+        "requests": 10000,
+        "dispatch_eligible_pct": 85.0,
+        "review_pct": 15.0,
+        "unresolved_pct": 2.28,
+        "invalid_pct": 2.44,
+        "explained_pct": 100.0
+      },
+      "B+R14_review_policy": {
+        "requests": 10000,
+        "dispatch_eligible_pct": 76.49,
+        "review_pct": 23.51,
+        "unresolved_pct": 2.28,
+        "invalid_pct": 2.44,
+        "explained_pct": 100.0
+      }
+    }
+  },
+  "historical": {
+    "val": {
+      "records": 7434,
+      "referred": 241,
+      "A_direct_lookup": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 0.0,
+        "advisory_flag_pct": 0.0,
+        "referred_flagged": 0,
+        "referred_flagged_pct": 0.0,
+        "referred_held": 0,
+        "referred_held_pct": 0.0,
+        "precision_of_flag_pct": 0.0
+      },
+      "B_catalog_rules": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 0.0,
+        "advisory_flag_pct": 0.0,
+        "referred_flagged": 0,
+        "referred_flagged_pct": 0.0,
+        "referred_held": 0,
+        "referred_held_pct": 0.0,
+        "precision_of_flag_pct": 0.0
+      },
+      "B+R14_advisory": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 0.0,
+        "advisory_flag_pct": 3.632,
+        "referred_flagged": 126,
+        "referred_flagged_pct": 52.282,
+        "referred_held": 0,
+        "referred_held_pct": 0.0,
+        "precision_of_flag_pct": 46.667
+      },
+      "B+R14_review_policy": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 3.632,
+        "advisory_flag_pct": 3.632,
+        "referred_flagged": 126,
+        "referred_flagged_pct": 52.282,
+        "referred_held": 126,
+        "referred_held_pct": 52.282,
+        "precision_of_flag_pct": 46.667
+      }
+    },
+    "test": {
+      "records": 7434,
+      "referred": 204,
+      "A_direct_lookup": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 0.0,
+        "advisory_flag_pct": 0.0,
+        "referred_flagged": 0,
+        "referred_flagged_pct": 0.0,
+        "referred_held": 0,
+        "referred_held_pct": 0.0,
+        "precision_of_flag_pct": 0.0
+      },
+      "B_catalog_rules": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 0.0,
+        "advisory_flag_pct": 0.0,
+        "referred_flagged": 0,
+        "referred_flagged_pct": 0.0,
+        "referred_held": 0,
+        "referred_held_pct": 0.0,
+        "precision_of_flag_pct": 0.0
+      },
+      "B+R14_advisory": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 0.0,
+        "advisory_flag_pct": 3.699,
+        "referred_flagged": 95,
+        "referred_flagged_pct": 46.569,
+        "referred_held": 0,
+        "referred_held_pct": 0.0,
+        "precision_of_flag_pct": 34.545
+      },
+      "B+R14_review_policy": {
+        "coverage_pct": 100.0,
+        "agree_first_agency_pct": 100.0,
+        "review_pct": 3.699,
+        "advisory_flag_pct": 3.699,
+        "referred_flagged": 95,
+        "referred_flagged_pct": 46.569,
+        "referred_held": 95,
+        "referred_held_pct": 46.569,
+        "precision_of_flag_pct": 34.545
+      }
+    }
+  },
+  "performance": {
+    "catalog_load_ms_median": 0.516,
+    "assign_latency_us": {
+      "p50": 13.1,
+      "p95": 16.2,
+      "p99": 17.4,
+      "max": 69.3,
+      "mean": 13.52,
+      "requests": 20000
+    },
+    "batch_throughput": {
+      "1000": {
+        "router_req_per_s": 73374,
+        "baseline_req_per_s": 4105090
+      },
+      "10000": {
+        "router_req_per_s": 69428,
+        "baseline_req_per_s": 3772162
+      },
+      "50000": {
+        "router_req_per_s": 60551,
+        "baseline_req_per_s": 2503731
+      }
+    },
+    "to_json_us_per_result": 3.99
+  },
+  "complexity": {
+    "business_rules": 14,
+    "runtime_source_lines": 1308,
+    "per_file": {
+      "__init__.py": 35,
+      "__main__.py": 4,
+      "catalog.py": 199,
+      "cli.py": 132,
+      "config.py": 14,
+      "explanations.py": 38,
+      "knowledge.py": 86,
+      "router.py": 176,
+      "rules.py": 213,
+      "schemas.py": 177,
+      "simulator.py": 99,
+      "validators.py": 135
+    },
+    "baseline_source_lines": 17,
+    "runtime_third_party_dependencies": 0
+  },
+  "benchmark_wall_seconds": 5.55
+}

@@ -1,0 +1,22 @@
+# Only what the two images need goes into the build. Everything else stays out.
+*
+!app/__init__.py
+!app/backend
+!app/frontend
+!components
+!models
+!data/__init__.py
+!data/reference
+!app/docker
+
+app/frontend/node_modules
+app/frontend/dist
+app/backend/tests
+**/__pycache__
+**/*.pyc
+**/*.db
+app/backend/measure_result.json
+**/.venv
+**/.pytest_cache
+components/external_factors/reports
+components/external_factors/outputs

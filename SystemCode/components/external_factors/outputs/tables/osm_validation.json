@@ -1,0 +1,122 @@
+{
+  "data_dir": "D:\\NUS\\Projects\\IRS-Project-2026-Agancy-Skills\\civicops_external_factors\\data\\osm",
+  "checks": [
+    {
+      "check": "runtime files present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest sizes/checksums match",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "cache loads",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "all five boroughs present",
+      "ok": true,
+      "detail": "present=['BRONX', 'BROOKLYN', 'MANHATTAN', 'QUEENS', 'STATEN ISLAND']"
+    },
+    {
+      "check": "every core category present in every borough",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "no invalid facility geometries",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no empty facility geometries",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "facility search area contains NYC",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "facilities intersect the search area",
+      "ok": true,
+      "detail": "0 disjoint; 19 extend beyond the search-area edge (kept whole)"
+    },
+    {
+      "check": "facility buffer covers ruleset",
+      "ok": true,
+      "detail": "buffer=2000 m, required=450 m"
+    },
+    {
+      "check": "ruleset categories present in cache",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "road network present (optional, for Crew Dispatch)",
+      "ok": false,
+      "detail": "{'nyc_drive.graphml': False, 'nyc_drive.gpkg': False}"
+    }
+  ],
+  "facilities_by_borough": {
+    "MANHATTAN": {
+      "SCHOOL": 493,
+      "TRANSIT_STATION": 184,
+      "CHILDCARE": 55,
+      "FIRE_STATION": 49,
+      "HOSPITAL": 33,
+      "POLICE": 32,
+      "SENIOR_CARE": 15
+    },
+    "BROOKLYN": {
+      "SCHOOL": 756,
+      "CHILDCARE": 255,
+      "TRANSIT_STATION": 181,
+      "FIRE_STATION": 91,
+      "SENIOR_CARE": 73,
+      "POLICE": 40,
+      "HOSPITAL": 17
+    },
+    "QUEENS": {
+      "SCHOOL": 459,
+      "TRANSIT_STATION": 120,
+      "CHILDCARE": 97,
+      "FIRE_STATION": 79,
+      "SENIOR_CARE": 45,
+      "POLICE": 27,
+      "HOSPITAL": 19
+    },
+    "BRONX": {
+      "SCHOOL": 461,
+      "TRANSIT_STATION": 87,
+      "FIRE_STATION": 43,
+      "POLICE": 20,
+      "HOSPITAL": 15,
+      "SENIOR_CARE": 15,
+      "CHILDCARE": 8
+    },
+    "STATEN ISLAND": {
+      "SCHOOL": 135,
+      "CHILDCARE": 53,
+      "FIRE_STATION": 31,
+      "TRANSIT_STATION": 25,
+      "SENIOR_CARE": 15,
+      "POLICE": 7,
+      "HOSPITAL": 6
+    }
+  },
+  "roads_files": {
+    "nyc_drive.graphml": false,
+    "nyc_drive.gpkg": false
+  },
+  "ok": true
+}

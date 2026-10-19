@@ -1,0 +1,35 @@
+request_type_code,keywords
+RT001,pothole hole crater
+RT002,sinkhole cave-in caved collapsed sinking
+RT003,manhole plate asphalt uneven
+RT004,streetlight street light lamp dark flickering
+RT005,traffic signal light red walk pedestrian
+RT006,sidewalk curb pavement slab tripping
+RT020,main break gushing leak road water pouring
+RT021,drain catch basin clogged grate storm
+RT022,flood flooded flooding underwater under water
+RT023,sewage sewer backup manhole overflow
+RT024,hydrant
+RT025,brown dirty tap pressure faucet
+RT040,garbage trash recycling pickup collection missed skipped
+RT041,dumped dumping mattress debris tires
+RT042,litter dirty swept overflowing trash
+RT043,derelict wrecked no plates burned junk
+RT044,snow ice icy shoveled
+RT045,dead animal cat raccoon bird
+RT060,fallen tree branch limb fell
+RT061,overgrown branches wires hanging
+RT062,dead dying rotten tree
+RT080,heat hot water radiator heating cold
+RT081,ceiling leak dripping upstairs
+RT082,toilet sink plumbing pipe bathtub clogged
+RT083,mold roaches bugs mice unsanitary infested
+RT084,outlet electricity power lights switch
+RT100,rats rat rodents
+RT120,neighbor music party banging pounding upstairs
+RT121,bar car blasting yelling honking restaurant
+RT122,driveway blocked
+RT123,parked parking hydrant double sidewalk bus stop
+RT124,abandoned car vehicle weeks month
+RT140,construction permit scaffolding shaking demolition
+RT141,elevator lift

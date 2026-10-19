@@ -1,0 +1,12 @@
+category,pattern,weight
+MEDICAL,\b(not breathing|stopped breathing|can'?t breathe|unconscious|unresponsive|passed out|(someone|somebody|a (man|woman|person|kid|child)|he|she|they) (has |just )?collapsed)\b,1.0
+MEDICAL,\b(heart attack|chest pain|stroke|seizure|overdos(e|ed|ing)|choking)\b,1.0
+MEDICAL,\b(bleeding (badly|heavily|a lot)|badly (hurt|injured)|serious(ly)? injur(y|ed)|broken (neck|back))\b,0.9
+FIRE,\b(on fire|house fire|building fire|car fire|flames|fire (is )?spreading|smoke (is )?coming out)\b,1.0
+FIRE,\bfire\b(?! (hydrant|escape|station|alarm test|lane|department inspection))(?=.*\b(burning|flames|smoke|spreading)\b),0.8
+GAS_LEAK,\b(smell(s|ing)? (of )?gas|gas (leak|smell)|leaking gas|hissing gas)\b,1.0
+CRIME_IN_PROGRESS,\b(break[- ]?in|breaking in(to)?|burglar|robbery|robbing|being robbed|mugg(ed|ing)|carjack)\b,0.9
+CRIME_IN_PROGRESS,\b(gun|shots? fired|shooting|stabb(ed|ing)|knife)\b,1.0
+VIOLENCE_OR_THREAT,\b(assault(ed|ing)?|being attacked|beating (someone|him|her)|domestic violence|threaten(ed|ing)? to kill|kidnap)\b,1.0
+LIFE_SAFETY_HAZARD,\b(live wire|downed (power )?lines?|power lines? (down|on the (ground|street))|sparking wires?|electrocut)\b,0.9
+LIFE_SAFETY_HAZARD,\b((person|child|kid|someone) (is )?trapped|building (is )?collaps(ing|ed)|about to collapse)\b,1.0

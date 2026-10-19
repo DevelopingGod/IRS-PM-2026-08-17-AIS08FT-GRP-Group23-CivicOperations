@@ -1,0 +1,32 @@
+id,folder,title,what,file,source
+E01,01_intent,model against training variant,Which model and which training data win. MiniLM embeddings lead on every variant.,E01_model_against_training_variant.png,"Mohammad's run, results.csv"
+E01t,01_intent,model against training variant,The same numbers as E01.,E01t_model_against_training_variant.csv,results.csv
+E02,01_intent,two test slices,Change the wording and every model drops. They learned vocabulary more than meaning.,E02_two_test_slices.png,results.csv
+E03,01_intent,seed spread,One run proves nothing. The spread across seeds is what the report quotes.,E03_seed_spread.png,results.csv
+E04,01_intent,per request type,"Where the intake bot is strong and where it is weak, type by type.",E04_per_request_type.png,components/c01_nlp_bot.py on the gold set
+E04t,01_intent,per request type,The same numbers as E04.,E04t_per_request_type.csv,components/c01_nlp_bot.py
+E05,01_intent,most common confusions,"Which request types the bot mixes up, and how often.",E05_most_common_confusions.csv,components/c01_nlp_bot.py
+E05b,01_intent,every mistake with its text,"Every single line the shipped model gets wrong, so the errors can be read.",E05b_every_mistake_with_its_text.csv,components/c01_nlp_bot.py
+E06,01_intent,abstain threshold,The rule: the best accuracy available while handing no more than one in five to a person.,E06_abstain_threshold.png,tools/train_c01_winner.py
+E06t,01_intent,abstain threshold,The same numbers as E06.,E06t_abstain_threshold.csv,tools/train_c01_winner.py
+E07,01_intent,accuracy against cost,Bubble size is the model on disk. The shipped model is well inside the CPU budget.,E07_accuracy_against_cost.png,tools/recover_run_outputs.py
+E07t,01_intent,accuracy against cost,The same numbers as E07.,E07t_accuracy_against_cost.csv,measured on this machine
+E24,01_intent,"slot filling, measured honestly","Span F1 for the slot filler on 308 messages whose slots were marked by hand, shown next to the same model scored on the template text it was trained on. The gap between the two bars is the reason the old 0.999 was withdrawn.",E24_slot_span_f1.png,tools/train_c01_slot_tagger.py
+E24t,01_intent,"slot filling, measured honestly","The same numbers as E24, with every slot broken out separately.",E24_slot_span_f1.csv,tools/train_c01_slot_tagger.py
+E08,02_emergency,threshold sweep,Recall reaches 1.0 at 0.45. Every step further costs false alarms and buys nothing.,E08_threshold_sweep.png,tools/recover_run_outputs.py
+E08t,02_emergency,threshold sweep,"Both lexicons, every threshold.",E08t_threshold_sweep.csv,tools/recover_run_outputs.py
+E09,02_emergency,recall by category,"Nothing is missed in any category, which is the one gate that cannot be traded.",E09_recall_by_category.png,components/c02_emergency.py
+E09t,02_emergency,recall by category,The same numbers as E09.,E09t_recall_by_category.csv,components/c02_emergency.py
+E10,02_emergency,every false alarm,"The cost of recall 1.0, written out: who gets asked to confirm and why.",E10_every_false_alarm.csv,components/c02_emergency.py
+E11,03_credibility,score against hidden honesty,What matters is the ordering: dishonest reporters sit below honest ones.,E11_score_against_hidden_honesty.png,components/c06_credibility.py
+E12,03_credibility,fairness across report types,Equally honest people should score the same whatever they report. They nearly do now.,E12_fairness_across_report_types.png,components/c06_credibility.py
+E13,03_credibility,confirmation rate by request type,Sewer backups are confirmed 0.8% of the time and potholes 89%. This is what the score corrects for.,E13_confirmation_rate_by_request_type.png,tools/build_evidence_pack.py
+E13t,03_credibility,confirmation rate by request type,The same numbers as E13.,E13t_confirmation_rate_by_request_type.csv,data/reference/outcome_base_rates.csv
+E14,03_credibility,recovery after one bad report,"A citizen starts at 50, earns trust, takes one knock, and recovers.",E14_recovery_after_one_bad_report.png,components/c06_credibility.py
+E15,04_alerting,forecasting arms,Gradient boosting wins. The Poisson model is worse than using no weather at all.,E15_forecasting_arms.png,tools/train_c11_alerting.py
+E15t,04_alerting,forecasting arms,The same numbers as E15.,E15t_forecasting_arms.csv,tools/train_c11_alerting.py
+E16,04_alerting,storm day spikes,Green means we warned before the calls arrived. Red means we missed it.,E16_storm_day_spikes.png,tools/verify_components.py
+E16t,04_alerting,storm day spikes,"Every spike checked, with the forecast.",E16t_storm_day_spikes.csv,components/c11_alerting.py
+E18,05_data,class imbalance,The rarest types are the ones our story depends on.,E18_class_imbalance.png,data/processed/requests_real.parquet
+E19,05_data,outcome composition,A quarter of outcomes are inconclusive and cannot be used as truth.,E19_outcome_composition.png,data/processed/requests_real.parquet
+E20,05_data,test set coverage,It was 152 lines with two for some intents. It is now 308 with at least eight.,E20_test_set_coverage.png,data/reference/nlp_gold_test*.csv

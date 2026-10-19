@@ -1,0 +1,6 @@
+model,ms_per_message,size_mb,gold_macro_f1
+keyword rules,0.06,0.01,0.543
+TF-IDF + SVM,0.06,12.7,0.715
+MiniLM + logistic regression (shipped),1.92,90.9,0.858
+DistilBERT fine-tuned,11.22,268.7,0.811
+"whole intake component, end to end",29.02,90.9,0.858

@@ -1,0 +1,153 @@
+text,intent,emergency_category,profanity
+theres a massive pothole on atlantic ave by the barclays center my car rim is bent,RT001,NONE,NONE
+Pot hole in front of 55 Water St - been there 3 weeks,RT001,NONE,NONE
+can u fix the road on 3rd avenue its full of holes,RT001,NONE,NONE
+the hole on bedford keeps getting bigger every time it rains,RT001,NONE,NONE
+there's a sinkhole opening up in the middle of the road on Jamaica Avenue,RT002,NONE,NONE
+part of the street just caved in near the school on grand concourse,RT002,NONE,NONE
+the asphalt collapsed and theres a big gap under it,RT002,NONE,NONE
+a manhole cover is loose and it bangs every time a car drives over it,RT003,NONE,NONE
+the steel plate they left on the road is sticking up,RT003,NONE,NONE
+street light out on corner of 5th and 23rd,RT004,NONE,NONE
+the lamp post outside my house has been dark for a week it's really unsafe at night,RT004,NONE,NONE
+all the lights on my block went out,RT004,NONE,NONE
+light pole flickering on and off on Victory Blvd,RT004,NONE,NONE
+the traffic lights at the intersection of queens blvd and 71st are completely off,RT005,NONE,NONE
+walk signal broken cars wont stop,RT005,NONE,NONE
+the signal on flatbush is stuck on red and people are running it,RT005,NONE,NONE
+traffic light hanging down after the wind,RT005,NONE,NONE
+the sidewalk in front of 210 east 86th is lifted by tree roots and my mom tripped,RT006,NONE,NONE
+curb is crumbling on Richmond Ave,RT006,NONE,NONE
+big crack in the pavement slab outside the deli,RT006,NONE,NONE
+water is bubbling up out of the street on Northern Blvd looks like a main broke,RT020,NONE,NONE
+theres water shooting up from a crack in the road,RT020,NONE,NONE
+the road is wet and theres a constant stream of clean water coming from under the asphalt,RT020,NONE,NONE
+the drain on my corner is totally clogged with leaves and trash,RT021,NONE,NONE
+catch basin blocked on nostrand every time it rains the whole corner floods,RT021,NONE,NONE
+storm drain full of garbage,RT021,NONE,NONE
+the sewer grate outside the school is backed up,RT021,NONE,NONE
+whole street under water after the storm cars cant pass,RT022,NONE,NONE
+flooding on Hylan Boulevard water up to the curb,RT022,NONE,NONE
+the underpass is flooded again,RT022,NONE,NONE
+sewage is coming up into my basement through the floor drain,RT023,NONE,NONE
+disgusting smell and sewage bubbling out of the manhole,RT023,NONE,NONE
+raw sewage on the sidewalk by the laundromat,RT023,NONE,NONE
+kids opened the fire hydrant and its been running for hours,RT024,NONE,NONE
+fire hydrant leaking on east tremont,RT024,NONE,NONE
+the hydrant got knocked over by a truck water everywhere,RT024,NONE,NONE
+my tap water is brown since this morning,RT025,NONE,NONE
+water pressure in the whole building is super low,RT025,NONE,NONE
+the water from the faucet smells like chlorine and tastes weird,RT025,NONE,NONE
+garbage wasnt picked up on tuesday again,RT040,NONE,NONE
+sanitation skipped our recycling this week,RT040,NONE,NONE
+missed pickup of my bulk item a couch,RT040,NONE,NONE
+someone dumped a whole pile of construction debris by the park entrance,RT041,NONE,NONE
+people keep dumping old mattresses in the empty lot on Fulton,RT041,NONE,NONE
+a van just unloaded a bunch of tires on the sidewalk and drove off,RT041,NONE,NONE
+the block is covered in litter nobody cleans it,RT042,NONE,NONE
+overflowing corner trash cans on broadway,RT042,NONE,NONE
+the street sweeper hasnt come in weeks,RT042,NONE,NONE
+wrecked car with no plates and smashed windows on my street,RT043,NONE,NONE
+burnt out car abandoned under the highway,RT043,NONE,NONE
+nobody shoveled the sidewalk in front of the bank its a sheet of ice,RT044,NONE,NONE
+the crosswalk is blocked by a huge snow pile,RT044,NONE,NONE
+icy road on the hill cars are sliding,RT044,NONE,NONE
+dead raccoon on the side of the road,RT045,NONE,NONE
+there is a dead cat in front of 45 Main St,RT045,NONE,NONE
+a big branch snapped off and is lying across the sidewalk,RT060,NONE,NONE
+tree came down in the storm blocking half the road,RT060,NONE,NONE
+a limb is cracked and hanging over the bus stop,RT060,NONE,NONE
+branches are touching the electric wires on my street,RT061,NONE,NONE
+the tree is so overgrown you cant see the stop sign,RT061,NONE,NONE
+tree outside my window is dead no leaves at all,RT062,NONE,NONE
+the old tree by the school looks rotten and hollow,RT062,NONE,NONE
+no heat in my apartment for 3 days and i have a baby,RT080,NONE,NONE
+landlord turned off the hot water again,RT080,NONE,NONE
+radiators are ice cold its freezing in here,RT080,NONE,NONE
+water is pouring through my ceiling from the unit above,RT081,NONE,NONE
+leak in the bathroom ceiling getting worse,RT081,NONE,NONE
+my toilet has been broken for a week and the super wont fix it,RT082,NONE,NONE
+the kitchen sink pipe is leaking under the cabinet,RT082,NONE,NONE
+bathtub wont drain,RT082,NONE,NONE
+black mold all over the bathroom walls,RT083,NONE,NONE
+roaches everywhere in my apartment the building is infested,RT083,NONE,NONE
+mice in the kitchen and the landlord ignores it,RT083,NONE,NONE
+half the outlets in my apartment stopped working,RT084,NONE,NONE
+the lights in the hallway of my building have been out for days,RT084,NONE,NONE
+rats all over the playground,RT100,NONE,NONE
+huge rats coming out of the garbage bags every night on 125th,RT100,NONE,NONE
+my upstairs neighbor plays loud music until 4am every night,RT120,NONE,NONE
+constant banging from the apartment above,RT120,NONE,NONE
+the bar downstairs is blasting music past midnight,RT121,NONE,NONE
+guy in a car blasting music outside my window,RT121,NONE,NONE
+people partying and yelling on the street all night,RT121,NONE,NONE
+somebody parked right across my driveway i cant get out for work,RT122,NONE,NONE
+my driveway is blocked by a white van,RT122,NONE,NONE
+car parked in front of the fire hydrant again,RT123,NONE,NONE
+delivery truck double parked blocking the bike lane,RT123,NONE,NONE
+someone parked on the sidewalk and people with strollers cant pass,RT123,NONE,NONE
+a car with plates hasnt moved in a month and has tickets all over it,RT124,NONE,NONE
+abandoned SUV on my block for weeks,RT124,NONE,NONE
+they are doing construction next door on a sunday with no permit,RT140,NONE,NONE
+the scaffolding next to my building looks like its going to fall,RT140,NONE,NONE
+the whole building shakes from the demolition next door,RT140,NONE,NONE
+our elevator has been broken for a week and there are elderly people on the 12th floor,RT141,NONE,NONE
+elevator stuck between floors nobody inside,RT141,NONE,NONE
+um so there's like a pot hole uh on ocean parkway,RT001,NONE,NONE
+the the street light is uh not working near my building,RT004,NONE,NONE
+flooding flooding on the street near the train station,RT022,NONE,NONE
+yeah the drain is blocked again same as last week,RT021,NONE,NONE
+Sir the garbage truck not come to my building two times,RT040,NONE,NONE
+very big hole in road please come quick,RT001,NONE,NONE
+water come from ceiling in my apartment,RT081,NONE,NONE
+no hot water no heat in building please help us,RT080,NONE,NONE
+tree fall down on car on my street,RT060,NONE,NONE
+potholle on linden blvd,RT001,NONE,NONE
+streetlite broke on bay ridge pkwy,RT004,NONE,NONE
+clogd drain flooding the crosswalk,RT021,NONE,NONE
+thers a dead rat on the stairs of the subway entrance,RT045,NONE,NONE
+this damn pothole has wrecked two of my tires,RT001,NONE,MILD
+the stupid street light is out again,RT004,NONE,MILD
+fix the fucking drain it floods every single time,RT021,NONE,SEVERE
+you useless idiots never pick up our trash,RT040,NONE,MILD
+this is bullshit no heat for a week,RT080,NONE,SEVERE
+my neighbor's shitty music is too loud,RT120,NONE,SEVERE
+the crappy sidewalk is broken,RT006,NONE,MILD
+hell of a mess with all this dumping,RT041,NONE,MILD
+somebody parked in my damn driveway again,RT122,NONE,MILD
+what the fuck is wrong with the traffic light,RT005,NONE,SEVERE
+my dad just collapsed and he isnt breathing,EMERGENCY,MEDICAL,NONE
+a man is lying on the sidewalk unconscious,EMERGENCY,MEDICAL,NONE
+my wife is having chest pain and cant breathe,EMERGENCY,MEDICAL,NONE
+someone overdosed in the stairwell,EMERGENCY,MEDICAL,NONE
+the apartment across the hall is on fire,EMERGENCY,FIRE,NONE
+theres smoke pouring out of the roof and flames,EMERGENCY,FIRE,NONE
+i can smell gas in the whole building,EMERGENCY,GAS_LEAK,NONE
+strong gas smell near the boiler room,EMERGENCY,GAS_LEAK,NONE
+someone is breaking into the car downstairs right now,EMERGENCY,CRIME_IN_PROGRESS,NONE
+i heard gunshots on my block,EMERGENCY,CRIME_IN_PROGRESS,NONE
+there's a guy with a knife threatening people at the bus stop,EMERGENCY,CRIME_IN_PROGRESS,NONE
+my neighbor is beating his wife i can hear her screaming,EMERGENCY,VIOLENCE_OR_THREAT,NONE
+two men are attacking someone outside the store,EMERGENCY,VIOLENCE_OR_THREAT,NONE
+power line fell on the street and its sparking,EMERGENCY,LIFE_SAFETY_HAZARD,NONE
+a kid is trapped in the elevator,EMERGENCY,LIFE_SAFETY_HAZARD,NONE
+the wall of the building next door is cracking and about to collapse,EMERGENCY,LIFE_SAFETY_HAZARD,NONE
+help my son fell and hit his head there is a lot of blood,EMERGENCY,MEDICAL,NONE
+a car crashed into the pole and the driver is not moving,EMERGENCY,MEDICAL,NONE
+fire hydrant is broken and spraying water,RT024,NONE,NONE
+the fire escape on my building is rusted and falling apart,RT140,NONE,NONE
+the gas station on the corner has a broken street light in front,RT004,NONE,NONE
+someone broke the street light,RT004,NONE,NONE
+the tree is on fire after lightning,EMERGENCY,FIRE,NONE
+the smell from the sewer is terrible,RT023,NONE,NONE
+the elevator doors are broken but nobody is stuck,RT141,NONE,NONE
+water main broke and water is flooding the basement of the school,RT020,NONE,NONE
+hi,SMALLTALK,NONE,NONE
+thanks for the help,SMALLTALK,NONE,NONE
+what can you do,SMALLTALK,NONE,NONE
+hello is anyone there,SMALLTALK,NONE,NONE
+how do i pay my property tax,OTHER,NONE,NONE
+i want to renew my driving license,OTHER,NONE,NONE
+the museum was closed today,OTHER,NONE,NONE
+my uber driver was rude,OTHER,NONE,NONE
+can i get a copy of my birth certificate,OTHER,NONE,NONE

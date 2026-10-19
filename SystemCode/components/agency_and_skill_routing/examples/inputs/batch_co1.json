@@ -1,0 +1,7 @@
+[
+  {"request_type": "RT001", "confidence": 0.94, "ready_to_submit": true, "needs_human": false, "is_emergency": false, "emergency_action": "CONTINUE", "emergency_category": null, "slots": {"incident_address": "500 GRAND CONCOURSE", "borough": "BRONX"}},
+  {"request_type": "OTHER", "confidence": 0.81, "ready_to_submit": false, "needs_human": true, "is_emergency": false, "emergency_action": "CONTINUE", "emergency_category": null, "slots": {}},
+  {"request_type": "RT141", "confidence": 0.77, "ready_to_submit": true, "needs_human": false, "is_emergency": false, "emergency_action": "CONFIRM_WITH_CITIZEN", "emergency_category": null, "slots": {"incident_address": "75 WEST END AVENUE", "borough": "MANHATTAN"}},
+  {"request_type": "RT060", "confidence": 1.7, "ready_to_submit": true, "needs_human": false, "is_emergency": false, "emergency_action": "CONTINUE", "emergency_category": null, "slots": {"borough": "BROOKLYN"}},
+  {"request_type": "SMALLTALK", "confidence": 0.99, "ready_to_submit": false, "needs_human": false, "is_emergency": false, "emergency_action": "CONTINUE", "emergency_category": null}
+]

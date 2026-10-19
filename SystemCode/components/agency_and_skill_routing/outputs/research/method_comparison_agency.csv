@@ -1,0 +1,9 @@
+split,approach,records,coverage,agree_initial_agency,determinable_final_records,agree_final_agency_determinable,differs_from_catalog
+val,A_catalog_lookup,7434,1.0,1.0,7339,0.98106,0
+val,C1_majority_by_code,7434,1.0,1.0,7339,0.98106,0
+val,C2_majority_by_code_borough,7434,1.0,1.0,7339,0.98106,0
+val,C3_final_agency_majority,7434,1.0,0.989911,7339,0.986102,75
+test,A_catalog_lookup,7434,1.0,1.0,7343,0.985564,0
+test,C1_majority_by_code,7434,1.0,1.0,7343,0.985564,0
+test,C2_majority_by_code_borough,7434,1.0,1.0,7343,0.985564,0
+test,C3_final_agency_majority,7434,1.0,0.991391,7343,0.989105,64

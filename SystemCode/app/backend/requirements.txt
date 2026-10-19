@@ -1,0 +1,21 @@
+# The app backend and every component it runs. Pinned to the versions it is tested with.
+# torch is installed separately in app/docker/backend.Dockerfile, from the CPU only index.
+fastapi==0.141.1
+uvicorn==0.53.0
+pydantic==2.13.5
+httpx==0.28.1
+pandas==2.3.3
+numpy==2.2.6
+pyarrow==25.0.1
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.6.0
+sentence-transformers==6.1.0
+transformers==5.17.0
+tokenizers==0.23.2
+safetensors==0.8.0
+geopandas==1.1.4
+shapely==2.1.2
+pyproj==3.7.1
+pyogrio==0.13.0
+PyYAML==6.0.3

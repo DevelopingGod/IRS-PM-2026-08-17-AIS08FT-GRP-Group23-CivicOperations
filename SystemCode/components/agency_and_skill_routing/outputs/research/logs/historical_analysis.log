@@ -1,0 +1,31 @@
+records: 49558
+columns: 52
+split_counts: {'train': 34690, 'val': 7434, 'test': 7434}
+split_boundaries: {'train': ['2025-09-24 04:00:17', '2026-05-20 06:43:24'], 'val': ['2026-05-20 06:44:36', '2026-07-17 19:53:36'], 'test': ['2026-07-17 19:54:00', '2026-09-16 01:48:51']}
+splits_strictly_ordered: True
+source_values: {'REAL_311': 49558}
+synthetic_rows: 0
+duplicate_unique_keys: 0
+distinct_rt_codes: 34
+catalog_codes_in_history: 34
+catalog_codes_missing_from_history: []
+history_codes_not_in_catalog: []
+historical_agencies: {'NYPD': 23570, 'HPD': 10357, 'DSNY': 5212, 'DOT': 5000, 'DEP': 2317, 'DPR': 1639, 'DOB': 1054, 'DOHMH': 407, 'NYC311-PRD': 2}
+overall_agreement: 49556
+overall_agreement_rate: 0.99996
+disagreement_count: 2
+multi_agency_codes: ['RT003', 'RT006']
+embedded_catalog_agency_matches_csv: True
+rt_reconstruction_exact: 49208
+rt_reconstruction_mismatch: 350
+complaint_types: 34
+complaint_types_with_multiple_agencies: {'Sidewalk Condition': 2, 'Street Condition': 2}
+agreement_by_split: {'test': 1.0, 'train': 0.999942, 'val': 1.0}
+codes_present_in_all_splits: 33
+rare_codes_under_1pct: [{'request_type_code': 'RT061', 'total': 473, 'share_pct': 0.954}, {'request_type_code': 'RT100', 'total': 407, 'share_pct': 0.821}, {'request_type_code': 'RT141', 'total': 385, 'share_pct': 0.777}, {'request_type_code': 'RT023', 'total': 314, 'share_pct': 0.634}, {'request_type_code': 'RT002', 'total': 301, 'share_pct': 0.607}, {'request_type_code': 'RT021', 'total': 286, 'share_pct': 0.577}, {'request_type_code': 'RT025', 'total': 251, 'share_pct': 0.506}, {'request_type_code': 'RT062', 'total': 251, 'share_pct': 0.506}, {'request_type_code': 'RT045', 'total': 240, 'share_pct': 0.484}, {'request_type_code': 'RT022', 'total': 141, 'share_pct': 0.285}]
+codes_under_30_in_val_or_test: [{'request_type_code': 'RT044', 'val': 0, 'test': 0}, {'request_type_code': 'RT025', 'val': 30, 'test': 3}, {'request_type_code': 'RT022', 'val': 28, 'test': 50}]
+rare_descriptor_rows_under_5: 56
+borough_values: {'BRONX': 9983, 'BROOKLYN': 9980, 'QUEENS': 9975, 'MANHATTAN': 9907, 'STATEN ISLAND': 9713}
+location_type_missing: 6623
+status_values: {'Closed': 47868, 'Open': 743, 'In Progress': 723, 'Pending': 103, 'Assigned': 89, 'Started': 28, 'Unspecified': 4}
+outcome_class_values: {'UNFOUNDED': 18306, 'GENUINE': 9718, 'SUBSIDED': 7788, 'ADMINISTRATIVE': 5740, 'NO_ACCESS': 3479, 'DUPLICATE': 2912, 'REFERRED': 1164, 'NO_NOTE': 451}

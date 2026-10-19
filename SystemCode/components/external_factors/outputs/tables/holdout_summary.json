@@ -1,0 +1,23 @@
+{
+  "explanation_completeness": {
+    "results": 49558,
+    "explanation_non_empty_pct": 100.0,
+    "triggered_rules_non_empty_pct": 100.0,
+    "positives_with_facility_evidence_pct": 100.0,
+    "complete_with_nearest_qualifying_distance_pct": 100.0,
+    "borough_mismatch_warnings": 58,
+    "batch_seconds": 2.99,
+    "batch_requests_per_second": 16592.5
+  },
+  "holdout": {
+    "selected_threshold_m": 100,
+    "test_minus_val_trigger_rate_pp": 0.11942607013468987,
+    "holdout_tolerance_pp": 5.0,
+    "holdout_shift_within_tolerance": true,
+    "test_C1_decision_agreement": true,
+    "test_C2_positive_stability": true,
+    "test_C4_informativeness": true,
+    "test_C5_borough_ratio": true,
+    "note": "Descriptive hold-out check of the frozen configuration; no thresholds were changed after it."
+  }
+}

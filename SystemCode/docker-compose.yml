@@ -1,0 +1,33 @@
+# Civic Operations: run the whole app in two containers. Full steps in SETUP.md.
+#   docker compose up --build -d
+#   docker compose exec backend python -m app.backend.manage create-user --role tech --name "Your name"
+#   docker compose exec backend python -m app.backend.manage import-backlog --count 150
+# Then open http://localhost:8080
+# data/processed (committed in the repository) is read from your disk, read only.
+name: civic-operations
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: app/docker/backend.Dockerfile
+    environment:
+      CIVICOPS_SALT: ${CIVICOPS_SALT:-change-me-before-any-real-use}
+      CIVICOPS_ORIGINS: http://localhost:8080
+    volumes:
+      - ./data/processed:/srv/data/processed:ro
+      - state:/srv/state
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: app/docker/frontend.Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  state:

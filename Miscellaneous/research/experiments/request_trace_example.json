@@ -1,0 +1,193 @@
+{
+  "message": "Deep pothole near the crossing, a cyclist nearly fell this morning",
+  "place": {
+    "incident_address": "37-61 79 Street",
+    "borough": "QUEENS",
+    "zip": "11372",
+    "latitude": 40.749097,
+    "longitude": -73.887024,
+    "label": "37-61 79 Street, Queens 11372",
+    "location_precision": "ADDRESS_POINT",
+    "location_source": "NYC 311 address index"
+  },
+  "first_answer": "FILED",
+  "request_id": "CO-6FD182",
+  "resident_id_format": "NYC-XXXX-XXXX",
+  "why": [
+    {
+      "component": "Intake bot + Emergency check",
+      "outcome": "LIVE",
+      "ms": 18570.51,
+      "reasons": [
+        "Read as 'Pothole' (model, confidence 0.78)",
+        "Address and time read by the word tagger",
+        "Location read from the message: borough"
+      ]
+    },
+    {
+      "component": "Agency and skill routing",
+      "outcome": "LIVE",
+      "ms": 0.15,
+      "reasons": [
+        "RT001 (Pothole) was resolved through the shared catalog to DOT (New York City Department of Transportation) with required skill ROAD_REPAIR. All intake, emergency and catalog checks passed, so the request continues to duplicate detection. Later components still decide priority, location and crew feasibility."
+      ]
+    },
+    {
+      "component": "Duplicate detection",
+      "outcome": "LIVE",
+      "ms": 0.12,
+      "reasons": [
+        "No open street condition report within 150 m in the last 48 h"
+      ]
+    },
+    {
+      "component": "External factors",
+      "outcome": "LIVE",
+      "ms": 9.22,
+      "reasons": [
+        "A qualifying critical facility is within its configured geographic threshold: school 'P.S. 69Q - The Jackson Heights School', 90 m away (threshold 100 m). This is geographic evidence only; it does not set urgency."
+      ]
+    },
+    {
+      "component": "Credibility and escalation",
+      "outcome": "LIVE",
+      "ms": 1.09,
+      "reasons": [
+        "First report from this person, so they start at neutral 50"
+      ]
+    },
+    {
+      "component": "Fake request detection",
+      "outcome": "LIVE",
+      "ms": 1.01,
+      "reasons": [
+        "Type base rate (how often this problem is unfounded)  (-1.814)",
+        "How many reports this citizen filed in one hour  (-0.095)",
+        "Weekend filing  (-0.058)",
+        "borough queens  (+0.054)",
+        "borough staten  (+0.045)",
+        "Hour of day  (-0.021)",
+        "About 11% of decided Street Condition reports close as unfounded  (-0.392)"
+      ]
+    },
+    {
+      "component": "Urgency + Prioritisation",
+      "outcome": "LIVE",
+      "ms": 0.48,
+      "reasons": [
+        "Rule fired: CATALOG_BASELINE",
+        "Rule fired: HAZ_POTHOLE",
+        "Rule fired: PEOPLE_INFERRED",
+        "Rule fired: PH_INFERRED_MODERATE"
+      ]
+    },
+    {
+      "component": "Crew deployment and routing",
+      "outcome": "MISSING",
+      "ms": 0.0,
+      "reasons": [
+        "Safe default: An empty plan (the admin assigns by hand).",
+        "no code from the owner yet"
+      ]
+    }
+  ],
+  "journey": [
+    {
+      "step": "Emergency check",
+      "text": "Checked for danger first. Not an emergency.",
+      "outcome": "LIVE"
+    },
+    {
+      "step": "Intake bot",
+      "text": "Understood as: Pothole.",
+      "outcome": "LIVE"
+    },
+    {
+      "step": "Agency and skill routing",
+      "text": "Sent to DOT.",
+      "outcome": "LIVE"
+    },
+    {
+      "step": "Duplicate detection",
+      "text": "First report of this problem here.",
+      "outcome": "LIVE"
+    },
+    {
+      "step": "External factors",
+      "text": "Near a school, which is noted.",
+      "outcome": "LIVE"
+    },
+    {
+      "step": "Urgency + Prioritisation",
+      "text": "Urgency: Medium.",
+      "outcome": "LIVE"
+    }
+  ],
+  "fields": {
+    "request_type": "RT001",
+    "label": "Pothole",
+    "agency": "DOT",
+    "required_skills": [
+      "ROAD_REPAIR"
+    ],
+    "dispatch_eligible": true,
+    "duplicate_relation": "NEW",
+    "external_factor": 1,
+    "sensitive_site_type": "school",
+    "facility_evidence": {
+      "facility_category": "SCHOOL",
+      "facility_name": "P.S. 69Q - The Jackson Heights School",
+      "distance_m": 89.55,
+      "threshold_m": 100.0,
+      "osm_id": "way/265922494"
+    },
+    "credibility_score": 50.0,
+    "credibility_band": "NEW",
+    "fake_action": "PROCEED",
+    "unfounded_probability": 0.1227,
+    "urgency_level": "MEDIUM",
+    "queue_status": "provisional"
+  },
+  "queue": {
+    "queue_position": 52,
+    "priority_band": "PLANNED",
+    "priority_score": 2.5,
+    "priority_reasons": [
+      "Catalog/C10 urgency: MEDIUM",
+      "Waiting: 0.0h",
+      "SLA target unavailable; no SLA points",
+      "C05 independent reporters: 2 (+2.5 provisional points)",
+      "Queue position is advisory and does not authorize dispatch",
+      "Official SLA unknown: no SLA-risk points assigned; Need code and official agency/problem/problem details",
+      "Default scheduling band from C10 urgency."
+    ]
+  },
+  "queue_size": 151,
+  "crew_id": "CRW-DOT-082",
+  "closure": {
+    "crew_outcome": "VALID_RESOLVED",
+    "verified_outcome": "GENUINE",
+    "credibility_change": 2.62,
+    "reasons": [
+      "The crew reported valid resolved, which counts as genuine",
+      "1 reporter(s) updated, +2.62 each"
+    ]
+  },
+  "conversation": [
+    {
+      "asked": "where is my request?",
+      "intent": "STATUS",
+      "reply": "CO-6FD182, Pothole at 37-61 79 Street, Queens: closed, the crew fixed it. If it is still there, tell me.",
+      "action": null
+    },
+    {
+      "asked": "the pothole is still there",
+      "intent": "PERSISTS",
+      "reply": "Sorry it is still there. I have filed it again as CO-B66929, linked to CO-6FD182. Because it came back after it was closed, it is marked as a recurrence and gets more attention.",
+      "action": {
+        "type": "FOLLOW_UP_FILED",
+        "request_id": "CO-B66929"
+      }
+    }
+  ]
+}

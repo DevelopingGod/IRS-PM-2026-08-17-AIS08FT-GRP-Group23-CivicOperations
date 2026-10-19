@@ -1,0 +1,54 @@
+# Threshold-selection protocol. FIXED after train-split exploration and BEFORE any
+# validation-split proximity result was computed (written 2026-10-15).
+# research/select_thresholds.py applies it mechanically to the validation split.
+#
+# Without independent outcome labels, no threshold can be "optimal". The protocol picks a
+# knowledge-based prior from the operational definition of adjacency, then checks it against
+# pre-declared data criteria. If the prior fails, it falls back to the nearest admissible candidate.
+
+protocol_version: "1.0"
+fixed_on: "2026-10-15"
+evidence_split_for_exploration: train
+evidence_split_for_selection: val
+holdout_split: test   # touched only after the configuration is frozen
+
+operational_definition: >-
+  "Adjacent" means the request is in the facility's immediate surroundings: on the same block
+  frontage, directly across the street, or at the adjacent intersection. NYC grid geometry
+  gives the scale: short block about 80 m, avenue right-of-way about 30 m, address points up
+  to about 30 m behind the curb. That puts adjacency at about 100 m of straight-line distance
+  to the facility geometry. Wider radii (250 m and up) describe a neighbourhood, not adjacency.
+
+candidate_radii_m: [50, 75, 100, 150, 200, 250, 300, 400, 500, 750, 1000]
+
+# H1 - admissible range implied by the operational definition and by measurement error
+#      (the lower bound is about 3x the typical street-level geocoding error of 15-25 m).
+admissible_range_m: [75, 150]
+
+knowledge_based_prior_m: 100
+
+# Pre-declared data criteria, evaluated on the VALIDATION split (point-estimate decisions,
+# core categories, universal threshold):
+criteria:
+  C1_decision_agreement_min_pct: 95.0        # decisions unchanged under a 15 m displacement (all requests)
+  C2_positive_stability_min_pct: 85.0        # positives unchanged under a 15 m displacement
+  C3_temporal_stability_max_abs_pp: 5.0      # |trigger rate val - train| in percentage points
+  C4_informativeness_max_trigger_pct: 50.0   # flag must not mark most requests ("adjacent" is the minority case)
+  C5_borough_max_min_ratio_max: 3.0          # no borough flagged more than 3x as often as another
+  displacement_m: 15
+
+decision_rule: >-
+  Select the knowledge-based prior if it is admissible and meets C1-C5 on validation.
+  Otherwise select the smallest admissible candidate that meets C1-C5. If none does, keep
+  the prior and record the failed criteria as a documented limitation.
+
+configuration_comparison:
+  # Alternatives evaluated on validation (reported, not tuned):
+  universal: "one threshold for all core categories"
+  category_specific: "vulnerable-population sites (SCHOOL, CHILDCARE, SENIOR_CARE) at the selected threshold; emergency-service sites (HOSPITAL, FIRE_STATION, POLICE) at the next larger candidate"
+  core_plus_transit: "universal threshold, TRANSIT_STATION added as a qualifying category"
+  context_aware: "universal threshold, factor forced to 0 for building-interior request types RT080-RT084, RT141"
+  preference: >-
+    Choose the simplest configuration (universal, pure geographic) unless an alternative
+    is clearly justified by spatial reasoning AND agreed with the Urgency owner. Request-type
+    gating is never adopted unilaterally, to avoid double counting with Urgency.

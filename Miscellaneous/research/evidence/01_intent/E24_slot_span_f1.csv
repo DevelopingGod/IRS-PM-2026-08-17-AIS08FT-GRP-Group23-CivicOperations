@@ -1,0 +1,29 @@
+system,measured_on,slot,precision,recall,f1,true,predicted,correct,f1_low,f1_high,note
+pattern matcher now in C01,synthetic held out split,all slots,0.6237,0.5226,0.5687,3980,3335,2080,0.555,0.584,
+pattern matcher now in C01,synthetic held out split,location and time slots only,0.6804,0.5622,0.6157,3700,3057,2080,0.6015,0.6311,"ADDRESS, CROSS_STREET, BOROUGH and TIME. HAZARD excluded, see the note in the script."
+pattern matcher now in C01,synthetic held out split,ADDRESS,0.554,0.4936,0.5221,1475,1314,728,,,
+pattern matcher now in C01,synthetic held out split,CROSS_STREET,0.7895,0.4174,0.5461,575,304,240,,,
+pattern matcher now in C01,synthetic held out split,BOROUGH,0.7669,0.5865,0.6646,931,712,546,,,
+pattern matcher now in C01,synthetic held out split,TIME,0.7785,0.7872,0.7828,719,727,566,,,
+pattern matcher now in C01,synthetic held out split,HAZARD,0.0,0.0,0.0,280,278,0,,,
+pattern matcher now in C01,hand labelled gold messages,all slots,0.3614,0.2703,0.3093,111,83,30,0.2162,0.4,
+pattern matcher now in C01,hand labelled gold messages,location and time slots only,0.5385,0.3636,0.4341,77,52,28,0.3186,0.5426,"ADDRESS, CROSS_STREET, BOROUGH and TIME. HAZARD excluded, see the note in the script."
+pattern matcher now in C01,hand labelled gold messages,ADDRESS,0.5417,0.4483,0.4906,29,24,13,,,
+pattern matcher now in C01,hand labelled gold messages,CROSS_STREET,0.0,0.0,0.0,3,0,0,,,"only 3 real cases here, far too few for the F1 to mean anything. The counts are shown instead."
+pattern matcher now in C01,hand labelled gold messages,BOROUGH,,,,0,1,0,,,"no message in this test set contains this slot, so there is nothing to score. The predicted count is pure false alarms."
+pattern matcher now in C01,hand labelled gold messages,TIME,0.5556,0.3333,0.4167,45,27,15,,,
+pattern matcher now in C01,hand labelled gold messages,HAZARD,0.0645,0.0588,0.0615,34,31,2,,,
+DistilBERT word tagger,synthetic held out split,all slots,0.9852,0.9852,0.9852,3980,3980,3921,0.9815,0.9887,
+DistilBERT word tagger,synthetic held out split,location and time slots only,0.9841,0.9841,0.9841,3700,3700,3641,0.98,0.9879,"ADDRESS, CROSS_STREET, BOROUGH and TIME. HAZARD excluded, see the note in the script."
+DistilBERT word tagger,synthetic held out split,ADDRESS,0.9783,0.9783,0.9783,1475,1475,1443,,,
+DistilBERT word tagger,synthetic held out split,CROSS_STREET,0.953,0.953,0.953,575,575,548,,,
+DistilBERT word tagger,synthetic held out split,BOROUGH,1.0,1.0,1.0,931,931,931,,,
+DistilBERT word tagger,synthetic held out split,TIME,1.0,1.0,1.0,719,719,719,,,
+DistilBERT word tagger,synthetic held out split,HAZARD,1.0,1.0,1.0,280,280,280,,,
+DistilBERT word tagger,hand labelled gold messages,all slots,0.4581,0.7387,0.5655,111,179,82,0.4929,0.6384,
+DistilBERT word tagger,hand labelled gold messages,location and time slots only,0.6053,0.8961,0.7225,77,114,69,0.6408,0.7961,"ADDRESS, CROSS_STREET, BOROUGH and TIME. HAZARD excluded, see the note in the script."
+DistilBERT word tagger,hand labelled gold messages,ADDRESS,0.7368,0.9655,0.8358,29,38,28,,,
+DistilBERT word tagger,hand labelled gold messages,CROSS_STREET,1.0,1.0,1.0,3,3,3,,,"only 3 real cases here, far too few for the F1 to mean anything. The counts are shown instead."
+DistilBERT word tagger,hand labelled gold messages,BOROUGH,,,,0,1,0,,,"no message in this test set contains this slot, so there is nothing to score. The predicted count is pure false alarms."
+DistilBERT word tagger,hand labelled gold messages,TIME,0.5278,0.8444,0.6496,45,72,38,,,
+DistilBERT word tagger,hand labelled gold messages,HAZARD,0.2,0.3824,0.2626,34,65,13,,,

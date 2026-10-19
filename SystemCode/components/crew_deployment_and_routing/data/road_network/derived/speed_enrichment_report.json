@@ -1,0 +1,116 @@
+{
+  "edges": 149355,
+  "maxspeed_parse_status": {
+    "missing": 105448,
+    "single": 43749,
+    "list": 155,
+    "invalid": 3
+  },
+  "speed_source_counts": {
+    "osm_maxspeed": 43749,
+    "osm_maxspeed_list_mean": 155,
+    "nyc_default_25mph": 94245,
+    "highway_class_median": 11103,
+    "fallback_25mph": 103
+  },
+  "class_median_mph": {
+    "living_street": 10.0,
+    "motorway": 50.0,
+    "motorway_link": 40.0,
+    "primary": 25.0,
+    "primary_link": 25.0,
+    "residential": 25.0,
+    "secondary": 25.0,
+    "secondary_link": 25.0,
+    "tertiary": 25.0,
+    "tertiary_link": 25.0,
+    "trunk": 30.0,
+    "unclassified": 25.0
+  },
+  "class_tagged_samples": {
+    "busway": 6,
+    "living_street": 107,
+    "motorway": 1103,
+    "motorway_link": 178,
+    "primary": 5545,
+    "primary_link": 38,
+    "residential": 20186,
+    "secondary": 8781,
+    "secondary_link": 90,
+    "tertiary": 6133,
+    "tertiary_link": 79,
+    "trunk": 323,
+    "trunk_link": 16,
+    "unclassified": 1319
+  },
+  "rules": {
+    "min_valid_mph": 5.0,
+    "max_valid_mph": 70.0,
+    "nyc_default_mph": 25.0,
+    "non_default_classes": [
+      "motorway",
+      "motorway_link",
+      "trunk",
+      "trunk_link"
+    ],
+    "min_class_samples": 20,
+    "fallback_mph": 25.0
+  },
+  "nodes": 59251,
+  "inside_nyc_edges": 139364,
+  "outside_nyc_edges": 9991,
+  "geometry_reoriented_edges": 0,
+  "length_over_haversine_min": 1.0000000313922026,
+  "edges_length_below_haversine": 0,
+  "posted_mph_by_source": {
+    "osm_maxspeed": {
+      "edges": 43749,
+      "mean_mph": 25.41
+    },
+    "osm_maxspeed_list_mean": {
+      "edges": 155,
+      "mean_mph": 30.16
+    },
+    "nyc_default_25mph": {
+      "edges": 94245,
+      "mean_mph": 25.0
+    },
+    "highway_class_median": {
+      "edges": 11103,
+      "mean_mph": 27.66
+    },
+    "fallback_25mph": {
+      "edges": 103,
+      "mean_mph": 25.0
+    }
+  },
+  "length_km_by_source": {
+    "osm_maxspeed": 5438.4,
+    "osm_maxspeed_list_mean": 115.1,
+    "nyc_default_25mph": 10288.1,
+    "highway_class_median": 1551.1,
+    "fallback_25mph": 9.6
+  },
+  "build_seconds": 5.31,
+  "validation": {
+    "heuristic_bound": {
+      "edges_checked": 148904,
+      "violations": 0,
+      "min_slack_s": 3.346553678618136e-08,
+      "v_max_mps": 24.587200000000003
+    },
+    "pairs": 300,
+    "seed": 20261019,
+    "speed_factor": 1.0,
+    "astar_vs_dijkstra_max_rel_diff": 0.0,
+    "astar_vs_dijkstra_mismatches": 0,
+    "scipy_vs_python_dijkstra_max_rel_diff_float32": 4.793753622939008e-08,
+    "mean_expanded_astar": 15534.846666666666,
+    "mean_expanded_dijkstra": 30950.286666666667,
+    "expansion_ratio": 0.5019290074426882,
+    "mean_ms_astar": 22.011058334610425,
+    "mean_ms_dijkstra": 24.9463320003512,
+    "scc_nodes": 58710,
+    "v_max_mps": 24.587200000000003
+  }
+}

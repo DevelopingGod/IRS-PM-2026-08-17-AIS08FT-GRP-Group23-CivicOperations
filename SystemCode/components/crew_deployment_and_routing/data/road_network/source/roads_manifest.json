@@ -1,0 +1,100 @@
+{
+  "data_version": "nyc-osm-2026-10-15",
+  "built_at": "2026-10-16T22:04:28+00:00",
+  "purpose": "Shared drivable road network for the CivicOps AI Crew Dispatch and Routing component",
+  "source": "(c) OpenStreetMap contributors, ODbL 1.0",
+  "acquisition": {
+    "method": "osmnx.graph_from_polygon(network_type='drive', simplify=True, retain_all=False, truncate_by_edge=True)",
+    "area": "union of the five NYC borough relations buffered by 1,000 m (boundaries/nyc_coverage.gpkg, layer road_area)",
+    "osmnx_version": "2.1.1",
+    "overpass_endpoint_used": "https://maps.mail.ru/osm/tools/overpass/api",
+    "acquired_at": "2026-10-16T22:03:40+00:00",
+    "nodes": 59251,
+    "edges": 149355,
+    "download_seconds": 3521.5,
+    "network_type": "drive",
+    "buffer_m": 1000,
+    "simplify": true,
+    "retain_all": false,
+    "truncate_by_edge": true
+  },
+  "graph": {
+    "nodes": 59251,
+    "edges": 149355,
+    "crs": "epsg:4326",
+    "directed": true,
+    "total_edge_length_km": 17402.3,
+    "largest_strongly_connected_component_nodes": 58710,
+    "largest_scc_share": 0.9909,
+    "oneway_edge_share": 0.3085,
+    "nodes_by_borough": {
+      "QUEENS": 21504,
+      "BROOKLYN": 12219,
+      "STATEN ISLAND": 9210,
+      "BRONX": 7728,
+      "MANHATTAN": 4643
+    },
+    "highway_types": {
+      "residential": 96890,
+      "secondary": 17469,
+      "tertiary": 17073,
+      "primary": 10215,
+      "unclassified": 2602,
+      "motorway_link": 1837,
+      "motorway": 1235,
+      "trunk": 561,
+      "primary_link": 472,
+      "secondary_link": 384,
+      "tertiary_link": 250,
+      "living_street": 126,
+      "trunk_link": 119,
+      "['unclassified', 'residential']": 31,
+      "['residential', 'tertiary']": 17
+    }
+  },
+  "edge_attribute_coverage": {
+    "name": 0.9735,
+    "highway": 1.0,
+    "oneway": 1.0,
+    "reversed": 1.0,
+    "lanes": 0.3249,
+    "maxspeed": 0.294,
+    "bridge": 0.0148,
+    "tunnel": 0.0016,
+    "ref": 0.0245,
+    "access": 0.0039,
+    "junction": 0.002
+  },
+  "not_included": "No speeds, travel times or turn restrictions are imputed. Enrich in Crew Dispatch (e.g. ox.routing.add_edge_speeds / add_edge_travel_times with agreed defaults).",
+  "checks": {
+    "graph_is_directed_multigraph": true,
+    "graphml_matches_gpkg_nodes": true,
+    "graphml_matches_gpkg_edges": true,
+    "all_edges_have_length": true,
+    "all_edges_have_geometry": true,
+    "weakly_connected": true,
+    "all_five_boroughs_have_nodes": true
+  },
+  "files": [
+    {
+      "path": "data/osm/roads/nyc_drive.graphml",
+      "size_bytes": 80328171,
+      "sha256": "da09f21ca166f3ff6a7426ac85f7d2485a76e34d31883af26379b9140b78fcbd"
+    },
+    {
+      "path": "data/osm/roads/nyc_drive.gpkg",
+      "size_bytes": 49836032,
+      "sha256": "bcd182e2ece86d6b43ceaa42641d53d1b87898d72d74c4d0ef95baa9c57fce0c"
+    },
+    {
+      "path": "data/osm/boundaries/nyc_boroughs.gpkg",
+      "size_bytes": 131072,
+      "sha256": "187412a0f88061bb4af8d21f062c02f505b8289d7067297d7658ca8af50dfc11"
+    },
+    {
+      "path": "data/osm/boundaries/nyc_coverage.gpkg",
+      "size_bytes": 163840,
+      "sha256": "00b8d21e1120a54e042ddd4443949b49cedd167ba8c9e57d734b9321344222d2"
+    }
+  ]
+}

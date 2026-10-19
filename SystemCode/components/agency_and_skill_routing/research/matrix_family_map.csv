@@ -1,0 +1,35 @@
+request_type_code,matrix_family,matrix_agencies,relationship,context_dimension,context_in_co1_contract,note
+RT001,"Potholes, street defects, sidewalks, streetlights, signals, signs, or transportation infrastructure",DOT,CONSISTENT,,,Single responsible agency in matrix.
+RT002,"Potholes, street defects, sidewalks, streetlights, signals, signs, or transportation infrastructure",DOT,CONSISTENT_CAUSE_DEPENDENT,Underlying cause (sewer/water defect vs road defect),NO,"Matrix lists street defects under DOT but sewers and street water leaks under DEP; the cause of a cave-in is only known after inspection."
+RT003,"Potholes, street defects, sidewalks, streetlights, signals, signs, or transportation infrastructure",DOT,CONSISTENT_WITH_BLOCKED_STREET_OVERLAP,Cause of a blocked street (construction/debris/vehicle),NO,"Matrix row 'Blocked street or sidewalk' lists DOT, DSNY, DOB or NYPD depending on cause; catalog RT003 absorbs 'Blocked - Construction' descriptors."
+RT004,"Potholes, street defects, sidewalks, streetlights, signals, signs, or transportation infrastructure",DOT,CONSISTENT,,,Single responsible agency in matrix.
+RT005,"Potholes, street defects, sidewalks, streetlights, signals, signs, or transportation infrastructure",DOT,CONSISTENT,,,Single responsible agency in matrix.
+RT006,"Potholes, street defects, sidewalks, streetlights, signals, signs, or transportation infrastructure",DOT,CONSISTENT_WITH_BLOCKED_STREET_OVERLAP,Cause of a blocked sidewalk,NO,"Sidewalks are DOT, but 'Blocked street or sidewalk' is multi-agency in the matrix."
+RT020,"Street water leaks, sewers, catch basins, flooding, or water-quality/pressure complaints",DEP,CONSISTENT,,,Single responsible agency in matrix.
+RT021,"Street water leaks, sewers, catch basins, flooding, or water-quality/pressure complaints",DEP,CONSISTENT,,,Single responsible agency in matrix.
+RT022,"Street water leaks, sewers, catch basins, flooding, or water-quality/pressure complaints",DEP,CONSISTENT,,,Single responsible agency in matrix.
+RT023,"Street water leaks, sewers, catch basins, flooding, or water-quality/pressure complaints",DEP,CONSISTENT,,,Single responsible agency in matrix.
+RT024,"Street water leaks, sewers, catch basins, flooding, or water-quality/pressure complaints",DEP,NOT_EXPLICIT,,,Hydrants are not named in the matrix; DEP is the closest family (street water system). Treated as consistent but not explicit.
+RT025,"Street water leaks, sewers, catch basins, flooding, or water-quality/pressure complaints",DEP,CONSISTENT,,,Single responsible agency in matrix.
+RT040,"Missed collection, dirty sidewalk/street, illegal dumping, trash storage, snow or ice",DSNY,CONSISTENT,,,Single responsible agency in matrix.
+RT041,"Missed collection, dirty sidewalk/street, illegal dumping, trash storage, snow or ice",DSNY,CONSISTENT,,,Single responsible agency in matrix.
+RT042,"Missed collection, dirty sidewalk/street, illegal dumping, trash storage, snow or ice",DSNY,CONSISTENT,,,Single responsible agency in matrix.
+RT043,Abandoned vehicles,DSNY|NYPD,MULTI_AGENCY_CONTEXTUAL,License plates attached and location,NO,"Matrix: DSNY or NYPD depending on plates and location. Catalog splits the family into RT043 (DSNY, derelict) and RT124 (NYPD, abandoned)."
+RT044,"Missed collection, dirty sidewalk/street, illegal dumping, trash storage, snow or ice",DSNY,CONSISTENT,,,Single responsible agency in matrix.
+RT045,Not explicitly covered (nearest: animal nuisance or stray-animal complaints),DOHMH|NYPD|ACC,NOT_EXPLICIT,,,"Dead animals on the street are not listed in the matrix. The nearest 'animal' row names DOHMH, NYPD or ACC; the catalog assigns DSNY. Recorded as an unexplained catalog/matrix gap, not as a conflict."
+RT060,"Street trees, fallen branches, parks, or playground maintenance",DPR,CONSISTENT,,,Single responsible agency in matrix.
+RT061,"Street trees, fallen branches, parks, or playground maintenance",DPR,CONSISTENT,,,Single responsible agency in matrix.
+RT062,"Street trees, fallen branches, parks, or playground maintenance",DPR,CONSISTENT,,,Single responsible agency in matrix.
+RT080,"Apartment maintenance; heat or hot water ... in private residential buildings",HPD|NYCHA,MULTI_AGENCY_CONTEXTUAL,Private building vs public housing,NO,"Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+RT081,"Apartment maintenance; heat or hot water ... in private residential buildings",HPD|NYCHA,MULTI_AGENCY_CONTEXTUAL,Private building vs public housing,NO,"Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+RT082,"Apartment maintenance; heat or hot water ... in private residential buildings",HPD|NYCHA,MULTI_AGENCY_CONTEXTUAL,Private building vs public housing,NO,"Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+RT083,"Apartment maintenance; heat or hot water ... in private residential buildings",HPD|NYCHA,MULTI_AGENCY_CONTEXTUAL,Private building vs public housing,NO,"Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+RT084,"Apartment maintenance; heat or hot water ... in private residential buildings",HPD|NYCHA,MULTI_AGENCY_CONTEXTUAL,Private building vs public housing,NO,"Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+RT100,"Restaurant sanitation, food poisoning, rodents, mosquitoes, standing water, smoking or vaping",DOHMH,CONSISTENT,,,Single responsible agency in matrix.
+RT120,"Illegal parking, blocked driveways, neighbor/street/vehicle noise",NYPD,CONSISTENT,,,Single responsible agency in matrix.
+RT121,"Illegal parking, blocked driveways, neighbor/street/vehicle noise; Bar, restaurant, or business noise",NYPD|DEP,MULTI_AGENCY_CONTEXTUAL,Noise subtype (commercial equipment/construction vs street/bar),NO,"Matrix: business noise is NYPD and/or DEP depending on subtype; construction and machinery noise is DEP."
+RT122,"Illegal parking, blocked driveways, neighbor/street/vehicle noise",NYPD,CONSISTENT,,,Single responsible agency in matrix.
+RT123,"Illegal parking, blocked driveways, neighbor/street/vehicle noise",NYPD,CONSISTENT,,,Single responsible agency in matrix.
+RT124,Abandoned vehicles,DSNY|NYPD,MULTI_AGENCY_CONTEXTUAL,License plates attached and location,NO,"Matrix: DSNY or NYPD depending on plates and location. Catalog splits the family into RT043 (DSNY, derelict) and RT124 (NYPD, abandoned)."
+RT140,"Illegal construction, unsafe buildings, facades, scaffolds, cranes, excavations, elevators, or escalators",DOB,CONSISTENT,,,Single responsible agency in matrix.
+RT141,"Illegal construction, unsafe buildings, facades, scaffolds, cranes, excavations, elevators, or escalators",DOB,CONSISTENT,,,Single responsible agency in matrix.

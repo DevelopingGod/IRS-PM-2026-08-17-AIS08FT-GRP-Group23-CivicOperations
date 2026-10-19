@@ -1,0 +1,7 @@
+credentials*.txt
+*.db
+__pycache__/
+node_modules/
+SystemCode/app/frontend/dist/
+SystemCode/app/backend/measure_result.json
+.env

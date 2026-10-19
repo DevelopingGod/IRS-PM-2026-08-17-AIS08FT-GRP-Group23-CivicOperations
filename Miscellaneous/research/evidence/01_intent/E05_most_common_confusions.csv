@@ -1,0 +1,13 @@
+expected,expected_label,got,got_label,times
+RT100,Rats or rodents,RT083,"Pests, mold or unsanitary condition",2
+RT140,Unsafe building or illegal construction,EMERGENCY,EMERGENCY,2
+RT045,Dead animal on street,RT062,Dead or dying tree,2
+RT002,Street cave-in or sinkhole,RT121,"Noise from street, business or vehicle",1
+RT002,Street cave-in or sinkhole,RT003,Other street surface defect,1
+RT002,Street cave-in or sinkhole,RT024,Fire hydrant running or damaged,1
+RT002,Street cave-in or sinkhole,RT060,Fallen tree or branch,1
+RT003,Other street surface defect,RT124,Abandoned vehicle,1
+RT003,Other street surface defect,RT006,Broken sidewalk or curb,1
+RT003,Other street surface defect,RT002,Street cave-in or sinkhole,1
+RT003,Other street surface defect,RT140,Unsafe building or illegal construction,1
+RT020,Water main break or street water leak,RT021,Catch basin clogged or flooding,1

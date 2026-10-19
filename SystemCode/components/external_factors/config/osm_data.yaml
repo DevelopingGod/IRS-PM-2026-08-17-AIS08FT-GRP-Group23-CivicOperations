@@ -1,0 +1,51 @@
+# OSM data-preparation settings for the CivicOps AI shared geographic data package.
+# Used by osm_data_prep/*.py. Not needed at evaluation time (evaluation reads the local cache only).
+
+data_version: "nyc-osm-2026-10-15"
+
+# Projected CRS used for all metric computations.
+# EPSG:32118 = NAD83 / New York Long Island (metres). It is the metric State Plane zone that
+# covers all five boroughs, so planar distances closely match geodesic distances
+# (verified in benchmarks/benchmark_proximity.py).
+metric_crs: "EPSG:32118"
+storage_crs: "EPSG:4326"
+
+# The five NYC boroughs, as OSM administrative relations (boundary=administrative).
+# The IDs were resolved through Nominatim on 2026-10-15 and are fixed here for
+# reproducibility. Borough names follow the shared data reference (capitals).
+boroughs:
+  MANHATTAN:     {osm_relation: 8398124, query: "Manhattan, New York, USA"}
+  BROOKLYN:      {osm_relation: 9691750, query: "Brooklyn, New York, USA"}
+  QUEENS:        {osm_relation: 9691819, query: "Queens, New York, USA"}
+  BRONX:         {osm_relation: 9691916, query: "The Bronx, New York, USA"}
+  STATEN ISLAND: {osm_relation: 9691948, query: "Staten Island, New York, USA"}
+
+# Facilities are acquired for the union of the five boroughs buffered by this distance, so that
+# facilities just outside NYC (Westchester, Nassau, New Jersey) are visible to requests near the
+# city edge. Must be >= max candidate radius + max evaluable location uncertainty + request
+# coverage tolerance (validated by validate_osm.py against config/proximity_rules.yaml).
+facility_buffer_m: 2000
+
+# Drivable road network for the future Crew Dispatch and Routing component (not used by
+# External Factors reasoning). Buffer keeps bridges/approaches at the city edge.
+roads:
+  network_type: "drive"
+  buffer_m: 1000
+  simplify: true
+  retain_all: false          # keep the largest weakly connected component (routable network)
+  truncate_by_edge: true
+
+overpass:
+  requests_timeout_s: 900
+  # Public endpoints tried in order. Each one gets `max_attempts` tries with exponential backoff.
+  # Order chosen on 2026-10-15 from /api/status checks (overpass-api.de and private.coffee were
+  # overloaded at the time); any order works, it only affects speed.
+  endpoints:
+    - "https://maps.mail.ru/osm/tools/overpass/api"
+    - "https://overpass-api.de/api"
+    - "https://overpass.private.coffee/api"
+  max_attempts: 4
+  # OSMnx splits the query polygon into sub-queries no larger than this (m^2). Smaller pieces
+  # avoid gateway timeouts on busy public servers.
+  max_query_area_m2: 150000000
+  initial_backoff_s: 30

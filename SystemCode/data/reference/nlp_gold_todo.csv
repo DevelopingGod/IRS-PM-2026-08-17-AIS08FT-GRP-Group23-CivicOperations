@@ -1,0 +1,38 @@
+intent,request_type,gold_lines_now,lines_to_write,train_examples,rows_in_real_311
+RT124,Abandoned vehicle,2,6,440,1292
+RT084,Electrical problem in building,2,6,438,601
+RT043,Derelict vehicle,2,6,437,533
+RT003,Other street surface defect,2,6,458,531
+RT061,Overgrown tree or branches on wires,2,6,434,473
+RT100,Rats or rodents,2,6,438,407
+RT062,Dead or dying tree,2,6,442,251
+RT123,Illegal parking or blocked hydrant,3,5,440,8971
+RT120,Noise from a residence,3,5,454,6215
+RT121,"Noise from street, business or vehicle",3,5,443,4287
+RT122,Blocked driveway,3,5,442,2805
+RT083,"Pests, mold or unsanitary condition",3,5,447,2225
+RT044,Snow or ice not cleared,3,5,436,1671
+RT082,Plumbing problem in apartment,3,5,442,1328
+RT042,Dirty street or litter,3,5,442,1322
+RT081,Water leak inside building,3,5,454,741
+RT141,Elevator not working,3,5,442,385
+RT002,Street cave-in or sinkhole,3,5,443,301
+RT025,Dirty water or low water pressure,3,5,446,251
+RT045,Dead animal on street,3,5,436,240
+RT060,Fallen tree or branch,4,4,439,915
+RT024,Fire hydrant running or damaged,4,4,442,824
+RT140,Unsafe building or illegal construction,4,4,443,669
+RT041,Illegal dumping,4,4,442,611
+RT006,Broken sidewalk or curb,4,4,450,575
+RT020,Water main break or street water leak,4,4,451,501
+RT023,Sewer backup or manhole overflow,4,4,434,314
+RT022,Street flooding,4,4,459,141
+SMALLTALK,SMALLTALK,4,4,9,0
+RT080,No heat or hot water,5,3,449,5462
+RT005,Traffic or pedestrian signal not working,5,3,441,1208
+RT040,Missed garbage or recycling collection,5,3,442,835
+OTHER,OTHER,5,3,6,0
+RT021,Catch basin clogged or flooding,7,1,434,286
+RT001,Pothole,8,0,443,1529
+RT004,Street light out or dim,9,0,439,858
+EMERGENCY,EMERGENCY,19,0,853,0

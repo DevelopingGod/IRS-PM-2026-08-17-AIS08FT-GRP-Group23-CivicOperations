@@ -1,0 +1,41 @@
+component,arm,config,macro_f1,macro_f1_v1,macro_f1_v2,size_mb,ms_per_message,mae,mae_storm_days
+C01,all-MiniLM-L6-v2 + logreg,"{""C"": 0.5}",0.8485,0.9449,0.7259,90.9,1.91,,
+C01,all-MiniLM-L6-v2 + logreg,"{""C"": 1.0}",0.8541,0.9496,0.7313,90.9,1.91,,
+C01,all-MiniLM-L6-v2 + logreg,"{""C"": 2.0}",0.8511,0.9496,0.7214,90.9,1.91,,
+C01,all-MiniLM-L6-v2 + logreg,"{""C"": 4.0}",0.8404,0.9451,0.7075,90.9,1.91,,
+C01,all-MiniLM-L6-v2 + logreg,"{""C"": 8.0}",0.8439,0.9451,0.714,90.9,1.91,,
+C01,all-MiniLM-L6-v2 + logreg,"{""C"": 16.0}",0.8363,0.9451,0.6835,90.9,1.91,,
+C01,all-MiniLM-L12-v2 + logreg,"{""C"": 0.5}",0.8433,0.9139,0.7645,127.0,3.2,,
+C01,all-MiniLM-L12-v2 + logreg,"{""C"": 1.0}",0.8448,0.9159,0.7629,127.0,3.2,,
+C01,all-MiniLM-L12-v2 + logreg,"{""C"": 2.0}",0.8381,0.9174,0.7506,127.0,3.2,,
+C01,all-MiniLM-L12-v2 + logreg,"{""C"": 4.0}",0.8383,0.9166,0.7241,127.0,3.2,,
+C01,all-MiniLM-L12-v2 + logreg,"{""C"": 8.0}",0.8383,0.9166,0.7241,127.0,3.2,,
+C01,all-MiniLM-L12-v2 + logreg,"{""C"": 16.0}",0.8421,0.9254,0.7238,127.0,3.2,,
+C01,paraphrase-MiniLM-L3-v2 + logreg,"{""C"": 0.5}",0.7666,0.8809,0.6351,61.0,0.97,,
+C01,paraphrase-MiniLM-L3-v2 + logreg,"{""C"": 1.0}",0.7719,0.9123,0.6144,61.0,0.97,,
+C01,paraphrase-MiniLM-L3-v2 + logreg,"{""C"": 2.0}",0.765,0.9119,0.6056,61.0,0.97,,
+C01,paraphrase-MiniLM-L3-v2 + logreg,"{""C"": 4.0}",0.756,0.9133,0.5852,61.0,0.97,,
+C01,paraphrase-MiniLM-L3-v2 + logreg,"{""C"": 8.0}",0.7536,0.9133,0.5759,61.0,0.97,,
+C01,paraphrase-MiniLM-L3-v2 + logreg,"{""C"": 16.0}",0.7536,0.9133,0.5759,61.0,0.97,,
+C01,all-mpnet-base-v2 + logreg,"{""C"": 0.5}",0.8579,0.9555,0.7117,420.0,8.46,,
+C01,all-mpnet-base-v2 + logreg,"{""C"": 1.0}",0.8671,0.9609,0.7187,420.0,8.46,,
+C01,all-mpnet-base-v2 + logreg,"{""C"": 2.0}",0.8612,0.9516,0.7178,420.0,8.46,,
+C01,all-mpnet-base-v2 + logreg,"{""C"": 4.0}",0.8739,0.9615,0.7342,420.0,8.46,,
+C01,all-mpnet-base-v2 + logreg,"{""C"": 8.0}",0.8703,0.9573,0.7331,420.0,8.46,,
+C01,all-mpnet-base-v2 + logreg,"{""C"": 16.0}",0.8634,0.9573,0.7206,420.0,8.46,,
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.03, ""max_iter"": 300, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 60, ""l2_regularization"": 1.0}",,,,,,60.466,76.002
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.12, ""max_iter"": 300, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 20, ""l2_regularization"": 1.0}",,,,,,60.556,76.871
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.12, ""max_iter"": 300, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 60, ""l2_regularization"": 0.0}",,,,,,60.959,78.306
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.06, ""max_iter"": 600, ""max_leaf_nodes"": 63, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0}",,,,,,60.319,74.289
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.06, ""max_iter"": 300, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 20, ""l2_regularization"": 1.0}",,,,,,60.307,77.042
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.06, ""max_iter"": 600, ""max_leaf_nodes"": 63, ""min_samples_leaf"": 60, ""l2_regularization"": 1.0}",,,,,,61.101,74.684
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.03, ""max_iter"": 600, ""max_leaf_nodes"": 63, ""min_samples_leaf"": 20, ""l2_regularization"": 1.0}",,,,,,60.48,73.625
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.03, ""max_iter"": 300, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0}",,,,,,60.312,75.01
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.06, ""max_iter"": 600, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 60, ""l2_regularization"": 0.0}",,,,,,60.685,77.052
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.03, ""max_iter"": 600, ""max_leaf_nodes"": 63, ""min_samples_leaf"": 60, ""l2_regularization"": 0.0}",,,,,,60.838,72.994
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.12, ""max_iter"": 300, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 60, ""l2_regularization"": 1.0}",,,,,,60.955,78.306
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.03, ""max_iter"": 600, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 20, ""l2_regularization"": 0.0}",,,,,,60.25,76.246
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.06, ""max_iter"": 300, ""max_leaf_nodes"": 63, ""min_samples_leaf"": 60, ""l2_regularization"": 1.0}",,,,,,60.818,73.628
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.03, ""max_iter"": 300, ""max_leaf_nodes"": 63, ""min_samples_leaf"": 60, ""l2_regularization"": 0.0}",,,,,,60.421,72.308
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.12, ""max_iter"": 600, ""max_leaf_nodes"": 31, ""min_samples_leaf"": 20, ""l2_regularization"": 1.0}",,,,,,60.784,77.395
+C11,"gradient boosting, Poisson loss","{""learning_rate"": 0.12, ""max_iter"": 600, ""max_leaf_nodes"": 63, ""min_samples_leaf"": 20, ""l2_regularization"": 1.0}",,,,,,62.057,79.764

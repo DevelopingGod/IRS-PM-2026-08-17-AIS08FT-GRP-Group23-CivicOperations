@@ -1,0 +1,18 @@
+{
+  "_about": "Where one component writes a value in different words from what the team agreed, the translation lives here and nowhere else. Each owner signs off their own table.",
+  "urgency_level": {
+    "_owner": "Khalid",
+    "_why": "The team agreed on 14 Oct to write urgency in capitals. Urgency currently writes title case.",
+    "Critical": "CRITICAL",
+    "High": "HIGH",
+    "Medium": "MEDIUM",
+    "Low": "LOW"
+  },
+  "suspected_fake_request": {
+    "_owner": "Nabeel and Khalid",
+    "_why": "Fake request detection writes an action; Urgency reads a yes or no flag. Proposed, waiting for both owners to confirm.",
+    "PROCEED": false,
+    "LOWER_PRIORITY": false,
+    "HOLD_FOR_REVIEW": true
+  }
+}

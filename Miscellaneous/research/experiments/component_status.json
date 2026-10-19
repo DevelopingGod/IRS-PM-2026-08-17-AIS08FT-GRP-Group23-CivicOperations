@@ -1,0 +1,230 @@
+{
+  "generated_at": "2026-10-18T16:52:39",
+  "components": [
+    {
+      "id": "C02",
+      "name": "Emergency safeguard",
+      "owner": "Sankalp",
+      "state": "ready",
+      "headline": "recall 1.000 on 19 emergencies in 308 test lines",
+      "inputs": [
+        "free text from the bot, the form, or a crew note"
+      ],
+      "outputs": [
+        "is_emergency",
+        "category",
+        "confidence",
+        "action",
+        "matched_signals",
+        "reasons"
+      ],
+      "model": "weighted lexicon + immobility patch, plus a TF-IDF classifier at 0.45",
+      "metrics": {
+        "recall": 1.0,
+        "precision": 0.613,
+        "missed": 0,
+        "false_alarms": 12,
+        "named_set_false_alarms": 0,
+        "stop_rate_on_emergencies": 0.737,
+        "ms_per_message": 0.64
+      },
+      "gates": [
+        {
+          "gate": "recall = 1.00, no emergency silently filed",
+          "pass": true,
+          "measured": "1.000, 0 missed"
+        },
+        {
+          "gate": "zero false alarms on hydrant / fire escape / fire lane",
+          "pass": true,
+          "measured": "0 on that set, 12 overall"
+        },
+        {
+          "gate": "works with no model loaded (fails closed)",
+          "pass": true,
+          "measured": "rules run in process; a failure shows the 911 advisory"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "C01",
+      "name": "NLP intake bot",
+      "owner": "Sankalp",
+      "state": "ready",
+      "headline": "macro-F1 0.858 across 308 hand-written messages",
+      "inputs": [
+        "utterance",
+        "conversation history",
+        "borough hint (optional)",
+        "GPS (optional)"
+      ],
+      "outputs": [
+        "request_type_code",
+        "confidence",
+        "alternatives",
+        "slots",
+        "missing_slots",
+        "next_question",
+        "ready_to_submit",
+        "needs_human",
+        "reasons"
+      ],
+      "model": "MiniLM embeddings + logistic regression, trained on the realistic-prior variant",
+      "metrics": {
+        "macro_f1": 0.858,
+        "macro_f1_team_lines": 0.96,
+        "macro_f1_keyword_avoiding": 0.731,
+        "out_of_scope_sent_to_a_person": 1.0,
+        "ms_per_message": 78.48,
+        "slot_span_f1_hand_labelled": 0.723,
+        "slot_span_f1_pattern_baseline": 0.434
+      },
+      "gates": [
+        {
+          "gate": "macro-F1 >= 0.85 on the team's lines",
+          "pass": true,
+          "measured": "0.960"
+        },
+        {
+          "gate": ">= 0.70 on the keyword-avoiding lines",
+          "pass": true,
+          "measured": "0.731"
+        },
+        {
+          "gate": "out-of-scope messages never silently routed to a crew",
+          "pass": true,
+          "measured": "100% handed to a person"
+        },
+        {
+          "gate": "under 200 ms per message on CPU",
+          "pass": true,
+          "measured": "78.5 ms"
+        },
+        {
+          "gate": "slot span F1 >= 0.60 on the location and time slots, measured on messages labelled by hand",
+          "pass": true,
+          "measured": "0.723"
+        },
+        {
+          "gate": "the shipped slot filler beats the pattern baseline, with the two confidence intervals not overlapping",
+          "pass": true,
+          "measured": "tagger low end 0.641 above baseline high end 0.543"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "C06",
+      "name": "Credibility and escalation",
+      "owner": "Sankalp",
+      "state": "ready",
+      "headline": "ranks citizens at Spearman 0.91 against their hidden honesty",
+      "inputs": [
+        "citizen id",
+        "their past confirmed outcomes with request types",
+        "closures at the same place and type"
+      ],
+      "outputs": [
+        "credibility_score",
+        "credibility_band",
+        "escalation_flag",
+        "escalation_level",
+        "recurrence_count",
+        "evidence_trail",
+        "reasons"
+      ],
+      "model": "decaying Beta, 180-day half-life, centred on the confirmation rate expected for the request types that citizen actually reports",
+      "metrics": {
+        "spearman_vs_hidden_honesty": 0.914,
+        "calibration_mae_vs_own_rate": 17.4,
+        "unfair_gap_hard_vs_easy_types": 0.3,
+        "citizens_scored": 4488,
+        "new_citizen_score": 50.0,
+        "after_three_good_then_one_bad": 41.2
+      },
+      "notes": "The original gate asked for mean error under 10 points against hidden honesty. That gate was wrong and has been replaced. The two are on different scales: in this data a citizen with honesty 0.9 can only ever reach a 0.73 confirmation rate, because genuine reports are still closed as nothing-found about 16% of the time. Ranking and fairness are what this score has to get right.",
+      "gates": [
+        {
+          "gate": "a new citizen starts at exactly neutral 50",
+          "pass": true,
+          "measured": "50.0"
+        },
+        {
+          "gate": "one bad report never drops a trusted citizen into the LOW band",
+          "pass": true,
+          "measured": "41.2 (NEUTRAL)"
+        },
+        {
+          "gate": "ranks citizens correctly, Spearman >= 0.85 for 10+ reports",
+          "pass": true,
+          "measured": "0.914 over 1,121 citizens"
+        },
+        {
+          "gate": "reporting hard-to-confirm problems costs under 2 points at equal honesty",
+          "pass": true,
+          "measured": "0.3 points (it was 4.0 before the base-rate correction)"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "name": "Predictive alerting",
+      "owner": "Sankalp",
+      "state": "ready",
+      "headline": "catches 87% of real water and sewer spikes on storm days",
+      "inputs": [
+        "borough",
+        "date",
+        "weather forecast (rain, snow, temperature, gusts)"
+      ],
+      "outputs": [
+        "alerts: borough, family, expected vs baseline, lift, severity, drivers",
+        "reasons"
+      ],
+      "model": "gradient boosting with a Poisson loss, beating the no-weather baseline and a Poisson GLM",
+      "metrics": {
+        "spike_recall_storm_days": 0.87,
+        "spikes_checked": 23,
+        "mae_chosen": 60.4,
+        "mae_no_weather_baseline": 72.3,
+        "examples": [
+          "Queens 30 Oct: 67 mm, 699 reports against 83 normal, warned",
+          "Bronx 06 Jul: 61 mm, 215 reports against 55 normal, warned",
+          "Manhattan 29 Jul: 59 mm, 59 reports against 35 normal, warned"
+        ]
+      },
+      "gates": [
+        {
+          "gate": "beats the no-weather baseline on count error",
+          "pass": true,
+          "measured": "MAE 60.4 against 72.3"
+        },
+        {
+          "gate": "catches at least 70% of real spikes on storm days",
+          "pass": true,
+          "measured": "87% of 23"
+        },
+        {
+          "gate": "a failure shows as failed, never as a quiet day",
+          "pass": true,
+          "measured": "empty alert list with ok=False"
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "scenarios": {
+    "total": 34,
+    "intent_correct": 33,
+    "false_emergency_stops": 0,
+    "sent_to_a_person": 0,
+    "wrong": [
+      {
+        "scenario": "SC-060",
+        "expected": "RT060",
+        "got": "RT061"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "c11_demand_model.joblib": "0f2e823bb7468fcc",
+  "_trained_at": "2026-10-07T23:41:49",
+  "_arm": "B2 gradient boosting, Poisson loss",
+  "_seed": 2026,
+  "_train_to": "2025-09-14",
+  "_rows": 82817,
+  "_results": [
+    {
+      "arm": "B0 weekday baseline, no weather",
+      "mae": 72.278,
+      "poisson_deviance": 67.3043,
+      "mae_storm_days": 88.132,
+      "mae_water_sewer": 30.865
+    },
+    {
+      "arm": "B1 Poisson regression + weather",
+      "mae": 83.053,
+      "poisson_deviance": 88.0148,
+      "mae_storm_days": 97.824,
+      "mae_water_sewer": 35.376
+    },
+    {
+      "arm": "B2 gradient boosting, Poisson loss",
+      "mae": 60.399,
+      "poisson_deviance": 46.6838,
+      "mae_storm_days": 73.738,
+      "mae_water_sewer": 25.435
+    }
+  ]
+}

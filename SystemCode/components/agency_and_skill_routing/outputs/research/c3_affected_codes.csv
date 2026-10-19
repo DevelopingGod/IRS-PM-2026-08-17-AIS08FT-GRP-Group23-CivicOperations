@@ -1,0 +1,3 @@
+split,request_type_code,determinable_records,final_is_catalog_agency,final_is_learned_agency,excluded_undeterminable
+val,RT002,75,19,56,0
+test,RT002,64,19,45,0

@@ -1,0 +1,57 @@
+text,intent
+can i get a copy of my birth certificate,OTHER
+how do i pay my parking ticket online,OTHER
+where do i renew my drivers licence,OTHER
+my uber driver was rude to me,OTHER
+what time does the museum close today,OTHER
+i want to apply for food assistance,OTHER
+how do i enrol my son in a new school,OTHER
+is there jury duty this week,OTHER
+i need a copy of my property tax bill,OTHER
+can you tell me when the library opens,OTHER
+how do i register to vote,OTHER
+i want to complain about my phone company,OTHER
+my amazon parcel never arrived,OTHER
+how do i get a permit for a block party,OTHER
+what is the number for the passport office,OTHER
+i need help with my electricity bill from con edison,OTHER
+is the subway running this weekend,OTHER
+how much is a monthly metrocard,OTHER
+i want to report my credit card stolen,OTHER
+can i book a tennis court in the park,OTHER
+where can i get a covid vaccine,OTHER
+my landlord is raising my rent illegally,OTHER
+how do i start a small business in brooklyn,OTHER
+i need a marriage licence appointment,OTHER
+what are the recycling rules for electronics,OTHER
+can i get a disabled parking permit,OTHER
+i want to dispute a water bill,OTHER
+how do i find out about summer camp for kids,OTHER
+where is the nearest dmv office,OTHER
+i need an interpreter for my appointment,OTHER
+can you transfer me to the housing department,OTHER
+i already called about this last week what is the status,OTHER
+do you know if schools are closed tomorrow,OTHER
+how do i get a police report for my insurance,OTHER
+hello,SMALLTALK
+hi there,SMALLTALK
+good morning,SMALLTALK
+thanks for your help,SMALLTALK
+thank you so much,SMALLTALK
+ok thanks bye,SMALLTALK
+that is all,SMALLTALK
+are you a real person,SMALLTALK
+is this a bot,SMALLTALK
+wait a second,SMALLTALK
+sorry wrong number,SMALLTALK
+never mind,SMALLTALK
+can you hear me,SMALLTALK
+let me check something,SMALLTALK
+hold on please,SMALLTALK
+yes,SMALLTALK
+no,SMALLTALK
+ok,SMALLTALK
+sure,SMALLTALK
+what,SMALLTALK
+hmm,SMALLTALK
+testing testing,SMALLTALK

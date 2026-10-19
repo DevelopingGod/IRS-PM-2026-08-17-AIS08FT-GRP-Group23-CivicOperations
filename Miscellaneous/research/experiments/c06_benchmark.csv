@@ -1,0 +1,6 @@
+component,strategy,n_rows,auc,brier,f1_operating_point,fpr_first_time,first_time_fp_share_old,fpr_first_time_action,recall_urgent_unfounded_action,recall_urgent_unfounded,latency_ms_mean,data_origin,split,label_kind
+C06,rules,5390,0.5732,0.2473,0.6923,0.8167,0.6667,0.3,0.703,0.7129,0.003,processed,test,real_verified_outcome_proxy
+C06,logreg,5390,0.6292,0.2361,0.6896,0.825,0.6735,0.3,0.7228,0.7327,0.733,processed,test,real_verified_outcome_proxy
+C06,gbm,5390,0.6325,0.2325,0.6919,0.85,0.6939,0.1583,0.7822,0.7822,2.546,processed,test,real_verified_outcome_proxy
+C06,hybrid_rules_logreg,5390,0.6133,0.2372,0.6921,0.825,0.6735,0.325,0.703,0.7129,0.101,processed,test,real_verified_outcome_proxy
+C06,logreg_no_burst,5390,0.6127,0.2377,0.6913,0.825,0.6735,0.3,0.7129,0.7228,0.781,processed,test,real_verified_outcome_proxy

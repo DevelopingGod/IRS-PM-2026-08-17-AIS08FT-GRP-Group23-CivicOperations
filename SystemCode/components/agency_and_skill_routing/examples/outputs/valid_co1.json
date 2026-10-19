@@ -1,0 +1,23 @@
+{
+  "request_type": "RT022",
+  "confidence": 0.96,
+  "ready_to_submit": true,
+  "needs_human": false,
+  "is_emergency": false,
+  "emergency_action": "CONTINUE",
+  "emergency_category": null,
+  "slots": {
+    "incident_address": "41-17 MAIN STREET",
+    "cross_street": "SANFORD AVENUE",
+    "borough": "QUEENS",
+    "landmark": null
+  },
+  "agency": "DEP",
+  "required_skills": [
+    "SEWER_DRAINAGE"
+  ],
+  "status": "ASSIGNED",
+  "dispatch_eligible": true,
+  "next_step": "DUPLICATE_DETECTION",
+  "explanation": "RT022 (Street flooding) was resolved through the shared catalog to DEP (New York City Department of Environmental Protection) with required skill SEWER_DRAINAGE. All intake, emergency and catalog checks passed, so the request continues to duplicate detection. Later components still decide priority, location and crew feasibility."
+}

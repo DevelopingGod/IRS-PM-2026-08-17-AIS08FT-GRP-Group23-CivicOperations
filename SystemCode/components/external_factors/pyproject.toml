@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "civicops-external-factors"
+version = "1.0.0"
+description = "CivicOps AI External Factors: offline critical-facility proximity factor from OpenStreetMap"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Code: project licence; OSM data: ODbL 1.0" }
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pyarrow>=15",
+  "shapely>=2.0",
+  "pyproj>=3.6",
+  "geopandas>=1.0",
+  "pyogrio>=0.7",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+prep = ["osmnx>=2.0", "networkx>=3.2"]          # OSM download / road graph (internet, one-off)
+research = ["matplotlib>=3.8", "scipy>=1.11", "psutil>=5.9"]
+test = ["pytest>=8"]
+
+[project.scripts]
+civicops-ef = "civicops_external_factors.cli:main"
+
+[tool.setuptools]
+packages = ["civicops_external_factors"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

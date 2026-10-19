@@ -1,0 +1,267 @@
+request_type_code,complaint_type,descriptor,records,referred,distinct_agencies,referral_rate
+RT001,Street Condition,Pothole,1529,61,1,0.0399
+RT002,Street Condition,Cave-in,301,186,1,0.6179
+RT003,Street Condition,Blocked - Construction,98,13,2,0.1327
+RT003,Street Condition,Crash Cushion Defect,2,0,1,0.0
+RT003,Street Condition,Defacement,1,0,1,0.0
+RT003,Street Condition,Defective Hardware,131,68,1,0.5191
+RT003,Street Condition,Depression Maintenance,7,2,1,0.2857
+RT003,Street Condition,Dumpster - Construction Waste,13,1,1,0.0769
+RT003,Street Condition,Failed Street Repair,78,14,1,0.1795
+RT003,Street Condition,Guard Rail - Street,8,0,1,0.0
+RT003,Street Condition,Line/Marking - After Repaving,12,0,1,0.0
+RT003,Street Condition,Line/Marking - Faded,21,0,1,0.0
+RT003,Street Condition,Plate Condition - Noisy,44,4,1,0.0909
+RT003,Street Condition,Plate Condition - Shifted,10,0,1,0.0
+RT003,Street Condition,"Rough, Pitted or Cracked Roads",94,1,1,0.0106
+RT003,Street Condition,Unsafe Worksite,1,0,1,0.0
+RT003,Street Condition,Wear & Tear,11,0,1,0.0
+RT004,Street Light Condition,Bracket Arm Missing,2,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Damaged,3,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Door Open,1,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Hanging,8,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Missing,2,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Out Of Position,2,0,1,0.0
+RT004,Street Light Condition,Flood Light Lamp Cycling,1,0,1,0.0
+RT004,Street Light Condition,Flood Light Lamp Out,4,0,1,0.0
+RT004,Street Light Condition,Glassware Hanging,2,0,1,0.0
+RT004,Street Light Condition,Lamppost Base Door/Cover Missing,2,0,1,0.0
+RT004,Street Light Condition,Lamppost Base Door/Cover Open,4,0,1,0.0
+RT004,Street Light Condition,Lamppost Damaged,8,0,1,0.0
+RT004,Street Light Condition,Lamppost Knocked Down,18,0,1,0.0
+RT004,Street Light Condition,Lamppost Leaning,7,0,1,0.0
+RT004,Street Light Condition,Lamppost Missing,2,0,1,0.0
+RT004,Street Light Condition,Lamppost Wire Exposed,10,0,1,0.0
+RT004,Street Light Condition,Multiple Street Lights Out,20,0,1,0.0
+RT004,Street Light Condition,New Con Ed Service Request,1,0,1,0.0
+RT004,Street Light Condition,Street Light Cycling,14,0,1,0.0
+RT004,Street Light Condition,Street Light Dayburning,13,0,1,0.0
+RT004,Street Light Condition,Street Light Lamp Dim,12,0,1,0.0
+RT004,Street Light Condition,Street Light Lamp Missing,4,0,1,0.0
+RT004,Street Light Condition,Street Light Out,708,0,1,0.0
+RT004,Street Light Condition,Traffic Signal Light,9,0,1,0.0
+RT004,Street Light Condition,Wood Pole Leaning,1,0,1,0.0
+RT005,Traffic Signal Condition,APS,30,0,1,0.0
+RT005,Traffic Signal Condition,Base Door,8,0,1,0.0
+RT005,Traffic Signal Condition,Bike Signal,5,0,1,0.0
+RT005,Traffic Signal Condition,CMU Communication,1,0,1,0.0
+RT005,Traffic Signal Condition,Cable,6,0,1,0.0
+RT005,Traffic Signal Condition,Controller,759,0,1,0.0
+RT005,Traffic Signal Condition,Controller Cabinet,3,0,1,0.0
+RT005,Traffic Signal Condition,Door Lock,3,0,1,0.0
+RT005,Traffic Signal Condition,Enclosure Cap,1,0,1,0.0
+RT005,Traffic Signal Condition,Foundation,1,0,1,0.0
+RT005,Traffic Signal Condition,Junction Box,7,0,1,0.0
+RT005,Traffic Signal Condition,LED Pedestrian Unit,6,0,1,0.0
+RT005,Traffic Signal Condition,Mast Arm,2,0,1,0.0
+RT005,Traffic Signal Condition,On Messenger,1,0,1,0.0
+RT005,Traffic Signal Condition,On Structure,1,0,1,0.0
+RT005,Traffic Signal Condition,Ped Flasher,2,0,1,0.0
+RT005,Traffic Signal Condition,Ped Lamp,11,0,1,0.0
+RT005,Traffic Signal Condition,Ped Multiple Lamps,11,0,1,0.0
+RT005,Traffic Signal Condition,Pedestrian Sign,1,0,1,0.0
+RT005,Traffic Signal Condition,Pedestrian Signal,78,0,1,0.0
+RT005,Traffic Signal Condition,Post,16,0,1,0.0
+RT005,Traffic Signal Condition,Push Button,1,0,1,0.0
+RT005,Traffic Signal Condition,Speed Board Sign,1,0,1,0.0
+RT005,Traffic Signal Condition,Street Light Feed,1,0,1,0.0
+RT005,Traffic Signal Condition,Support Bracket,6,0,1,0.0
+RT005,Traffic Signal Condition,Sway Bar,1,0,1,0.0
+RT005,Traffic Signal Condition,Telco Connection Blk,1,0,1,0.0
+RT005,Traffic Signal Condition,Time Switch,13,0,1,0.0
+RT005,Traffic Signal Condition,Underground,4,0,1,0.0
+RT005,Traffic Signal Condition,Veh Sgnl Mult Lamps,21,0,1,0.0
+RT005,Traffic Signal Condition,Veh Signal Head,28,0,1,0.0
+RT005,Traffic Signal Condition,Veh Signal Lamp,118,0,1,0.0
+RT005,Traffic Signal Condition,Veh Signal Lens,5,0,1,0.0
+RT005,Traffic Signal Condition,Veh Signal Visor,11,0,1,0.0
+RT005,Traffic Signal Condition,Vehicle Signal,33,0,1,0.0
+RT005,Traffic Signal Condition,Ver Mesage Sign RTPI,5,0,1,0.0
+RT005,Traffic Signal Condition,Warning Signal Lamp,1,0,1,0.0
+RT005,Traffic Signal Condition,Wireless,5,0,1,0.0
+RT006,Curb Condition,Broken Curb,102,4,1,0.0392
+RT006,Curb Condition,Curb Defect-Metal Protruding,14,1,1,0.0714
+RT006,Curb Condition,Defacement,40,0,1,0.0
+RT006,Sidewalk Condition,Blocked - ATM,2,0,1,0.0
+RT006,Sidewalk Condition,Blocked - Construction,64,7,2,0.1094
+RT006,Sidewalk Condition,Broken Sidewalk,148,4,1,0.027
+RT006,Sidewalk Condition,Canopy Complaint,2,0,1,0.0
+RT006,Sidewalk Condition,Defective Hardware,12,2,1,0.1667
+RT006,Sidewalk Condition,Dumpster - Construction Waste,6,1,1,0.1667
+RT006,Sidewalk Condition,Metal Protruding - Sign Stump,2,0,1,0.0
+RT006,Sidewalk Condition,Pedestrian Ramp Defective,14,0,1,0.0
+RT006,Sidewalk Condition,Sidewalk Collapsed,12,3,1,0.25
+RT006,Sidewalk Condition,Sidewalk Grating - Defective,4,1,1,0.25
+RT006,Sidewalk Condition,Sidewalk Grating - Missing,1,0,1,0.0
+RT006,Sidewalk Condition,Sidewalk Staircase,1,0,1,0.0
+RT006,Sidewalk Condition,Sidewalk Violation,151,0,1,0.0
+RT020,Water Maintenance,Fire Hydrant Leaking,27,0,1,0.0
+RT020,Water Maintenance,Leak,30,1,1,0.0333
+RT020,Water Maintenance,Water Main Break,10,0,1,0.0
+RT020,Water System,Hydrant Leaking (WC1),141,0,1,0.0
+RT020,Water System,Leak (Use Comments) (WA2),195,15,1,0.0769
+RT020,Water System,Possible Water Main Break (Use Comments) (WA1),98,4,1,0.0408
+RT021,Sewer,Catch Basin Clogged/Flooding (Use Comments) (SC),149,2,1,0.0134
+RT021,Sewer,Catch Basin Grating Missing (SA4),2,0,1,0.0
+RT021,Sewer,Catch Basin Search (SC2),22,3,1,0.1364
+RT021,Sewer,Catch Basin Sunken/Damaged/Raised (SC1),32,1,1,0.0312
+RT021,Sewer Maintenance,Catch Basin Clogged,61,4,1,0.0656
+RT021,Sewer Maintenance,Catch Basin Search,7,1,1,0.1429
+RT021,Sewer Maintenance,Catch Basin Sunken,13,0,1,0.0
+RT022,Sewer,Highway Flooding (SH),1,0,1,0.0
+RT022,Sewer,Street Flooding (SJ),87,10,1,0.1149
+RT022,Sewer Maintenance,Flooding on Street,53,6,1,0.1132
+RT023,Sewer,Manhole Cover Missing (Emergency) (SA3),32,8,1,0.25
+RT023,Sewer,Manhole Overflow (Use Comments) (SA1),30,1,1,0.0333
+RT023,Sewer,Sewer Backup (Use Comments) (SA),163,0,1,0.0
+RT023,Sewer Maintenance,Backup,66,0,1,0.0
+RT023,Sewer Maintenance,Manhole Cover Missing,8,0,1,0.0
+RT023,Sewer Maintenance,Manhole Overflow,15,0,1,0.0
+RT024,Water Maintenance,Fire Hydrant Defective,12,0,1,0.0
+RT024,Water Maintenance,Fire Hydrant Emergency,12,0,1,0.0
+RT024,Water Maintenance,Fire Hydrant Leaning/Missing,8,0,1,0.0
+RT024,Water Maintenance,Fire Hydrant Running,34,0,1,0.0
+RT024,Water Maintenance,Fire Hydrant Running Full,33,0,1,0.0
+RT024,Water Maintenance,Fire Hydrant Valve Box,2,0,1,0.0
+RT024,Water System,Fire Hydrant Emergency (FHE),291,0,1,0.0
+RT024,Water System,Hydrant Defective (WC2),45,0,1,0.0
+RT024,Water System,Hydrant Knocked Over/Missing (WC),37,0,1,0.0
+RT024,Water System,Hydrant Running (WC3),206,1,1,0.0049
+RT024,Water System,Hydrant Running Full (WA4),142,0,1,0.0
+RT024,Water System,installation of hydrant side post (WHFP),2,0,1,0.0
+RT025,Water System,Dirty Water (WE),155,1,1,0.0065
+RT025,Water System,LOW WATER PRESSURE - WLWP,31,7,1,0.2258
+RT025,Water System,No Water (WNW),65,20,1,0.3077
+RT040,Missed Collection,Bulky Recycling,68,0,1,0.0
+RT040,Missed Collection,Bulky Trash,106,0,1,0.0
+RT040,Missed Collection,Compost,167,0,1,0.0
+RT040,Missed Collection,Recycling - Metal/Glass/Rigid Plastic,58,0,1,0.0
+RT040,Missed Collection,Recycling - Paper,60,0,1,0.0
+RT040,Missed Collection,Recycling - Paper/Metal/Glass/Rigid Plastic,116,0,1,0.0
+RT040,Missed Collection,Trash,250,0,1,0.0
+RT040,Missed Collection,Trash and Bulky Trash,10,0,1,0.0
+RT041,Illegal Dumping,Chronic Dumping,69,4,1,0.058
+RT041,Illegal Dumping,Removal Request,542,26,1,0.048
+RT042,Dirty Condition,Broken Glass,24,0,1,0.0
+RT042,Dirty Condition,Debris from Car Accident,6,0,1,0.0
+RT042,Dirty Condition,Dirt or Gravel,28,4,1,0.1429
+RT042,Dirty Condition,Dog Waste,85,1,1,0.0118
+RT042,Dirty Condition,Syringes,23,1,1,0.0435
+RT042,Dirty Condition,Trash,1072,63,1,0.0588
+RT042,Street Sweeping Complaint,Inadequate Sweeping,55,0,1,0.0
+RT042,Street Sweeping Complaint,Street Not Swept,29,0,1,0.0
+RT043,Derelict Vehicles,Derelict Vehicles,533,214,1,0.4015
+RT044,Snow or Ice,Bike Lane,1,0,1,0.0
+RT044,Snow or Ice,Pedestrian Feature,82,0,1,0.0
+RT044,Snow or Ice,Roadway,502,1,1,0.002
+RT044,Snow or Ice,Sidewalk,936,6,1,0.0064
+RT044,Snow or Ice,Snow Tracking,150,0,1,0.0
+RT045,Dead Animal,Bird,16,1,1,0.0625
+RT045,Dead Animal,Cat,86,1,1,0.0116
+RT045,Dead Animal,Deer,10,0,1,0.0
+RT045,Dead Animal,Dog,2,0,1,0.0
+RT045,Dead Animal,Opossum,21,1,1,0.0476
+RT045,Dead Animal,Other,30,0,1,0.0
+RT045,Dead Animal,Raccoon,47,0,1,0.0
+RT045,Dead Animal,Rat or Mouse,18,0,1,0.0
+RT045,Dead Animal,Squirrel,10,0,1,0.0
+RT060,Damaged Tree,Branch Cracked and Will Fall,165,4,1,0.0242
+RT060,Damaged Tree,Branch or Limb Has Fallen Down,404,19,1,0.047
+RT060,Damaged Tree,Entire Tree Has Fallen Down,159,7,1,0.044
+RT060,Damaged Tree,Tree Alive - in Poor Condition,75,2,1,0.0267
+RT060,Damaged Tree,Tree Leaning/Uprooted,97,9,1,0.0928
+RT060,Damaged Tree,Tree Trunk Split,15,4,1,0.2667
+RT061,Overgrown Tree/Branches,Blocking Street,116,1,1,0.0086
+RT061,Overgrown Tree/Branches,Clear Street Light,15,0,1,0.0
+RT061,Overgrown Tree/Branches,Dead Branches in Tree,72,4,1,0.0556
+RT061,Overgrown Tree/Branches,Hitting Building,131,3,1,0.0229
+RT061,Overgrown Tree/Branches,Hitting Phone/Cable Lines,35,0,1,0.0
+RT061,Overgrown Tree/Branches,Hitting Power Lines,92,8,1,0.087
+RT061,Overgrown Tree/Branches,Traffic Sign or Signal Blocked,12,0,1,0.0
+RT062,Dead/Dying Tree,Planted Less Than 2 Years Ago,15,1,1,0.0667
+RT062,Dead/Dying Tree,Planted More Than 2 Years Ago,236,14,1,0.0593
+RT080,HEAT/HOT WATER,APARTMENT ONLY,1929,0,1,0.0
+RT080,HEAT/HOT WATER,ENTIRE BUILDING,3533,0,1,0.0
+RT081,WATER LEAK,DAMP SPOT,106,0,1,0.0
+RT081,WATER LEAK,HEAVY FLOW,330,0,1,0.0
+RT081,WATER LEAK,SLOW LEAK,305,0,1,0.0
+RT082,PLUMBING,BASIN/SINK,298,0,1,0.0
+RT082,PLUMBING,BATHTUB/SHOWER,252,0,1,0.0
+RT082,PLUMBING,BOILER,2,0,1,0.0
+RT082,PLUMBING,RADIATOR,94,0,1,0.0
+RT082,PLUMBING,SEWER,1,0,1,0.0
+RT082,PLUMBING,STEAM PIPE/RISER,33,0,1,0.0
+RT082,PLUMBING,TOILET,184,0,1,0.0
+RT082,PLUMBING,WATER SUPPLY,464,0,1,0.0
+RT083,UNSANITARY CONDITION,GARBAGE/RECYCLING STORAGE,335,0,1,0.0
+RT083,UNSANITARY CONDITION,MOLD,650,0,1,0.0
+RT083,UNSANITARY CONDITION,PESTS,1170,0,1,0.0
+RT083,UNSANITARY CONDITION,SEWAGE,70,0,1,0.0
+RT084,ELECTRIC,LIGHTING,94,0,1,0.0
+RT084,ELECTRIC,NO LIGHTING,132,0,1,0.0
+RT084,ELECTRIC,OUTLET/SWITCH,150,0,1,0.0
+RT084,ELECTRIC,POWER OUTAGE,154,0,1,0.0
+RT084,ELECTRIC,WIRING,71,0,1,0.0
+RT100,Rodent,Condition Attracting Rodents,98,1,1,0.0102
+RT100,Rodent,Mouse Sighting,13,0,1,0.0
+RT100,Rodent,Rat Sighting,272,7,1,0.0257
+RT100,Rodent,Signs of Rodents,24,0,1,0.0
+RT120,Noise - Residential,Banging/Pounding,2252,45,1,0.02
+RT120,Noise - Residential,Loud Music/Party,3380,10,1,0.003
+RT120,Noise - Residential,Loud Talking,463,1,1,0.0022
+RT120,Noise - Residential,Loud Television,120,4,1,0.0333
+RT121,Noise - Commercial,Banging/Pounding,114,2,1,0.0175
+RT121,Noise - Commercial,Car/Truck Horn,12,0,1,0.0
+RT121,Noise - Commercial,Car/Truck Music,12,0,1,0.0
+RT121,Noise - Commercial,Loud Music/Party,630,1,1,0.0016
+RT121,Noise - Commercial,Loud Talking,65,0,1,0.0
+RT121,Noise - Commercial,Loud Television,6,0,1,0.0
+RT121,Noise - Street/Sidewalk,Loud Music/Party,2094,1,1,0.0005
+RT121,Noise - Street/Sidewalk,Loud Talking,590,0,1,0.0
+RT121,Noise - Vehicle,Car/Truck Horn,280,5,1,0.0179
+RT121,Noise - Vehicle,Car/Truck Music,294,0,1,0.0
+RT121,Noise - Vehicle,Engine Idling,190,0,1,0.0
+RT122,Blocked Driveway,No Access,2100,8,1,0.0038
+RT122,Blocked Driveway,Partial Access,705,2,1,0.0028
+RT123,Illegal Parking,Blocked Bike Lane,240,0,1,0.0
+RT123,Illegal Parking,Blocked Crosswalk,552,1,1,0.0018
+RT123,Illegal Parking,Blocked Hydrant,2326,18,1,0.0077
+RT123,Illegal Parking,Blocked Sidewalk,1132,4,1,0.0035
+RT123,Illegal Parking,Commercial Overnight Parking,684,10,1,0.0146
+RT123,Illegal Parking,Detached Trailer,40,5,1,0.125
+RT123,Illegal Parking,Double Parked Blocking Traffic,602,3,1,0.005
+RT123,Illegal Parking,Double Parked Blocking Vehicle,279,0,1,0.0
+RT123,Illegal Parking,License Plate Obscured,189,3,1,0.0159
+RT123,Illegal Parking,Overnight Commercial Storage,58,1,1,0.0172
+RT123,Illegal Parking,Paper License Plates,77,0,1,0.0
+RT123,Illegal Parking,Parking Permit Improper Use,408,4,1,0.0098
+RT123,Illegal Parking,Posted Parking Sign Violation,2312,48,1,0.0208
+RT123,Illegal Parking,Unauthorized Bus Layover,72,2,1,0.0278
+RT124,Abandoned Vehicle,With License Plate,1292,105,1,0.0813
+RT140,General Construction/Plumbing,Adjacent Buildings Not Protected,9,1,1,0.1111
+RT140,General Construction/Plumbing,"Building - Vacant, Open And Unguarded",16,0,1,0.0
+RT140,General Construction/Plumbing,Building Permit - None,174,1,1,0.0057
+RT140,General Construction/Plumbing,Building Shaking/Vibrating/Structural Stability,62,0,1,0.0
+RT140,General Construction/Plumbing,Cons - Contrary/Beyond Approved Plans/Permits,57,0,1,0.0
+RT140,General Construction/Plumbing,Construction - Change Grade/Watercourse,2,0,1,0.0
+RT140,General Construction/Plumbing,Curb Cut/Driveway/Carport - Illegal,62,0,1,0.0
+RT140,General Construction/Plumbing,Debris - Excessive,24,0,1,0.0
+RT140,General Construction/Plumbing,Debris - Falling Or In Danger Of Falling,11,1,1,0.0909
+RT140,General Construction/Plumbing,Egress - Doors Locked/Blocked/Improper/No Secondary Means,21,0,1,0.0
+RT140,General Construction/Plumbing,Excavation Undermining Adjacent Building,3,1,1,0.3333
+RT140,General Construction/Plumbing,Failure To Maintain,13,2,1,0.1538
+RT140,General Construction/Plumbing,Failure to Comply with Vacate Order,2,0,1,0.0
+RT140,General Construction/Plumbing,Fence - None/Inadequate,62,1,1,0.0161
+RT140,General Construction/Plumbing,Illegal Conversion Of Commercial Bldg/Space To Other Uses,3,1,1,0.3333
+RT140,General Construction/Plumbing,Landmark Bldg - Illegal Work,3,0,1,0.0
+RT140,General Construction/Plumbing,Posted Notice Or Order Removed/Tampered With,5,0,1,0.0
+RT140,General Construction/Plumbing,Safety Inspection-Retaining Walls (May 2005),2,0,1,0.0
+RT140,General Construction/Plumbing,Safety Netting/Guard Rails - Damaged/Inadequate/None (6 Stories/75 Feet Or Less),3,0,1,0.0
+RT140,General Construction/Plumbing,Sidewalk Shed/Pipe Scafford - Inadequate Defective/None,64,0,1,0.0
+RT140,General Construction/Plumbing,Site Conditions Endangering Workers,7,0,1,0.0
+RT140,General Construction/Plumbing,Structural Stability Impacted - New Building Under Construction,2,0,1,0.0
+RT140,General Construction/Plumbing,Vent/Exhaust - Illegal/Improper,21,0,1,0.0
+RT140,General Construction/Plumbing,Wall/Retaining Wall - Bulging/Cracked,5,1,1,0.2
+RT140,General Construction/Plumbing,Working Contrary To Stop Work Order,36,0,1,0.0
+RT141,Elevator,Elevator - Multiple Devices On Property,171,5,1,0.0292
+RT141,Elevator,Elevator - Single Device On Property/No Alternate Service,214,2,1,0.0093

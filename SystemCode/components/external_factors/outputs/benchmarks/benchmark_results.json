@@ -1,0 +1,72 @@
+{
+  "machine": {
+    "python": "3.14.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpus": 24,
+    "ram_gb": 63.4
+  },
+  "note": "Single-process, single-thread wall-clock timings on the development machine.",
+  "load": {
+    "evaluator_load_seconds": 0.122,
+    "rss_before_import_mb": 87.9,
+    "rss_after_import_mb": 106.7,
+    "rss_after_load_mb": 162.7,
+    "evaluator_incremental_mb": 56.0,
+    "facilities_indexed": 4445,
+    "facility_cache_bytes_on_disk": 1131581,
+    "rss_after_full_batch_mb": 329.2
+  },
+  "single_request_latency_ms": {
+    "n": 2000,
+    "mean": 0.145,
+    "p50": 0.144,
+    "p95": 0.158,
+    "p99": 0.17,
+    "max": 0.214
+  },
+  "batch_throughput": {
+    "100": {
+      "seconds": 0.004,
+      "requests_per_second": 22826.9
+    },
+    "1000": {
+      "seconds": 0.047,
+      "requests_per_second": 21310.6
+    },
+    "10000": {
+      "seconds": 0.477,
+      "requests_per_second": 20943.0
+    },
+    "49558": {
+      "seconds": 2.4,
+      "requests_per_second": 20649.4
+    }
+  },
+  "spatial_index": {
+    "points": 500,
+    "categories": 6,
+    "strtree_nearest_seconds": 0.0109,
+    "brute_force_seconds": 0.2928,
+    "speedup_x": 26.9,
+    "max_abs_distance_difference_m": 0.0,
+    "results_identical": true,
+    "facilities_per_point_brute_force": 3803,
+    "mean_candidates_within_threshold_per_point": 0.36
+  },
+  "distance_correctness": {
+    "pairs": 3000,
+    "method": "planar EPSG:32118 vs pyproj.Geod WGS84 between the same nearest points",
+    "max_abs_error_m": 0.0986,
+    "mean_abs_error_m": 0.004,
+    "max_relative_error_pct": 0.00121,
+    "mean_relative_error_pct": 0.00036,
+    "max_abs_error_within_250m_m": 0.002,
+    "naive_degree_subtraction_error_example": {
+      "segment": "0.01 deg of longitude at 40.75N",
+      "naive_m": 1113.2,
+      "geodesic_m": 844.5,
+      "naive_error_pct": 31.8
+    }
+  }
+}

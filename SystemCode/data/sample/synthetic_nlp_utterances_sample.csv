@@ -1,0 +1,1418 @@
+text,intent,emergency_category,profanity,has_slot_labels,borough,is_voice_style,split,is_synthetic
+someone is unconscious on the sidewalk on Beach 98 Street near Beach Sixth Street,EMERGENCY,MEDICAL,NONE,True,,False,train,True
+help someone is beating a woman outside at 226 East 54 Street in bk,EMERGENCY,VIOLENCE_OR_THREAT,NONE,True,,False,train,True
+help it smells like gas outside outside my building on west 128 street in manhattan,EMERGENCY,GAS_LEAK,NONE,True,,False,val,True
+someone is trying to break in to my apartment in front of 377 rector place in the city,EMERGENCY,CRIME_IN_PROGRESS,NONE,True,,False,train,True
+a man with a knife is threatening people,EMERGENCY,CRIME_IN_PROGRESS,NONE,True,,False,train,True
+help a man with a knife is threatening people in the city,EMERGENCY,CRIME_IN_PROGRESS,NONE,True,,False,train,True
+"please the building next door is on fire, the bronx",EMERGENCY,FIRE,NONE,True,,False,train,True
+hurry there are flames coming out of the window,EMERGENCY,FIRE,NONE,True,,False,train,True
+please gas leak in the building,EMERGENCY,GAS_LEAK,NONE,True,,False,val,True
+there are flames coming out of the window at 1851 Colden Avenue,EMERGENCY,FIRE,NONE,True,,False,val,True
+help the building next door is on fire in front of 1513 cooper avenue,EMERGENCY,FIRE,NONE,True,,False,train,True
+please someone is beating a woman outside outside my building on Ridgewood Avenue in SI,EMERGENCY,VIOLENCE_OR_THREAT,NONE,True,,False,train,True
+hurry there are flames coming out of the window in bk,EMERGENCY,FIRE,NONE,True,,False,train,True
+please my friend overdosed please help,EMERGENCY,MEDICAL,NONE,True,,False,train,True
+a car is on fire on my street in front of 2060 bronx park east,EMERGENCY,FIRE,NONE,True,,False,train,True
+"help there is a live wire down on the street at the corner of east 217 street and hobart avenue, the bronx",EMERGENCY,LIFE_SAFETY_HAZARD,NONE,True,,False,val,True
+hurry a woman fell and is bleeding badly outside my building on west 51 street,EMERGENCY,MEDICAL,NONE,True,,False,train,True
+please a man threatened to kill me outside my building on seaman avenue in manhattan,EMERGENCY,VIOLENCE_OR_THREAT,NONE,True,,False,train,True
+please the building wall looks like it is about to collapse outside my building on Street in queens,EMERGENCY,LIFE_SAFETY_HAZARD,NONE,True,,False,train,True
+hurry someone is beating a woman outside in queens,EMERGENCY,VIOLENCE_OR_THREAT,NONE,True,,False,train,True
+"hurry a man threatened to kill me at 142 Freedom Avenue, SI",EMERGENCY,VIOLENCE_OR_THREAT,NONE,True,,False,train,True
+help my neighbor is having a seizure in front of 955 woodycrest avenue,EMERGENCY,MEDICAL,NONE,True,,False,train,True
+a man is having a heart attack at the corner of metropolitan avenue and east 161 street in the bronx,EMERGENCY,MEDICAL,NONE,True,,False,val,True
+"help gas leak in the building outside my building on west 104 street, manhattan",EMERGENCY,GAS_LEAK,NONE,True,,False,train,True
+please someone is trying to break in to my apartment on nicholas avenue near hylan boulevard in staten island,EMERGENCY,CRIME_IN_PROGRESS,NONE,True,,False,train,True
+i heard shots fired,EMERGENCY,CRIME_IN_PROGRESS,NONE,True,,False,train,True
+there are flames coming out of the window at 162 nassau street in manhattan,EMERGENCY,FIRE,NONE,True,,False,train,True
+hurry my neighbor is being attacked,EMERGENCY,VIOLENCE_OR_THREAT,NONE,True,,False,train,True
+please someone is unconscious on the sidewalk in front of 930 ogden avenue,EMERGENCY,MEDICAL,NONE,True,,False,train,True
+hurry the building wall looks like it is about to collapse at 386 Autumn Avenue,EMERGENCY,LIFE_SAFETY_HAZARD,NONE,True,,False,train,True
+please power lines are on the ground and sparking at the corner of pugsley avenue and west 170 street,EMERGENCY,LIFE_SAFETY_HAZARD,NONE,True,,False,train,True
+a car is on fire on my street at the corner of claremont terrace and street,EMERGENCY,FIRE,NONE,True,,False,train,True
+hurry the building wall looks like it is about to collapse at 60 Sand Lane,EMERGENCY,LIFE_SAFETY_HAZARD,NONE,True,,False,val,True
+"help it smells like gas outside at the corner of east 148 street and crotona avenue, the bronx",EMERGENCY,GAS_LEAK,NONE,True,,False,train,True
+please a man with a knife is threatening people,EMERGENCY,CRIME_IN_PROGRESS,NONE,True,,False,train,True
+please i heard shots fired outside my building on yates avenue,EMERGENCY,CRIME_IN_PROGRESS,NONE,True,,False,val,True
+help i smell gas in the hallway,EMERGENCY,GAS_LEAK,NONE,True,,False,train,True
+hurry power lines are on the ground and sparking at 200 Mcclean Avenue,EMERGENCY,LIFE_SAFETY_HAZARD,NONE,True,,False,train,True
+power lines are on the ground and sparking in front of 174 east 2 street in manhattan,EMERGENCY,LIFE_SAFETY_HAZARD,NONE,True,,False,train,True
+please a man threatened to kill me on west 22 street near 7 avenue,EMERGENCY,VIOLENCE_OR_THREAT,NONE,True,,False,train,True
+I lost my wallet on the bus,OTHER,NONE,NONE,True,,False,train,True
+when is the next election,OTHER,NONE,NONE,True,,False,train,True
+I want to pay a parking ticket,OTHER,NONE,NONE,True,,False,train,True
+what are the library hours,OTHER,NONE,NONE,True,,False,val,True
+I want to complain about my taxi driver,OTHER,NONE,NONE,True,,False,train,True
+how do I renew my passport,OTHER,NONE,NONE,True,,False,train,True
+my landlord raised the rent,OTHER,NONE,NONE,True,,False,train,True
+"Yah god mroning, a pothole at the cornner of Grantwood Avenuue and Edgerove Avenue, staten isalnd rigth noow, it's danegrous",RT001,NONE,NONE,False,STATEN ISLAND,True,train,True
+"so please help, a deep hole in the road at the corner of piave avenue and rose lane in staten island",RT001,NONE,NONE,True,STATEN ISLAND,True,train,True
+Like I'd lkie to report a crater in the raod taht damaged my tier at the corner of Greencroft Avenue and Dbois Avenue boody,RT001,NONE,MILD,False,STATEN ISLAND,True,train,True
+"Hi, we have a deeep hle in the roda in front of 174 Hamitlon Avennue riht now",RT001,NONE,NONE,False,STATEN ISLAND,False,train,True
+"So hi, i see a deep hole in the road at 730 St Nicholas Avenue",RT001,NONE,NONE,True,MANHATTAN,True,train,True
+"There is a deep hole in the road, it's dangerous",RT001,NONE,NONE,False,STATEN ISLAND,False,train,True
+I want to report we have potholes all over the street in front of 1268 Grant Avenue in the bronx,RT001,NONE,NONE,True,BRONX,False,train,True
+i'd like to report i see a huge pohtole in the broonx for a week now,RT001,NONE,NONE,False,BRONX,False,train,True
+"Uh hi, we have a huge pothole outside my building on Avenue N in bk since yesterday thanks",RT001,NONE,NONE,True,BROOKLYN,True,val,True
+"hi, a crater in the road that damaged my tire",RT001,NONE,NONE,False,BROOKLYN,False,train,True
+A huge pothole in front of 76 East 1 Street thanks bastard,RT001,NONE,SEVERE,True,MANHATTAN,False,train,True
+Like we have a huge pothole on Villa Avenue near West 232 Street since yesterday,RT001,NONE,NONE,True,BRONX,True,train,True
+"can you send someone, a deep hole in the road on wall street near bradley avenue, si since this morning",RT001,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Good morning, a crater in the road that damaged my tire at 202 Lily Pond Avenue in SI",RT001,NONE,NONE,True,STATEN ISLAND,False,val,True
+"hi, a hgue pothloe at the corner of wst 3 street and etna street",RT001,NONE,NONE,False,BROOKLYN,False,train,True
+I see a deep hole in the road in front of 1135 East 214 Street,RT001,NONE,NONE,True,BRONX,False,val,True
+a huge pothole since this morning,RT001,NONE,NONE,True,STATEN ISLAND,False,val,True
+"please help, i see a crater in the road that damaged my tire outside my building on east 149 street in bronx since this morning",RT001,NONE,NONE,True,BRONX,False,train,True
+"helol, potholes all ovr the street at 173 wrawick avenue in si fucked",RT001,NONE,SEVERE,False,STATEN ISLAND,False,train,True
+i'd like to report there's a huge pothole at the corner of hart avenue and forest avenue,RT001,NONE,NONE,True,STATEN ISLAND,False,val,True
+We have a deep hole in the road on East 180 Street near Rosedale Avenue for two days,RT001,NONE,NONE,True,BRONX,False,train,True
+"helol, there's a huge pothole outsiide my buildding on east 178 street, bronx sicne this morning",RT001,NONE,NONE,False,BRONX,False,val,True
+potholes all over the street in si,RT001,NONE,NONE,True,STATEN ISLAND,False,train,True
+There is a crater in the road that damaged my tire at the corner of East Macon Avenue and Bertram Avenue in SI dickhead,RT001,NONE,SEVERE,True,STATEN ISLAND,False,val,True
+"Okay so please help, a crater in the road that damaged my tire thanks",RT001,NONE,NONE,False,BROOKLYN,True,train,True
+"Hello, we have a huge pothole in front of 621 East 211 Street thanks",RT001,NONE,NONE,True,BRONX,False,train,True
+"hi, there is a crater in the road that damaged my tire on scott avenue near pacific street",RT001,NONE,NONE,True,BROOKLYN,False,val,True
+"Can you send someone, there is potholes all over the street on Belmont Avenue near College Avenue in bronx since yesterday",RT001,NONE,NONE,True,BRONX,False,train,True
+i wnat to rpeort i see a pothole outisde my building on minford plae in the bronx thanks,RT001,NONE,NONE,False,BRONX,False,train,True
+"I wnat to repport we have a crater in the road that daamged my tire at the corenr of West 51 Street and East 20 Street, manhattan thanks",RT001,NONE,NONE,False,MANHATTAN,False,train,True
+I want to report i see a huge pothole,RT001,NONE,NONE,False,BRONX,False,train,True
+we hae a depe hoole in the roaad at 165 east 179 street in the bronx sice ths morning. you sccrew nveer fix anything,RT001,NONE,MILD,False,BRONX,False,train,True
+I want to report there is a crater in the road that damaged my tire,RT001,NONE,NONE,False,BRONX,False,train,True
+"Uh please help, we have potholes all over the street on Craig Avenue near Yetman Avenue in SI",RT001,NONE,NONE,True,STATEN ISLAND,True,train,True
+"can you send someone, pothooles all over the street in bk",RT001,NONE,NONE,False,BROOKLYN,False,train,True
+"Hello, there's a crater in the road that damaged my tire at 227 Hemlock Street, bk, this is incompetent",RT001,NONE,MILD,True,BROOKLYN,False,train,True
+"Hi, a deep hoe in the rod at the corner of 8 Avennue and Broadway",RT001,NONE,NONE,False,MANHATTAN,False,train,True
+"Like good morning, there is a crater in the road that damaged my tire at the corner of Fernside Place and Beach 127 Street in queens",RT001,NONE,NONE,True,QUEENS,True,train,True
+"Can you send someone, a huge pothole outside my building on Eadie Place",RT001,NONE,NONE,True,STATEN ISLAND,False,train,True
+Yeah i see a crater in the road that damaged my tire at 140 Wild Avenue,RT001,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hi, we hve a sinkhole ouutside my building on Briiar Place. you blulshit neevr fix anyything",RT002,NONE,SEVERE,False,QUEENS,False,train,True
+"Okay so I'd like to report i see the pavement collapsed into a hole outside my building on Avenue A, the city right now",RT002,NONE,NONE,True,MANHATTAN,True,train,True
+"can you send someone, i see the pavement collapsed into a hole thanks",RT002,NONE,NONE,True,BRONX,False,train,True
+"Good morning, there is the pavement collapsed into a hole, brooklyn all day",RT002,NONE,NONE,True,BROOKLYN,False,train,True
+"can you send someone, a sinkhole screw",RT002,NONE,MILD,True,MANHATTAN,False,train,True
+"Like I want to report we havve the road caving in on Ocean Parway ner East 8 Stret, pelase sned someone",RT002,NONE,NONE,False,BROOKLYN,True,train,True
+"yeah please help, there is a cave-in on the street, please send someone",RT002,NONE,NONE,True,QUEENS,True,train,True
+"uh good morning, the pavement collapsed into a hole at the corner of ocean avenue and 18 avenue please",RT002,NONE,NONE,True,BROOKLYN,True,train,True
+there is a sinkhole at the corner of street and street in queens piss,RT002,NONE,MILD,True,QUEENS,False,train,True
+"i waant to report the rod caving in on adley street ner street in quees, pleease send someone",RT002,NONE,NONE,False,QUEENS,False,train,True
+"Hi, ther's a cavein on the street outsidde my building on Madsn Aenue, pelase seend somenoe",RT002,NONE,NONE,False,STATEN ISLAND,False,train,True
+there is the street is sinking,RT002,NONE,NONE,True,STATEN ISLAND,False,train,True
+I'd like to report there's the pavement collapsed into a hole on West 86 Street near Ludlow Street. you sucks never fix anything,RT002,NONE,MILD,True,MANHATTAN,False,train,True
+"can you send someone, there is the street is sinking at 548 west 164 street in manhattan since yesterday",RT002,NONE,NONE,True,MANHATTAN,False,val,True
+"Can you send someone, there's a sinkhole on Prospect Place near 85 Street",RT002,NONE,NONE,True,BROOKLYN,False,train,True
+"can you send someone, there's a sinkhole in front of 552 west 184 street in the city",RT002,NONE,NONE,True,MANHATTAN,False,train,True
+um there's the pavement collapsed into a hole at 815 8 avenue right now,RT002,NONE,NONE,True,BROOKLYN,True,train,True
+"Like can you send someone, the pavement collapsed into a hole at 418 Henry Street",RT002,NONE,NONE,True,BROOKLYN,True,train,True
+"good morning, i see the street is sinking on avenue near palmetto street for a week now",RT002,NONE,NONE,True,QUEENS,False,train,True
+"Therre's the road cavign in at the corneer of Souhtern Boulevard and Cannon Plac,e the bronx",RT002,NONE,NONE,False,BRONX,False,train,True
+"God morning, there is a sinkhoel outsdie my building on Street in queens",RT002,NONE,NONE,False,QUEENS,False,train,True
+"there's a sinkhole on street near street since last night, please send someone",RT002,NONE,NONE,True,QUEENS,False,train,True
+I'd like to report there's a sinkhole outside my building on Fairmount Place for two days,RT002,NONE,NONE,True,BRONX,False,train,True
+yeah i'd like to report a sinkhole at the corner of redgrave avenue and rivington avenue in si sucks,RT002,NONE,MILD,True,STATEN ISLAND,True,train,True
+"Like hi, the pavement collapsed into a hole right now",RT002,NONE,NONE,True,MANHATTAN,True,train,True
+"Um hi, the pavement collapsed into a hole",RT002,NONE,NONE,True,QUEENS,True,train,True
+"okay so good morning, we have the pavement collapsed into a hole at 22 east 60 street for a week now",RT002,NONE,NONE,True,MANHATTAN,True,train,True
+"can you send someone, a sinkhole at the corner of belmont avenue and bronx boulevard in bronx since this morning please. you shitty never fix anything",RT002,NONE,SEVERE,True,BRONX,False,train,True
+"uh can you send someone, there's the pavement collapsed into a hole at 3165 decatur avenue thanks",RT002,NONE,NONE,True,BRONX,True,train,True
+I see a cave-in on the street at the conrer of Grand Concourse and East 199 Street plaese,RT002,NONE,NONE,False,BRONX,False,val,True
+"i'd like to report thhere is the rod caving in, i's dangeerous",RT002,NONE,NONE,False,MANHATTAN,False,train,True
+"Yeah please help, a cave-in on the street, it's dangerous",RT002,NONE,NONE,True,QUEENS,True,val,True
+We haave a sinkole in frot of 120 Sherman Aveneu in manattan all day,RT002,NONE,NONE,False,MANHATTAN,False,val,True
+"Helo, we hae the pavemet collasped intto a hole at 182 Nagle Avenue, the cty since yesterday, this is biitch",RT002,NONE,SEVERE,False,MANHATTAN,False,train,True
+"God morning, ther's a sinkhole at 220 Ocan Parkay in brookln",RT002,NONE,NONE,False,BROOKLYN,False,train,True
+"heello, the street is sinking in qeuens",RT002,NONE,NONE,False,QUEENS,False,val,True
+Like I'd like to report there's a cave-in on the street outside my building on Lincoln Place,RT002,NONE,NONE,True,BROOKLYN,True,train,True
+"please help, the street is sinking",RT002,NONE,NONE,True,QUEENS,False,train,True
+We haave the street is sinkng outside my building on Rathbun Aveneu in SI since lats night,RT002,NONE,NONE,False,STATEN ISLAND,False,train,True
+"okay so please help, i see a sinkhole in front of 2351 adam clayton powell jr boulevard in the city for two days, it's dangerous",RT002,NONE,NONE,True,MANHATTAN,True,train,True
+A raised steel plate on the road at the corner of St Edward Lane and Hunter Avenue in staten island,RT003,NONE,NONE,True,STATEN ISLAND,False,val,True
+"Hello, therre's loose asphaalt everywhree",RT003,NONE,NONE,False,STATEN ISLAND,False,train,True
+"hello, we have a broken manhole cover at 1397 stanley avenue in brooklyn, please send someone",RT003,NONE,NONE,True,BROOKLYN,False,train,True
+I'd likke to repotr there is the road sufrace is craacked and unevne on Est 163 Street nar St Raymoond Avenue in the bonx,RT003,NONE,NONE,False,BRONX,False,train,True
+"So hello, loose asphalt everywhere",RT003,NONE,NONE,False,MANHATTAN,True,train,True
+"okay so theer's a broken manhole cover at the cornr of adelpi steet and schermerhorn sreet, please sed someone",RT003,NONE,NONE,False,BROOKLYN,True,train,True
+I'd like to reprot we have looose asphalt everywhere in front of 22006 Holland Avenue in broxn,RT003,NONE,NONE,False,BRONX,False,train,True
+"Good morning, a raised steel plate on the road on Grand Concourse near Morris Park Avenue, bronx",RT003,NONE,NONE,True,BRONX,False,train,True
+"please help, loose asphalt everywhere all day",RT003,NONE,NONE,True,BROOKLYN,False,val,True
+"Can you send someone, i see the road surface is cracked and uneven in front of 401 West 47 Street in the city, it's dangerous idiots",RT003,NONE,MILD,True,MANHATTAN,False,train,True
+"please help, there's loose asphalt everywhere outside my building on 1 avenue for two days",RT003,NONE,NONE,True,MANHATTAN,False,train,True
+uh there is loose asphalt everywhere in front of 3009 kingsbridge terrace in bronx,RT003,NONE,NONE,True,BRONX,True,train,True
+"Can you send someone, we have a raised steel plate on the road in front of 390 Van Siclen Avenue in brooklyn",RT003,NONE,NONE,True,BROOKLYN,False,train,True
+"I want to report i see a raised steel plate on the road at the corner of West 76 Street and 1 Avenue, manhattan",RT003,NONE,NONE,True,MANHATTAN,False,train,True
+"Hello, we have a broken manhole cover at the corner of Mott Street and Broadway in the city for a week now",RT003,NONE,NONE,True,MANHATTAN,False,train,True
+"uh hi, a broken manhle cover outside my buildig on richmod plzaa in the bronx",RT003,NONE,NONE,False,BRONX,True,train,True
+"Like good morning, there's the road surface is cracked and uneven at the corner of Myrtle Avenue and Saint Marks Avenue for two days",RT003,NONE,NONE,True,BROOKLYN,True,train,True
+"Please help, there is loose asphalt everywhere at the corner of East 55 Street and Cadman Plaza East",RT003,NONE,NONE,True,BROOKLYN,False,train,True
+"Please help, there's a raised steel plate on the road at 113 Audley Street in queens all day",RT003,NONE,NONE,True,QUEENS,False,train,True
+i'd like to report we have loose asphalt everywhere on east 34 street near west 151 street,RT003,NONE,NONE,True,MANHATTAN,False,train,True
+I see a broken manhole cover at the corner of Lenox Road and Carroll Street in bk since last night,RT003,NONE,NONE,True,BROOKLYN,False,train,True
+Like we have the raod surface is cracked and uneven in manhttan all day,RT003,NONE,NONE,False,MANHATTAN,True,train,True
+I'd like to report the road surface is cracked and uneven on Leland Avenue near Anthony Avenue since last night. you shitty never fix anything,RT003,NONE,SEVERE,True,BRONX,False,train,True
+"good morning, there's the road surface is cracked and uneven in front of 408 seneca avenue in queens for a week now",RT003,NONE,NONE,True,QUEENS,False,train,True
+"Like a broekn mahnole cover in front of 214 Rockaway Parkway, bk",RT003,NONE,NONE,False,BROOKLYN,True,train,True
+I want to report we have a raised steel plate on the road at 650 West 173 Street in manhattan,RT003,NONE,NONE,True,MANHATTAN,False,train,True
+"can you seend someone, theree's a brokeen manhole coover for a week now, pease sedn someoe",RT003,NONE,NONE,False,MANHATTAN,False,train,True
+"hi, a boken manhole cover in fronnt of 6 heenry pllace, si",RT003,NONE,NONE,False,STATEN ISLAND,False,train,True
+"hi, there is the road surface is cracked and uneven for a wek now",RT003,NONE,NONE,False,BROOKLYN,False,val,True
+"please help, loose asphalt everywhere in front of 82 lake avenue in staten island pissed",RT003,NONE,MILD,True,STATEN ISLAND,False,train,True
+I'd liike to reoprt there's a brokne manhole cover. you screew nver fix anythig,RT003,NONE,MILD,False,BROOKLYN,False,train,True
+"Can you send someone, there's loose asphalt everywhere at the corner of 5 Avenue and West 53 Street, manhattan since yesterday, it's dangerous. you jackass never fix anything",RT003,NONE,SEVERE,True,MANHATTAN,False,train,True
+"Can you send someone, there's a raised steel plate on the road on Ridgefield Avenue near Bryant Avenue",RT003,NONE,NONE,True,STATEN ISLAND,False,train,True
+"good mornin, there's loose asphaalt evreywhere in front of 85 bradhurst avene",RT003,NONE,NONE,False,MANHATTAN,False,train,True
+"Yeah please help, we have loose asphalt everywhere outside my building on East 117 Street, manhattan since this morning, please send someone",RT003,NONE,NONE,True,MANHATTAN,True,train,True
+"Yah I'd liek to repot i see the roaad surrface is cracked and unveen at the corrner of Doone Court and 79 Street in brooklyn, its' dagnerous idiots",RT003,NONE,MILD,False,BROOKLYN,True,train,True
+the road surface is cracked and uneven in front of 513 west 207 street,RT003,NONE,NONE,True,MANHATTAN,False,train,True
+i see a broken manhole cover on hicksville road near street in queens for two days,RT003,NONE,NONE,True,QUEENS,False,train,True
+"Can you send someone, we have the road surface is cracked and uneven all day",RT003,NONE,NONE,True,MANHATTAN,False,val,True
+"So can you send someone, i see a raised steel plate on the road at the corner of 1 Avenue and Riverside Drive",RT003,NONE,NONE,True,MANHATTAN,True,train,True
+"I'd like to report it is completely dark, the lights on the street are not working at the corner of Prescott Avenue and Chicago Avenue in SI all day",RT004,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hi, we have it is completely dark, the lights on the street are not working at 1 Marina Road for a week now",RT004,NONE,NONE,True,QUEENS,False,train,True
+"we have the street lamp keeps flickering on 3 street near victory boulevard in staten island, please send someone",RT004,NONE,NONE,True,STATEN ISLAND,False,train,True
+Yeah I want to report tehre is the streeet lamp keps flickering outside my building on Rosedale Avenuue in bronx please,RT004,NONE,NONE,False,BRONX,True,train,True
+"Uh can you send someone, i see it is completely dark, the lights on the street are not working outside my building on Seneca Street in staten island right now, please send someone moron",RT004,NONE,MILD,True,STATEN ISLAND,True,val,True
+"hi, there's a dim street light at the corner of street and street",RT004,NONE,NONE,True,QUEENS,False,train,True
+Okkay so I'd like to reoprt we hae the street lamp keeeps flickering at the corner of Nassau Avenue and Jay Street in brookyn,RT004,NONE,NONE,False,BROOKLYN,True,val,True
+the street light is out,RT004,NONE,NONE,False,STATEN ISLAND,False,train,True
+"hello, there's it is completely dark, the lights on the street are not working outside my building on ely avenue in the bronx",RT004,NONE,NONE,True,BRONX,False,train,True
+"Hi, i see the street lammp kepes flickering in bk",RT004,NONE,NONE,False,BROOKLYN,False,train,True
+"um hi, we have the srteet lapm keeps fickering at 22773 adam clayton powell boulevadr thaanks. you sucks never fix anyhing",RT004,NONE,MILD,False,MANHATTAN,True,train,True
+"um hello, a broken streetlight in front of 407 beach 20 street",RT004,NONE,NONE,True,QUEENS,True,train,True
+Uh i see the street light is out right now thanks,RT004,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hlelo, it is completely drak, the lights on the strreet are not working on Beeach 118 Street near Road in queens",RT004,NONE,NONE,False,QUEENS,False,train,True
+"so please help, we have a broken streetlight in front of 500 east 75 street thanks",RT004,NONE,NONE,True,MANHATTAN,True,val,True
+I want to report we have the street light is out at the corner of Empire Boulevard and Avenue I in bk,RT004,NONE,NONE,True,BROOKLYN,False,train,True
+"Good morning, there is the street light is out",RT004,NONE,NONE,False,BRONX,False,train,True
+"Like hello, the street light is out",RT004,NONE,NONE,False,STATEN ISLAND,True,train,True
+"Um hi, there's a dim street light outside my building on Manhattan Avenue right now thanks",RT004,NONE,NONE,True,BROOKLYN,True,val,True
+i'd like to report i see a broken streetlight at 3468 broadway,RT004,NONE,NONE,True,MANHATTAN,False,train,True
+"Yeah a dim street light on Mayflower Avenue near West 168 Street in the bronx since this morning, it's dangerous",RT004,NONE,NONE,True,BRONX,True,train,True
+"good mornign, thee's a broken sttreetlight at 134 doscher steret in brooklyn thanks",RT004,NONE,NONE,False,BROOKLYN,False,train,True
+I see a broken streetlight at the corner of West 141 Street and 10 Avenue in the city thanks,RT004,NONE,NONE,True,MANHATTAN,False,train,True
+i want to report the street lamp keeps flickering please,RT004,NONE,NONE,False,MANHATTAN,False,train,True
+I'd like to report a broken streetlight outside my building on Rutgers Street in manhattan,RT004,NONE,NONE,True,MANHATTAN,False,train,True
+"uh there's the street light is out for two days, it's dangerous",RT004,NONE,NONE,True,BRONX,True,train,True
+"please help, the street light is out at 888 post avenue",RT004,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hello, there is the street light is out on Broadway near West 110 Street",RT004,NONE,NONE,True,MANHATTAN,False,train,True
+"pleaase help, we haev the strete lamp kepes flikering at the corner of est 56 stret and east 83 street",RT004,NONE,NONE,False,MANHATTAN,False,train,True
+"can you send someone, there's a dim street light at the corner of west 46 street and st nicholas avenue in the city",RT004,NONE,NONE,True,MANHATTAN,False,train,True
+"please help, there's the street lamp keeps flickering at the corner of flatland avenue and gateway drive, brooklyn for two days",RT004,NONE,NONE,True,BROOKLYN,False,train,True
+"Hi, i see it is completely dark, the lights on the street are not working on Cropsey Avenue near East 21 Street in bk, please send someone",RT004,NONE,NONE,True,BROOKLYN,False,train,True
+I see a dim street light at the corner of Seneca Avenue and Woodbine Street in queens,RT004,NONE,NONE,True,QUEENS,False,train,True
+"Good morning, the street light is out in front of 466 Woodrow Road, it's dangerous",RT004,NONE,NONE,True,STATEN ISLAND,False,train,True
+"good morning, a broken streetlight at 440 beach 54 street, queens",RT004,NONE,NONE,True,QUEENS,False,train,True
+Like there's a broken streetlight on West 56 Street near West 95 Street in the city,RT004,NONE,NONE,True,MANHATTAN,True,train,True
+"I'd like to report we have a broken streetlight at 1108 Fulton Street in brooklyn, please send someone. you incompetent never fix anything",RT004,NONE,MILD,True,BROOKLYN,False,train,True
+"There's it is cmpletely dark, the lgihts on the street are not woring on State Street near Empire Boulevard",RT004,NONE,NONE,False,BROOKLYN,False,train,True
+"Good morning, tehre's the streeet lgiht is out on Caffrey Avneue neaar Bech 129 Stret",RT004,NONE,NONE,False,QUEENS,False,train,True
+"Hello, we haave the street lapm keeps flickering at 1 West Frdham Road in the bronx",RT004,NONE,NONE,False,BRONX,False,train,True
+I want to report there's the traffic light is not working in front of 250 East 63 Street since yesterday,RT005,NONE,NONE,True,MANHATTAN,False,val,True
+I want to report the traffic light is not working outside my building on Anderson Avenue since last night,RT005,NONE,NONE,True,BRONX,False,train,True
+i want to report there is the signal is stuck on red in si,RT005,NONE,NONE,True,STATEN ISLAND,False,train,True
+"hi, therre is the signal is stucck on red at the coorner of larkin street and merrick avenuue, statten island since yesterday thanks",RT005,NONE,NONE,False,STATEN ISLAND,False,train,True
+"There's the signal is stuck on red at 705 Nereid Avenue, bronx for a week now",RT005,NONE,NONE,True,BRONX,False,train,True
+"good morning, we have a broken traffic signal on dean street near 59 street since last night crappy",RT005,NONE,MILD,True,BROOKLYN,False,train,True
+so i want to report the traffic lighht is not working thakns. you bitcch never fix anything,RT005,NONE,SEVERE,False,BRONX,True,train,True
+The traffic light is not working please,RT005,NONE,NONE,False,MANHATTAN,False,train,True
+Theere is the traffic ligght is not working on Sreet nar Raod in queens,RT005,NONE,NONE,False,QUEENS,False,train,True
+There's the pedestrian walk signal is dead right now,RT005,NONE,NONE,True,MANHATTAN,False,train,True
+i want to report i see a broken traffic signal in front of 1349 stratford avenue in the bronx,RT005,NONE,NONE,True,BRONX,False,train,True
+"Hello, a broken traffic signal all day",RT005,NONE,NONE,True,MANHATTAN,False,train,True
+"Can you send someone, we have the pedestrian walk signal is dead for two days please",RT005,NONE,NONE,True,BRONX,False,train,True
+I want to report the traffic light is not working,RT005,NONE,NONE,False,STATEN ISLAND,False,train,True
+I want to report there's traffic lights are flashing at the intersection,RT005,NONE,NONE,False,QUEENS,False,train,True
+um we hve a broken trafic sinal on avene n ner 61 street in broklyn,RT005,NONE,NONE,False,BROOKLYN,True,train,True
+The traffic light is not working at 4245 Digney Avenue,RT005,NONE,NONE,True,BRONX,False,train,True
+uh there is the pedestrian walk signal is dead on ft washington avenue near west 171 street all day,RT005,NONE,NONE,True,MANHATTAN,True,train,True
+"Hi, the traffic ligth is not working rihgt now",RT005,NONE,NONE,False,BROOKLYN,False,train,True
+"like good morning, i see the signal is stuck on red on palmetto street near avenue, queens right now",RT005,NONE,NONE,True,QUEENS,True,train,True
+I see the traffic light is not working please pissed,RT005,NONE,MILD,False,BROOKLYN,False,train,True
+"hello, there is a broken traffic signal",RT005,NONE,NONE,False,BRONX,False,train,True
+"Uh I wat to report i see traffic lights are flahing at the inntersection outside my buiding on Slyvia Streett, sttaen ilsand",RT005,NONE,NONE,False,STATEN ISLAND,True,train,True
+"There is the traffic light is not working, this is idiots",RT005,NONE,MILD,False,STATEN ISLAND,False,train,True
+"please hel,p we have a brooken traffic siganl outide my buidling on 81 street, bk for two days",RT005,NONE,NONE,False,BROOKLYN,False,train,True
+uh i'd like to report the pedestrian walk signal is dead in front of 330 east 137 street in bronx,RT005,NONE,NONE,True,BRONX,True,train,True
+"Like i see the pedestrian walk signal is dead on Avenue near Rear Beach 99 Street, queens for two days",RT005,NONE,NONE,True,QUEENS,True,train,True
+I see the pedestrian walk signal is dead at 284 Martin Avenue,RT005,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Pleasse hep, there is the pedestrian walk siggnal is daed at the corner of Grand Avenue and Paark Hil Avenue",RT005,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Uh please help, there is traffic lights are flashing at the intersection at the corner of 5 Avenue and Park Terrace East in manhattan",RT005,NONE,NONE,True,MANHATTAN,True,train,True
+"Can you send someone, i see the signal is stuck on red since yesterday idiot",RT005,NONE,MILD,True,QUEENS,False,train,True
+"um can you sennd soomeone, the signaal is stuck on red",RT005,NONE,NONE,False,QUEENS,True,val,True
+The pedestrian walk signal is dead at the corner of Ramsey Place and North Railroad Avenue please,RT005,NONE,NONE,True,STATEN ISLAND,False,train,True
+"The pedestrian walk signal is dead in front of 9 Cook Street in brooklyn, please send someone",RT005,NONE,NONE,True,BROOKLYN,False,train,True
+I want to report there's the pedestrian walk signal is dead for a week now,RT005,NONE,NONE,True,QUEENS,False,train,True
+"Um good morning, there is the pedestrian walk signal is dead in front of 454 Beach 123 Street in queens, please send someone",RT005,NONE,NONE,True,QUEENS,True,train,True
+"Good morning, the pedestrian walk signal is dead at 2108 Gates Avenue, queens thanks",RT005,NONE,NONE,True,QUEENS,False,train,True
+"um please help, i see the signal is stuck on red on union avenue near east 171 street in the bronx, this is shit",RT005,NONE,SEVERE,True,BRONX,True,train,True
+i see the signal is stuck on red thanks,RT005,NONE,NONE,False,BRONX,False,train,True
+I see the signal is stuck on red,RT005,NONE,NONE,False,BROOKLYN,False,train,True
+i see the sidewalk is cracked and lifted in front of 66 west 88 street,RT006,NONE,NONE,True,MANHATTAN,False,train,True
+"good morning, we have a damaged curb",RT006,NONE,NONE,False,QUEENS,False,train,True
+"Hi, i see a broken sidewalk at 586 West 178 Street",RT006,NONE,NONE,True,MANHATTAN,False,train,True
+"a damaged curb, please send someone",RT006,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Hi, there is a missing chunk of curb at 25 Park Row in the city for two days. you bullshit never fix anything",RT006,NONE,SEVERE,True,MANHATTAN,False,train,True
+So we have a missing chunk of curb on Graham Avenue near Humboldt Street,RT006,NONE,NONE,True,BROOKLYN,True,train,True
+"Goood morning, there's the sidewalk is cracked and liffted at 105 Macdougaal Street in manhatan for two days thankks",RT006,NONE,NONE,False,MANHATTAN,False,train,True
+"the pavement sab is brooken, peopel keep trippnig on roosevetl avenue near annadale road thanks",RT006,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Yeah can you send someone, i see a damaged curb for a week now thanks",RT006,NONE,NONE,True,BROOKLYN,True,train,True
+"we have the sidewalk is cracked and lifted on fenton avenue near east 217 street, please send someone",RT006,NONE,NONE,True,BRONX,False,train,True
+I'd lie to rport a misssing chunk of crb at the corneer of Shpherd Avvenue and 85 Street,RT006,NONE,NONE,False,BROOKLYN,False,train,True
+"good morning, a broken sidewalk in bronx",RT006,NONE,NONE,True,BRONX,False,train,True
+"helol, a missing chuunk of curb on pleasaant avenue nera freeodm place soutth",RT006,NONE,NONE,False,MANHATTAN,False,train,True
+"hello, we have the pavement sllab is broken, peoople kep trpiping ouutside my buidling on battery aveneu",RT006,NONE,NONE,False,BROOKLYN,False,train,True
+"Uh can you send someone, a broken sidewalk",RT006,NONE,NONE,False,BRONX,True,train,True
+"goood morning, a brkoen sidwalk",RT006,NONE,NONE,False,QUEENS,False,train,True
+"We have a damaged curb in bronx, please send someone",RT006,NONE,NONE,True,BRONX,False,train,True
+i'd like to report there's a damaged curb in bk,RT006,NONE,NONE,True,BROOKLYN,False,train,True
+We haev the sidwealk is cracked and litfed,RT006,NONE,NONE,False,QUEENS,False,train,True
+"can you send someone, the sidewalk is cracked and lifted",RT006,NONE,NONE,False,QUEENS,False,train,True
+"please help, a broken sidewalk",RT006,NONE,NONE,False,BRONX,False,train,True
+"Can you send someone, we have a damaged curb in front of 10 Midwood Street right now",RT006,NONE,NONE,True,BROOKLYN,False,train,True
+There's a missing chunk of curb for a week now,RT006,NONE,NONE,True,MANHATTAN,False,train,True
+"there's the pavement slab is broken, people keep tripping since last night",RT006,NONE,NONE,True,QUEENS,False,train,True
+"Like can you send someone, the sidewalk is cracked and lifted on East 152 Street near Valentine Avenue in bronx",RT006,NONE,NONE,True,BRONX,True,train,True
+I'd like to report we have a damaged curb outside my building on New York Avenue in bk right now,RT006,NONE,NONE,True,BROOKLYN,False,train,True
+There is a broken sidewalk at 1829 Adam C Powell Boulevard in manhattan thanks,RT006,NONE,NONE,True,MANHATTAN,False,val,True
+"so hi, there is a damaged curb at the corner of south end avenue and exchange place",RT006,NONE,NONE,True,MANHATTAN,True,train,True
+okay so i'd like to report there's a broken sidewalk at the corner of plaza st east and 72 street in brooklyn for two days,RT006,NONE,NONE,True,BROOKLYN,True,train,True
+"I want to report theer is a borken sidewalk, thsi is bith",RT006,NONE,SEVERE,False,BROOKLYN,False,train,True
+"Like hello, we have the pavement slab is broken, people keep tripping in front of 225 Street in queens",RT006,NONE,NONE,True,QUEENS,True,train,True
+"so please help, there is the pavement slab is broken, people keep tripping outside my building on beach 118 street right now",RT006,NONE,NONE,True,QUEENS,True,train,True
+"Good morning, there is a damaged curb in SI, please send someone",RT006,NONE,NONE,True,STATEN ISLAND,False,val,True
+like there is a missing chunk of curb right now,RT006,NONE,NONE,True,BROOKLYN,True,train,True
+"okay so good morning, we have the sidewalk is cracked and lifted right now",RT006,NONE,NONE,True,MANHATTAN,True,train,True
+i want to report there's a missing chunk of curb in front of 109 street since last night,RT006,NONE,NONE,True,QUEENS,False,val,True
+"hello, i see the sdewalk is cracked and lifted on avenue near steret",RT006,NONE,NONE,False,QUEENS,False,train,True
+"Can you send someone, the sidewalk is cracked and lifted at the corner of West 82 Street and East 80 Street for a week now",RT006,NONE,NONE,True,MANHATTAN,False,train,True
+Okay so I want to report there is a damaged curb outside my building on 2 Avenue,RT006,NONE,NONE,True,MANHATTAN,True,train,True
+"Hello, a missing chunk of curb at 1958 Second Avenue, the city please",RT006,NONE,NONE,True,MANHATTAN,False,train,True
+"Okay so hi, there's a water main break at the corner of West 136 Street and West 135 Street for a week now",RT020,NONE,NONE,True,MANHATTAN,True,train,True
+I'd lkie to report there is wter pouring out of a crack in the street outsidde my building on Weest 204 Street in the ciy pleasse,RT020,NONE,NONE,False,MANHATTAN,False,train,True
+"hello, i see water pouring out of a crack in the street",RT020,NONE,NONE,True,BRONX,False,train,True
+there's a water main break outside my building on grand avenue since yesterday,RT020,NONE,NONE,True,BRONX,False,train,True
+yeah i see water pouring out of a crack in the street in front of 475 sackett street for two days thanks,RT020,NONE,NONE,True,BROOKLYN,True,train,True
+"Hi, there is water pouring out of a crack in the street at the corner of Bronx Boulevard and Tibbet Avenue",RT020,NONE,NONE,True,BRONX,False,train,True
+"good morning, we have water gushing out of the street at 198 wellbrook avenue, si",RT020,NONE,NONE,True,STATEN ISLAND,False,train,True
+a water laek comiing up frrom the rod,RT020,NONE,NONE,False,MANHATTAN,False,train,True
+I'd like to rport water puring out of a crak in the street in fronnt of 18810 81 Street in brookklyn for a weke now,RT020,NONE,NONE,False,BROOKLYN,False,train,True
+"water gushing out of the street at the corner of havenwood road and wright street in si since last night, it's dangerous",RT020,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Water gushing out of the street at the corner of East 85 Street and Grand Street right now, it's dangerous jackass",RT020,NONE,SEVERE,True,BROOKLYN,False,val,True
+"Please help, we have water pouring out of a crack in the street at the corner of Cross Bay Boulevard and Avenue in queens",RT020,NONE,NONE,True,QUEENS,False,train,True
+okay so we have a water main break,RT020,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hi, a wter leka comnig up form the raod tahnks",RT020,NONE,NONE,False,STATEN ISLAND,False,train,True
+"water gushing out of the street, the city right now",RT020,NONE,NONE,True,MANHATTAN,False,train,True
+"Hello, i see water gushing out of the street on Road near Ocean Avenue, queens",RT020,NONE,NONE,True,QUEENS,False,train,True
+"can you sennd somenoe, i see a waater mian break outsidde my building on forest avenue in si",RT020,NONE,NONE,False,STATEN ISLAND,False,train,True
+"i want to report i see a water main break in front of 914 crossbay boulevard, please send someone",RT020,NONE,NONE,True,QUEENS,False,train,True
+i'd like to report we have a water main break at the corner of east 34 street and west 94 street in manhattan,RT020,NONE,NONE,True,MANHATTAN,False,val,True
+"Can you send someone, there's water gushing out of the street at 1828 Eastern Parkway please",RT020,NONE,NONE,True,BROOKLYN,False,train,True
+"Like hi, there is water gushing out of the street at 2937 Grace Avenue in the bronx since yesterday thanks. you damn never fix anything",RT020,NONE,MILD,True,BRONX,True,train,True
+"Good morning, a water leak coming up from the road at the corner of St Johns Place and Willmohr Street, please send someone",RT020,NONE,NONE,True,BROOKLYN,False,train,True
+"Good morning, a water leak coming up from the road in front of 391 Lorimer Street, brooklyn for a week now",RT020,NONE,NONE,True,BROOKLYN,False,train,True
+i want to report we have a water leak coming up from the road on decatur avenue near inwood avenue,RT020,NONE,NONE,True,BRONX,False,train,True
+A water leak coming up from the road in front of 1705 Elm Avenue,RT020,NONE,NONE,True,BROOKLYN,False,train,True
+"i'd like to report a water main break in brooklyn since yesterday, it's dangerous",RT020,NONE,NONE,True,BROOKLYN,False,train,True
+I see water gushing out of the street at 131 Street in queens. you shitty never fix anything,RT020,NONE,SEVERE,True,QUEENS,False,train,True
+i see wateer pouring out of a crack in the street all day,RT020,NONE,NONE,False,MANHATTAN,False,train,True
+"Hi, a water main break at 3915 Avenue P, brooklyn for a week now",RT020,NONE,NONE,True,BROOKLYN,False,train,True
+i'd like to report water pouring out of a crack in the street at 159 street please,RT020,NONE,NONE,True,QUEENS,False,train,True
+"hi, there's watre pouring out of a crack in the streeet since yestrday thankks",RT020,NONE,NONE,False,QUEENS,False,val,True
+I want to report a water leak coming up from the road at the corner of Harrison Avenue and Winters Street in bronx,RT020,NONE,NONE,True,BRONX,False,train,True
+So I'd like to report i see water gushing out of the street on Graham Avenue near Atlantic Avenue in bk,RT020,NONE,NONE,True,BROOKLYN,True,train,True
+so i'd like to report water pouring out of a crack in the street at the corner of westervelt avenue and elkhart street in staten island since yesterday please,RT020,NONE,NONE,True,STATEN ISLAND,True,train,True
+I want to report i see a water main break in front of 106 2 Avenue in brooklyn all day,RT020,NONE,NONE,True,BROOKLYN,False,train,True
+Water gushing out of the street at 3763 Barnes Avenue right now. you bloody never fix anything,RT020,NONE,MILD,True,BRONX,False,train,True
+"I'd lie to reort theere is water pouring out of a craack in the street at 318 Valhalla Drvie in broxn sinec last night, it's dnagerous",RT020,NONE,NONE,False,BRONX,False,train,True
+"Good morning, watre puring out of a crack in the stret at 100 Overlok Terace",RT020,NONE,NONE,False,MANHATTAN,False,train,True
+I'd like to report there is a water leak coming up from the road at the corner of Avenue and Beach 135 Street since last night thanks,RT020,NONE,NONE,True,QUEENS,False,train,True
+"please help, water gushing out of the street in front of 1827 cornelia street, queens",RT020,NONE,NONE,True,QUEENS,False,train,True
+i want to report we have a clogged catch basin on 14 street near south 3 street for two days,RT021,NONE,NONE,True,BROOKLYN,False,train,True
+"Like can you send someone, the drain outside is overflowing for two days",RT021,NONE,NONE,True,BRONX,True,train,True
+I wannt to report thee is the drian outsdie is overflowing at the conrer of Street and Drve in quenes,RT021,NONE,NONE,False,QUEENS,False,val,True
+"Can you send someone, there's the drain outside is overflowing on Belmont Place near Arden Avenue",RT021,NONE,NONE,True,STATEN ISLAND,False,train,True
+I see a clogged catch basin in queens for a week now,RT021,NONE,NONE,True,QUEENS,False,train,True
+i'd like to report there is the storm drain is blocked on macdonough street near east new york avenue in brooklyn,RT021,NONE,NONE,True,BROOKLYN,False,train,True
+"i want to report there's a clogged catch basin, it's dangerous",RT021,NONE,NONE,False,QUEENS,False,train,True
+"hello, there is the sewer grate is blocked and water is pooling",RT021,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Please help, there's the storm drain is blocked at the corner of Richardson Street and Aurelia Court",RT021,NONE,NONE,True,BROOKLYN,False,train,True
+"please help, i see a clogged catch basin on marble hill avenue near jesup place, bronx",RT021,NONE,NONE,True,BRONX,False,val,True
+"Goood mornign, we have the sewer grate is blocked and wtaer is poolign at the corner of University Avenue and Uniersity Avenu,e bronx since yesterady",RT021,NONE,NONE,False,BRONX,False,train,True
+So I want to report theer is the darin outside is overflowing on Hart Street neaar Harmn Street,RT021,NONE,NONE,False,QUEENS,True,train,True
+There's the sewer grate is blocked and water is pooling in front of 809 Delafield Avenue for a week now,RT021,NONE,NONE,True,STATEN ISLAND,False,train,True
+"I see the drain outside is overflowing at 175 Field Place, the bronx",RT021,NONE,NONE,True,BRONX,False,val,True
+"Okya so the sewer grate is blocked and water is poooling right noww, it''s dangerosu",RT021,NONE,NONE,False,MANHATTAN,True,train,True
+"Um can you send someone, we have the drain is clogged with leaves outside my building on Gurley Avenue in SI",RT021,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Yeah please help, there's a clogged catch basin on East 17 Street near East 35 Street, it's dangerous",RT021,NONE,NONE,True,BROOKLYN,True,train,True
+"Hello, there's the drain outside is overflowing, SI all day",RT021,NONE,NONE,True,STATEN ISLAND,False,train,True
+yeah there is the sewer grate is blocked and water is pooling outside my building on sylvia street in staten island since last night,RT021,NONE,NONE,True,STATEN ISLAND,True,val,True
+"Yeah hi, there is the storm drain is blocked, it's dangerous",RT021,NONE,NONE,False,QUEENS,True,train,True
+i'd like to report there's the drain is clogged with leaves,RT021,NONE,NONE,False,BRONX,False,train,True
+uh i want to repot i see a clogged cathc basin,RT021,NONE,NONE,False,BROOKLYN,True,train,True
+"Can you send someone, there's the storm drain is blocked outside my building on Columbus Avenue, it's dangerous crap",RT021,NONE,MILD,True,MANHATTAN,False,train,True
+"good morning, the drain is clogged with leaves in front of 56 perry avenue for two days, it's dangerous",RT021,NONE,NONE,True,STATEN ISLAND,False,train,True
+"like please help, there is a clogged catch basin in front of 125 east 103 street",RT021,NONE,NONE,True,MANHATTAN,True,train,True
+"Hello, we have a clogged catch basin on East 23 Street near Myrtle Avenue, please send someone",RT021,NONE,NONE,True,BROOKLYN,False,train,True
+"Hi, i see the drain is cloggde wth leaves in manhattan",RT021,NONE,NONE,False,MANHATTAN,False,train,True
+Okay so there is a clogged catch basin in bk,RT021,NONE,NONE,True,BROOKLYN,True,train,True
+Um there is a clogged catch basn,RT021,NONE,NONE,False,STATEN ISLAND,True,val,True
+"can you sned someone, the sewer grate is blocked and water is poolinng in front of 36 austin avenue in staen island",RT021,NONE,NONE,False,STATEN ISLAND,False,train,True
+"the drain outside is overflowing at the corner of washington avenue and bartow avenue, staten island bloody",RT021,NONE,MILD,True,STATEN ISLAND,False,train,True
+i'd like to report we have the drain outside is overflowing in front of 22 avenue in queens please. you idiot never fix anything,RT021,NONE,MILD,True,QUEENS,False,train,True
+so there is a cloggde catch basin outtside my buildding on louis nine bouleavrd in bonx thakns,RT021,NONE,NONE,False,BRONX,True,train,True
+"I'd like to report the sewer grate is blocked and water is pooling, bk since yesterday please",RT021,NONE,NONE,True,BROOKLYN,False,val,True
+uh the drain is clogged with leaves,RT021,NONE,NONE,False,BROOKLYN,True,train,True
+"Um hi, i see the sewer grate is blocked and water is pooling",RT021,NONE,NONE,False,BROOKLYN,True,train,True
+"There's the drani outside is overfllowing in front of 408 Seneca Avenue, queens thanks",RT021,NONE,NONE,False,QUEENS,False,val,True
+"hell,o we have the sweer grate is bocked and water is poooling outside my building on west 94 street, the city, itt's dangerous. you fuck neevr fix anyhting",RT021,NONE,SEVERE,False,MANHATTAN,False,train,True
+"so please help, we have the drain outside is overflowing. you bitch never fix anything",RT021,NONE,SEVERE,False,BRONX,True,train,True
+We have the storm drain is blocked in front of 71 Lafayette Avenue in brooklyn for two days. you crappy never fix anything,RT021,NONE,MILD,True,BROOKLYN,False,val,True
+"so i want to report there is the intersection is under watre on grand concourse near hering avene in the bonx all daay, pleae snd someone",RT022,NONE,NONE,False,BRONX,True,train,True
+The whole street is flooded at 1177 Grinnell Place in bronx. you dammit never fix anything,RT022,NONE,MILD,True,BRONX,False,train,True
+uh i'd like to report water is flooding the road please,RT022,NONE,NONE,True,BRONX,True,train,True
+"Please help, the whole street is flooded on Steuben Avenue near Radcliff Avenue",RT022,NONE,NONE,True,BRONX,False,train,True
+I'd like to report we have water is flooding the road for two days,RT022,NONE,NONE,True,QUEENS,False,val,True
+"Hlelo, i see the whole street is flooded thaks",RT022,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Can you send someone, we have the whole street is flooded",RT022,NONE,NONE,True,STATEN ISLAND,False,train,True
+I want to report i see flooding after the rain at 150 Beach 134 Street,RT022,NONE,NONE,True,QUEENS,False,train,True
+I want to report we have flooding after the rain in brooklyn,RT022,NONE,NONE,True,BROOKLYN,False,train,True
+"there is street flooding at 41 drive since yesterday, it's dangerous",RT022,NONE,NONE,True,QUEENS,False,val,True
+"hello, we have street flooding outside my building on linden street in queens",RT022,NONE,NONE,True,QUEENS,False,train,True
+"Please help, flooding after the rain at 722 Bay Street in SI",RT022,NONE,NONE,True,STATEN ISLAND,False,val,True
+I see street flooding at 1829 Southern Boulevard,RT022,NONE,NONE,True,BRONX,False,train,True
+"So can you sned someone, tehre is floodng after the rain at the cornner of Benton Aevnue and Woolley Avenue in SI all day",RT022,NONE,NONE,False,STATEN ISLAND,True,train,True
+"god mroning, there's flooding afer the rain since laast night",RT022,NONE,NONE,False,QUEENS,False,val,True
+"hi, there's streeet flooidng in frront of 277 deaal court in stateen island all day pease",RT022,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Like can you send someone, there's water is flooding the road at the corner of Riverside Drive and West 164 Street",RT022,NONE,NONE,True,MANHATTAN,True,train,True
+"Hi, therre's the intersection is under water, queesn for two days shit",RT022,NONE,SEVERE,False,QUEENS,False,train,True
+"Can you send someone, i see the whole street is flooded since last night, please send someone",RT022,NONE,NONE,True,QUEENS,False,train,True
+"Hllo, the intersection is under water in froont of 62 Soth 5 Street for a weeek now",RT022,NONE,NONE,False,BROOKLYN,False,train,True
+"hello, we have the intersection is under water at the corner of victory boulevard and john street",RT022,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Yeah hi, i see the whole street is flooded on East 182 Street near Third Avenue in the bronx",RT022,NONE,NONE,True,BRONX,True,train,True
+"Okay so hi, i see flooding after the rain",RT022,NONE,NONE,True,BRONX,True,train,True
+Like I'd like to report there is street flooding outside my building on Stanley Avenue please,RT022,NONE,NONE,True,STATEN ISLAND,True,train,True
+i see the whole street is flooded,RT022,NONE,NONE,True,BRONX,False,train,True
+I see flooding after the rain,RT022,NONE,NONE,True,BROOKLYN,False,train,True
+"hello, we have water is flooing the road in front of 15335 dcatur steret",RT022,NONE,NONE,False,QUEENS,False,train,True
+"can you send someone, there's street flooding in front of 87 bay terrace, staten island. you incompetent never fix anything",RT022,NONE,MILD,True,STATEN ISLAND,False,train,True
+"Hi, theree's flooding after the rain at the conrer of Faiel Street and Wheeler Avenuee, the bronx all day",RT022,NONE,NONE,False,BRONX,False,train,True
+"hello, there's the intersection is under water in the bronx thanks",RT022,NONE,NONE,True,BRONX,False,train,True
+"please hlp, therre is flooding after the rani outside my building on pak terarce west in manhttan for a week now, this is damit",RT022,NONE,MILD,False,MANHATTAN,False,train,True
+There is street flooding at 28 Dunbar Street,RT022,NONE,NONE,True,STATEN ISLAND,False,train,True
+i want to report i see flooding after the rain in front of 772 east 182 street all day,RT022,NONE,NONE,True,BRONX,False,val,True
+"The whole street is flooded at 422 Ocean View Avenue in brooklyn for a week now, it's dangerous",RT022,NONE,NONE,True,BROOKLYN,False,val,True
+Um I wnat to rport theree's flooding after the rain in fronnt of 62 Road for a week now. you dan never fix anything,RT022,NONE,MILD,False,QUEENS,True,train,True
+"please help, we have streeet flooding at 20 northhfield court in saten island for two dyas, i'ts danegrous screw",RT022,NONE,MILD,False,STATEN ISLAND,False,train,True
+"can you send someone, there's water is flooding the road on street near palmetto street in queens",RT022,NONE,NONE,True,QUEENS,False,val,True
+"Can you send someone, there is water is flooding the road at 511 West 169 Street in manhattan all day crap",RT022,NONE,MILD,True,MANHATTAN,False,train,True
+"Please help, flooding after the rain since this morning",RT022,NONE,NONE,True,MANHATTAN,False,train,True
+"Pleease hlp, i see street flooding",RT022,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Can you sennd smoeone, a sewr backp in queens. you heell nevver fix anything",RT023,NONE,MILD,False,QUEENS,False,val,True
+yeah i'd like to report there's a manhole overflowing at 80 scarboro avenue please,RT023,NONE,NONE,True,STATEN ISLAND,True,train,True
+we have a sewer backup on quintard street near college avenue,RT023,NONE,NONE,True,STATEN ISLAND,False,train,True
+"hi, i see the sewer is backing up into my basement in brooklyn right now",RT023,NONE,NONE,True,BROOKLYN,False,train,True
+I wannt to rport i see a sewer backup in front of 1028 Wilcox Avnue,RT023,NONE,NONE,False,BRONX,False,val,True
+"Can you send someone, sewage coming up from the manhole on Lincoln Avenue near Sleight Avenue, SI since last night, it's dangerous",RT023,NONE,NONE,True,STATEN ISLAND,False,val,True
+i want to report a mnhole oveflowing motherfucker,RT023,NONE,SEVERE,False,STATEN ISLAND,False,train,True
+Um a manhole overflowing in bronx,RT023,NONE,NONE,True,BRONX,True,train,True
+"can you send someone, i see a manhole overflowing",RT023,NONE,NONE,True,BROOKLYN,False,train,True
+"Good morning, there's the sewer is backing up into my basement in front of 133 Rockville Avenue please",RT023,NONE,NONE,True,STATEN ISLAND,False,train,True
+"good morning, there is a manhole overflowing at the corner of franklin avenue and college avenue",RT023,NONE,NONE,True,BRONX,False,train,True
+"hi, there is sewage comign up frmo the mahole at 244 east 46 strreet right now",RT023,NONE,NONE,False,MANHATTAN,False,train,True
+"I'd lkie to report sweage coming up from the manohle in fronnt of 160 Becah 6 Stree, thiis is stupid",RT023,NONE,MILD,False,QUEENS,False,train,True
+Uh I want to report i see a manhole overflowing for two days useless,RT023,NONE,MILD,True,BRONX,True,train,True
+"um hello, we have a manhole overflowing in front of 94 street, thiis is piss",RT023,NONE,MILD,False,QUEENS,True,train,True
+"Hi, a manhole overflowng ouside my buiilding on East 5 Street",RT023,NONE,NONE,False,MANHATTAN,False,val,True
+"Hello, raw sewage on the street please",RT023,NONE,NONE,True,BROOKLYN,False,train,True
+"um hello, the sewer is backing up into my basement on avenue near seneca avenue since yesterday",RT023,NONE,NONE,True,QUEENS,True,train,True
+um i want to report there is a manhole overflowing thanks,RT023,NONE,NONE,True,QUEENS,True,train,True
+"uh hi, raw sewage on the street since this morning",RT023,NONE,NONE,True,BROOKLYN,True,train,True
+The sewer is backing up into my basement,RT023,NONE,NONE,True,BRONX,False,train,True
+i'd like to report a sewer backup,RT023,NONE,NONE,True,STATEN ISLAND,False,train,True
+"please help, i see raw sewage on the street at 51 mountainview avenue, staten island since this morning",RT023,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Please help, raw sewage on the street for a week now",RT023,NONE,NONE,True,QUEENS,False,train,True
+"good morning, theres the seer is backing up ino my basement outtside my building on wset 154 street in the ciy thaanks",RT023,NONE,NONE,False,MANHATTAN,False,train,True
+Uh I want to report a sewer backup at 3479 Fort Independence Street in the bronx,RT023,NONE,NONE,True,BRONX,True,val,True
+"Um I want to report we have a manhole overflowing outside my building on Street in queens, please send someone",RT023,NONE,NONE,True,QUEENS,True,train,True
+"please help, a sewer backup outside my building on 7 avenue",RT023,NONE,NONE,True,MANHATTAN,False,train,True
+"Please help, there's raw sweage on the street at the corner of 5 Avene and Seamman Avenue",RT023,NONE,NONE,False,MANHATTAN,False,train,True
+"Can you send someone, there is a manhole overflowing outside my building on Benson Avenue thanks",RT023,NONE,NONE,True,BROOKLYN,False,train,True
+"Hello, a manhole overflowing on Avenue T near Sackett Street, it's dangerous",RT023,NONE,NONE,True,BROOKLYN,False,train,True
+The sewre is bacing up into my basement at the corner of 3 Avenue and Concoruse Village West please,RT023,NONE,NONE,False,BRONX,False,train,True
+"Like good morning, there's the sewer is backing up into my basement in bk",RT023,NONE,NONE,True,BROOKLYN,True,train,True
+"So there's a sewer backup at the corner of West Kingsbridge Road and Dewey Avenue, bronx",RT023,NONE,NONE,True,BRONX,True,train,True
+"please help, sewage coming up from the manhole at 120 beach 19 street in queens",RT023,NONE,NONE,True,QUEENS,False,train,True
+"Hello, sewage coming up from the manhole, it's dangerous",RT023,NONE,NONE,True,QUEENS,False,train,True
+"can you send someone, there's sewage coming up from the manhole on kenilworth avenue near kenilworth avenue in staten island since yesterday please",RT023,NONE,NONE,True,STATEN ISLAND,False,train,True
+"can you send someone, sewage coming up from the manhole all day please",RT023,NONE,NONE,True,MANHATTAN,False,train,True
+"so can you send someone, there is a manhole overflowing outside my building on halletts point, please send someone",RT023,NONE,NONE,True,QUEENS,True,train,True
+"hi, we have a sewer backup on seagirt avenue near decatur street",RT023,NONE,NONE,True,QUEENS,False,train,True
+Someone opened the hydrant at the corner of 15 Street and 14 Avenue,RT024,NONE,NONE,True,BROOKLYN,False,train,True
+I want to report there's a fire hydrant running in front of 1250 74 Street,RT024,NONE,NONE,True,BROOKLYN,False,val,True
+"Can you send someone, there's a hydrant spraying water at 218 Lafayette Avenue in staten island all day",RT024,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Uh can you send someone, we have the hydrant is leaking",RT024,NONE,NONE,False,BROOKLYN,True,train,True
+"Okay so hi, we have the hydrant is leaking, this is wtf",RT024,NONE,SEVERE,False,MANHATTAN,True,train,True
+"Can you snd somene, there is someoone opeed the hydrant since ths morinng",RT024,NONE,NONE,False,MANHATTAN,False,train,True
+"hello, there is a hydrant spraying water for a week now, it's dangerous",RT024,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Can you sedn someone, i see an open fire hydrant on Avvenue nar Street in queeens riight now thanks",RT024,NONE,NONE,False,QUEENS,False,train,True
+"can you send someone, i see a hydrant spraying water at the corner of montgomery street and east 18 street, bk",RT024,NONE,NONE,True,BROOKLYN,False,train,True
+i'd like to report there's a fire hydrant running in queens,RT024,NONE,NONE,True,QUEENS,False,train,True
+"So please help, a hydrant spraying water in front of 1405 Coney Island Avenue, brooklyn all day thanks, this is fucked",RT024,NONE,SEVERE,True,BROOKLYN,True,train,True
+"can you send someone, there is someone opened the hydrant at 73 avenue, it's dangerous",RT024,NONE,NONE,True,QUEENS,False,val,True
+"I want to report there's a hydrant spraying water, please send someone",RT024,NONE,NONE,False,BRONX,False,train,True
+"Yeeah good moring, tehre's a hydrnt spraynig waer at the corner of West 164 Street and East 77 Streeet in manhattan for a week now daammit",RT024,NONE,MILD,False,MANHATTAN,True,train,True
+"Hi, a hydrant spraing wter please",RT024,NONE,NONE,False,QUEENS,False,train,True
+"hi, i see the hydrant is leaking outside my building on carroll street",RT024,NONE,NONE,True,BROOKLYN,False,train,True
+"Please help, someone opened the hydrant at the corner of Reid Avenue and Utah Street",RT024,NONE,NONE,True,STATEN ISLAND,False,train,True
+"like hi, there's someone opened the hydrant on grand concourse near cruger avenue, the bronx",RT024,NONE,NONE,True,BRONX,True,train,True
+"uh please help, a fier hydrant running",RT024,NONE,NONE,False,STATEN ISLAND,True,train,True
+"Uh I want to report someone opened the hydrant outside my building on Josephine Street, staten island",RT024,NONE,NONE,True,STATEN ISLAND,True,train,True
+"please help, someone opened the hydrant in staten island since this morning thanks",RT024,NONE,NONE,True,STATEN ISLAND,False,train,True
+"There is someone opened the hydrant outside my building on West 33 Street in the city since last night, please send someone",RT024,NONE,NONE,True,MANHATTAN,False,train,True
+"i'd like to report a fire hydrant running in queens, please send someone",RT024,NONE,NONE,True,QUEENS,False,train,True
+Yeah I want to report we have the hydrant is leaking on East 138 Street near Throgs Neck Expressway in the bronx thanks,RT024,NONE,NONE,True,BRONX,True,train,True
+"Hello, we haave a fiire hydrant running on Stecher Street near Westervelt Aevnue",RT024,NONE,NONE,False,STATEN ISLAND,False,train,True
+"I want to report a hydrant spraying water, manhattan",RT024,NONE,NONE,True,MANHATTAN,False,train,True
+"can you send someone, a fire hyrdant runing fucked",RT024,NONE,SEVERE,False,BRONX,False,train,True
+"i'd like to report i see someone opened the hydrant, queens",RT024,NONE,NONE,True,QUEENS,False,train,True
+i'd like to report a fire hydrant running at the corner of 8 avenue and sullivan street,RT024,NONE,NONE,True,MANHATTAN,False,val,True
+"like good morning, there's a hydrant spraying water in brooklyn please",RT024,NONE,NONE,True,BROOKLYN,True,train,True
+So I want to report an open fire hydrant please,RT024,NONE,NONE,False,BROOKLYN,True,train,True
+"Can you send someone, a fire hydrant runnig at the corner of Avennue and Stret, queens",RT024,NONE,NONE,False,QUEENS,False,train,True
+"Like please help, a hydrant spraying water",RT024,NONE,NONE,False,MANHATTAN,True,val,True
+"hello, a fire hydrant rnning at 84 street",RT024,NONE,NONE,False,QUEENS,False,train,True
+"Hello, a fire hydrant running",RT024,NONE,NONE,False,MANHATTAN,False,train,True
+"plese hel,p someone opened the hdrant all day thanks",RT024,NONE,NONE,False,QUEENS,False,train,True
+there's someone opened the hydrant in queens,RT024,NONE,NONE,True,QUEENS,False,val,True
+"Uh hi, a hydrant spraying water outside my building on Van Duzer Street in SI",RT024,NONE,NONE,True,STATEN ISLAND,True,train,True
+i see a fire hydrant running at the corner of bombay street and white oak lane,RT024,NONE,NONE,True,STATEN ISLAND,False,train,True
+"yeah can you send someone, i see someone opened the hydrant since last night",RT024,NONE,NONE,True,BRONX,True,train,True
+i want to report i see no water pressure in the city,RT025,NONE,NONE,True,MANHATTAN,False,train,True
+"uh hi, very low water pressure outside my building on kingsbridge avenue in the bronx please, this is piss",RT025,NONE,MILD,True,BRONX,True,train,True
+"Can you send someone, very low water pressure in bronx",RT025,NONE,NONE,True,BRONX,False,train,True
+"Um I want to report very low water pressure since yesterday, it's dangerous",RT025,NONE,NONE,True,QUEENS,True,train,True
+"Uh hllo, we have no waer pressure at the corner of 61 Strreet and Asfhord Streeet, brookyn",RT025,NONE,NONE,False,BROOKLYN,True,train,True
+"Hello, i see dirty water coming out of the faucet on West 127 Street near East 111 Street",RT025,NONE,NONE,True,MANHATTAN,False,train,True
+"pleae help, there's brwon water frrom the tap",RT025,NONE,NONE,False,BRONX,False,train,True
+"uh please help, dirty water coming out of the faucet at the corner of road and beach 9 street",RT025,NONE,NONE,True,QUEENS,True,train,True
+the tap water smells weird in bk,RT025,NONE,NONE,True,BROOKLYN,False,val,True
+we have no water pressure at the corner of kramer street and gannon avenue north in staten island since this morning,RT025,NONE,NONE,True,STATEN ISLAND,False,train,True
+"uh hi, i see very low water pressure all day",RT025,NONE,NONE,True,BRONX,True,train,True
+We have dirty water coming out of the faucet at the corner of Forbell Street and 40 Street please,RT025,NONE,NONE,True,BROOKLYN,False,train,True
+"we have brown water from the tap on 71 street near 4 avenue, brooklyn",RT025,NONE,NONE,True,BROOKLYN,False,train,True
+I'd like to report i see the tap water smells weird in the bronx,RT025,NONE,NONE,True,BRONX,False,train,True
+"pease heelp, there's browwn water from the tap",RT025,NONE,NONE,False,QUEENS,False,val,True
+i'd like to report i see dirty water coming out of the faucet in front of 35 washington street,RT025,NONE,NONE,True,BROOKLYN,False,train,True
+"uh please help, there is very low water pressure on east 14 street near west 57 street, the city for a week now",RT025,NONE,NONE,True,MANHATTAN,True,train,True
+"Uh we have the tap water smells weird at the corner of Halletts Point and Stockholm Street in queens for two days, it's dangerous",RT025,NONE,NONE,True,QUEENS,True,train,True
+"Yeah can you send someone, we have very low water pressure at the corner of Honeywell Avenue and Saint Pauls Place, the bronx please",RT025,NONE,NONE,True,BRONX,True,train,True
+"good morning, we have no water pressure thanks",RT025,NONE,NONE,False,BROOKLYN,False,train,True
+"Can you send someone, there is dirty water coming out of the faucet at the corner of East 124 Street and West 57 Street in the city, please send someone",RT025,NONE,NONE,True,MANHATTAN,False,train,True
+"Good morning, i see brown water from the tap on Nostrand Avenue near Linden Boulevard in bk since last night. you idiots never fix anything",RT025,NONE,MILD,True,BROOKLYN,False,train,True
+"Can you send someone, i see brown water from the tap at 236 Hart Boulevard in staten island thanks",RT025,NONE,NONE,True,STATEN ISLAND,False,train,True
+No water pressure in front of 1746 Madison Street in queens thanks,RT025,NONE,NONE,True,QUEENS,False,train,True
+"good morning, there is dirty water coming out of the faucet on notus avenue near milburn street since this morning",RT025,NONE,NONE,True,STATEN ISLAND,False,train,True
+i want to report there is no water pressure,RT025,NONE,NONE,False,BROOKLYN,False,train,True
+"Good morning, very low water pressure outside my building on West 142 Street in manhattan right now, please send someone",RT025,NONE,NONE,True,MANHATTAN,False,train,True
+"Like I want to report there is no water pressure on Avenue near Street, it's dangerous",RT025,NONE,NONE,True,QUEENS,True,train,True
+"Please help, there is vry low water presssure in fornt of 357 Port Richmmond Avenue",RT025,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Hi, there's brown water frrom the tap at the croner of Benzier Aveenue and Shearden Avenue, SI sine this morning, please send someone",RT025,NONE,NONE,False,STATEN ISLAND,False,train,True
+"so hi, we hae no water pressure on alexander aveue near stry avenue, please sed somenoe pissd",RT025,NONE,MILD,False,BRONX,True,train,True
+"Good morning, we have very low water pressure at the corner of Park Avenue and Terrace View Avenue, the city, please send someone",RT025,NONE,NONE,True,MANHATTAN,False,train,True
+"Can you send someone, we have brown water from the tap",RT025,NONE,NONE,False,STATEN ISLAND,False,train,True
+"So hi, we have dirty water coming out of the faucet at 790 Nugent Avenue in staten island please",RT025,NONE,NONE,True,STATEN ISLAND,True,train,True
+"hello, i see very low water pressure",RT025,NONE,NONE,False,MANHATTAN,False,train,True
+Like I'd like to report ther's the tap watr smmells werid at 9 Jacobus Placce,RT025,NONE,NONE,False,BRONX,True,val,True
+um i'd like to report there is very low water pressure in front of 460 beach 125 street in queens,RT025,NONE,NONE,True,QUEENS,True,train,True
+Uh I'd like to report there's brown water from the tap on Mosel Avenue near Ada Drive in staten island,RT025,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Uh can you seend smeone, we hae no water presssure outside my building on Ashford Street",RT025,NONE,NONE,False,BROOKLYN,True,train,True
+brown water from the tap outside my building on stanhope street in bk right now,RT025,NONE,NONE,True,BROOKLYN,False,train,True
+Yeah i see the recycling was not collected outside my building on Commercial Street right now,RT040,NONE,NONE,True,BROOKLYN,True,train,True
+"please help, we have my garbage was not picked up in bk for two days, please send someone",RT040,NONE,NONE,True,BROOKLYN,False,train,True
+they skipped our pickup outside my building on 16 street in bk thanks shit,RT040,NONE,SEVERE,True,BROOKLYN,False,train,True
+"the recycling was not collected on grand avenue near jerome avenue, the bronx please",RT040,NONE,NONE,True,BRONX,False,train,True
+I want to report i see bulk trash left behind by the sanitation truck in brooklyn all day,RT040,NONE,NONE,True,BROOKLYN,False,train,True
+"hello, my garbage was not picked up on 17 avenue near avenue x in bk",RT040,NONE,NONE,True,BROOKLYN,False,train,True
+"I'd like to report there's they skipped our pickup on East 91 Street near East 23 Street, bk",RT040,NONE,NONE,True,BROOKLYN,False,train,True
+"um we have my garbage was not picked up on east 234 street near clarke place east in bronx, please send someone",RT040,NONE,NONE,True,BRONX,True,train,True
+"hello, missed trash collection at 869 fairmont place in the bronx",RT040,NONE,NONE,True,BRONX,False,train,True
+i want to report there is they skipped our pickup in front of 95 avenue since this morning,RT040,NONE,NONE,True,QUEENS,False,val,True
+"there is my garbage was not picked up on avenue near avenue, queens for a week now. you crap never fix anything",RT040,NONE,MILD,True,QUEENS,False,train,True
+"okay so can you send someone, there is my garbage was not picked up in front of 189 hampton green in staten island since yesterday",RT040,NONE,NONE,True,STATEN ISLAND,True,train,True
+"okay so please help, the recycling was not collected, bk right now, it's dangerous",RT040,NONE,NONE,True,BROOKLYN,True,val,True
+"Hi, there's my garbage was not picked up at 143 West 140 Street in the city",RT040,NONE,NONE,True,MANHATTAN,False,train,True
+i want to report we have missed trash collection since yesterday,RT040,NONE,NONE,True,QUEENS,False,train,True
+"hi, they skipped our pickup in front of 44 drive, queens",RT040,NONE,NONE,True,QUEENS,False,train,True
+"Can you send someone, there is they skipped our pickup in front of 663 Crescent Avenue in the bronx, please send someone",RT040,NONE,NONE,True,BRONX,False,val,True
+there is they skipped our pickup at 365 west 22 street in the city,RT040,NONE,NONE,True,MANHATTAN,False,train,True
+"Okay so pleasse help, they sikpped our pickup at the crner of Wets 207 Street and Est 13 Street in the city",RT040,NONE,NONE,False,MANHATTAN,True,train,True
+i want to report there is they skipped our pickup on east 34 street near east 2 street in the city all day please,RT040,NONE,NONE,True,MANHATTAN,False,train,True
+"i see missed trash collection at 30 avenue, queens, please send someone",RT040,NONE,NONE,True,QUEENS,False,train,True
+"um hi, i see bulk trash left behind by the sanitation truck at 4607 park avenue in bronx",RT040,NONE,NONE,True,BRONX,True,val,True
+"yeah i'd like to report they skipped our pickup outside my building on west 235 street, the bronx since last night please",RT040,NONE,NONE,True,BRONX,True,val,True
+"Thee's the recycling was not cllected at the coorner of 1 Aenue and West 103 Strreet, the cityy. you fuck never fix anythinng",RT040,NONE,SEVERE,False,MANHATTAN,False,train,True
+"Hello, there is the recycling was not collected in front of 1118 Findlay Avenue all day",RT040,NONE,NONE,True,BRONX,False,train,True
+"so hello, i see missed trash collection at 539 west 179 street in the city, please send someone",RT040,NONE,NONE,True,MANHATTAN,True,train,True
+"good morning, we have they skipped our pickup in si since this morning thanks",RT040,NONE,NONE,True,STATEN ISLAND,False,val,True
+"can you send someone, i see the recycling was not collected at 11 new street, please send someone",RT040,NONE,NONE,True,MANHATTAN,False,val,True
+"Hi, we hve missed trash collection in qeuens",RT040,NONE,NONE,False,QUEENS,False,train,True
+i want to report missed trash collection please,RT040,NONE,NONE,False,QUEENS,False,val,True
+"like can you send someone, there's they skipped our pickup at the corner of avenue and avenue all day, please send someone",RT040,NONE,NONE,True,QUEENS,True,train,True
+"Good morning, my garbage was not picked up",RT040,NONE,NONE,False,STATEN ISLAND,False,train,True
+"yeeah hi, there's the recycling was not collected at 25 poetts circle in si",RT040,NONE,NONE,False,STATEN ISLAND,True,val,True
+i want to report we have missed trash collection for two days,RT040,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hi, we have the recycling was not collected outside my building on West 83 Street, the city please",RT040,NONE,NONE,True,MANHATTAN,False,train,True
+Like the recycling was not collected outside my building on Avenue L,RT040,NONE,NONE,True,BROOKLYN,True,train,True
+"so plesae hep, missed trash collection on west 25 street nera barclay strreet thans",RT040,NONE,NONE,False,MANHATTAN,True,train,True
+"please help, i see missed trash collection",RT040,NONE,NONE,False,BRONX,False,train,True
+"Okay so hi, my garbage was not picked up at the corner of Irving Avenue and Avenue, this is asshole",RT040,NONE,SEVERE,True,QUEENS,True,train,True
+i see missed trash collection at the corner of bath avenue and schaefer street,RT040,NONE,NONE,True,BROOKLYN,False,train,True
+"Please help, i see a pile of construction debris dumped in front of 1066 78 Street in bk since this morning, it's dangerous",RT041,NONE,NONE,True,BROOKLYN,False,train,True
+"So good morning, old furniture dumped on the corner at 261 East 202 Street in the bronx. you motherfucker never fix anything",RT041,NONE,SEVERE,True,BRONX,True,train,True
+"Please help, there's someone dumped a mattress on the sidewalk at 24 Rockville Avenue, SI, please send someone",RT041,NONE,NONE,True,STATEN ISLAND,False,train,True
+I want to reoprt we haave a pile of construction debris dumpd at 814 East 181 Street for a wek now,RT041,NONE,NONE,False,BRONX,False,val,True
+illegal dumping at 140 metroolitan aveneu sinnce lasst night,RT041,NONE,NONE,False,BRONX,False,train,True
+"Uh can you snd someone, a pile of construcction debris dumped on Delafield Avenue near Depppe Place for a week now",RT041,NONE,NONE,False,STATEN ISLAND,True,val,True
+"um pleaase help, we have old furnitture dumped on the corrner",RT041,NONE,NONE,False,QUEENS,True,train,True
+"There is someone dumped a mattress on the sidewalk on Greene Avenue near Road in queens, please send someone",RT041,NONE,NONE,True,QUEENS,False,val,True
+"Hi, illegal dumping at the corner of Western Avenue and Burgher Avenue",RT041,NONE,NONE,True,STATEN ISLAND,False,train,True
+Um I'd like to reoprt we have someone dumed a mattreess on the sidewlk ouutside my builing on Avenue useless,RT041,NONE,MILD,False,QUEENS,True,train,True
+"i want to report illegal dumping in front of 2124 himrod street in queens, it's dangerous",RT041,NONE,NONE,True,QUEENS,False,train,True
+i want to report there's people dumping tires in bk since last night,RT041,NONE,NONE,True,BROOKLYN,False,train,True
+"Like I want to report illegal dumping at the corner of Grand Concourse and Belmont Avenue, the bronx please",RT041,NONE,NONE,True,BRONX,True,train,True
+there is illegal dumping in staten island all day,RT041,NONE,NONE,True,STATEN ISLAND,False,val,True
+"can you send someonee, someone dmped a matterss on the sidewalk at the crner of lafaayette street and tiemann place in the city",RT041,NONE,NONE,False,MANHATTAN,False,train,True
+"Um goood morning, there is old furnniture dumped on the conrer at the coner of Ctiy Islnd Avenue and Maron Avenue in bronx for two dys",RT041,NONE,NONE,False,BRONX,True,train,True
+liek i wnat to report a piile of contruction debris dupmed at 173 st puals avenue in stateen island,RT041,NONE,NONE,False,STATEN ISLAND,True,train,True
+illegal dumping,RT041,NONE,NONE,False,BRONX,False,train,True
+"Can you send someone, people dumping tires, bk for two days",RT041,NONE,NONE,True,BROOKLYN,False,train,True
+i want to report there is people dumping tires,RT041,NONE,NONE,False,BROOKLYN,False,train,True
+"uh please help, we have old furniture dumped on the corner, queens",RT041,NONE,NONE,True,QUEENS,True,train,True
+"okay so i'd lke to rport i see illeggal dumping, ths is damn",RT041,NONE,MILD,False,BROOKLYN,True,train,True
+Someone dumped a mattress on the sidewalk on Ocean Avenue near Ocean Avenue in bk since yesterday,RT041,NONE,NONE,True,BROOKLYN,False,val,True
+"we have a pile of construction debris dumped outside my building on woodbine avenue, staten island for two days shitty",RT041,NONE,SEVERE,True,STATEN ISLAND,False,train,True
+"Good morning, i see someone dumped a mattress on the sidewalk at 40 Richman Plaza since this morning",RT041,NONE,NONE,True,BRONX,False,train,True
+"Hello, there is illegal dumping",RT041,NONE,NONE,False,BRONX,False,train,True
+"i want to report illegal dumping at 700 pacific street, bk",RT041,NONE,NONE,True,BROOKLYN,False,train,True
+"Hi, there's old furniture dumped on the corner in front of 4902 11 Avenue, bk all day",RT041,NONE,NONE,True,BROOKLYN,False,train,True
+"like hi, there is a pile of construction debris dumped on willowbrook road near tysen lane in staten island",RT041,NONE,NONE,True,STATEN ISLAND,True,train,True
+"like i want to report a pile of construction debris dumped in front of 794 broadway, this is asshole",RT041,NONE,SEVERE,True,BROOKLYN,True,val,True
+"uh can you send someone, we have old furniture dumped on the corner in front of 3341 reservoir oval for two days",RT041,NONE,NONE,True,BRONX,True,train,True
+"hello, there is someone dumped a mattress on the sidewalk on prospect place near eldert street right now stupid",RT041,NONE,MILD,True,BROOKLYN,False,train,True
+"heello, i see someone dumped a mattres on the sidewalk on west 72 strreet near b aveenue in the city",RT041,NONE,NONE,False,MANHATTAN,False,train,True
+I want to report a pile of construction debris dumped at the corner of West 49 Street and York Avenue,RT041,NONE,NONE,True,MANHATTAN,False,val,True
+We have illegal dumping,RT041,NONE,NONE,False,STATEN ISLAND,False,train,True
+I'd like to report we have old furniture dumped on the corner at the corner of Charles Place and Nugent Avenue in staten island,RT041,NONE,NONE,True,STATEN ISLAND,False,train,True
+"please help, thee's a piel of construction debirs duumped",RT041,NONE,NONE,False,QUEENS,False,train,True
+"i'd like to report i see illegal dumping outside my building on street in queens, this is shit",RT041,NONE,SEVERE,True,QUEENS,False,train,True
+like there's people dumping tires since last night,RT041,NONE,NONE,True,STATEN ISLAND,True,train,True
+There's old furniture dumped on the corner on Soundview Avenue near Bainbridge Avenue in the bronx,RT041,NONE,NONE,True,BRONX,False,train,True
+yeah we have the streeet has not ben swept,RT042,NONE,NONE,False,QUEENS,True,val,True
+"So hi, we have overflowing trash on the sidewalk outside my building on West End Avenue, manhattan",RT042,NONE,NONE,True,MANHATTAN,True,train,True
+"please heelp, i see liter evrywhere sine last night",RT042,NONE,NONE,False,MANHATTAN,False,train,True
+"Can you send someone, there's garbage all over the block, this is bastard",RT042,NONE,SEVERE,False,MANHATTAN,False,train,True
+"i'd like to report we have a dirty street, queens all day",RT042,NONE,NONE,True,QUEENS,False,train,True
+"Hello, there is litter everywhere outside my building on Cebra Avenue in staten island",RT042,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hllo, therre is garbage all oveer the block, SI",RT042,NONE,NONE,False,STATEN ISLAND,False,train,True
+"we have the street has not been swept outside my building on niles place since last night, please send someone",RT042,NONE,NONE,True,STATEN ISLAND,False,train,True
+"i waant to repotr we have a dirty street at 246 reid avenue, si for two das",RT042,NONE,NONE,False,STATEN ISLAND,False,train,True
+there is overflowing trash on the sidewalk in front of 916 east 98 street in brooklyn,RT042,NONE,NONE,True,BROOKLYN,False,train,True
+"Hi, litter everywhere at 170 Forsyth Street, this is screw",RT042,NONE,MILD,True,MANHATTAN,False,train,True
+"can you send someone, there's the street has not been swept at 65 street. you dammit never fix anything",RT042,NONE,MILD,True,QUEENS,False,train,True
+i see a dirty street in si,RT042,NONE,NONE,True,STATEN ISLAND,False,train,True
+"pleasse hepl, overlfowing trash on the sidwalk in staten isalnd",RT042,NONE,NONE,False,STATEN ISLAND,False,train,True
+I'd like to report i see a dirty strete at 2839 Wilkinson Avene in the broonx please,RT042,NONE,NONE,False,BRONX,False,train,True
+"Good morning, i see the srteet has not been swept at the corner of Chseter Sttreet and Graant Aevnue right now",RT042,NONE,NONE,False,BROOKLYN,False,train,True
+"Hello, there's garbage all over the block in bronx, this is bitch",RT042,NONE,SEVERE,True,BRONX,False,train,True
+i'd like to report we have the street has not been swept outside my building on bradley avenue in si,RT042,NONE,NONE,True,STATEN ISLAND,False,val,True
+I'd likke to report litteer everywhee in bk righht now,RT042,NONE,NONE,False,BROOKLYN,False,train,True
+"Can you send someone, there is the street has not been swept at the corner of 3 Avenue and Gates Place in bronx for two days",RT042,NONE,NONE,True,BRONX,False,train,True
+"Plesae hepl, thre is garbage all over the block in frot of 41 Bambberger Laen in SI, it's dangerous freaking",RT042,NONE,MILD,False,STATEN ISLAND,False,train,True
+I'd like to report there is a dirty street,RT042,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Hi, i see the street has not been swept, this is dammit",RT042,NONE,MILD,False,STATEN ISLAND,False,train,True
+"Yeah there is garbage all over the block at 402 Onderdonk Avenue right now, it's dangerous",RT042,NONE,NONE,True,QUEENS,True,train,True
+"hello, there's overflowing trash on the sidewalk in front of 5995 shore parkway in brooklyn for a week now. you jackass never fix anything",RT042,NONE,SEVERE,True,BROOKLYN,False,val,True
+"Yeah good morning, we have litter everywhere in front of 267 Rice Avenue in staten island",RT042,NONE,NONE,True,STATEN ISLAND,True,train,True
+"So please help, we have litter everywhere at the corner of Washington Avenue and Bay 34 Street",RT042,NONE,NONE,True,BROOKLYN,True,train,True
+"Uh please help, overflowing trash on the sidewalk in front of 121 West 115 Street in the city all day",RT042,NONE,NONE,True,MANHATTAN,True,train,True
+"a ditry street, please send someoone",RT042,NONE,NONE,False,STATEN ISLAND,False,val,True
+"Good morning, i see overflowing trash on the sidewalk, it's dangerous",RT042,NONE,NONE,False,BROOKLYN,False,train,True
+"Uh please help, we have litter everywhere on Klondike Avenue near Taylor Court, it's dangerous",RT042,NONE,NONE,True,STATEN ISLAND,True,train,True
+Um I want to report we have the street has not been swept,RT042,NONE,NONE,False,STATEN ISLAND,True,train,True
+"like i'd like to report we have a dirty street at the corner of dean street and 38 street, brooklyn right now, this is piss",RT042,NONE,MILD,True,BROOKLYN,True,train,True
+i'd like to report the street has not been swept in front of 1836 stephen street since this morning thanks,RT042,NONE,NONE,True,QUEENS,False,train,True
+"please help, there is garbage all over the block on east 103 street near east 119 street in manhattan",RT042,NONE,NONE,True,MANHATTAN,False,val,True
+There is the street has not been swept outside my building on Wheeler Avenue in SI right now,RT042,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Um I watn to reeport i see a drty steet on Benziger Avenue nar Discala Laane, SI assole",RT042,NONE,SEVERE,False,STATEN ISLAND,True,train,True
+"Overflowing trash on the sidewalk outside my building on East 20 Street, the city, please send someone",RT042,NONE,NONE,True,MANHATTAN,False,val,True
+"Yeah good morning, garbage all over the block thanks",RT042,NONE,NONE,False,MANHATTAN,True,train,True
+"good morning, we haave a drity street on terace nera whitte sands way in queens",RT042,NONE,NONE,False,QUEENS,False,train,True
+"good morning, there is a derelict car at the corner of alaska street and tompkins avenue all day",RT043,NONE,NONE,True,STATEN ISLAND,False,val,True
+"Can you send someone, a derelict car in front of 640 5 Avenue in manhattan",RT043,NONE,NONE,True,MANHATTAN,False,train,True
+"Good morning, there is a burned out vehicle in front of 21 Powers Street for two days. you bitch never fix anything",RT043,NONE,SEVERE,True,BROOKLYN,False,train,True
+there is a derelict car outside my building on dent road,RT043,NONE,NONE,True,STATEN ISLAND,False,train,True
+"can you send someone, a car with no plates and flat tires in front of 3013 eastchester road in the bronx all day",RT043,NONE,NONE,True,BRONX,False,val,True
+"Hello, there is a junk car sitting for weeks in bk please",RT043,NONE,NONE,True,BROOKLYN,False,val,True
+"Hi, a car with no plates and flat tires on College Avenue near East 168 Street",RT043,NONE,NONE,True,BRONX,False,val,True
+I want to report we have a burnned out vehicle on Eat 49 Street nar Sterling Place,RT043,NONE,NONE,False,BROOKLYN,False,val,True
+"Hi, a car with no plates and flat tires outside my building on Place in queens, it's dangerous",RT043,NONE,NONE,True,QUEENS,False,train,True
+"Hello, a burned out vehicle outside my building on Concord Avenue in the bronx thanks",RT043,NONE,NONE,True,BRONX,False,train,True
+"So good morning, i see a junk car sitting for weeks at 30 Mill Road for two days",RT043,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hello, a car wiith no plates and flaat tires outside my building on Joones Strreet in SI, please send someone",RT043,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Hello, i see a burned out vehicle on Street near Road since this morning",RT043,NONE,NONE,True,QUEENS,False,train,True
+"can you snd smoeone, a car wth no paltes and flat tires at 2556 easst 23 streeet",RT043,NONE,NONE,False,BROOKLYN,False,train,True
+i'd like to report there's an abandoned wrecked car with no plates outside my building on road,RT043,NONE,NONE,True,QUEENS,False,train,True
+"hi, i see an abandoned wrecked car with no plates at the corner of street and avenue in queens",RT043,NONE,NONE,True,QUEENS,False,val,True
+"Good morning, i see an abandoned wrecked car with no plates on East 100 Street near East 12 Street please",RT043,NONE,NONE,True,MANHATTAN,False,train,True
+"i'd like to report a car with no plates and flat tires, please send someone",RT043,NONE,NONE,False,BRONX,False,train,True
+"there is a burned out vehicle outside my building on cross bay boulevard, queens. you bullshit never fix anything",RT043,NONE,SEVERE,True,QUEENS,False,train,True
+"Hello, there's a derelict car in front of 2653 Bainbridge Avenue",RT043,NONE,NONE,True,BRONX,False,train,True
+"hi, an abandoned wrecked car with no plates outside my building on harrison avenue",RT043,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hello, i see a car with no plates and flat tires at the corner of Gurley Avenue and Lindbergh Avenue in staten island",RT043,NONE,NONE,True,STATEN ISLAND,False,train,True
+"please help, an abandoned wrecked car with no plates",RT043,NONE,NONE,False,QUEENS,False,val,True
+So there is a burned out vehicle at 24 Street in queens,RT043,NONE,NONE,True,QUEENS,True,train,True
+"please help, we have a junk car sitting for weeks",RT043,NONE,NONE,False,QUEENS,False,train,True
+"Please help, there's a junk car sitting for weeks at the corner of Amboy Road and Taylor Street, it's dangerous",RT043,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Please help, i see an abandoned wrecked car with no plates at 166 Sand Lane",RT043,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hello, a car witth no plates and flat tires at 1466 College Aveue in bronx rigth now, please sed someone",RT043,NONE,NONE,False,BRONX,False,train,True
+I want to report there is a derelict car on Marcy Avenue near 4 Avenue in bk,RT043,NONE,NONE,True,BROOKLYN,False,train,True
+"hi, there is a derelict car in front of 277 rockaway parkway for a week now",RT043,NONE,NONE,True,BROOKLYN,False,train,True
+"Please help, there's a junk car sitting for weeks, bronx since last night, it's dangerous",RT043,NONE,NONE,True,BRONX,False,train,True
+an abandoned wrecked car with no plates at 315 east 111 street in manhattan,RT043,NONE,NONE,True,MANHATTAN,False,train,True
+"so good morning, we have a derelict car",RT043,NONE,NONE,False,STATEN ISLAND,True,train,True
+"uh please help, a car with no plates and flat tires on east 10 street near vermilyea avenue",RT043,NONE,NONE,True,MANHATTAN,True,train,True
+"I'd like to report there is an abandoned wrecked car with no plates, manhattan please",RT043,NONE,NONE,True,MANHATTAN,False,train,True
+"i'd like to report a derelict car in manhattan all day, it's dangerous",RT043,NONE,NONE,True,MANHATTAN,False,train,True
+"Can you send someone, a car with no plates and flat tires",RT043,NONE,NONE,False,STATEN ISLAND,False,val,True
+"So pllease hlep, a jnuk car sitting for weks",RT043,NONE,NONE,False,BRONX,True,train,True
+"hello, a car with no plates and flat tires, please send someone",RT043,NONE,NONE,False,MANHATTAN,False,val,True
+"Good morning, we have a car with no plates and flat tires please",RT043,NONE,NONE,False,BROOKLYN,False,train,True
+"there's ice on the road in front of 525 west 138 street, this is diickhead",RT044,NONE,SEVERE,False,MANHATTAN,False,train,True
+so there's a snow pile blocking the crosswalk at the corner of vernon avenue and hylan boulevard in staten island,RT044,NONE,NONE,True,STATEN ISLAND,True,train,True
+snow not cleared in front of 46 street in brooklyn please wtf,RT044,NONE,SEVERE,True,BROOKLYN,False,train,True
+"Uh I want to repot we have a snow pile blocking the crosswalk, manhattan for two dayss, i's dangerous",RT044,NONE,NONE,False,MANHATTAN,True,train,True
+There is ice on the road,RT044,NONE,NONE,False,BROOKLYN,False,train,True
+"I'd like to report there's the sidewalk is not shoveled, bk right now",RT044,NONE,NONE,True,BROOKLYN,False,train,True
+"can you send someone, there's snow not cleared at 148 beach 148 street since this morning",RT044,NONE,NONE,True,QUEENS,False,train,True
+So i see a snwo piel blocking the crosswalk at the corenr of Coursen Court and Richmond Road in SI,RT044,NONE,NONE,False,STATEN ISLAND,True,val,True
+"Please help, i see a snow pile blocking the crosswalk in staten island",RT044,NONE,NONE,True,STATEN ISLAND,False,train,True
+i'd like to report there's a snow pile blocking the crosswalk at the corner of edinboro road and taylor street,RT044,NONE,NONE,True,STATEN ISLAND,False,val,True
+a snow pile blocking the crosswalk at 1425 51 street in bk for a week now,RT044,NONE,NONE,True,BROOKLYN,False,train,True
+"um hello, we hae the sidewalk is not shoveled in brooklyn, plaese snd soemone, tihs is carp",RT044,NONE,MILD,False,BROOKLYN,True,train,True
+Okay so I want to report i see a snow pile blocking the crosswalk please idiots,RT044,NONE,MILD,False,MANHATTAN,True,train,True
+"Good mornng, there is snow not cleraed in frnt of 212 Heberton Avnue in SI, please send soeone. you shitty neevr fix anything",RT044,NONE,SEVERE,False,STATEN ISLAND,False,train,True
+we have the sidewalk is not shoveled,RT044,NONE,NONE,False,QUEENS,False,val,True
+"pleasse hel, ice on the raod ouside my buliding on occean aevnue. you dammit never fix anything",RT044,NONE,MILD,False,BROOKLYN,False,train,True
+"please help, ice on the road on richmond avenue near hillcrest avenue in si, it's dangerous",RT044,NONE,NONE,True,STATEN ISLAND,False,val,True
+"Good morning, there's the sidewalk is not shoveled at the corner of Grote Street and Pelham Parkway South, the bronx, please send someone",RT044,NONE,NONE,True,BRONX,False,val,True
+"Good morning, ice on the road",RT044,NONE,NONE,False,BRONX,False,train,True
+"plese help, there is the sidewlak is not shoveeled on cromwell avenue nera amboy roaad, si for a week now, this is jackass",RT044,NONE,SEVERE,False,STATEN ISLAND,False,train,True
+"Uh hi, icy sdiewalk in frnot of 173 Bedfoord Avenue in brooklyn for two dyas",RT044,NONE,NONE,False,BROOKLYN,True,train,True
+"Like hi, there's ice on the road at the corner of Longfellow Avenue and 3 Avenue in bronx",RT044,NONE,NONE,True,BRONX,True,train,True
+"Can you send someone, a snow pile blocking the crosswalk outside my building on West 166 Street in the bronx all day please",RT044,NONE,NONE,True,BRONX,False,train,True
+"Hi, ice on the road at the corner of Loring Place South and Bailey Avenue",RT044,NONE,NONE,True,BRONX,False,train,True
+"okay so please help, i see ice on the road",RT044,NONE,NONE,False,BROOKLYN,True,train,True
+"hi, we have ice on the road at the corner of flushing avenue and stephen street in queens",RT044,NONE,NONE,True,QUEENS,False,train,True
+"Okay so I wnt to report theres' the sidewalk is not shhoveled outsie my buidling on Siant Pauls Avenuue, SI, please snd someone",RT044,NONE,NONE,False,STATEN ISLAND,True,train,True
+i see a snow pile blocking the crosswalk at 100 street,RT044,NONE,NONE,True,QUEENS,False,train,True
+"Hi, ice on the road, queens, please send someone",RT044,NONE,NONE,True,QUEENS,False,train,True
+Like I'd like to report there's icy sidewalk for two days,RT044,NONE,NONE,True,BRONX,True,train,True
+"can you send someone, there's icy sidewalk in front of 150 52 street in bk",RT044,NONE,NONE,True,BROOKLYN,False,train,True
+I'd like to report snow not cleared in front of 1675 Metropolitan Avenue in bronx. you bitch never fix anything,RT044,NONE,SEVERE,True,BRONX,False,train,True
+"Okay so can you sned somoene, i see ice on the road at 310 Beahc 31 Streett, queens",RT044,NONE,NONE,False,QUEENS,True,train,True
+"Hi, a snow pile blocking the crosswalk since yesterday. you crap never fix anything",RT044,NONE,MILD,True,BROOKLYN,False,train,True
+like i'd like to report ice on the road at 230 street in queens for a week now,RT044,NONE,NONE,True,QUEENS,True,train,True
+"Um hello, a snow pile blocking the crosswalk",RT044,NONE,NONE,False,BRONX,True,train,True
+"please help, icy sidewalk at the corner of bailey place and bronx boulevard in bronx all day",RT044,NONE,NONE,True,BRONX,False,train,True
+"like can you send someone, we have icy sidewalk in front of 368 fulton street in brooklyn, it's dangerous",RT044,NONE,NONE,True,BROOKLYN,True,train,True
+"We have snow not cleared, manhattan thanks jackass",RT044,NONE,SEVERE,True,MANHATTAN,False,train,True
+"Uh please help, i see a snow pile blocking the crosswalk in front of 2071 Narragansett Avenue, the bronx, please send someone",RT044,NONE,NONE,True,BRONX,True,train,True
+"There is a dead aniimal at 134 Bryannt Avenue, the bonx please",RT045,NONE,NONE,False,BRONX,False,train,True
+"hello, there is a dead rat in front of the building at the corner of east tremont avenue and ellis avenue in bronx all day",RT045,NONE,NONE,True,BRONX,False,train,True
+i'd like to report we have a dead cat on the street at the corner of coney island avenue and berry street,RT045,NONE,NONE,True,BROOKLYN,False,train,True
+"Yeah hi, there's a dead cat on the street at 499 Broadway in manhattan",RT045,NONE,NONE,True,MANHATTAN,True,train,True
+"Um I'd like to report there is a dead bird on the sidewalk in front of 61 Narrows Road North, SI for two days",RT045,NONE,NONE,True,STATEN ISLAND,True,train,True
+"hello, i see a dead cat on the street at the corner of beach 101 street and place for two days",RT045,NONE,NONE,True,QUEENS,False,val,True
+"good morning, there is a dead rat in front of the building in bronx",RT045,NONE,NONE,True,BRONX,False,val,True
+"uh please help, a dead bird on the sidewalk on street near road",RT045,NONE,NONE,True,QUEENS,True,train,True
+"Can you send someone, there's a dead rat in front of the building at 2119 Frederick Douglass Boulevard",RT045,NONE,NONE,True,MANHATTAN,False,train,True
+yeah a daed animal ouside my builing on cropsey avenue,RT045,NONE,NONE,False,BROOKLYN,True,train,True
+"good morning, there is a dead bird on the sidewalk for two days",RT045,NONE,NONE,True,STATEN ISLAND,False,train,True
+"uh hi, a dead rat in front of the building outside my building on mill road thanks",RT045,NONE,NONE,True,STATEN ISLAND,True,train,True
+"a dead raccoon in front of 144 scranton avenue in si, please send someone",RT045,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Good morning, a dead cat on the street at 2281 University Avenue since this morning",RT045,NONE,NONE,True,BRONX,False,train,True
+Uh a dead cat on the street outside my building on West 29 Street in manhattan,RT045,NONE,NONE,True,MANHATTAN,True,train,True
+"i want to report a dead bird on the sidewalk outside my building on wolkoff lane, staten island, it's dangerous",RT045,NONE,NONE,True,STATEN ISLAND,False,train,True
+"I'd like to report there is a dead raccoon outside my building on East Tremont Avenue in bronx right now, please send someone",RT045,NONE,NONE,True,BRONX,False,train,True
+"Can you send someone, there is a dead rat in front of the building on Bayview Lane near Freedom Avenue for two days",RT045,NONE,NONE,True,STATEN ISLAND,False,train,True
+"hi, there's a dead cat on the street, it's dangerous",RT045,NONE,NONE,False,BROOKLYN,False,train,True
+"hi, i see a dead cat on the street at 826 east 16 street",RT045,NONE,NONE,True,BROOKLYN,False,train,True
+"hi, a dead animal on ocean avenue near tompkins avenue, bk thanks",RT045,NONE,NONE,True,BROOKLYN,False,train,True
+i want to reprot we have a deead aniimal in the ciyt,RT045,NONE,NONE,False,MANHATTAN,False,train,True
+"Hello, there is a dead cat on the street in front of 85 Avenue right now",RT045,NONE,NONE,True,QUEENS,False,train,True
+"Uh hello, a dead cat on the street in front of 23 Primrose Place",RT045,NONE,NONE,True,STATEN ISLAND,True,train,True
+"so can you send someone, a dead raccoon outside my building on west 86 street in manhattan since yesterday",RT045,NONE,NONE,True,MANHATTAN,True,train,True
+"please help, there is a dead animal since last night, it's dangerous",RT045,NONE,NONE,True,QUEENS,False,val,True
+I'd like to report we have a dead rat in front of the building at the corner of Foch Avenue and Ramona Avenue for a week now,RT045,NONE,NONE,True,STATEN ISLAND,False,train,True
+"good morning, there is a dead cat on the street at the corner of kew gardens road and beach 40 street in queens since yesterday",RT045,NONE,NONE,True,QUEENS,False,train,True
+"Hello, we have a dead cat on the street outside my building on East 233 Street in bronx right now",RT045,NONE,NONE,True,BRONX,False,train,True
+"Um hello, we have a dead rat in front of the building outside my building on Beach 87 Street in queens since yesterday",RT045,NONE,NONE,True,QUEENS,True,train,True
+i want to report we have a dead cat on the street outside my building on pacific avenue for two days,RT045,NONE,NONE,True,STATEN ISLAND,False,train,True
+"um i'd like to reeport a dead raccoon on west 109 stret near ft washingotn avene, mnahattan since this morning",RT045,NONE,NONE,False,MANHATTAN,True,val,True
+"Hi, a dead animal at the corner of East 232 Street and Jackson Avenue please",RT045,NONE,NONE,True,BRONX,False,train,True
+"I'd like to report a dead rat in front of the building, staten island",RT045,NONE,NONE,True,STATEN ISLAND,False,train,True
+"A deda raccoon at the corner of Covert Stret and Dekalb Aevnue in brokolyn since last nigth, this is moron",RT045,NONE,MILD,False,BROOKLYN,False,train,True
+there's a dead rat in front of the building in front of 7 east 6 road,RT045,NONE,NONE,True,QUEENS,False,train,True
+"Uh i see a dead rat in front of the building in front of 400 East 20 Street in manhattan, it's dangerous",RT045,NONE,NONE,True,MANHATTAN,True,val,True
+"um good morning, a dead raccoon on grand concourse near randall avenue, bronx all day, please send someone",RT045,NONE,NONE,True,BRONX,True,train,True
+um i see a dead rat in front of the building at the corner of west 56 street and 1 avenue right now,RT045,NONE,NONE,True,MANHATTAN,True,val,True
+i see a deead cat on the srteet sine yesterady. you shitty never fix anyhting,RT045,NONE,SEVERE,False,BROOKLYN,False,train,True
+So I'd like to report there is a tree branch fell down in front of 100 Irving Avenue in brooklyn for a week now,RT060,NONE,NONE,True,BROOKLYN,True,train,True
+i want to report a cracked branch about to fall on avenue near avenue,RT060,NONE,NONE,True,QUEENS,False,train,True
+a fallen tree since yesterday,RT060,NONE,NONE,True,BROOKLYN,False,train,True
+There is a big limb broke off the tree please,RT060,NONE,NONE,True,BRONX,False,train,True
+"can you snd someone, a cracked brnch about to fall at the cornre of carroll street and 4 avvenue in bk, thhis is motheerfucker",RT060,NONE,SEVERE,False,BROOKLYN,False,train,True
+i wnat to reort thee is a fallen tree since tis moorning,RT060,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Please help, there's a fallen tree",RT060,NONE,NONE,True,BROOKLYN,False,train,True
+"a tree branch fell down, please send someone",RT060,NONE,NONE,True,MANHATTAN,False,train,True
+I'd like to report we have a fallen tree outside my building on Kingston Avenue in bk since this morning. you damn never fix anything,RT060,NONE,MILD,True,BROOKLYN,False,train,True
+"So good morning, there is a cracked branch about to fall since last night please",RT060,NONE,NONE,True,QUEENS,True,train,True
+"Hi, we have a cracked branch about to fall at the corner of Beach 102 Street and Fernside Place in queens. you dammit never fix anything",RT060,NONE,MILD,True,QUEENS,False,train,True
+"Uh helo, thre is a big libm brkoe off the tre outsdie my building on Winthrop Street",RT060,NONE,NONE,False,BROOKLYN,True,train,True
+"hello, i see a tree fell across the road at 15 abby place in staten island since yesterday",RT060,NONE,NONE,True,STATEN ISLAND,False,train,True
+"please hellp, a big limb brkoe off the treee at the corrner of hoolland aveneu and grand concourse in the bronx all day",RT060,NONE,NONE,False,BRONX,False,val,True
+I want to report there's a cracked branch about to fall outside my building on Second Avenue,RT060,NONE,NONE,True,MANHATTAN,False,train,True
+"um i see a tree branch fell down outside my building on dewey avenue, please send someone",RT060,NONE,NONE,True,BRONX,True,train,True
+"uh i want to report we have a big limb broke off the tree in si, please send someone",RT060,NONE,NONE,True,STATEN ISLAND,True,train,True
+like i'd like to report a big limb broke off the tree at 194 street in queens please,RT060,NONE,NONE,True,QUEENS,True,train,True
+"Good morning, there is a big limb broke off the tree, SI since this morning, please send someone",RT060,NONE,NONE,True,STATEN ISLAND,False,train,True
+i see a big limb broke off the tree outside my building on avenue right now,RT060,NONE,NONE,True,QUEENS,False,val,True
+"a cracked branch about to fall in front of 163 senator street, brooklyn",RT060,NONE,NONE,True,BROOKLYN,False,train,True
+i want to report there's a tree branch fell down on beach 19 street near beach 54 street for two days,RT060,NONE,NONE,True,QUEENS,False,train,True
+"Hello, there is a tree fell across the road in front of 1860 Woodbine Street for two days shitty",RT060,NONE,SEVERE,True,QUEENS,False,train,True
+a tree fell across the road outside my building on beach 72 street,RT060,NONE,NONE,True,QUEENS,False,train,True
+I'd like to report a big limb broke off the tree at the corner of East 18 Street and 18 Avenue right now thanks. you crap never fix anything,RT060,NONE,MILD,True,BROOKLYN,False,train,True
+"Um hello, there is a fallen tree in front of 210 Place",RT060,NONE,NONE,True,QUEENS,True,train,True
+"i'd like to report a cracked branch about to fall outside my building on beach street in si for two days, it's dangerous",RT060,NONE,NONE,True,STATEN ISLAND,False,train,True
+There's a big limb broke off the tree in front of 472 Davis Avenue in staten island,RT060,NONE,NONE,True,STATEN ISLAND,False,train,True
+"i'd like to report there is a tree fell across the road in queens right now, this is fucked",RT060,NONE,SEVERE,True,QUEENS,False,train,True
+"Lkie can you send someone, i see a big lmb broke off the tree on Eastcheter Roda near Heah Avenue for a week now",RT060,NONE,NONE,False,BRONX,True,train,True
+a fallen tree at 163 bush streeet in brronx,RT060,NONE,NONE,False,BRONX,False,train,True
+"Good morning, there is a cracked branch about to fall at 501 82 Street, it's dangerous",RT060,NONE,NONE,True,BROOKLYN,False,train,True
+"Uh hi, we have a tree fell across the road outside my building on Luke Court, staten island",RT060,NONE,NONE,True,STATEN ISLAND,True,val,True
+I want to reporrt we have a tere branch fell down at the corner of Stewart Aveneu and Beeach Steret since yesterday,RT060,NONE,NONE,False,STATEN ISLAND,False,train,True
+"we have a tree branch fell down, it's dangerous",RT060,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hi, theere is a fallen tree, queens since laast night thanks stupid",RT060,NONE,MILD,False,QUEENS,False,train,True
+"Okay so hello, there is a tree fell across the road on Beach 110 Street near Broadway, queens since this morning please",RT060,NONE,NONE,True,QUEENS,True,train,True
+I'd like to report there is a tree branch fell down at the corner of Avenue and Avenue,RT060,NONE,NONE,True,QUEENS,False,train,True
+I want to report there's a tree fell across the road thanks,RT060,NONE,NONE,True,STATEN ISLAND,False,train,True
+"please help, we haev a big limb broke off the tree in frotn of 133 dyckman sreet all day",RT060,NONE,NONE,False,MANHATTAN,False,train,True
+I want to report we have an overgrown tree blocking the street sign at the corner of Stagg Street and Mill Avenue in bk right now,RT061,NONE,NONE,True,BROOKLYN,False,train,True
+"hi, there is tree brranches hittinng the poower lines in front of 51 street in queens",RT061,NONE,NONE,False,QUEENS,False,train,True
+I want to rpeort branches hanging over the sidewalk on Whie Sansd Way near Ferside Place in quens,RT061,NONE,NONE,False,QUEENS,False,val,True
+"good morning, we have branches hanging over the sidewalk since this morning. you incompetent never fix anything",RT061,NONE,MILD,True,STATEN ISLAND,False,train,True
+"Like hi, branches hanging over the sidewalk at 184 Etna Street since this morning, it's dangerous screw",RT061,NONE,MILD,True,BROOKLYN,True,train,True
+"Please help, an overgrown tree blocking the street sign at 145 Beach Eighth Street",RT061,NONE,NONE,True,QUEENS,False,train,True
+"i'd like to report tree branches touching my windows at 494 dean street, brooklyn",RT061,NONE,NONE,True,BROOKLYN,False,train,True
+like branches hanging over the sidewalk in front of 1702 west 1 street since yesterday,RT061,NONE,NONE,True,BROOKLYN,True,train,True
+"uh can you send someone, there's tree branches touching my windows at the corner of coddington avenue and brook avenue, staten island right now, please send someone",RT061,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Can you send someone, branches hanging over the sidewalk at 116 Street",RT061,NONE,NONE,True,QUEENS,False,train,True
+"I see branches hanginng ovver the sidewalk on Ravenurst Avnue near Pakr Hill Avenu, SI",RT061,NONE,NONE,False,STATEN ISLAND,False,train,True
+There is branches hanging over the sidewalk,RT061,NONE,NONE,False,STATEN ISLAND,False,train,True
+i want to report an overgrown tree blocking the street sign in front of 1881 starr street in queens,RT061,NONE,NONE,True,QUEENS,False,train,True
+Uh I want to report we have branches hanging over the sidewalk. you shit never fix anything,RT061,NONE,SEVERE,False,MANHATTAN,True,train,True
+"Good morning, an overgrown tree blocking the street sign outside my building on Bodine Street in SI since yesterday thanks",RT061,NONE,NONE,True,STATEN ISLAND,False,train,True
+"can you send someone, tree branches touching my windows at the corner of beach 67 street and street in queens since this morning",RT061,NONE,NONE,True,QUEENS,False,train,True
+i want to report branches hanging over the sidewalk in the city since last night,RT061,NONE,NONE,True,MANHATTAN,False,train,True
+"branchees hagning over the sdewalk on sleight avenue nera mcclean avnue, si",RT061,NONE,NONE,False,STATEN ISLAND,False,train,True
+I see tree branches hitting the power lines outside my building on Featherbed Lane,RT061,NONE,NONE,True,BRONX,False,train,True
+"can you send someone, there's tree branches touching my windows, bk for a week now, please send someone",RT061,NONE,NONE,True,BROOKLYN,False,train,True
+"Can you send someone, i see an overgrown tree blocking the street sign at the corner of East 115 Street and East 80 Street thanks",RT061,NONE,NONE,True,MANHATTAN,False,train,True
+lkie banches hanging oer the sidewwalk at 3442 fenton aveneu since this morning,RT061,NONE,NONE,False,BRONX,True,train,True
+"I wnat to report i see brnches hangig over the sidewalk in fornt of 123 Broadway in staten iland, its dangreous",RT061,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Please help, there's branches hanging over the sidewalk since last night",RT061,NONE,NONE,True,STATEN ISLAND,False,train,True
+"hello, there's branches hanging over the sidewalk",RT061,NONE,NONE,False,MANHATTAN,False,val,True
+i'd like to repport branchhes hanging ovre the sidewallk at 37 west 20 stret in manhattan plase,RT061,NONE,NONE,False,MANHATTAN,False,train,True
+"I want to report there is an overgrown tree blocking the street sign, it's dangerous. you crappy never fix anything",RT061,NONE,MILD,False,STATEN ISLAND,False,train,True
+"Can you send someone, we have tree branches hitting the power lines on West 238 Street near Calhoun Avenue, the bronx",RT061,NONE,NONE,True,BRONX,False,train,True
+I want to report tree branches touching my windows in front of 187 Crowell Avenue in staten island,RT061,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hello, i see branches hanging over the sidewalk outside my building on Flatlands 9 Street since last night",RT061,NONE,NONE,True,BROOKLYN,False,train,True
+"Please help, there's branches hanging over the sidewalk at the corner of Avenue S and Van Dam Street in bk since this morning thanks",RT061,NONE,NONE,True,BROOKLYN,False,train,True
+"can you send someone, i see an overgrown tree blocking the street sign in front of 565 isham street right now thanks",RT061,NONE,NONE,True,MANHATTAN,False,train,True
+"So please help, we have tree branches hitting the power lines outside my building on Decatur Street",RT061,NONE,NONE,True,QUEENS,True,train,True
+"Hi, we havve an overgroown treee blcking the srteet siggn on St Nicholas Avenue near 8 Avenue in manhattan thanks",RT061,NONE,NONE,False,MANHATTAN,False,val,True
+i'd like to report tree branches hitting the power lines outside my building on fieldstone road,RT061,NONE,NONE,True,STATEN ISLAND,False,train,True
+I see an overgrown tree blocking the street sign at 350 East 143 Street in bronx for two days thanks,RT061,NONE,NONE,True,BRONX,False,train,True
+"Hi, there is an overgrown tree blocking the street sign in front of 43 Avenue, queens",RT061,NONE,NONE,True,QUEENS,False,val,True
+We have tree branches touching my windows in front of 1942 64 Street in bk,RT061,NONE,NONE,True,BROOKLYN,False,train,True
+Uh i see tree branches hitting the power lines outside my building on Park Avenue South,RT061,NONE,NONE,True,MANHATTAN,True,train,True
+I see an overgrown tree blocking the street sign at the corner of Gold Street and Battery Avenue sucks,RT061,NONE,MILD,True,BROOKLYN,False,train,True
+"hello, we have a rotten tree in front of 99 street please",RT062,NONE,NONE,True,QUEENS,False,train,True
+So I want to report a dying tree outside my building on Place in queens,RT062,NONE,NONE,True,QUEENS,True,train,True
+a dying tree in front of 2351 adam clayton powell jr boulevard right now,RT062,NONE,NONE,True,MANHATTAN,False,train,True
+"So thhere is a rotteen trree on Oakland Avenue neear Colno Avenue in staen ilsand sice this morningg, i's dangerous",RT062,NONE,NONE,False,STATEN ISLAND,True,train,True
+"Um hi, i see a rotten tree at 318 East 19 Street",RT062,NONE,NONE,True,MANHATTAN,True,train,True
+We havve a rootten tre at 2442B Katn Avenue in SI,RT062,NONE,NONE,False,STATEN ISLAND,False,train,True
+"hi, there is a dying tree at 227 rear beach 99 street, queens",RT062,NONE,NONE,True,QUEENS,False,train,True
+Uh a dead tree at the corner of Westminster Road and Coyle Street in bk,RT062,NONE,NONE,True,BROOKLYN,True,train,True
+"I'd like to report we have a dying tree at the corner of Street and Onderdonk Avenue right now, please send someone",RT062,NONE,NONE,True,QUEENS,False,train,True
+"Can you send someone, we have a rotten tree at the corner of Metropolitan Avenue and Webster Avenue",RT062,NONE,NONE,True,BRONX,False,train,True
+"can you send smoeone, we haave the tree has no leaves and looks dead in font of 65 boowdoin steret",RT062,NONE,NONE,False,STATEN ISLAND,False,train,True
+There's a rotten tree on Tysens Lane near Jansen Street for two days. you bitch never fix anything,RT062,NONE,SEVERE,True,STATEN ISLAND,False,train,True
+"Hi, we have a dyinng tee at 1110 Wyatt Stret in the bronx",RT062,NONE,NONE,False,BRONX,False,train,True
+"Okay so hi, a dead tree on Fulton Street near 43 Street since last night, please send someone",RT062,NONE,NONE,True,BROOKLYN,True,train,True
+"yeah good morning, the tree has no leaves and looks dead",RT062,NONE,NONE,False,STATEN ISLAND,True,train,True
+The tree has no leaves and lookks dead,RT062,NONE,NONE,False,STATEN ISLAND,False,val,True
+"so please help, we have a dying tree on 17 street near narrows avenue, bk",RT062,NONE,NONE,True,BROOKLYN,True,train,True
+"Um a deaad tree, thiis is freaking",RT062,NONE,MILD,False,QUEENS,True,train,True
+i want to report there's a dead tree thanks,RT062,NONE,NONE,False,QUEENS,False,train,True
+I'd liike to repoort thee's a dad tre outsside my buildnig on Avenue for a week now thaks,RT062,NONE,NONE,False,QUEENS,False,train,True
+"plese hlep, i see a diyng tree all day",RT062,NONE,NONE,False,MANHATTAN,False,val,True
+"So good morning, i see a dead tree. you shit never fix anything",RT062,NONE,SEVERE,False,MANHATTAN,True,train,True
+"Okay so please help, the tree has no leaves and looks dead since last night",RT062,NONE,NONE,True,STATEN ISLAND,True,train,True
+I'd like to report i see a rotten tree at 4074 Victory Boulevard,RT062,NONE,NONE,True,STATEN ISLAND,False,val,True
+"hello, there's a dead tree at 32 street",RT062,NONE,NONE,True,QUEENS,False,train,True
+"Like hello, i see a rotten tree on Victory Boulevard near Cortlandt Street",RT062,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hello, we have a dying tree outside my building on East 11 Street, manhattan since this morning",RT062,NONE,NONE,True,MANHATTAN,False,train,True
+I'd like to report we have a dead tree since yesterday,RT062,NONE,NONE,True,MANHATTAN,False,train,True
+"please hel,p theere is a rotetn tree in font of 915 east 17 sreet in bk, plesae seend someoone",RT062,NONE,NONE,False,BROOKLYN,False,train,True
+I see a dyng tree since lats nigth,RT062,NONE,NONE,False,MANHATTAN,False,train,True
+"Yeah I want to report we have a rotten tree in front of 150 Street, queens please",RT062,NONE,NONE,True,QUEENS,True,train,True
+"can you sennd someoone, i see the tree has no leaves and looks dead",RT062,NONE,NONE,False,BROOKLYN,False,train,True
+"Please help, a dead tree",RT062,NONE,NONE,False,BRONX,False,train,True
+I want to report we have a dead tree outside my building on Whiteplains Road in the bronx thanks,RT062,NONE,NONE,True,BRONX,False,train,True
+I'd like to report we have a dead tree,RT062,NONE,NONE,False,QUEENS,False,val,True
+"i'd lkie to report i see a rotten tree at the corner of washignton avenue and anthny avenue, the brox",RT062,NONE,NONE,False,BRONX,False,train,True
+a ded tree at the corner of beach avenue and mortn place,RT062,NONE,NONE,False,BRONX,False,train,True
+"Hello, there is a rotten tree at 2124 Bergen Avenue",RT062,NONE,NONE,True,BROOKLYN,False,train,True
+"hello, there is the trree has no leaves and looks deead on eagle avenue neear teibout avenue, it's dangerous. you stupid never fix anything",RT062,NONE,MILD,False,BRONX,False,train,True
+"uh can you send someone, the tree has no leaves and looks dead on marisa circle near seneca avenue in si, this is bitch",RT062,NONE,SEVERE,True,STATEN ISLAND,True,val,True
+Okay so I'd like to report we have the heating is not working on Richmond Avenue near Abingdon Avenue in SI since last night,RT080,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Good morning, there is our building has no heat outside my building on West 135 Street",RT080,NONE,NONE,True,MANHATTAN,False,train,True
+"The radiator is cold and it is freezing at 53 East 177 Street in the bronx since this morning, please send someone",RT080,NONE,NONE,True,BRONX,False,train,True
+"um can you send someone, no heat in my apartment outside my building on olinville avenue please, this is idiot",RT080,NONE,MILD,True,BRONX,True,train,True
+"Theer's the heatng is not working, queens",RT080,NONE,NONE,False,QUEENS,False,train,True
+Yeah i see no heat in my apartment at 419 East 93 Street in the city since yesterday,RT080,NONE,NONE,True,MANHATTAN,True,train,True
+"I want to report there's the heating is not working, it's dangerous",RT080,NONE,NONE,False,BRONX,False,train,True
+"yeah good morning, there's the heating is not working outside my building on cruger avenue since yesterday",RT080,NONE,NONE,True,BRONX,True,train,True
+"Good morning, there is the radiattor is cld and it is frezing in front of 33 Ocaen Aenue",RT080,NONE,NONE,False,STATEN ISLAND,False,train,True
+"uh good morning, no heat in my apartment thanks",RT080,NONE,NONE,False,QUEENS,True,train,True
+"God mornnig, no heat in my aparrtment",RT080,NONE,NONE,False,QUEENS,False,train,True
+Okay so we have no heat in my apartment,RT080,NONE,NONE,False,MANHATTAN,True,train,True
+I see the heating is not working at the corner of West 148 Street and East 115 Street in the city all day please asshole,RT080,NONE,SEVERE,True,MANHATTAN,False,train,True
+"so can you sned somenoe, no het in my aprtment since last ngiht",RT080,NONE,NONE,False,STATEN ISLAND,True,val,True
+"hi, the radiator is cold and it is freezing at 319 west 145 street all day, it's dangerous, this is damn",RT080,NONE,MILD,True,MANHATTAN,False,train,True
+"please help, i see the radiator is cold and it is freezing outside my building on avenue pissed",RT080,NONE,MILD,True,QUEENS,False,train,True
+"Can you send someone, there's the radiator is cold and it is freezing at the corner of Wellington Court and Church Street thanks",RT080,NONE,NONE,True,STATEN ISLAND,False,train,True
+"can you send someone, the heating is not working for two days",RT080,NONE,NONE,True,BRONX,False,train,True
+okay so i wnat to report we hae our building has no heta in front of 20 avene d for a week now thnks,RT080,NONE,NONE,False,MANHATTAN,True,train,True
+okaay so i wnat to repot thre is our building has no heat on wallker street neaar litle clove road. you boody never fix anythign,RT080,NONE,MILD,False,STATEN ISLAND,True,train,True
+i'd like to report i see no hot water at the corner of national drive and east 95 street for two days,RT080,NONE,NONE,True,BROOKLYN,False,train,True
+so theree's the radiatr is cold and it is freezzing in font of 41 bennett aveue in manattan,RT080,NONE,NONE,False,MANHATTAN,True,train,True
+i waant to report i see the radiatro is codl and it is freezing outside my builidng on fairview avennue in queens,RT080,NONE,NONE,False,QUEENS,False,train,True
+"Can you send someone, there is the heating is not working outside my building on Monahan Avenue since this morning",RT080,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Um we have our building has no heat in front of 248 East 28 Street, bk since last night please",RT080,NONE,NONE,True,BROOKLYN,True,train,True
+"i'd like to report there is the radiator is cold and it is freezing at the corner of east 17 street and franklin avenue, bk",RT080,NONE,NONE,True,BROOKLYN,False,val,True
+"please hep, i see the radiator is colld and it is freezing at the corner of fisher avnue and finlay street, satten island since last nigth",RT080,NONE,NONE,False,STATEN ISLAND,False,train,True
+"There's our building has no heat at the corner of Street and Street, queens all day",RT080,NONE,NONE,True,QUEENS,False,train,True
+"I want to report i see the heating is not working in front of 532 Tysens Lane, staten island since last night, please send someone",RT080,NONE,NONE,True,STATEN ISLAND,False,val,True
+"goood morning, there's the heating is not workiing at the cornre of howon avene and vicctory boulevard for a week now tanks",RT080,NONE,NONE,False,STATEN ISLAND,False,train,True
+Like i see the heating is not working outside my building on Clarendon Road in brooklyn thanks,RT080,NONE,NONE,True,BROOKLYN,True,train,True
+"Our building has no heat outside my building on Marcy Avenue, bk for a week now",RT080,NONE,NONE,True,BROOKLYN,False,train,True
+"Hello, there is our building has no heat at the corner of Crossbay Boulevard and West 11 Road in queens since this morning",RT080,NONE,NONE,True,QUEENS,False,val,True
+I want to report there's the heating is not working in front of 189 Street thanks,RT080,NONE,NONE,True,QUEENS,False,val,True
+"Good morning, we have no hot water",RT080,NONE,NONE,False,BRONX,False,val,True
+"hello, the heating is not working since this morning",RT080,NONE,NONE,True,BRONX,False,val,True
+"Can you send someone, we have the radiator is cold and it is freezing in front of 302 West 148 Street all day",RT080,NONE,NONE,True,MANHATTAN,False,train,True
+"good morning, no hot water at 1261 central avenue in queens right now",RT080,NONE,NONE,True,QUEENS,False,train,True
+Uh we have the heating is not working outside my building on Drive in queens right now. you hell never fix anything,RT080,NONE,MILD,True,QUEENS,True,train,True
+"hi, i see no heeat in my aartment",RT080,NONE,NONE,False,BROOKLYN,False,train,True
+so we have waetr drippng throuugh the ceiling on east 203 street ner plham paarkway sotuh since lsat night,RT081,NONE,NONE,False,BRONX,True,train,True
+like i want to report i see a leak from the apartment upstairs in front of 500 west 175 street in the city for a week now,RT081,NONE,NONE,True,MANHATTAN,True,train,True
+"Hi, theer is a heavvy leak in the bathroom in bk",RT081,NONE,NONE,False,BROOKLYN,False,val,True
+"hello, there's water leaking from the ceiling in front of 2463 creston avenue",RT081,NONE,NONE,True,BRONX,False,train,True
+"Please help, water leaking from the ceiling in front of 467 West 164 Street",RT081,NONE,NONE,True,MANHATTAN,False,train,True
+So a heavy leak in the bathroom,RT081,NONE,NONE,False,STATEN ISLAND,True,val,True
+"Hello, there is a leak from the apartment upstairs right now",RT081,NONE,NONE,True,STATEN ISLAND,False,train,True
+I'd like to report we have a heavy leak in the bathroom at 542 19 Street in brooklyn since yesterday,RT081,NONE,NONE,True,BROOKLYN,False,train,True
+"i'd like to report there is water leaking from the ceiling in front of 351 beverly road, please send someone",RT081,NONE,NONE,True,QUEENS,False,train,True
+i'd like to report water leaking from the ceiling outside my building on leggett place in staten island,RT081,NONE,NONE,True,STATEN ISLAND,False,val,True
+"goood morning, a hevy lek in the bathrroom for two days",RT081,NONE,NONE,False,QUEENS,False,train,True
+"Good morning, we have a leak from the apartment upstairs outside my building on 24 Avenue",RT081,NONE,NONE,True,BROOKLYN,False,train,True
+"Like please help, i see a heavy leak in the bathroom",RT081,NONE,NONE,False,BROOKLYN,True,train,True
+We have water dripping through the ceiling at 5532 Avenue D,RT081,NONE,NONE,True,BROOKLYN,False,train,True
+i'd lie to report we have water drippig through the ceeiling,RT081,NONE,NONE,False,BRONX,False,train,True
+"hello, i see water leaking from the ceiling at the corner of est 61 stret and west 51 street",RT081,NONE,NONE,False,MANHATTAN,False,train,True
+i'd like to report water leaking from the ceiling outside my building on west 206 street in manhattan,RT081,NONE,NONE,True,MANHATTAN,False,train,True
+"i'd like to report water dripping through the ceiling, bk thanks",RT081,NONE,NONE,True,BROOKLYN,False,train,True
+"I want to report water dripping through the ceiling in front of 21 Greene Street, the city thanks",RT081,NONE,NONE,True,MANHATTAN,False,train,True
+"i see a leak from the apartment upstairs, the bronx please",RT081,NONE,NONE,True,BRONX,False,train,True
+"Yeah hi, we have water dripping through the ceiling since last night thanks",RT081,NONE,NONE,True,BRONX,True,train,True
+"Hello, a leak from the appartment upstairrs at the corner of Marsa Circle and Ganseovort Boulevad in staetn islad, plaese send someone fucked",RT081,NONE,SEVERE,False,STATEN ISLAND,False,train,True
+"Hi, thre is a leak frmo the aprtment upstairs in fronnt of 255 Street, queens",RT081,NONE,NONE,False,QUEENS,False,val,True
+"hi, ther's a leak from the apartmetn upstaris at 161 west 54 stret in the city thanks",RT081,NONE,NONE,False,MANHATTAN,False,train,True
+Yeeah I'd like to reort i see waetr dripping through the ceiling,RT081,NONE,NONE,False,STATEN ISLAND,True,train,True
+"we have water dripping through the ceiling at 136 beekman street, the city right now thanks",RT081,NONE,NONE,True,MANHATTAN,False,train,True
+"i'd liike to report i see a lak from the aartment uppstairs in queens for two days, it's dangerous",RT081,NONE,NONE,False,QUEENS,False,train,True
+"Good morning, there is a heavy leak in the bathroom at 290 Vail Avenue since yesterday, please send someone",RT081,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Please help, i see water dripping through the ceiling, please send someone",RT081,NONE,NONE,False,BRONX,False,train,True
+"There is a heavy leak in the bathroom outside my building on Watson Avenue, bronx since yesterday thanks",RT081,NONE,NONE,True,BRONX,False,train,True
+"there is a leak from the apartment upstairs at the corner of crestwater court and loring avenue, staten island",RT081,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Please help, i see a leak from the apartment upstairs at 1711 Hancock Street in queens, it's dangerous",RT081,NONE,NONE,True,QUEENS,False,train,True
+yeah i'd like to report i see a heavy leak in the bathroom on anjali loop near queen street,RT081,NONE,NONE,True,STATEN ISLAND,True,train,True
+"can you send someone, a leak from the apartment upstairs in front of 271 east 10 street for a week now, this is crap",RT081,NONE,MILD,True,MANHATTAN,False,train,True
+Water leaking from the ceiling since yesterday,RT081,NONE,NONE,True,STATEN ISLAND,False,train,True
+"hello, there is a heavy leak in the bathroom for a week now",RT081,NONE,NONE,True,BROOKLYN,False,train,True
+"hi, there is a leak from the apartment upstairs at 582 9 avenue",RT081,NONE,NONE,True,MANHATTAN,False,train,True
+"Hi, i see a leak from the apartment upstairs, please send someone fuck",RT081,NONE,SEVERE,False,MANHATTAN,False,train,True
+i want to report a heavy leak in the bathroom,RT081,NONE,NONE,False,STATEN ISLAND,False,train,True
+"pllease hel, we have a leak froom the aparttment upstairrs, si, please send somene wtf",RT081,NONE,SEVERE,False,STATEN ISLAND,False,train,True
+i'd like to report i see a plumbing problem since this morning,RT082,NONE,NONE,True,BRONX,False,train,True
+"can you send someone, there's a plumbing problem in front of 2472 86 street in bk since this morning thanks",RT082,NONE,NONE,True,BROOKLYN,False,val,True
+There's the bathtub drain is blocked in bronx,RT082,NONE,NONE,True,BRONX,False,train,True
+"Okay so good morning, thhere's the sink is cloged in front of 1565 Hyln Bouevard in staten island, itt's dangerous",RT082,NONE,NONE,False,STATEN ISLAND,True,train,True
+"good morning, there's the bathtub drain is blocked at the corner of amsterdam avenue and greenwich street, the city",RT082,NONE,NONE,True,MANHATTAN,False,train,True
+"can you snd someone, we have a laking piep uder the sink at 1612 madison stret in queens",RT082,NONE,NONE,False,QUEENS,False,train,True
+There is a plumbing problem outside my building on West Street,RT082,NONE,NONE,True,BROOKLYN,False,train,True
+there is the bathtub drain is blocked at the corner of russek drive and tone lane since yesterday,RT082,NONE,NONE,True,STATEN ISLAND,False,train,True
+i want to report i see the bathtub drain is blocked on suydam street near avenue in queens thanks,RT082,NONE,NONE,True,QUEENS,False,train,True
+the sink is clogged at the corner of ocean parkway and 5 avenue since this morning,RT082,NONE,NONE,True,BROOKLYN,False,val,True
+"good morning, there is the sink is clogged at the corner of weirfield street and woodward avenue in queens, it's dangerous",RT082,NONE,NONE,True,QUEENS,False,train,True
+i'd like to report there's the bathtub drain is blocked. you crappy never fix anything,RT082,NONE,MILD,False,MANHATTAN,False,train,True
+"A plumbing problem in queens, please send someone, this is moron",RT082,NONE,MILD,True,QUEENS,False,train,True
+I want to report i see a leaking pipe under the sink thanks,RT082,NONE,NONE,False,MANHATTAN,False,train,True
+i wat to rpeort a borken toileet on terrace near flusshing avenue thhanks,RT082,NONE,NONE,False,QUEENS,False,train,True
+Oay so a leaaking ppie under the siink on Goowdin Avenue ner Nicholas Avenue,RT082,NONE,NONE,False,STATEN ISLAND,True,train,True
+"i want to report there's a plumbing problem at the corner of avenue a and amsterdam avenue in manhattan, it's dangerous",RT082,NONE,NONE,True,MANHATTAN,False,val,True
+"Please help, there is a leaking pipe under the sink at 144 Purdy Avenue, staten island",RT082,NONE,NONE,True,STATEN ISLAND,False,train,True
+i wat to report a leaking piep uder the sink on tabor coutr neaar coney island avenue,RT082,NONE,NONE,False,BROOKLYN,False,val,True
+"Uh good morning, there is the sink is clogged, manhattan, it's dangerous",RT082,NONE,NONE,True,MANHATTAN,True,train,True
+I want to report a broken toilet outside my building on West 79 Street,RT082,NONE,NONE,True,MANHATTAN,False,train,True
+"Yeah can you send someone, we have a broken toilet",RT082,NONE,NONE,False,STATEN ISLAND,True,train,True
+Um i see the sink is clogged in frnot of 100 Eaast 173 Steet in bronx all day thanks,RT082,NONE,NONE,False,BRONX,True,train,True
+"okay so hello, we have a plumbing problem since yesterday",RT082,NONE,NONE,True,BRONX,True,train,True
+"So can you send someone, a leaking pipe under the sink outside my building on Garrett Place in bronx right now thanks. you hell never fix anything",RT082,NONE,MILD,True,BRONX,True,val,True
+um i'd like to report there is the bathtub drain is blocked in si please useless,RT082,NONE,MILD,True,STATEN ISLAND,True,val,True
+I'd like to report we have a plumbing problem at 69 Street,RT082,NONE,NONE,True,QUEENS,False,train,True
+"a broken toilet in front of 1199 east 94 street, it's dangerous",RT082,NONE,NONE,True,BROOKLYN,False,val,True
+"Hi, there is a broken toilet outside my building on Chester Street, bk. you piss never fix anything",RT082,NONE,MILD,True,BROOKLYN,False,train,True
+"good morning, the sink is clogged in front of 3542 tryon avenue please",RT082,NONE,NONE,True,BRONX,False,train,True
+Uh a leaking pipe under the sink since yesterday,RT082,NONE,NONE,True,BROOKLYN,True,train,True
+i'd like to report a leaking pipe under the sink in front of 19 east houston street,RT082,NONE,NONE,True,MANHATTAN,False,train,True
+"can you send someone, there's the sink is clogged on east 128 street near east 10 street",RT082,NONE,NONE,True,MANHATTAN,False,train,True
+"Can you send someone, a leaking pipe under the sink on 7 Avenue near Coney Island Avenue",RT082,NONE,NONE,True,BROOKLYN,False,train,True
+"please help, there is a broken toilet in brooklyn",RT082,NONE,NONE,True,BROOKLYN,False,train,True
+"Good morning, there's the bathtub drain is blocked at the corner of Willow Lane and Broadway right now",RT082,NONE,NONE,True,BRONX,False,train,True
+"so can you send someone, there is the bathtub drain is blocked at the corner of suffolk avenue and bell street, si",RT082,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hi, i see a leaking ppie under the sink on Bond Stret neear Sutton Plce South for a weeek now",RT082,NONE,NONE,False,MANHATTAN,False,train,True
+I want to report we have a plumbing problem at 443 East 83 Street right now,RT082,NONE,NONE,True,MANHATTAN,False,train,True
+"uh i see a plumbing problem in front of 270 hewes street in brooklyn, please send someone",RT082,NONE,NONE,True,BROOKLYN,True,train,True
+"Uh please help, there is mice in my kitchen at the corner of Redgrave Avenue and Pelican Circle",RT083,NONE,NONE,True,STATEN ISLAND,True,train,True
+"please help, we have mold in the bathroom",RT083,NONE,NONE,False,BROOKLYN,False,train,True
+"good morning, mold in the bathroom in front of 8629 bay parkway in brooklyn, please send someone",RT083,NONE,NONE,True,BROOKLYN,False,train,True
+we hve bed bgus on southern boulevard near taylor avenue in the bronx,RT083,NONE,NONE,False,BRONX,False,train,True
+"good morning, there's roaches in the apartment on west 173 street near broadway",RT083,NONE,NONE,True,MANHATTAN,False,train,True
+"Mold in the bathroom in front of 41 Avenue, queens since yesterday",RT083,NONE,NONE,True,QUEENS,False,val,True
+"yeah please help, there is mice in my kitchen at 83 north burgher avenue since yesterday. you crappy never fix anything",RT083,NONE,MILD,True,STATEN ISLAND,True,train,True
+Uh I'd like to report mold in the bathroom outside my building on Avenue since last night please,RT083,NONE,NONE,True,QUEENS,True,train,True
+"so i want to reort therre's the hlalway is filtyh and unsanitray in front of 200 stokcholm stree, bk",RT083,NONE,NONE,False,BROOKLYN,True,train,True
+"hi, we have mice in my kitchen all day",RT083,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hello, modl in the batthroom at the crner of 2 Avenue and 8 Aveneu all day pelase",RT083,NONE,NONE,False,MANHATTAN,False,train,True
+"Hi, there's the hallway is filthy and unsanitary on Avenue C near West 74 Street in manhattan thanks",RT083,NONE,NONE,True,MANHATTAN,False,val,True
+"hi, there's mice in my kitchen at the corner of gunther avenue and bainbridge avenue, the bronx",RT083,NONE,NONE,True,BRONX,False,train,True
+I'd like to report there's mice in my kitchen,RT083,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Hi, bed bugs on Washington Avenue near Morgan Avenue thanks",RT083,NONE,NONE,True,BROOKLYN,False,train,True
+There is bed bugs on Ridgewood Avenue near Smith Street in SI,RT083,NONE,NONE,True,STATEN ISLAND,False,val,True
+So I want to report there is mold in the bathroom at the corner of Patterson Avenue and Lockman Avenue in staten island since this morning,RT083,NONE,NONE,True,STATEN ISLAND,True,train,True
+"hello, i see mice in my kitchen outside my building on west 154 street, manhattan, please send someone",RT083,NONE,NONE,True,MANHATTAN,False,train,True
+"please help, bed bugs in front of 1429 east 89 street, bk",RT083,NONE,NONE,True,BROOKLYN,False,val,True
+Uh there's mice in my kitchen at 247 Mc Clean Avenue in SI,RT083,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Can you sedn someone, mice in my kichen at 687 9 Avenue, the ctiy",RT083,NONE,NONE,False,MANHATTAN,False,train,True
+"yeah hello, we have mice in my kitchen at the corner of arlington avenue and kingsland avenue thanks",RT083,NONE,NONE,True,BRONX,True,val,True
+I'd like to report there's bed bugs in front of 132 Road in queens,RT083,NONE,NONE,True,QUEENS,False,train,True
+I'd like to report there's the hallway is filthy and unsanitary on University Avenue near Wilder Avenue idiots,RT083,NONE,MILD,True,BRONX,False,train,True
+I want to report i see mold in the bathroom on Cooper Avenue near Avenue please,RT083,NONE,NONE,True,QUEENS,False,train,True
+"okay so hi, there is bed bugs outside my building on city island avenue in bronx, it's dangerous",RT083,NONE,NONE,True,BRONX,True,val,True
+The hallway is filthy and unsanitary,RT083,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Okkay so hell,o i see roaches in the aparmtent, pleasse send somene",RT083,NONE,NONE,False,MANHATTAN,True,train,True
+"Hello, the hallway is filty and unasnitary, queens",RT083,NONE,NONE,False,QUEENS,False,train,True
+"hi, mice in my kitchen in front of 623 90 street in bk",RT083,NONE,NONE,True,BROOKLYN,False,train,True
+i'd liike to report there's modl in the batroom for a week now,RT083,NONE,NONE,False,STATEN ISLAND,False,train,True
+there's bed bugs in front of 80 endor avenue in si,RT083,NONE,NONE,True,STATEN ISLAND,False,train,True
+Uh I'd like to report we have the hallway is filthy and unsanitary in front of 50 Morningside Drive since this morning,RT083,NONE,NONE,True,MANHATTAN,True,train,True
+"okay so hi, the hallwway is filthy and usnanitary",RT083,NONE,NONE,False,MANHATTAN,True,val,True
+"Please hellp, mld in the bathroom in frnt of 181 Billop Avenue in staten islaand all day pleae",RT083,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Hi, there is bed bugs since yesterday",RT083,NONE,NONE,True,MANHATTAN,False,train,True
+I want to report there is the hallway is filthy and unsanitary in queens,RT083,NONE,NONE,True,QUEENS,False,train,True
+"Hello, bed bugs at the corner of East 95 Street and Prospect Place please",RT083,NONE,NONE,True,BROOKLYN,False,train,True
+There is roaches in the apartment in front of 2155 East 69 Street,RT083,NONE,NONE,True,BROOKLYN,False,train,True
+Uh I want to report i see the hallway is filthy and unsanitary in front of 8 Roosevelt Court,RT083,NONE,NONE,True,BROOKLYN,True,train,True
+"Good morning, i see a broken light switch, staten island for two days, please send someone, this is shit",RT084,NONE,SEVERE,True,STATEN ISLAND,False,train,True
+"good morning, there is a broken light switch at the corner of eastern parkway and east 55 street shitty",RT084,NONE,SEVERE,True,BROOKLYN,False,val,True
+"please help, we have a broken light switch",RT084,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Plaese help, i see power outage in the buildig on Sherman Avneue nar West 167 Strreet",RT084,NONE,NONE,False,BRONX,False,train,True
+power outage in the building on west 178 street near amsterdam avenue in the city,RT084,NONE,NONE,True,MANHATTAN,False,val,True
+We haev a brokn light swwitch at 341 58 Srteet in brokolyn,RT084,NONE,NONE,False,BROOKLYN,False,train,True
+We have the outlets are not working,RT084,NONE,NONE,False,QUEENS,False,val,True
+There is power outage in the building shit,RT084,NONE,SEVERE,False,STATEN ISLAND,False,val,True
+"please help, the outlets are not working at the corner of manida street and west farms road",RT084,NONE,NONE,True,BRONX,False,train,True
+"Good morning, a broken light switch in the city for two days",RT084,NONE,NONE,True,MANHATTAN,False,train,True
+i see the outltes are not working at the crner of easst 72 stret and amstedam aveenue for two das,RT084,NONE,NONE,False,MANHATTAN,False,train,True
+"okay so good morning, i see the outlets are not working in front of 103 oakville street",RT084,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Like hi, we have the lights keep going out in the building in brooklyn, this is motherfucker",RT084,NONE,SEVERE,True,BROOKLYN,True,train,True
+"please help, we have power outage in the building",RT084,NONE,NONE,False,QUEENS,False,val,True
+"hello, there's the lights keep going out in the building for two days. you bloody never fix anything",RT084,NONE,MILD,True,QUEENS,False,val,True
+A broken light switch in front of 109 Kell Avenue in staten island since this morning thanks,RT084,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Please help, i see a brokne light switch outside my building on Prospect Aveneu thaks",RT084,NONE,NONE,False,BRONX,False,train,True
+so i waant to report there is no electricity in my apartent on eat 54 street near linden boulevard,RT084,NONE,NONE,False,BROOKLYN,True,train,True
+"Um hi, power outage in the building on Hancock Street near Street since this morning",RT084,NONE,NONE,True,QUEENS,True,val,True
+"please help, we have no electricity in my apartment outside my building on nagle avenue in the city",RT084,NONE,NONE,True,MANHATTAN,False,train,True
+I want to report the lights keep going out in the building in manhattan,RT084,NONE,NONE,True,MANHATTAN,False,train,True
+"Yeah can you send someone, power outage in the building at 620 Crescent Avenue in the bronx thanks",RT084,NONE,NONE,True,BRONX,True,train,True
+"okay so hi, power outage in the building since last night",RT084,NONE,NONE,True,BRONX,True,train,True
+"Can you send someone, there is the outlets are not working since yesterday",RT084,NONE,NONE,True,QUEENS,False,train,True
+"I'd like to report we have the outlets are not working outside my building on 5 Avenue for a week now thanks, this is stupid",RT084,NONE,MILD,True,BROOKLYN,False,train,True
+"Please help, i see no electricity in my apartment at 624 Academy Street",RT084,NONE,NONE,True,MANHATTAN,False,train,True
+yeah i see the outlets are not working at the corner of east 117 street and east 64 street in manhattan,RT084,NONE,NONE,True,MANHATTAN,True,train,True
+"Yeah can you send someone, power outage in the building at the corner of Seguine Loop and Hylan Boulevard in SI please. you idiot never fix anything",RT084,NONE,MILD,True,STATEN ISLAND,True,train,True
+"helllo, there's the outlets are not wroking at 328 west 12 steet in manhattan sine laast night",RT084,NONE,NONE,False,MANHATTAN,False,train,True
+i'd like to report there is the outlets are not working on duane street near east 19 street in manhattan since yesterday,RT084,NONE,NONE,True,MANHATTAN,False,train,True
+"Hello, there's the lights keep going out in the building in brooklyn",RT084,NONE,NONE,True,BROOKLYN,False,train,True
+"hi, there's the lights keep going out in the building at 1299 dean street, brooklyn",RT084,NONE,NONE,True,BROOKLYN,False,val,True
+"hi, no electricity in my apartment in queens since last night, please send someone. you pissed never fix anything",RT084,NONE,MILD,True,QUEENS,False,train,True
+"so hello, we have no electricity in my apartment in queens since last night thanks",RT084,NONE,NONE,True,QUEENS,True,val,True
+"Good morning, the ligts keep gonig out in the buildding outside my building on Richmmond Hill Road thanks. you pissed nveer fix anything",RT084,NONE,MILD,False,STATEN ISLAND,False,train,True
+"I'd like to report there's no electricity in my apartment, bronx for two days",RT084,NONE,NONE,True,BRONX,False,train,True
+"Power outage in the building in front of 2525 Bedford Avenue, bk",RT084,NONE,NONE,True,BROOKLYN,False,train,True
+"can you send someone, power outage in the building at 20 road in queens, it's dangerous",RT084,NONE,NONE,True,QUEENS,False,train,True
+i see power outage in the building,RT084,NONE,NONE,False,BRONX,False,train,True
+"hi, there is the outlets are not working",RT084,NONE,NONE,False,MANHATTAN,False,train,True
+"can you send someone, we have a rat infestation in front of 2006 cross bronx expressway",RT100,NONE,NONE,True,BRONX,False,train,True
+"yeah we have rats coming out of the garbage in front of 352 east 139 street since yesterday, it's dangerous",RT100,NONE,NONE,True,BRONX,True,train,True
+"Hi, we havve a rat inffestation in queens",RT100,NONE,NONE,False,QUEENS,False,val,True
+a rat infetsation on est 3 sreet naer weest 72 streeet for a weke now,RT100,NONE,NONE,False,MANHATTAN,False,train,True
+"Rodents in the park in front of 1003 Greene Avenue, bk. you wtf never fix anything",RT100,NONE,SEVERE,True,BROOKLYN,False,train,True
+"I want to report rodents in the park in the city, it's dangerous",RT100,NONE,NONE,True,MANHATTAN,False,train,True
+"Uh can you send someone, there is rats coming out of the garbage at 14 Clinton Court right now. you piss never fix anything",RT100,NONE,MILD,True,STATEN ISLAND,True,train,True
+I want to report there's a rat infestation on Sherman Avenue near East 188 Street in bronx,RT100,NONE,NONE,True,BRONX,False,train,True
+a rat infestation in front of 339 grandview avenue in queens,RT100,NONE,NONE,True,QUEENS,False,train,True
+"Okay so hello, there is rats running around at 125 Beach 17 Street",RT100,NONE,NONE,True,QUEENS,True,train,True
+So I'd like to report there's rats running around in front of 2322 University Avenue right now,RT100,NONE,NONE,True,BRONX,True,train,True
+"Um can you send someone, rats coming out of the garbage outside my building on Webster Avenue in staten island",RT100,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hi, we have a rat infestation outside my building on West 135 Street for two days, it's dangerous",RT100,NONE,NONE,True,MANHATTAN,False,train,True
+"Can you send somone, rats comig out of the gabrage, i's dangeroous",RT100,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Um hello, there's a rat infestation at the corner of Huguenot Avenue and Monroe Avenue, staten island, it's dangerous",RT100,NONE,NONE,True,STATEN ISLAND,True,train,True
+i'd likke to rport rts cmoing out of the garbage,RT100,NONE,NONE,False,STATEN ISLAND,False,train,True
+"good morning, rats running around at the corner of richmond road and laconia avenue all day",RT100,NONE,NONE,True,STATEN ISLAND,False,train,True
+i'd liek to repoort we havve rats coming out of the garbage in frnot of 305 east 153 street in the bronx,RT100,NONE,NONE,False,BRONX,False,train,True
+"good morning, rodents in the park at the corner of west 178 street and adam clayton powell boulevard in the city",RT100,NONE,NONE,True,MANHATTAN,False,train,True
+Um I'd like to report there is a rat infestation at the corner of Bathgate Avenue and East 139 Street,RT100,NONE,NONE,True,BRONX,True,train,True
+"Hello, there is rodents in the park in bk, please send someone",RT100,NONE,NONE,True,BROOKLYN,False,train,True
+"Lkie can you send someoe, i see rts comign out of the garbage ouutside my building on Ralph Avenue",RT100,NONE,NONE,False,BROOKLYN,True,train,True
+"can you sned someoone, rast runnign aroudn at 117 5 avenue in brooklyyn",RT100,NONE,NONE,False,BROOKLYN,False,train,True
+i'd like to report there is rodents in the park,RT100,NONE,NONE,False,BROOKLYN,False,train,True
+"god morning, thhere's a rat inestation outside my building on ble sliip",RT100,NONE,NONE,False,BROOKLYN,False,train,True
+"Can you send someone, there's rodents in the park since this morning",RT100,NONE,NONE,True,MANHATTAN,False,train,True
+there's rodents in the park at the corner of street and street in queens right now,RT100,NONE,NONE,True,QUEENS,False,train,True
+"please help, i see rats running around at the corner of eastchester road and davidson avenue in the bronx since last night",RT100,NONE,NONE,True,BRONX,False,train,True
+So I want to report there is rats for two days,RT100,NONE,NONE,True,QUEENS,True,train,True
+I'd like to report i see rats coming out of the garbage on Caton Avenue near 8 Avenue in brooklyn thanks,RT100,NONE,NONE,True,BROOKLYN,False,train,True
+Okay so I'd like to report there's a rat infestation since yesterday,RT100,NONE,NONE,True,MANHATTAN,True,val,True
+I want to report we have rats outside my building on Willis Avenue,RT100,NONE,NONE,True,STATEN ISLAND,False,val,True
+"hi, rodents in the park at 344 east 209 street in bronx sice yesterday",RT100,NONE,NONE,False,BRONX,False,train,True
+"good morning, rats coming out of the garbage",RT100,NONE,NONE,False,BROOKLYN,False,val,True
+"yeah can you send someone, there is rats for two days",RT100,NONE,NONE,True,QUEENS,True,train,True
+I'd like to report there is rats coming out of the garbage at the corner of West 44 Street and Broadway all day,RT100,NONE,NONE,True,MANHATTAN,False,train,True
+I'd liike to report a rat infestation in front of 224 Street in queens,RT100,NONE,NONE,False,QUEENS,False,train,True
+"please help, a rat infestation outside my building on seaman avenue",RT100,NONE,NONE,True,MANHATTAN,False,train,True
+"can you send somenoe, rats comiing out of the garbage",RT100,NONE,NONE,False,MANHATTAN,False,train,True
+I want to report i see rodents in the park on Willow Road West near Seeley Lane in SI,RT100,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Can you send someone, there is loud noise from the apartment next door on Grandview Avenue near Central Avenue in queens, please send someone",RT120,NONE,NONE,True,QUEENS,False,train,True
+there's loud noise from the apartment next door on greenwich avenue near east 70 street in manhattan for two days,RT120,NONE,NONE,True,MANHATTAN,False,val,True
+Uh there is my neighbors are partying all night right now,RT120,NONE,NONE,True,MANHATTAN,True,train,True
+There is loud noise from the apartment next door at the corner of Gold Avenue and Davis Avenue in SI right now. you freaking never fix anything,RT120,NONE,MILD,True,STATEN ISLAND,False,val,True
+"Like hello, i see loud noise from the apartment next door thanks",RT120,NONE,NONE,False,MANHATTAN,True,train,True
+"Please help, we have loud music from my neighbor at the corner of Metropolitan Avenue and Herkimer Street thanks",RT120,NONE,NONE,True,BROOKLYN,False,train,True
+"hello, there is baging and poundnig frmo upstairs ouutside my buildign on easst 88 street since this mornign",RT120,NONE,NONE,False,MANHATTAN,False,train,True
+"can you send someone, loud music from my neighbor",RT120,NONE,NONE,False,BROOKLYN,False,train,True
+"Okay so please help, loud noise from the apartment next door outside my building on West 12 Street in manhattan",RT120,NONE,NONE,True,MANHATTAN,True,train,True
+i watn to reprt theres' my neighbors are partyying all night ouutside my buildiing on woodycrest avvenue,RT120,NONE,NONE,False,BRONX,False,train,True
+i'd like to report my neighbors are partying all night at the corner of bushwick avenue and east 56 street thanks,RT120,NONE,NONE,True,BROOKLYN,False,train,True
+So I want to report i see loud music from my neighbor at the corner of Rev James Polite Avenue and Grand Concourse in bronx,RT120,NONE,NONE,True,BRONX,True,train,True
+"i see banging and pounding from upstairs outside my building on huron street, brooklyn",RT120,NONE,NONE,True,BROOKLYN,False,train,True
+"Hi, loud noise from the apartment next door in front of 1755 York Avenue in manhattan",RT120,NONE,NONE,True,MANHATTAN,False,train,True
+banging and pounding from upstairs at 12 west 85 street,RT120,NONE,NONE,True,MANHATTAN,False,val,True
+"Good morning, loud noise from the apartment next door at the corner of Newkirk Avenue and Ocean Parkway, bk since this morning",RT120,NONE,NONE,True,BROOKLYN,False,train,True
+"hello, banging and pounding from upstairs, it's dangerous",RT120,NONE,NONE,False,BROOKLYN,False,train,True
+"please help, i see banging and pounding from upstairs on amsterdam avenue near main street in manhattan bullshit",RT120,NONE,SEVERE,True,MANHATTAN,False,train,True
+So there is banging and poundig form upstaris at 215 Avnue A in the city,RT120,NONE,NONE,False,MANHATTAN,True,train,True
+Loud noise from the apartment next door all day thanks,RT120,NONE,NONE,True,BROOKLYN,False,train,True
+"hello, there's my neighbors are partying all night on montgomery avenue near walton avenue thanks",RT120,NONE,NONE,True,BRONX,False,train,True
+Yeah I'd like to report i see my neighbors are partying all night in front of 1046 Crescent Street,RT120,NONE,NONE,True,BROOKLYN,True,train,True
+"Hi, we have loud noise from the apartment next door",RT120,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Good moorning, bangnig and poounding frmo upstairs at the cornner of Lgihthouse Avenue and Wellington Coutr in SI, please sned someone",RT120,NONE,NONE,False,STATEN ISLAND,False,train,True
+"please help, there's banging and pounding from upstairs at 762 10 avenue right now",RT120,NONE,NONE,True,MANHATTAN,False,train,True
+"Yeah please help, loud noise from the apartment next door at 310 Beach 31 Street in queens right now",RT120,NONE,NONE,True,QUEENS,True,val,True
+"good morning, loud music from my neighbor in front of 140 west 131 street since yesterday",RT120,NONE,NONE,True,MANHATTAN,False,train,True
+"can you sed smoeone, looud noiise from the apartment next door in front of 2 ellwood street in the citty",RT120,NONE,NONE,False,MANHATTAN,False,val,True
+uh we have banging and pounding from upstairs in front of 215 rogers avenue in bk all day,RT120,NONE,NONE,True,BROOKLYN,True,train,True
+"Yeeah pleease help, there is banging and poundnig from upsatirs at 14558 Sait Johns Placce in brooklyn for a week no, this is freking",RT120,NONE,MILD,False,BROOKLYN,True,train,True
+"Good morning, we have my neighbors are partying all night outside my building on Sheepshead Bay Road in brooklyn",RT120,NONE,NONE,True,BROOKLYN,False,train,True
+"uh please help, loud music from my neighbor outside my building on himrod street thanks",RT120,NONE,NONE,True,QUEENS,True,train,True
+"Good morning, there's my neighbors are partying all night in front of 405 51 Street",RT120,NONE,NONE,True,BROOKLYN,False,train,True
+"hi, thre's loud noise from the aprtment next door at the corner of wesst 115 streeet and wets 137 steret in the cty since last nigth",RT120,NONE,NONE,False,MANHATTAN,False,train,True
+"hi, there is banging and pounding from upstairs at the corner of east 33 street and delancey street in manhattan",RT120,NONE,NONE,True,MANHATTAN,False,val,True
+"i'd like to report loud music from my neighbor outside my building on white plains road, the bronx, it's dangerous, this is bloody",RT120,NONE,MILD,True,BRONX,False,train,True
+"Hello, i see loud music from my neighbor",RT120,NONE,NONE,False,BRONX,False,train,True
+"Um i see luod noise form the apartment next doro in frnot of 339 Grandviiew Aenue, quens piiss",RT120,NONE,MILD,False,QUEENS,True,train,True
+We have loud noise from the apartment next door in bronx,RT120,NONE,NONE,True,BRONX,False,train,True
+"Thhere is my neighbors are partying all nihgt on Road near Cypress Avenue, quees",RT120,NONE,NONE,False,QUEENS,False,train,True
+"i want to report a car blasting music in front of 1100 grand concourse for a week now, it's dangerous",RT121,NONE,NONE,True,BRONX,False,train,True
+"pease help, i see noise from a resaurant in frront of 70 new lane in statten island",RT121,NONE,NONE,False,STATEN ISLAND,False,train,True
+"Um a car honking nonstop at the crner of Nashville Street and Altamont Street, staten island for a weeek now",RT121,NONE,NONE,False,STATEN ISLAND,True,train,True
+a car honking nonstop in front of 1068 remsen avenue right now thanks,RT121,NONE,NONE,False,BROOKLYN,False,train,True
+Loud music from a bar,RT121,NONE,NONE,False,BRONX,False,val,True
+"yeah can you send someone, loud music from a bar",RT121,NONE,NONE,False,QUEENS,True,train,True
+"can you send someone, there is noise from a restaurant in queens",RT121,NONE,NONE,True,QUEENS,False,train,True
+i'd like to report people yelling on the street at the corner of netherland avenue and esplanade since yesterday,RT121,NONE,NONE,True,BRONX,False,train,True
+"Uh please help, we have loud music from a bar in front of 1035 Bay 32 Street",RT121,NONE,NONE,True,QUEENS,True,train,True
+"helo, noie frm a restaurant outsside my buliding on becah 27 street in queens",RT121,NONE,NONE,False,QUEENS,False,val,True
+"Like hello, there's a car blasting music in front of 9 Street in queens right now crap",RT121,NONE,MILD,True,QUEENS,True,train,True
+"Goood morning, people yellign on the stret at the corner of Road and Avenue, queens all day please",RT121,NONE,NONE,False,QUEENS,False,train,True
+"Good morning, i see people yelling on the street at 35 Avenue in queens",RT121,NONE,NONE,True,QUEENS,False,train,True
+i want to report loud music from a bar,RT121,NONE,NONE,False,MANHATTAN,False,train,True
+"um hello, there's a car honking nonstop outside my building on east gun hill road",RT121,NONE,NONE,True,BRONX,True,train,True
+"i'd like to report i see loud music from a bar in front of 1722 undercliff avenue for two days, please send someone",RT121,NONE,NONE,True,BRONX,False,train,True
+I'd like to report there's noise from a restaurant at the corner of Loring Place and Grand Concourse in bronx since this morning,RT121,NONE,NONE,True,BRONX,False,val,True
+"um can you send someone, i see people yelling on the street in queens right now",RT121,NONE,NONE,True,QUEENS,True,train,True
+"Okay so hi, we have loud music from a bar outside my building on Cropsey Avenue in bk all day",RT121,NONE,NONE,True,BROOKLYN,True,train,True
+"Can you send someone, there is noise from a restaurant outside my building on 2 Avenue",RT121,NONE,NONE,True,MANHATTAN,False,train,True
+there's a car blasting music at 588 west fingerboard road in staten island thanks,RT121,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hello, there is noise from a restaurant outside my building on Gillespie Avenue in bronx since last night thanks",RT121,NONE,NONE,True,BRONX,False,train,True
+"Hi, people yelling on the street outside my building on Charleston Avenue please",RT121,NONE,NONE,True,STATEN ISLAND,False,train,True
+i want to report there is a car blasting music in si,RT121,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Can you send someone, i see a car honking nonstop at the corner of Richard Avenue and Theresa Place since yesterday",RT121,NONE,NONE,True,STATEN ISLAND,False,train,True
+"okay so hello, a car blasting music outside my building on brighton 13 street, it's dangerous",RT121,NONE,NONE,True,BROOKLYN,True,train,True
+"uh hi, we have people yelling on the street at the corner of oakville street and layton avenue in si, please send someone",RT121,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Like there's noise from a restaurant at 68 Drive in queens, please send someone",RT121,NONE,NONE,True,QUEENS,True,train,True
+"Like can you send someone, we have noise from a restaurant in the city. you bitch never fix anything",RT121,NONE,SEVERE,True,MANHATTAN,True,train,True
+"so hi, tere is a car blasting music at 15009 telleer avneue right now",RT121,NONE,NONE,False,BRONX,True,val,True
+"So hi, we have loud music from a bar at the corner of Avenue and Street for a week now",RT121,NONE,NONE,True,QUEENS,True,train,True
+Um we have a car blasting music on La Salle Street near Manhattan Avenue in manhattan,RT121,NONE,NONE,True,MANHATTAN,True,val,True
+i'd like to report a car blasting music in bronx,RT121,NONE,NONE,True,BRONX,False,val,True
+"Can you send someone, loud music from a bar please",RT121,NONE,NONE,False,BRONX,False,train,True
+Um i see loud musiic from a bar,RT121,NONE,NONE,False,QUEENS,True,train,True
+"Goood morning, i see a car blasting music outside my building on West 139 Street",RT121,NONE,NONE,False,MANHATTAN,False,train,True
+"can you send someone, there is a car blasting music since this morning",RT121,NONE,NONE,True,MANHATTAN,False,train,True
+uh there's people yelling on the street,RT121,NONE,NONE,False,QUEENS,True,val,True
+"hi, we have a car honking nonstop on beach 134 street near seneca avenue in queens",RT121,NONE,NONE,True,QUEENS,False,train,True
+Okay so we have a car blasting music outside my building on Kingsbridge Terrace in the bronx,RT121,NONE,NONE,True,BRONX,True,train,True
+"Like can you send someone, we have I cannot get my car out, a vehicle is blocking the driveway, this is bullshit",RT122,NONE,SEVERE,False,MANHATTAN,True,train,True
+"I'd like to report I cannot get my car out, a vehicle is blocking the driveway in front of 749 East 85 Street in brooklyn since last night",RT122,NONE,NONE,True,BROOKLYN,False,train,True
+"please help, there is i cannot get my car out, a vehicle is blocking the driveway right now, this is fuck",RT122,NONE,SEVERE,True,BROOKLYN,False,train,True
+"Yeah I cannot get my car out, a vehicel is blocking the driveway at 21143 Mappes Avenue",RT122,NONE,NONE,False,BRONX,True,train,True
+i see my driveway is blockde at the cornr of maien aveue and arthur kill rod,RT122,NONE,NONE,False,STATEN ISLAND,False,val,True
+"I see a car blocking my driveway outside my building on Seneca Avenue, queens right now",RT122,NONE,NONE,True,QUEENS,False,train,True
+I want to repotr we hvae my driveway is blocked at 70 Roaad,RT122,NONE,NONE,False,QUEENS,False,train,True
+"Hi, i see my driveway is blocked on Lamberts Lane near Wall Street",RT122,NONE,NONE,True,STATEN ISLAND,False,train,True
+"good morning, someone parked in my driveway",RT122,NONE,NONE,False,STATEN ISLAND,False,train,True
+so i'd like to report we have my driveway is blocked on watson avenue near east kingsbridge road for a week now,RT122,NONE,NONE,True,BRONX,True,train,True
+"Hi, we have my driveway is blocked at 1956 Clinton Avenue, bronx since this morning. you fucked never fix anything",RT122,NONE,SEVERE,True,BRONX,False,val,True
+"god mornng, theer is a car blocking my drivewy on east 232 street neaar reservooir oal wset, bronx basttard",RT122,NONE,SEVERE,False,BRONX,False,train,True
+"I cannot get my car out, a vehicle is blocking the driveway outside my building on 41 Street, brooklyn",RT122,NONE,NONE,True,BROOKLYN,False,train,True
+"Hello, someone parked in my driveway at 1341 Park Avenue in the city since last night",RT122,NONE,NONE,True,MANHATTAN,False,train,True
+someone parkked in my driveway in brronx,RT122,NONE,NONE,False,BRONX,False,val,True
+i'd likke to reporrt theres somene pared in my drieway outside my bilding on melvlle strete in staten islannd,RT122,NONE,NONE,False,STATEN ISLAND,False,train,True
+my driveway is blocked in front of 483 baltic street in bk for a week now,RT122,NONE,NONE,True,BROOKLYN,False,train,True
+"Hell,o we have I cannot get my car ouut, a vehcle is blocking the driveway at 465 Seneca Aevnue right no, this is bullshit",RT122,NONE,SEVERE,False,QUEENS,False,val,True
+"um hello, a car blocking my drivway at the corneer of ttus avnue and redi avenuue in si please",RT122,NONE,NONE,False,STATEN ISLAND,True,train,True
+"God mornin, my drveway is bllocked at 11000 Ocean Avenue in brooklyn",RT122,NONE,NONE,False,BROOKLYN,False,train,True
+I see soeone parkd in my dirveway in front of 754 Maguire Avenue in SI for two dasy,RT122,NONE,NONE,False,STATEN ISLAND,False,train,True
+i want to report i see my driveway is blocked,RT122,NONE,NONE,False,MANHATTAN,False,train,True
+"like i want to report my driveway is blocked at the corner of overlook terrace and west 47 street, manhattan for two days",RT122,NONE,NONE,True,MANHATTAN,True,val,True
+"we have i cannot get my car out, a vehicle is blocking the driveway outside my building on ridgewood avenue since yesterday",RT122,NONE,NONE,True,STATEN ISLAND,False,train,True
+"like please help, a car blocking my driveway at the corner of corson avenue and seaview avenue in si",RT122,NONE,NONE,True,STATEN ISLAND,True,train,True
+"please help, there's someone parked in my driveway on hubbard street near 55 street in brooklyn right now",RT122,NONE,NONE,True,BROOKLYN,False,train,True
+"good morning, my driveway is blocked at the corner of gates avenue and hegeman avenue for two days. you incompetent never fix anything",RT122,NONE,MILD,True,BROOKLYN,False,val,True
+"I see I cannot get my car out, a vehicle is blocking the driveway at the corner of Place and Cornelia Street, queens, it's dangerous",RT122,NONE,NONE,True,QUEENS,False,train,True
+Uh there's my driveway is blocked on Hicksville Road near Street in queens,RT122,NONE,NONE,True,QUEENS,True,train,True
+"Can you send someone, I cannot get my car out, a vehicle is blocking the driveway, queens",RT122,NONE,NONE,True,QUEENS,False,train,True
+"Can you send someone, there is I cannot get my car out, a vehicle is blocking the driveway on Greencroft Avenue near Jersey Street",RT122,NONE,NONE,True,STATEN ISLAND,False,train,True
+"hell,o there is i canot get my car out, a vehicle is blocking the driveway. you piss nveer fix anythig",RT122,NONE,MILD,False,MANHATTAN,False,train,True
+"hi, there is a car blocking my driveway in front of 153 street in queens",RT122,NONE,NONE,True,QUEENS,False,train,True
+i see someone parked in my driveway thanks,RT122,NONE,NONE,False,QUEENS,False,train,True
+"Uh hi, we have I cannot get my car out, a vehicle is blocking the driveway in front of 1035 Bay 32 Street in queens right now please",RT122,NONE,NONE,True,QUEENS,True,train,True
+"uh i cannot get my car out, a vehicle is blocking the driveway in front of 217 west 111 street, the city",RT122,NONE,NONE,True,MANHATTAN,True,val,True
+"I want to report i see someone parked in my driveway in front of 1100 Dean Street, brooklyn please. you useless never fix anything",RT122,NONE,MILD,True,BROOKLYN,False,val,True
+"i see i cannot get my car out, a vehicle is blocking the driveway on mount morris park west near commerce street",RT122,NONE,NONE,True,MANHATTAN,False,train,True
+"I want to report we have I cannot get my car out, a vehicle is blocking the driveway on 14 Street near 52 Street since this morning",RT122,NONE,NONE,True,BROOKLYN,False,train,True
+"Hi, therre's I cannot get my car otu, a veicle is blocking the driveway, it's dangerous",RT122,NONE,NONE,False,MANHATTAN,False,train,True
+Um soeone praked in the bus stpo in fornt of 115 Avvenue in queens rigt now damn,RT123,NONE,MILD,False,QUEENS,True,val,True
+"yeah hi, there is a truck double parked, the bronx",RT123,NONE,NONE,True,BRONX,True,train,True
+"i'd like to report i see a car parked on the sidewalk since last night, please send someone",RT123,NONE,NONE,True,BRONX,False,train,True
+"can you send someone, there is a car parked on the sidewalk",RT123,NONE,NONE,False,MANHATTAN,False,train,True
+Okay so I'd like to report there is illegal parking in bk thanks,RT123,NONE,NONE,True,BROOKLYN,True,val,True
+"can you send someone, there's a truck double parked, it's dangerous",RT123,NONE,NONE,False,STATEN ISLAND,False,val,True
+"Um I want to report i see a truck double parked in SI, please send someone. you moron never fix anything",RT123,NONE,MILD,True,STATEN ISLAND,True,train,True
+"uh please help, a truck double parked in front of 14 avenue for a week now",RT123,NONE,NONE,True,QUEENS,True,train,True
+"please help, we have a car parked on the sidewalk in front of 125 brighton 11 street",RT123,NONE,NONE,True,BROOKLYN,False,train,True
+"Hello, there is someone parked in the bus stop on Place near Street all day please",RT123,NONE,NONE,True,QUEENS,False,train,True
+There's a car parked on the sidewalk in front of 53 Rivington Street,RT123,NONE,NONE,True,MANHATTAN,False,train,True
+"Yeah good morning, i see a car parked on the sidewalk since yesterday",RT123,NONE,NONE,True,BRONX,True,train,True
+Uh I'd like to report i see a truck double parked at the corner of Broadway and West 179 Street,RT123,NONE,NONE,True,MANHATTAN,True,train,True
+"can you send someone, a car parked at the fire hydrant in front of 29 newton street in staten island since yesterday, it's dangerous",RT123,NONE,NONE,True,STATEN ISLAND,False,train,True
+"okay so hello, a truck double parked at the corner of beach 20 street and road, it's dangerous",RT123,NONE,NONE,True,QUEENS,True,train,True
+"Okay so please help, there is illegal parking at the corner of Street and Himrod Street for two days",RT123,NONE,NONE,True,QUEENS,True,val,True
+"yeah good morning, we have a car parked on the sidewalk outside my building on street since yesterday",RT123,NONE,NONE,True,QUEENS,True,train,True
+"i want to report illegal parking at 2759 sedgwick avenue, the bronx all day please",RT123,NONE,NONE,True,BRONX,False,train,True
+"can you send someone, someone parked in the bus stop in front of 67 avenue since yesterday. you bastard never fix anything",RT123,NONE,SEVERE,True,QUEENS,False,train,True
+I'd like to reprot a car parked at the fie hydrant plase,RT123,NONE,NONE,False,QUEENS,False,train,True
+"okay so hello, there's a car parked at the fire hydrant since this morning, please send someone",RT123,NONE,NONE,True,BRONX,True,train,True
+"can you send someone, we have someone parked in the bus stop in front of 16 west 11 road",RT123,NONE,NONE,True,QUEENS,False,val,True
+"Good morning, a truck double parked",RT123,NONE,NONE,False,MANHATTAN,False,train,True
+Um we have a truck double parked please dammit,RT123,NONE,MILD,False,QUEENS,True,train,True
+"please help, there's someone parked in the bus stop on himrod street near himrod street in queens",RT123,NONE,NONE,True,QUEENS,False,train,True
+"hi, we have a car parked at the fire hydrant",RT123,NONE,NONE,False,BRONX,False,train,True
+There's a truck double parked at 32 Eltingville Boulevard,RT123,NONE,NONE,True,STATEN ISLAND,False,train,True
+"um hello, illegal parking",RT123,NONE,NONE,False,BROOKLYN,True,train,True
+"Um good morning, we have illegal parking in front of 231 Union Avenue, SI",RT123,NONE,NONE,True,STATEN ISLAND,True,train,True
+A car parked on the sidewalk on 13 Avenue near New Utrecht Avenue since yesterday,RT123,NONE,NONE,True,BROOKLYN,False,val,True
+"Like I'd like to report someone parked in the bus stop, it's dangerous",RT123,NONE,NONE,False,QUEENS,True,train,True
+"uh can you send someone, i see someone parked in the bus stop, it's dangerous",RT123,NONE,NONE,False,MANHATTAN,True,train,True
+"like please help, a car parked on the sidewalk outside my building on lenox road in brooklyn",RT123,NONE,NONE,True,BROOKLYN,True,train,True
+"Good morning, there's someone parked in the bus stop in manhattan",RT123,NONE,NONE,True,MANHATTAN,False,train,True
+"please help, i see a truck double parked in front of 125 pine street since last night",RT123,NONE,NONE,True,BROOKLYN,False,train,True
+"Okay so I want to report we have a car parked on the sidewalk at 2899 Kingsbridge Terrace in bronx since last night thanks, this is piss",RT123,NONE,MILD,True,BRONX,True,train,True
+"okay so hello, a car parked on the sdiewalk at the corrner of west 140 stret and west 144 street snce thhis mornng, it's dangerous",RT123,NONE,NONE,False,MANHATTAN,True,train,True
+"Can you send someone, there is illegal parking at 27 Street",RT123,NONE,NONE,True,QUEENS,False,train,True
+I'd like to report i see a car parked at the fire hydrant in front of 2020 86 Street in bk for a week now,RT123,NONE,NONE,True,BROOKLYN,False,train,True
+"Okay so please help, i see a car parked at the fire hydrant, manhattan",RT123,NONE,NONE,True,MANHATTAN,True,train,True
+"i want to report a car that has not moved in weeks outside my building on east 17 street, brooklyn for two days",RT124,NONE,NONE,True,BROOKLYN,False,val,True
+"Can you send someone, i see an abandoned car in front of 3044 Albany Crescent",RT124,NONE,NONE,True,BRONX,False,train,True
+"Like good morning, there's an abandoned car at the corner of Street and Himrod Street right now",RT124,NONE,NONE,True,QUEENS,True,train,True
+"uh hi, there''s an abandoned car rihgt now",RT124,NONE,NONE,False,STATEN ISLAND,True,train,True
+Uh a car left on the street for a month at the corner of Fulton Street and Ocean Parkway,RT124,NONE,NONE,True,BROOKLYN,True,train,True
+"Hello, an abandoned vehicle with plates outside my building on Avenue",RT124,NONE,NONE,True,QUEENS,False,train,True
+So I'd like to report there is a car left on the street for a month on Ocean Parkway near Force Tube Avenue in bk,RT124,NONE,NONE,True,BROOKLYN,True,train,True
+"okay so please help, we have a car left on the street for a month on east 151 street near colden avenue in bronx",RT124,NONE,NONE,True,BRONX,True,val,True
+um i wnat to report there's a car that has not moved in weeks right now please,RT124,NONE,NONE,False,BRONX,True,train,True
+"hi, we have a car that has not moved in weeks",RT124,NONE,NONE,False,BRONX,False,val,True
+Okay so I'd like to report an abandoned vehicle with plates in front of 55 Broad Street since this morning,RT124,NONE,NONE,True,MANHATTAN,True,train,True
+there's a car left on the street for a month on coyle street near veronica place in bk for a week now,RT124,NONE,NONE,True,BROOKLYN,False,train,True
+"Um can you send someone, a car that has not moved in weeks",RT124,NONE,NONE,False,QUEENS,True,train,True
+An abandoned vehicle with plates on Roberts Avenue near Hutchinson Avenue in the bronx since last night,RT124,NONE,NONE,True,BRONX,False,train,True
+Um an abanddoned vheicle wiht platse in font of 79 Cayuga Aevnue in SI since tihs morning,RT124,NONE,NONE,False,STATEN ISLAND,True,val,True
+"hi, i see a car that has not moved in weeks at the corner of place and beach 19 street since this morning",RT124,NONE,NONE,True,QUEENS,False,train,True
+there is a car that has not moved in weeks at 2082 8 avenue in manhattan please,RT124,NONE,NONE,True,MANHATTAN,False,train,True
+"Yeah can you send someone, i see a car that has not moved in weeks",RT124,NONE,NONE,False,BRONX,True,val,True
+"Yeah can you send someone, i see a car left on the street for a month on High Street near Benton Avenue since this morning",RT124,NONE,NONE,True,STATEN ISLAND,True,train,True
+"Hi, a car that has not moved in weks on Fotr Hamiilton Parkway near Ridge Bouleevard in bk for two days, i'ts danerous, thiis is motherfuckre",RT124,NONE,SEVERE,False,BROOKLYN,False,train,True
+I want to report a car left on the street for a month outside my building on West 136 Street in manhattan,RT124,NONE,NONE,True,MANHATTAN,False,train,True
+"Yeeah hello, we haev a car that has not mved in weks at the croner of Summerffield Srteet and Road",RT124,NONE,NONE,False,QUEENS,True,val,True
+I'd like to report there's an abandoned vehicle with plates since this morning,RT124,NONE,NONE,True,BRONX,False,train,True
+I wannt to repport a car thaat has not moved in weeks on East Munt Edn Avenue near Van Cortandt Avene East,RT124,NONE,NONE,False,BRONX,False,train,True
+"like hello, there is an abandoned vehicle with plates. you pissed never fix anything",RT124,NONE,MILD,False,BROOKLYN,True,train,True
+"Hello, a car lft on the street for a moth on Vulacn Stret near Riverside Lae, SI since this morinng, pllease send someone",RT124,NONE,NONE,False,STATEN ISLAND,False,train,True
+"So good morning, we have a car that has not moved in weeks, please send someone",RT124,NONE,NONE,False,QUEENS,True,train,True
+"Can you send someone, an abandoned vehicle with plates since yesterday",RT124,NONE,NONE,True,BRONX,False,train,True
+Lke I'd likke to report a car taht has not movved in weeks for two days,RT124,NONE,NONE,False,QUEENS,True,train,True
+i want to report an abandoned car in bk,RT124,NONE,NONE,True,BROOKLYN,False,train,True
+"Can you send someone, i see a car that has not moved in weeks on 6 Street near Jefferson Avenue in brooklyn dammit",RT124,NONE,MILD,True,BROOKLYN,False,train,True
+"please help, there is an abandoned vehicle with plates, it's dangerous incompetent",RT124,NONE,MILD,False,MANHATTAN,False,val,True
+"hi, there is an abanndoned vehicle with plates at 415 myrtle aenue, brookyln",RT124,NONE,NONE,False,BROOKLYN,False,train,True
+"So we have an abandoned vehicle with plates, the city since last night",RT124,NONE,NONE,True,MANHATTAN,True,train,True
+"i'd like to report we have a car left on the street for a month at 1361 college avenue in the bronx, please send someone",RT124,NONE,NONE,True,BRONX,False,train,True
+We have a car left on the street for a month on East 7 Street near East 108 Street in the city since yesterday,RT124,NONE,NONE,True,MANHATTAN,False,train,True
+Uh an abandoned car outside my building on Ocean Avenue in bk,RT124,NONE,NONE,True,BROOKLYN,True,train,True
+"a car left on the street for a month on west 88 street near amsterdam avenue, manhattan please",RT124,NONE,NONE,True,MANHATTAN,False,train,True
+A car that has not moed in weeks since yesterdy,RT124,NONE,NONE,False,MANHATTAN,False,train,True
+"i want to report a car that has not moved in weeks in front of 100 street, queens since last night, please send someone",RT124,NONE,NONE,True,QUEENS,False,train,True
+"uh there is unsafe scaffolding outside my building on west 53 street, please send someone",RT140,NONE,NONE,True,MANHATTAN,True,val,True
+illegal construction since this morning,RT140,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Please help, i see construction work without a permit in front of 99 Newberry Avenue, it's dangerous",RT140,NONE,NONE,True,STATEN ISLAND,False,val,True
+like we have unsafe scaffolding outside my building on broadway in the city since last night,RT140,NONE,NONE,True,MANHATTAN,True,train,True
+"Um unsafe scaffolding at 1640 Cornelia Street, queens",RT140,NONE,NONE,True,QUEENS,True,train,True
+"Oky so can you seend smoeone, we have the building is shaking from construction in frot of 1330 3 Aveenue, the city. you dickhead neevr fix anyting",RT140,NONE,SEVERE,False,MANHATTAN,True,train,True
+"uh i'd like to report there is unsafe scaffolding in front of 176 suffolk street since yesterday, it's dangerous",RT140,NONE,NONE,True,MANHATTAN,True,train,True
+"I'd like to report the building is shaking from construction outside my building on Mason Boulevard, staten island",RT140,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Can you send someone, we have the building is shaking from construction",RT140,NONE,NONE,False,BRONX,False,train,True
+"I'd like to report we have work going on after hours without permits in bk, please send someone crap",RT140,NONE,MILD,True,BROOKLYN,False,val,True
+"Hello, i see work going on after hours without permits on Adam Clayton Powell Boulevard near Morningside Avenue in manhattan right now, please send someone",RT140,NONE,NONE,True,MANHATTAN,False,val,True
+"Hi, we have unsafe scaffolding at the corner of East 50 Street and West 179 Street, manhattan",RT140,NONE,NONE,True,MANHATTAN,False,train,True
+"Hello, there is unsafe scaffolding in queens. you useless never fix anything",RT140,NONE,MILD,True,QUEENS,False,train,True
+"hi, i see the building is shaking from construction outside my building on avenue in the city since yesterday, please send someone",RT140,NONE,NONE,True,MANHATTAN,False,train,True
+I want to report construction work without a permit at 711A Seagirt Avenue,RT140,NONE,NONE,True,QUEENS,False,train,True
+yeah i'd like to report there is illegal construction on seneca avenue near street in queens,RT140,NONE,NONE,True,QUEENS,True,train,True
+"There's the building is shaking from construction since this morning, it's dangerous hell",RT140,NONE,MILD,True,STATEN ISLAND,False,train,True
+"Please help, the building is shaking from construction on Gates Avenue near Street, queens, it's dangerous",RT140,NONE,NONE,True,QUEENS,False,train,True
+"We have construction work without a permit outside my building on Halletts Point in queens, it's dangerous",RT140,NONE,NONE,True,QUEENS,False,train,True
+"Likke hi, there's work gong on afer houurs without permtis for two days",RT140,NONE,NONE,False,MANHATTAN,True,train,True
+i'd like to report unsafe scaffolding since yesterday. you idiots never fix anything,RT140,NONE,MILD,True,STATEN ISLAND,False,train,True
+"can you send someone, we have construction work without a permit at the corner of barlow avenue and colon avenue in si since this morning",RT140,NONE,NONE,True,STATEN ISLAND,False,val,True
+"um please help, we have the building is shaking from construction on madison avenue near bradhurst avenue for two days",RT140,NONE,NONE,True,MANHATTAN,True,train,True
+"Hello, we have unsafe scaffolding",RT140,NONE,NONE,False,QUEENS,False,train,True
+"can you send someone, i see construction work without a permit, please send someone",RT140,NONE,NONE,False,BRONX,False,val,True
+Work going on after hours without permits in staten island please,RT140,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Good morning, work going on after hours without permits on Braisted Avenue near Van Name Avenue in staten island",RT140,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Yeah there is work going on after hours without permits outside my building on Martense Street in bk right now, it's dangerous",RT140,NONE,NONE,True,BROOKLYN,True,train,True
+Uh i see unsafe scaffolding. you freaking never fix anything,RT140,NONE,MILD,False,QUEENS,True,train,True
+i'd lke to report there is unsafe scaffolding on west 162 street ner laafyette street in manhattan pleasse,RT140,NONE,NONE,False,MANHATTAN,False,train,True
+Lie thee is illeegal construction all day,RT140,NONE,NONE,False,QUEENS,True,train,True
+"Hi, unsafe scaffolding on Farragtu Avene near Virgnia Avenue in saten ilsand",RT140,NONE,NONE,False,STATEN ISLAND,False,train,True
+"I want to report the building is shaking from construction on Broadway near East 77 Street, manhattan, it's dangerous",RT140,NONE,NONE,True,MANHATTAN,False,train,True
+"please help, illegal construction for two days thanks",RT140,NONE,NONE,True,QUEENS,False,train,True
+I want to report we have the building is shaking from construction at 418 100 Street in bk,RT140,NONE,NONE,True,BROOKLYN,False,train,True
+"Like good mornng, i see construction wrk withuot a perit on Shotwelll Aveneu near Elm Stret. you incompetent never fix anyting",RT140,NONE,MILD,False,STATEN ISLAND,True,val,True
+"I want to repport construction wok without a permitt, it's dangerous. you idiot never fix anythng",RT140,NONE,MILD,False,BROOKLYN,False,train,True
+"hi, there is the building is shaking from construction at the corner of street and beach 6 street, queens since last night",RT140,NONE,NONE,True,QUEENS,False,train,True
+i want to report tehre is the buildig is shakking fom cosntruction since yesteerday thankks,RT140,NONE,NONE,False,BROOKLYN,False,train,True
+"God morrning, there is costruction work without a premit at the crner of Beach 110 Street and Aveneu pleease",RT140,NONE,NONE,False,QUEENS,False,train,True
+"Hi, the elevator is broken please",RT141,NONE,NONE,False,MANHATTAN,False,train,True
+"Good morning, there's the elevator is not working outside my building on West 3 Street in brooklyn crap",RT141,NONE,MILD,True,BROOKLYN,False,train,True
+So I'd like to report our only elevator is out of service outside my building on West 260 Street in bronx,RT141,NONE,NONE,True,BRONX,True,train,True
+I want to report there is the lift is stuck at the corner of Walton Avenue and Webster Avenue since last night,RT141,NONE,NONE,True,BRONX,False,train,True
+"hi, we have the lift is stuck at 275 olympia boulevard since last night",RT141,NONE,NONE,True,STATEN ISLAND,False,train,True
+"Hi, the lift is stuck in front of 179 Place in queens since last night",RT141,NONE,NONE,True,QUEENS,False,train,True
+Okay so I want to report there is the lift is stuck on Beach 40 Street near Avenue for a week now,RT141,NONE,NONE,True,QUEENS,True,train,True
+"we have the lift is stuck at the corner of cheshire place and targee street, please send someone, this is pissed",RT141,NONE,MILD,True,STATEN ISLAND,False,train,True
+okay so i'd like to report i see the elevator is not working,RT141,NONE,NONE,False,BRONX,True,val,True
+"Please help, our only elevator is out of service outside my building on Fort George Avenue, it's dangerous",RT141,NONE,NONE,True,MANHATTAN,False,val,True
+"Good morning, we have the elevator is not working in front of 267 6 Street, please send someone",RT141,NONE,NONE,True,BROOKLYN,False,train,True
+the elevator is broken in front of 27 74 street in brooklyn,RT141,NONE,NONE,True,BROOKLYN,False,train,True
+The lift is stcuk since this mornign,RT141,NONE,NONE,False,STATEN ISLAND,False,train,True
+"I want to report i see the lift is stuck on Arthur Kill Road near Stobe Avenue in staten island for a week now, this is morons",RT141,NONE,MILD,True,STATEN ISLAND,False,train,True
+"Please help, there is the elevator is broken at 45 Wadsworth Terrace in the city since last night",RT141,NONE,NONE,True,MANHATTAN,False,train,True
+There is our onlly elevatoor is out of service,RT141,NONE,NONE,False,BROOKLYN,False,train,True
+"please help, we have the lift is stuck since this morning, please send someone",RT141,NONE,NONE,True,QUEENS,False,train,True
+"good morning, the elevator is not working on clay avenue near east 174 street in bronx",RT141,NONE,NONE,True,BRONX,False,train,True
+"Can you send someone, we have our only elevator is out of service on Street near Avenue, queens",RT141,NONE,NONE,True,QUEENS,False,train,True
+"Theer is our onnly elevator is out of serrvice at 2338 Mrris Avenue in the bronx, i's dangerous",RT141,NONE,NONE,False,BRONX,False,train,True
+"Can you snd someonee, i see the elevator is brooken at the corner of Green Vlley Roaad and Moreno Court",RT141,NONE,NONE,False,STATEN ISLAND,False,train,True
+"There's the elevator is not working in front of 474 Lafayette Avenue, brooklyn",RT141,NONE,NONE,True,BROOKLYN,False,train,True
+"I'd like to report our olny elevator is out of servce at the cornre of West 144 Srteet and Seamna Avenue, manhatttan",RT141,NONE,NONE,False,MANHATTAN,False,train,True
+"can you send someone, i see our only elevator is out of service at 2033 greene avenue in queens for a week now please",RT141,NONE,NONE,True,QUEENS,False,val,True
+"Can you sennd someone, there is the lift is stuck in frotn of 4121 Gace Aveue right now",RT141,NONE,NONE,False,BRONX,False,train,True
+"Hello, there is the lift is stuck in queens right now",RT141,NONE,NONE,True,QUEENS,False,val,True
+"So please help, we have the eleavtor is not workign on Seneca Avenue near Hancocck Street. you shitty never fix anything",RT141,NONE,SEVERE,False,QUEENS,True,train,True
+i'd like to report there is our only elevator is out of service at 25 nightingale street right now,RT141,NONE,NONE,True,STATEN ISLAND,False,train,True
+I'd like to report our only elevator is out of service outside my building on Beach 101 Street since yesterday,RT141,NONE,NONE,True,QUEENS,False,val,True
+"hi, i see our only elevatr is out of sevice outside my buildng on birggs avenue in the bronx",RT141,NONE,NONE,False,BRONX,False,train,True
+"Hi, the elevator is broken outside my building on Street in queens, this is screw",RT141,NONE,MILD,True,QUEENS,False,train,True
+"Can you send someone, i see our only elevator is out of service on Ft Washington Avenue near Sherman Avenue, the city",RT141,NONE,NONE,True,MANHATTAN,False,train,True
+"Please hel, we haev our only elevatr is out of service",RT141,NONE,NONE,False,BRONX,False,val,True
+"Hi, the elevator is broken, please send someone",RT141,NONE,NONE,False,MANHATTAN,False,train,True
+"Hi, there is the elevator is broken outside my building on Briar Place",RT141,NONE,NONE,True,QUEENS,False,train,True
+"okay so i'd like to report there is the lift is stuck at 3326 merritt avenue in bronx since last night, please send someone",RT141,NONE,NONE,True,BRONX,True,val,True
+"uh please help, there's our only elevator is out of service",RT141,NONE,NONE,False,QUEENS,True,val,True
+"can you send someone, i see the elevator is not working in front of 1636 macombs road, bronx since last night. you incompetent never fix anything",RT141,NONE,MILD,True,BRONX,False,train,True
+"um good morning, our only elveator is out of servie outsde my building on burke avene right now",RT141,NONE,NONE,False,BRONX,True,train,True
+"Um can you send someone, i see our only elevator is out of service, it's dangerous",RT141,NONE,NONE,False,BRONX,True,train,True
+who are you,SMALLTALK,NONE,NONE,True,,False,train,True
+hi,SMALLTALK,NONE,NONE,True,,False,train,True
+thanks a lot,SMALLTALK,NONE,NONE,True,,False,train,True
+help,SMALLTALK,NONE,NONE,True,,False,train,True
+ok,SMALLTALK,NONE,NONE,True,,False,train,True
+hello there,SMALLTALK,NONE,NONE,True,,False,train,True
+good morning,SMALLTALK,NONE,NONE,True,,False,val,True
+what can you do,SMALLTALK,NONE,NONE,True,,False,train,True
+thank you,SMALLTALK,NONE,NONE,True,,False,train,True
+bye,SMALLTALK,NONE,NONE,True,,False,train,True

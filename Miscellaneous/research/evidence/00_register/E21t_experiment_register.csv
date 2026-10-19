@@ -1,0 +1,28 @@
+component,algorithm family,what was varied,runs,chosen on,outcome
+C01 intake,Keyword rules (baseline),"none, it is a fixed lookup",1,gold macro F1,0.543 · the floor everything else has to beat
+C01 intake,TF IDF with a linear SVM,4 training data variants,4,gold macro F1,"0.733 best · purely lexical, no sense of meaning"
+C01 intake,MiniLM embeddings + logistic regression,"4 data variants, then 4 encoders x 6 regularisation strengths",28,gold macro F1 inside the deployment budget,0.854 · SHIPPED
+C01 intake,DistilBERT fine tuned,"4 data variants, random search of 18 trials over 8 settings, 5 seeds",27,gold macro F1,"0.811 mean · best validation score, worst gold score"
+C01 intake,RoBERTa fine tuned,4 training data variants,4,gold macro F1,0.808 best · no better than DistilBERT for twice the size
+C01 intake,DeBERTa v3 small,"planned, never ran",0,n/a,skipped: sentencepiece was missing on the GPU machine
+C01 slots,Regex patterns (the original),"none, they are fixed patterns",1,span F1 on messages labelled by hand,0.434 on location and time · the floor to beat
+C01 slots,"DistilBERT word tagger, on the original labels",2 learning rate and epoch settings,2,span F1 on the synthetic split,"0.999 · on template text, so it measured nothing"
+C01 slots,"DistilBERT word tagger, labels repaired and gold spans hand labelled","4 passes over 10,735 rows after repairing 2,376 truncated spans",1,span F1 on 308 messages labelled by hand,"0.723 on location and time, 0.984 on the synthetic split · SHIPPED"
+C02 emergency,Weighted lexicon with negation,"2 lexicons, with and without the immobility patch",2,"recall first, then precision",recall 0.737 alone
+C02 emergency,TF IDF with logistic regression,8 decision thresholds against both lexicons,16,lowest threshold reaching recall 1.0,recall 1.000 at 0.45 · SHIPPED
+C06 credibility,"Decaying Beta, fixed neutral prior",the original design,1,ranking and fairness,unfair by 4.0 points across report types
+C06 credibility,"Decaying Beta, centred on the base rate for the types reported",with per type confirmation rates,1,ranking and fairness,"Spearman 0.926, unfairness 2.2 · SHIPPED"
+C11 alerting,"Weekday and season baseline, no weather",none,1,error on storm days,MAE 72.3 · the honest floor
+C11 alerting,Poisson regression with weather,one specification,1,error on storm days,MAE 83.1 · WORSE than using no weather
+C11 alerting,Gradient boosting with a Poisson loss,16 configurations over 5 hyperparameters,17,error on storm days,"MAE 60.4, storm 73.7 · SHIPPED"
+C05 duplicate,Exact BBL + type key,"none, missing BBL rows are skipped",1,"pair F1, false-merge first","F1 0.93, false merge 0.08 on 295 hand pairs"
+C05 duplicate,Radius + time window (150 m / 48 h),"none, it is the documented baseline",1,"pair F1, false-merge first","F1 0.69, false merge 0.48 · 150 m is too wide"
+C05 duplicate,Fuzzy address (SequenceMatcher),strong 0.88 / weak 0.72 cutoffs,1,"pair F1, false-merge first",F1 0.69 · only helps weak-location rows (synthetic test)
+C05 duplicate,DBSCAN in metres + scaled hours,"eps 160 m, min_samples 2",1,"pair F1, false-merge first",F1 0.65
+C05 duplicate,"HDBSCAN, min_cluster_size 2","sklearn HDBSCAN, single-linkage fallback",1,"pair F1, false-merge first",F1 0.69 · crash on many candidates fixed
+C05 duplicate,NetworkX connected components,pairwise edges above score 0.45,1,"pair F1, false-merge first",F1 0.69 · transitivity chains over-merge
+C05 duplicate,Hybrid evidence (BBL + radius + fuzzy + graph),"radius x time x fuzzy x graph grid, then per-type radius/time",216,"false-merge first, then F1 and ARI","SHIPPED: 25 m / 6 h + per-type table · F1 0.92 hand, 0.76 Feb silver"
+C06 fake risk,"Rules (type base rate, burst, corroboration)",burst flag at 5 reports / 1 h,1,"Brier and first-time FPR, floor on urgent recall",AUC 0.573 / Brier 0.247 on real test
+C06 fake risk,Calibrated logistic regression,Platt sigmoid on the val split,1,Brier and first-time FPR,AUC 0.629 / Brier 0.236
+C06 fake risk,Histogram gradient boosting,"depth 3, 80 iterations, then calibration",1,Brier and first-time FPR,AUC 0.633 / Brier 0.233 · first-time FPR 0.85
+C06 fake risk,Hybrid rules + logreg,0.65 model + 0.35 rules; one burst ablation,2,"Brier and first-time FPR, floor on urgent recall","AUC 0.613 / Brier 0.237 · SHIPPED, cold-start floor"

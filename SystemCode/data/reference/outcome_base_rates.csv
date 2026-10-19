@@ -1,0 +1,33 @@
+request_type_code,citizen_label,p_confirmed,decided_rows
+RT023,Sewer backup or manhole overflow,0.0082,122
+RT022,Street flooding,0.2162,74
+RT140,Unsafe building or illegal construction,0.2547,428
+RT002,Street cave-in or sinkhole,0.3095,84
+RT120,Noise from a residence,0.3163,5314
+RT044,Snow or ice not cleared,0.3231,1201
+RT121,"Noise from street, business or vehicle",0.3522,4250
+RT141,Elevator not working,0.3969,131
+RT020,Water main break or street water leak,0.422,218
+RT042,Dirty street or litter,0.424,1073
+RT084,Electrical problem in building,0.4281,313
+RT083,"Pests, mold or unsanitary condition",0.4407,1257
+RT006,Broken sidewalk or curb,0.4478,134
+RT081,Water leak inside building,0.4645,465
+RT082,Plumbing problem in apartment,0.4658,571
+RT123,Illegal parking or blocked hydrant,0.4831,8791
+RT061,Overgrown tree or branches on wires,0.4963,135
+RT003,Other street surface defect,0.5,248
+RT122,Blocked driveway,0.5036,2764
+RT043,Derelict vehicle,0.5319,235
+RT045,Dead animal on street,0.5399,213
+RT041,Illegal dumping,0.5556,513
+RT021,Catch basin clogged or flooding,0.592,174
+RT100,Rats or rodents,0.6037,164
+RT124,Abandoned vehicle,0.6125,1120
+RT062,Dead or dying tree,0.7405,185
+RT060,Fallen tree or branch,0.7465,797
+RT025,Dirty water or low water pressure,0.7468,154
+RT040,Missed garbage or recycling collection,0.8058,690
+RT080,No heat or hot water,0.8084,2406
+RT024,Fire hydrant running or damaged,0.8092,587
+RT001,Pothole,0.8921,1001

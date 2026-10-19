@@ -1,0 +1,2765 @@
+slot,action,before,after
+CROSS_STREET,extended,davidson,davidson avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+TIME,extended,all,all day
+CROSS_STREET,extended,mill,mill avenue
+ADDRESS,extended,alabama,alabama avenue
+ADDRESS,extended,throop,throop avenue
+TIME,extended,since this,since this morning
+TIME,extended,since this,since this morning
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+TIME,extended,right,right now
+CROSS_STREET,extended,onderdonk,onderdonk avenue
+TIME,extended,right,right now
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,east 228,east 228 street
+ADDRESS,extended,morrison,morrison avenue
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,logan,logan avenue
+ADDRESS,extended,180 east 162,180 east 162 street
+BOROUGH,extended,the,the city
+ADDRESS,extended,west 131,west 131 street
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,putnam,putnam avenue
+ADDRESS,extended,veterans road,veterans road west
+TIME,extended,right,right now
+ADDRESS,extended,7 east 31,7 east 31 street
+TIME,extended,all,all day
+CROSS_STREET,extended,1,1 avenue
+TIME,extended,right,right now
+TIME,extended,all,all day
+TIME,extended,all,all day
+CROSS_STREET,extended,east 173,east 173 street
+BOROUGH,extended,the,the bronx
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,morris,morris avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,408 seneca,408 seneca avenue
+TIME,extended,since,since yesterday
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,unionport,unionport road
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,first,first avenue
+TIME,extended,for two,for two days
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,west 129,west 129 street
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,east tremont,east tremont avenue
+TIME,extended,all,all day
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 123,beach 123 street
+ADDRESS,extended,159,159 avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,nagle,nagle avenue
+ADDRESS,extended,bainbridge,bainbridge avenue
+TIME,extended,right,right now
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,castleton,castleton avenue
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,andrews avenue,andrews avenue
+ADDRESS,extended,west 138,west 138 street
+TIME,extended,since this,since this morning
+ADDRESS,left as is,park avenue,park avenue
+ADDRESS,extended,west 109,west 109 street
+CROSS_STREET,extended,woodrow,woodrow road
+ADDRESS,extended,1672 cornelia,1672 cornelia street
+ADDRESS,extended,79,79 street
+HAZARD,extended,a cave-in on the,a cave-in on the street
+ADDRESS,left as is,73,73
+TIME,extended,for a week,for a week now
+TIME,extended,right,right now
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+ADDRESS,extended,richmond,richmond road
+TIME,extended,all,all day
+CROSS_STREET,extended,degraw,degraw street
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+CROSS_STREET,extended,wyckoff,wyckoff avenue
+ADDRESS,extended,169,169 place
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+ADDRESS,extended,st nicholas,st nicholas avenue
+TIME,extended,for a week,for a week now
+BOROUGH,extended,the,the city
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,avenue,avenue a
+TIME,extended,since this,since this morning
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,carroll,carroll street
+CROSS_STREET,extended,west 11,west 11 road
+BOROUGH,extended,the,the city
+TIME,extended,for a week,for a week now
+HAZARD,extended,a,a sinkhole
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,west 111,west 111 street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+CROSS_STREET,extended,east 179,east 179 street
+TIME,extended,since last,since last night
+HAZARD,extended,the street is,the street is sinking
+TIME,extended,all,all day
+HAZARD,extended,a cave-in on the,a cave-in on the street
+TIME,extended,since last,since last night
+HAZARD,extended,a,a sinkhole
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the bronx
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+HAZARD,extended,a cave-in on the,a cave-in on the street
+HAZARD,extended,a cave-in on the,a cave-in on the street
+TIME,extended,since this,since this morning
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the city
+HAZARD,extended,a cave-in on the,a cave-in on the street
+HAZARD,extended,a cave-in on the,a cave-in on the street
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,east 9,east 9 street
+TIME,extended,since last,since last night
+ADDRESS,extended,loring,loring avenue
+ADDRESS,extended,hicksville,hicksville road
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+ADDRESS,extended,33,33 avenue
+TIME,extended,since,since yesterday
+ADDRESS,left as is,1 avenue,1 avenue
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+ADDRESS,extended,seneca,seneca avenue
+TIME,extended,for two,for two days
+HAZARD,extended,the road caving,the road caving in
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+HAZARD,extended,a cave-in on the,a cave-in on the street
+HAZARD,extended,the road caving,the road caving in
+BOROUGH,extended,staten,staten island
+HAZARD,extended,the road caving,the road caving in
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+ADDRESS,left as is,118,118
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,38,38
+TIME,extended,since last,since last night
+HAZARD,extended,the street is,the street is sinking
+HAZARD,extended,the street is,the street is sinking
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,avenue,avenue
+HAZARD,extended,a cave-in on the,a cave-in on the street
+CROSS_STREET,extended,college,college avenue
+CROSS_STREET,extended,st nicholas,st nicholas avenue
+CROSS_STREET,left as is,metropolitan,metropolitan
+TIME,extended,for two,for two days
+HAZARD,extended,a cave-in on the,a cave-in on the street
+CROSS_STREET,extended,west 164,west 164 street
+TIME,extended,since this,since this morning
+ADDRESS,left as is,bronx park,bronx park
+TIME,extended,all,all day
+HAZARD,extended,the street is,the street is sinking
+BOROUGH,extended,the,the bronx
+HAZARD,extended,the pavement collapsed into a,the pavement collapsed into a hole
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+HAZARD,extended,a cave-in on the,a cave-in on the street
+ADDRESS,extended,west 143,west 143 street
+CROSS_STREET,extended,arden,arden avenue
+TIME,extended,right,right now
+CROSS_STREET,extended,ludlow,ludlow street
+CROSS_STREET,left as is,delaware,delaware
+TIME,extended,all,all day
+ADDRESS,extended,east 65,east 65 street
+ADDRESS,extended,fairview,fairview avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,396 saratoga,396 saratoga avenue
+TIME,extended,right,right now
+ADDRESS,left as is,1 avenue,1 avenue
+CROSS_STREET,extended,delaware,delaware avenue
+TIME,extended,for two,for two days
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,ellwood,ellwood street
+ADDRESS,extended,greene,greene avenue
+BOROUGH,extended,the,the city
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,west 53,west 53 street
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,decatur,decatur street
+TIME,extended,right,right now
+CROSS_STREET,extended,simonson,simonson place
+TIME,extended,for a week,for a week now
+ADDRESS,extended,1513 cooper,1513 cooper avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,bedford,bedford avenue
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,beach 129,beach 129 street
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+TIME,extended,since this,since this morning
+ADDRESS,extended,9,9 street
+ADDRESS,extended,east 117,east 117 street
+TIME,extended,since this,since this morning
+TIME,extended,for a week,for a week now
+TIME,extended,all,all day
+ADDRESS,extended,cornelia,cornelia street
+CROSS_STREET,extended,evan,evan place
+ADDRESS,extended,east 162,east 162 street
+ADDRESS,left as is,leland avenue,leland avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,2518 webb,2518 webb avenue
+CROSS_STREET,extended,palmetto,palmetto street
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beverly,beverly road
+CROSS_STREET,extended,walton,walton avenue
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,nostrand,nostrand avenue
+ADDRESS,extended,granite,granite avenue
+ADDRESS,extended,stanley,stanley avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+BOROUGH,extended,staten,staten island
+TIME,extended,for two,for two days
+CROSS_STREET,extended,edison,edison avenue
+TIME,extended,for two,for two days
+ADDRESS,left as is,1 avenue,1 avenue
+CROSS_STREET,extended,1,1 avenue
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,avenue,avenue w
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+ADDRESS,extended,east 189,east 189 street
+CROSS_STREET,extended,east tremont,east tremont avenue
+TIME,extended,since this,since this morning
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,seagirt,seagirt avenue
+TIME,extended,right,right now
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,senator,senator street
+TIME,extended,since last,since last night
+ADDRESS,extended,hancock,hancock street
+CROSS_STREET,extended,mill,mill road
+TIME,extended,for a week,for a week now
+TIME,extended,since last,since last night
+ADDRESS,extended,150 greenway,150 greenway terrace
+CROSS_STREET,left as is,nelson,nelson
+ADDRESS,extended,beach 38,beach 38 street
+BOROUGH,extended,the,the city
+TIME,extended,for a week,for a week now
+TIME,extended,for two,for two days
+ADDRESS,extended,grand,grand concourse
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,bowery,bowery street
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,bronx,bronx boulevard
+TIME,extended,since,since yesterday
+ADDRESS,extended,metropolitan,metropolitan avenue
+CROSS_STREET,left as is,university,university
+TIME,extended,for a week,for a week now
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 12,east 12 street
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,7,7 avenue
+TIME,extended,right,right now
+ADDRESS,extended,alter,alter avenue
+ADDRESS,extended,west 182,west 182 street
+CROSS_STREET,extended,monterey,monterey avenue
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,lee,lee avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+ADDRESS,extended,5,5 avenue
+TIME,extended,for two,for two days
+CROSS_STREET,left as is,winthrop,winthrop
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,park avenue,park avenue
+TIME,extended,right,right now
+TIME,extended,right,right now
+ADDRESS,extended,1940 east tremont,1940 east tremont avenue
+CROSS_STREET,extended,first,first avenue
+ADDRESS,extended,3 saybrook,3 saybrook street
+ADDRESS,extended,707 beach 9,707 beach 9 street
+TIME,extended,all,all day
+ADDRESS,extended,391 menahan,391 menahan street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,troutman,troutman street
+TIME,extended,for a week,for a week now
+ADDRESS,extended,eltingville,eltingville boulevard
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,2876 claflin,2876 claflin avenue
+CROSS_STREET,extended,arden,arden avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since this,since this morning
+ADDRESS,extended,6616 14,6616 14 avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+TIME,extended,right,right now
+BOROUGH,extended,staten,staten island
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,monroe,monroe street
+TIME,extended,for two,for two days
+ADDRESS,extended,wallace,wallace avenue
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+ADDRESS,extended,drumgoole road,drumgoole road west
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,113,113 street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,72,72 street
+ADDRESS,extended,234 sands,234 sands street
+CROSS_STREET,extended,metropolitan,metropolitan avenue
+TIME,extended,since,since yesterday
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,rear beach 99,rear beach 99 street
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,68,68 street
+ADDRESS,extended,beach 56,beach 56 place
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,colon,colon
+BOROUGH,extended,the,the city
+ADDRESS,extended,east 12,east 12 street
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,beach eighth,beach eighth street
+TIME,extended,for two,for two days
+ADDRESS,extended,seneca,seneca avenue
+ADDRESS,extended,east mosholu parkway,east mosholu parkway south
+CROSS_STREET,extended,irving,irving avenue
+TIME,extended,since,since yesterday
+TIME,extended,for two,for two days
+ADDRESS,left as is,1 avenue,1 avenue
+ADDRESS,extended,grove,grove street
+CROSS_STREET,extended,west 164,west 164 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,hancock,hancock street
+CROSS_STREET,extended,west 5,west 5 street
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+ADDRESS,extended,2108 gates,2108 gates avenue
+ADDRESS,extended,1859 cornelia,1859 cornelia street
+TIME,extended,for two,for two days
+CROSS_STREET,extended,nagle,nagle avenue
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+BOROUGH,extended,the,the city
+TIME,extended,since this,since this morning
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,west 164,west 164 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,fort hamilton,fort hamilton parkway
+ADDRESS,extended,home,home street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,all,all day
+ADDRESS,extended,503 grandview,503 grandview avenue
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+ADDRESS,extended,2508 devoe,2508 devoe terrace
+TIME,extended,for a week,for a week now
+BOROUGH,extended,the,the bronx
+TIME,extended,since,since yesterday
+ADDRESS,extended,holland,holland avenue
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+ADDRESS,extended,seneca,seneca avenue
+TIME,extended,all,all day
+TIME,extended,for two,for two days
+CROSS_STREET,extended,east 3,east 3 street
+ADDRESS,extended,milbank,milbank road
+TIME,extended,since this,since this morning
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,vermont,vermont street
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,linden,linden street
+CROSS_STREET,extended,west 207,west 207 street
+TIME,extended,right,right now
+CROSS_STREET,extended,holland,holland avenue
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,greaves,greaves avenue
+ADDRESS,extended,thomas,thomas street
+TIME,extended,since this,since this morning
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,van duzer,van duzer street
+ADDRESS,extended,main,main street
+ADDRESS,left as is,park avenue,park avenue
+ADDRESS,extended,83,83 drive
+ADDRESS,extended,16 center,16 center street
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,east 217,east 217 street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,all,all day
+ADDRESS,left as is,leland avenue,leland avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,all,all day
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,mosely,mosely avenue
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+ADDRESS,extended,rivington,rivington street
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,third,third avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,palmetto,palmetto street
+TIME,extended,all,all day
+CROSS_STREET,extended,linden,linden boulevard
+CROSS_STREET,extended,59,59 street
+ADDRESS,extended,37,37 avenue
+TIME,extended,for two,for two days
+CROSS_STREET,extended,manor,manor avenue
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+ADDRESS,extended,59,59 street
+CROSS_STREET,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,20,20 road
+TIME,extended,right,right now
+ADDRESS,extended,lexington,lexington avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,driggs,driggs street
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+ADDRESS,extended,149,149 road
+ADDRESS,extended,edgecombe,edgecombe avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,bennett,bennett avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,2223 himrod,2223 himrod street
+TIME,extended,since last,since last night
+HAZARD,extended,water pouring out of a crack in the,water pouring out of a crack in the street
+CROSS_STREET,extended,north railroad,north railroad avenue
+CROSS_STREET,extended,onderdonk,onderdonk avenue
+TIME,extended,since last,since last night
+HAZARD,extended,a water main,a water main break
+ADDRESS,extended,1827 cornelia,1827 cornelia street
+TIME,extended,for two,for two days
+CROSS_STREET,extended,clarkson,clarkson avenue
+ADDRESS,extended,77,77 street
+CROSS_STREET,extended,milton,milton avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+HAZARD,extended,a water leak coming up from the,a water leak coming up from the road
+ADDRESS,extended,beach 129,beach 129 street
+HAZARD,extended,water gushing out of the,water gushing out of the street
+CROSS_STREET,extended,bruckner,bruckner boulevard
+ADDRESS,extended,pelham parkway,pelham parkway south
+HAZARD,extended,water gushing out of the,water gushing out of the street
+CROSS_STREET,extended,union,union avenue
+CROSS_STREET,extended,beach 29,beach 29 street
+CROSS_STREET,extended,cortelyou,cortelyou road
+TIME,extended,for two,for two days
+HAZARD,extended,water gushing out of the,water gushing out of the street
+HAZARD,extended,a water main,a water main break
+ADDRESS,extended,135 amersfort,135 amersfort place
+TIME,extended,right,right now
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+HAZARD,extended,a water leak coming up from the,a water leak coming up from the road
+ADDRESS,left as is,195,195
+TIME,extended,right,right now
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,2,2 avenue
+TIME,extended,right,right now
+TIME,extended,all,all day
+ADDRESS,extended,914 crossbay,914 crossbay boulevard
+ADDRESS,extended,boston,boston road
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,ocean,ocean avenue
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+HAZARD,extended,water gushing out of the,water gushing out of the street
+ADDRESS,extended,cornelia,cornelia street
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,avenue,avenue
+HAZARD,extended,a water leak coming up from the,a water leak coming up from the road
+CROSS_STREET,extended,beach 38,beach 38 street
+ADDRESS,left as is,avenue,avenue
+HAZARD,extended,water pouring out of a crack in the,water pouring out of a crack in the street
+HAZARD,extended,a water leak coming up from the,a water leak coming up from the road
+TIME,extended,for two,for two days
+HAZARD,extended,a water main,a water main break
+CROSS_STREET,extended,grove,grove street
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+HAZARD,extended,a water leak coming up from the,a water leak coming up from the road
+HAZARD,extended,a water main,a water main break
+CROSS_STREET,extended,union,union avenue
+HAZARD,extended,a water main,a water main break
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,palmetto,palmetto street
+TIME,extended,for two,for two days
+HAZARD,extended,a water main,a water main break
+TIME,extended,right,right now
+HAZARD,extended,a water main,a water main break
+TIME,extended,for a week,for a week now
+TIME,extended,all,all day
+ADDRESS,extended,35 vassar,35 vassar street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,greene,greene avenue
+HAZARD,extended,water pouring out of a crack in the,water pouring out of a crack in the street
+HAZARD,extended,a water leak coming up from the,a water leak coming up from the road
+ADDRESS,extended,amboy,amboy road
+TIME,extended,since last,since last night
+CROSS_STREET,extended,prospect,prospect avenue
+CROSS_STREET,extended,west 131,west 131 street
+ADDRESS,extended,west 10,west 10 street
+ADDRESS,left as is,1 avenue,1 avenue
+CROSS_STREET,extended,richmond,richmond terrace
+TIME,extended,for a week,for a week now
+HAZARD,extended,a water main,a water main break
+TIME,extended,for two,for two days
+CROSS_STREET,extended,morris,morris avenue
+TIME,extended,right,right now
+ADDRESS,extended,194 beach 114,194 beach 114 street
+ADDRESS,extended,schaefer,schaefer street
+BOROUGH,extended,the,the city
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,wyckoff,wyckoff avenue
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,dyckman,dyckman street
+ADDRESS,extended,2124 himrod,2124 himrod street
+TIME,extended,for two,for two days
+BOROUGH,extended,the,the city
+TIME,extended,for two,for two days
+ADDRESS,extended,willow road,willow road west
+ADDRESS,extended,fairview,fairview avenue
+TIME,extended,since,since yesterday
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,beach 29,beach 29 street
+ADDRESS,extended,east 103,east 103 street
+TIME,extended,for a week,for a week now
+ADDRESS,extended,champlain,champlain avenue
+CROSS_STREET,extended,west 36,west 36 street
+TIME,extended,since last,since last night
+ADDRESS,extended,71,71 avenue
+ADDRESS,extended,sterling,sterling place
+ADDRESS,extended,schroeders,schroeders avenue
+TIME,extended,since this,since this morning
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for two,for two days
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,sterling,sterling place
+CROSS_STREET,extended,7,7 avenue
+ADDRESS,extended,rivington,rivington street
+ADDRESS,extended,columbus,columbus avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 15,beach 15 street
+ADDRESS,extended,194,194 street
+ADDRESS,extended,46,46 street
+ADDRESS,extended,42,42 street
+TIME,extended,right,right now
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,beach 66,beach 66 street
+CROSS_STREET,extended,bartow,bartow avenue
+TIME,extended,since,since yesterday
+ADDRESS,extended,128 beach,128 beach street
+CROSS_STREET,extended,west 96,west 96 street
+CROSS_STREET,left as is,jesup,jesup
+ADDRESS,extended,2655 richmond,2655 richmond avenue
+CROSS_STREET,extended,east 35,east 35 street
+CROSS_STREET,extended,convent,convent avenue
+ADDRESS,extended,edgecombe,edgecombe avenue
+ADDRESS,extended,bethel,bethel avenue
+TIME,extended,for a week,for a week now
+TIME,extended,for two,for two days
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,saratoga,saratoga avenue
+TIME,extended,for a week,for a week now
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+ADDRESS,extended,1349 stratford,1349 stratford avenue
+TIME,extended,for a week,for a week now
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,hart,hart
+ADDRESS,extended,grand,grand concourse
+CROSS_STREET,extended,creston,creston avenue
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,linden,linden street
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,east 167,east 167 street
+TIME,extended,since this,since this morning
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,beaumont,beaumont avenue
+CROSS_STREET,extended,himrod,himrod street
+CROSS_STREET,extended,targee,targee street
+CROSS_STREET,extended,beach 117,beach 117 street
+TIME,extended,since this,since this morning
+TIME,extended,for two,for two days
+ADDRESS,extended,2340 amsterdam,2340 amsterdam avenue
+ADDRESS,extended,82,82 street
+CROSS_STREET,extended,fulton,fulton street
+TIME,extended,all,all day
+CROSS_STREET,extended,79,79 street
+TIME,extended,for two,for two days
+HAZARD,extended,flooding after the,flooding after the rain
+TIME,extended,all,all day
+HAZARD,extended,the intersection is under,the intersection is under water
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,west 117,west 117 street
+ADDRESS,left as is,902,902
+BOROUGH,extended,staten,staten island
+BOROUGH,extended,the,the bronx
+BOROUGH,extended,the,the bronx
+BOROUGH,extended,the,the bronx
+BOROUGH,extended,the,the city
+HAZARD,extended,flooding after the,flooding after the rain
+HAZARD,extended,street,street flooding
+CROSS_STREET,extended,beach 65,beach 65 street
+HAZARD,extended,street,street flooding
+HAZARD,extended,the whole street is,the whole street is flooded
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+ADDRESS,extended,121,121 avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+TIME,extended,right,right now
+HAZARD,extended,flooding after the,flooding after the rain
+CROSS_STREET,extended,sedgwick,sedgwick avenue
+HAZARD,extended,water is flooding the,water is flooding the road
+HAZARD,extended,the whole street is,the whole street is flooded
+ADDRESS,extended,grafton,grafton street
+TIME,extended,all,all day
+ADDRESS,extended,pleasant valley,pleasant valley avenue
+TIME,extended,since,since yesterday
+TIME,extended,for two,for two days
+HAZARD,extended,street,street flooding
+TIME,extended,all,all day
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,5,5 avenue
+TIME,extended,since,since yesterday
+HAZARD,extended,the whole street is,the whole street is flooded
+TIME,extended,since last,since last night
+ADDRESS,extended,215,215 street
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+HAZARD,extended,the intersection is under,the intersection is under water
+ADDRESS,left as is,91,91
+TIME,extended,all,all day
+TIME,extended,for two,for two days
+HAZARD,extended,flooding after the,flooding after the rain
+TIME,extended,right,right now
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+TIME,extended,since last,since last night
+ADDRESS,extended,1170 east 225,1170 east 225 street
+TIME,extended,since this,since this morning
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+ADDRESS,extended,eagle,eagle avenue
+ADDRESS,left as is,pelham parkway,pelham parkway
+CROSS_STREET,extended,columbus,columbus avenue
+ADDRESS,extended,west 56,west 56 street
+ADDRESS,extended,225,225 street
+ADDRESS,extended,jerome,jerome avenue
+CROSS_STREET,extended,barlow,barlow avenue
+HAZARD,extended,the whole street is,the whole street is flooded
+HAZARD,extended,water is flooding the,water is flooding the road
+HAZARD,extended,the whole street is,the whole street is flooded
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 117,beach 117 street
+TIME,extended,all,all day
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+HAZARD,extended,raw sewage on the,raw sewage on the street
+TIME,extended,all,all day
+ADDRESS,left as is,park avenue,park avenue
+HAZARD,extended,sewage coming up from the,sewage coming up from the manhole
+HAZARD,extended,the sewer is backing up into my,the sewer is backing up into my basement
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,granite,granite avenue
+ADDRESS,extended,21,21 avenue
+CROSS_STREET,extended,highlawn,highlawn avenue
+TIME,extended,all,all day
+CROSS_STREET,extended,greene,greene avenue
+CROSS_STREET,extended,cypress,cypress avenue
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+HAZARD,extended,a sewer,a sewer backup
+HAZARD,extended,raw sewage on the,raw sewage on the street
+ADDRESS,extended,woodbine,woodbine street
+BOROUGH,extended,the,the bronx
+TIME,extended,since,since yesterday
+HAZARD,extended,sewage coming up from the,sewage coming up from the manhole
+CROSS_STREET,left as is,avenue,avenue
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,west 76,west 76 street
+CROSS_STREET,extended,west 151,west 151 street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+TIME,extended,since,since yesterday
+BOROUGH,extended,staten,staten island
+HAZARD,extended,a sewer,a sewer backup
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,sackett,sackett street
+HAZARD,extended,sewage coming up from the,sewage coming up from the manhole
+TIME,extended,since last,since last night
+TIME,extended,all,all day
+ADDRESS,extended,5,5 avenue
+ADDRESS,left as is,park avenue,park avenue
+BOROUGH,extended,staten,staten island
+HAZARD,extended,sewage coming up from the,sewage coming up from the manhole
+CROSS_STREET,left as is,avenue,avenue
+HAZARD,extended,raw sewage on the,raw sewage on the street
+ADDRESS,extended,80,80 street
+ADDRESS,extended,3,3 avenue
+TIME,extended,for two,for two days
+CROSS_STREET,extended,morris,morris avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,right,right now
+ADDRESS,extended,halletts,halletts point
+ADDRESS,extended,huguenot,huguenot avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+CROSS_STREET,extended,dewey,dewey avenue
+TIME,extended,all,all day
+HAZARD,extended,raw sewage on the,raw sewage on the street
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,sleight,sleight avenue
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the city
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+TIME,extended,all,all day
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+ADDRESS,extended,88,88 street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,bruckner,bruckner boulevard
+HAZARD,extended,raw sewage on the,raw sewage on the street
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 58,east 58 street
+ADDRESS,extended,burke,burke avenue
+ADDRESS,extended,west 46,west 46 street
+TIME,extended,all,all day
+CROSS_STREET,extended,shore front,shore front parkway
+CROSS_STREET,extended,east 177,east 177 street
+HAZARD,extended,a manhole,a manhole overflowing
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+TIME,extended,all,all day
+ADDRESS,extended,cooper,cooper avenue
+CROSS_STREET,left as is,cannon,cannon
+TIME,extended,since,since yesterday
+ADDRESS,left as is,82,82
+TIME,extended,since last,since last night
+ADDRESS,extended,7311 4,7311 4 avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,east 47,east 47 street
+ADDRESS,left as is,73,73
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+ADDRESS,extended,815 8,815 8 avenue
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+ADDRESS,extended,beach 98,beach 98 street
+BOROUGH,extended,the,the bronx
+TIME,extended,since last,since last night
+ADDRESS,left as is,edison,edison
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,broad,broad street
+CROSS_STREET,extended,prospect,prospect avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,thatford,thatford avenue
+CROSS_STREET,extended,east 85,east 85 street
+BOROUGH,extended,staten,staten island
+TIME,extended,all,all day
+CROSS_STREET,extended,east 18,east 18 street
+TIME,extended,for a week,for a week now
+ADDRESS,extended,richmond,richmond road
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,hunter,hunter avenue
+CROSS_STREET,extended,east 17,east 17 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,6,6 avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,west 118,west 118 street
+ADDRESS,extended,west 51,west 51 street
+TIME,extended,right,right now
+ADDRESS,extended,60,60 avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 106,east 106 street
+BOROUGH,extended,staten,staten island
+CROSS_STREET,left as is,summit,summit
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,914 crossbay,914 crossbay boulevard
+CROSS_STREET,extended,st nicholas,st nicholas avenue
+BOROUGH,extended,the,the city
+TIME,extended,since,since yesterday
+TIME,extended,since this,since this morning
+ADDRESS,extended,67,67 avenue
+CROSS_STREET,extended,ramapo,ramapo avenue
+ADDRESS,extended,1510 paerdegat avenue,1510 paerdegat avenue north
+ADDRESS,extended,109,109 avenue
+CROSS_STREET,extended,rutledge,rutledge street
+TIME,extended,right,right now
+CROSS_STREET,extended,courtlandt,courtlandt avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,president,president street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,cruger,cruger avenue
+TIME,extended,all,all day
+TIME,extended,since this,since this morning
+ADDRESS,extended,harman,harman street
+CROSS_STREET,extended,west 23,west 23 street
+TIME,extended,since this,since this morning
+ADDRESS,extended,2121 linden,2121 linden street
+BOROUGH,extended,staten,staten island
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,amboy,amboy road
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since last,since last night
+TIME,extended,since last,since last night
+TIME,extended,all,all day
+CROSS_STREET,extended,1,1 avenue
+ADDRESS,left as is,37,37
+ADDRESS,extended,534 beach 65,534 beach 65 street
+CROSS_STREET,extended,east 30,east 30 street
+TIME,extended,for a week,for a week now
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,21,21 avenue
+ADDRESS,left as is,midland,midland
+ADDRESS,left as is,tiffany,tiffany
+CROSS_STREET,extended,west 144,west 144 street
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,30,30 avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,vermilyea,vermilyea avenue
+TIME,extended,right,right now
+TIME,extended,since,since yesterday
+TIME,extended,right,right now
+CROSS_STREET,extended,east 207,east 207 street
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,grandview,grandview avenue
+TIME,extended,all,all day
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,168,168 street
+TIME,extended,for a week,for a week now
+ADDRESS,extended,212 beach 32,212 beach 32 street
+CROSS_STREET,extended,webster,webster avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,3049 richmond,3049 richmond avenue
+TIME,extended,since last,since last night
+TIME,extended,right,right now
+ADDRESS,extended,east 21,east 21 street
+CROSS_STREET,extended,anthony,anthony avenue
+BOROUGH,extended,the,the city
+BOROUGH,extended,staten,staten island
+CROSS_STREET,left as is,saint pauls,saint pauls
+TIME,extended,for two,for two days
+ADDRESS,left as is,85,85
+ADDRESS,extended,west 135,west 135 street
+ADDRESS,extended,walton,walton avenue
+TIME,extended,all,all day
+TIME,extended,since,since yesterday
+ADDRESS,left as is,park avenue,park avenue
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+CROSS_STREET,left as is,sackett,sackett
+TIME,extended,for two,for two days
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,west 57,west 57 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,palmetto,palmetto street
+ADDRESS,extended,1 beach 105,1 beach 105 street
+TIME,extended,since last,since last night
+CROSS_STREET,extended,beach 96,beach 96 street
+ADDRESS,extended,1535 decatur,1535 decatur street
+TIME,extended,for two,for two days
+TIME,extended,since this,since this morning
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+ADDRESS,extended,carpenter,carpenter avenue
+CROSS_STREET,extended,grandview,grandview avenue
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+ADDRESS,extended,himrod,himrod street
+ADDRESS,extended,159 east 173,159 east 173 street
+TIME,extended,all,all day
+ADDRESS,extended,64,64 road
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+ADDRESS,left as is,terrace,terrace
+ADDRESS,extended,441 lenox,441 lenox avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,loring,loring avenue
+CROSS_STREET,extended,monroe,monroe street
+CROSS_STREET,extended,5,5 avenue
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+ADDRESS,extended,beach 129,beach 129 street
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,4,4 avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,50 avenue,50 avenue
+ADDRESS,extended,500 fort washington,500 fort washington avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+CROSS_STREET,extended,west 169,west 169 street
+ADDRESS,left as is,leland avenue,leland avenue
+CROSS_STREET,extended,east kingsbridge,east kingsbridge road
+CROSS_STREET,extended,audley,audley street
+ADDRESS,extended,30,30 avenue
+ADDRESS,extended,seminary,seminary row
+TIME,extended,for two,for two days
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,mersereau,mersereau avenue
+ADDRESS,extended,east 223,east 223 street
+TIME,extended,since last,since last night
+ADDRESS,left as is,44,44
+ADDRESS,extended,zerega,zerega avenue
+ADDRESS,extended,wadsworth,wadsworth avenue
+ADDRESS,extended,west 188,west 188 street
+TIME,extended,all,all day
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,bryant,bryant avenue
+CROSS_STREET,extended,beach 132,beach 132 street
+ADDRESS,extended,brooklyn,brooklyn avenue
+TIME,extended,since,since yesterday
+ADDRESS,extended,jerome,jerome avenue
+CROSS_STREET,extended,jerome,jerome avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,quincy,quincy avenue
+TIME,extended,right,right now
+ADDRESS,extended,52,52 street
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,all,all day
+TIME,extended,since,since yesterday
+ADDRESS,extended,east 50,east 50 street
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,right,right now
+ADDRESS,extended,richmond,richmond terrace
+ADDRESS,extended,west 44,west 44 street
+ADDRESS,extended,44,44 drive
+CROSS_STREET,extended,3,3 avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for two,for two days
+BOROUGH,extended,the,the bronx
+TIME,extended,for two,for two days
+CROSS_STREET,extended,east 23,east 23 street
+CROSS_STREET,extended,innis,innis street
+TIME,extended,all,all day
+BOROUGH,extended,the,the bronx
+TIME,extended,right,right now
+CROSS_STREET,extended,kingsbridge,kingsbridge terrace
+CROSS_STREET,extended,saint nicholas,saint nicholas avenue
+CROSS_STREET,left as is,loring place,loring place
+TIME,extended,all,all day
+ADDRESS,extended,west 83,west 83 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,bishop,bishop street
+TIME,extended,for a week,for a week now
+TIME,extended,right,right now
+CROSS_STREET,extended,bard,bard avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+ADDRESS,extended,marion,marion avenue
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+ADDRESS,extended,120 beach 19,120 beach 19 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,west 43,west 43 street
+ADDRESS,extended,west 177,west 177 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,trinity,trinity avenue
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+ADDRESS,extended,bedford park,bedford park boulevard
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,jerome,jerome avenue
+ADDRESS,extended,sedgwick,sedgwick avenue
+TIME,extended,right,right now
+BOROUGH,extended,the,the city
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+CROSS_STREET,extended,49,49 street
+TIME,extended,since,since yesterday
+ADDRESS,extended,263,263 street
+ADDRESS,left as is,park avenue,park avenue
+ADDRESS,extended,east 132,east 132 street
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,woodward,woodward avenue
+TIME,extended,all,all day
+CROSS_STREET,extended,columbus,columbus avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,forest hill,forest hill road
+TIME,extended,for a week,for a week now
+TIME,extended,all,all day
+CROSS_STREET,extended,boston,boston road
+TIME,extended,all,all day
+TIME,extended,all,all day
+ADDRESS,extended,2935 west 33,2935 west 33 street
+CROSS_STREET,extended,grand,grand avenue
+CROSS_STREET,extended,elm,elm street
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+ADDRESS,left as is,50 avenue,50 avenue
+ADDRESS,extended,700 pacific,700 pacific street
+CROSS_STREET,extended,onderdonk,onderdonk avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,schenck,schenck avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,bement,bement avenue
+TIME,extended,since last,since last night
+ADDRESS,left as is,794,794
+ADDRESS,extended,3 west 103,3 west 103 street
+BOROUGH,extended,the,the bronx
+TIME,extended,all,all day
+ADDRESS,extended,east 85,east 85 street
+CROSS_STREET,left as is,east 6,east 6
+CROSS_STREET,extended,flushing,flushing avenue
+ADDRESS,left as is,70,70
+CROSS_STREET,extended,gordon,gordon street
+ADDRESS,extended,342 beach 89,342 beach 89 street
+CROSS_STREET,extended,west 125,west 125 street
+ADDRESS,extended,bayview,bayview avenue
+CROSS_STREET,extended,barnes,barnes avenue
+CROSS_STREET,extended,west,west broadway
+CROSS_STREET,extended,mace,mace avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,right,right now
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,hancock,hancock street
+TIME,extended,since,since yesterday
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,elm,elm
+TIME,extended,right,right now
+CROSS_STREET,extended,bay 32,bay 32 street
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the bronx
+TIME,extended,for two,for two days
+CROSS_STREET,extended,laconia,laconia avenue
+TIME,extended,right,right now
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,1709 himrod,1709 himrod street
+CROSS_STREET,extended,west 137,west 137 street
+TIME,extended,for two,for two days
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,gerard,gerard avenue
+ADDRESS,extended,768 woodward,768 woodward avenue
+CROSS_STREET,extended,stockholm,stockholm street
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,willard,willard avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,since last,since last night
+ADDRESS,left as is,park avenue,park avenue
+CROSS_STREET,extended,belmont,belmont avenue
+BOROUGH,extended,the,the city
+ADDRESS,extended,woodbine,woodbine avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,manhattan,manhattan avenue
+ADDRESS,extended,1820 flushing,1820 flushing avenue
+ADDRESS,left as is,137,137
+TIME,extended,for two,for two days
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,6,6 avenue
+CROSS_STREET,extended,sherman,sherman avenue
+CROSS_STREET,extended,quentin,quentin road
+ADDRESS,extended,2270 washington,2270 washington avenue
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+ADDRESS,extended,7,7 avenue
+TIME,extended,since last,since last night
+ADDRESS,left as is,50 avenue,50 avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,ryer,ryer avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,st nicholas,st nicholas avenue
+CROSS_STREET,extended,east gun hill,east gun hill road
+TIME,extended,all,all day
+CROSS_STREET,extended,beach 117,beach 117 street
+TIME,extended,all,all day
+CROSS_STREET,extended,east 49,east 49 street
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the bronx
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,woodward,woodward avenue
+ADDRESS,extended,madison,madison avenue
+BOROUGH,extended,the,the city
+TIME,extended,for two,for two days
+CROSS_STREET,left as is,loring,loring
+ADDRESS,extended,west end,west end avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,65,65 street
+ADDRESS,extended,90 sullivan,90 sullivan place
+ADDRESS,extended,35,35 avenue
+BOROUGH,extended,the,the city
+ADDRESS,extended,144 beach 110,144 beach 110 street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,148,148 avenue
+ADDRESS,left as is,50,50
+TIME,extended,right,right now
+CROSS_STREET,extended,sandalwood,sandalwood drive
+ADDRESS,extended,olinville,olinville avenue
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+CROSS_STREET,left as is,taylor,taylor
+TIME,extended,all,all day
+ADDRESS,extended,holland,holland avenue
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,richardson,richardson street
+TIME,extended,right,right now
+CROSS_STREET,extended,university,university avenue
+ADDRESS,left as is,111,111
+TIME,extended,all,all day
+ADDRESS,extended,grand,grand concourse
+CROSS_STREET,extended,85,85 street
+CROSS_STREET,extended,main,main street
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+ADDRESS,extended,353 beach 57,353 beach 57 street
+CROSS_STREET,extended,2,2 avenue
+BOROUGH,extended,the,the city
+ADDRESS,left as is,hanover,hanover
+ADDRESS,extended,beach 98,beach 98 street
+ADDRESS,extended,136 south gannon,136 south gannon avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,beach 128,beach 128 street
+CROSS_STREET,extended,east 224,east 224 street
+CROSS_STREET,extended,hylan,hylan boulevard
+TIME,extended,for a week,for a week now
+TIME,extended,since last,since last night
+CROSS_STREET,extended,anthony,anthony avenue
+ADDRESS,extended,orloff,orloff avenue
+CROSS_STREET,extended,fillmore,fillmore avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,east 20,east 20 street
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,west 156,west 156 street
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 176,east 176 street
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+ADDRESS,extended,quentin,quentin road
+CROSS_STREET,extended,arlo,arlo road
+BOROUGH,extended,the,the bronx
+BOROUGH,extended,the,the bronx
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,east 57,east 57 street
+TIME,extended,since last,since last night
+ADDRESS,extended,west 4,west 4 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,stockholm,stockholm street
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the bronx
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,greene,greene avenue
+ADDRESS,extended,1944 union port,1944 union port road
+ADDRESS,extended,west 147,west 147 street
+ADDRESS,extended,1666 hancock,1666 hancock street
+ADDRESS,extended,eastchester,eastchester road
+BOROUGH,extended,the,the bronx
+TIME,extended,right,right now
+TIME,extended,all,all day
+TIME,extended,for two,for two days
+TIME,extended,for two,for two days
+TIME,extended,all,all day
+ADDRESS,extended,west fingerboard,west fingerboard road
+TIME,extended,all,all day
+CROSS_STREET,extended,mcdonald,mcdonald avenue
+ADDRESS,left as is,park avenue,park avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,colon,colon avenue
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,richmond,richmond avenue
+TIME,extended,for two,for two days
+ADDRESS,extended,east 80,east 80 street
+CROSS_STREET,extended,findlay,findlay avenue
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,bard,bard avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,gerard,gerard avenue
+TIME,extended,since this,since this morning
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,beach 65,beach 65 street
+CROSS_STREET,extended,east 231,east 231 street
+ADDRESS,extended,cross bay,cross bay boulevard
+CROSS_STREET,extended,tennyson,tennyson drive
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,76,76 street
+TIME,extended,since last,since last night
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,196,196
+TIME,extended,since last,since last night
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,west 143,west 143 street
+ADDRESS,extended,137 rockville,137 rockville avenue
+CROSS_STREET,extended,university,university avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,beach 87,beach 87 street
+TIME,extended,since this,since this morning
+TIME,extended,all,all day
+TIME,extended,for two,for two days
+TIME,extended,since this,since this morning
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+ADDRESS,extended,1031 father capodanno,1031 father capodanno boulevard
+TIME,extended,since last,since last night
+ADDRESS,left as is,post,post
+TIME,extended,since this,since this morning
+TIME,extended,for two,for two days
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+CROSS_STREET,extended,east 112,east 112 street
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+ADDRESS,extended,tilden,tilden avenue
+TIME,extended,since last,since last night
+TIME,extended,right,right now
+CROSS_STREET,extended,taylor,taylor street
+CROSS_STREET,extended,east 108,east 108 street
+TIME,extended,since this,since this morning
+ADDRESS,extended,east 29,east 29 street
+CROSS_STREET,extended,south 9,south 9 street
+CROSS_STREET,extended,wilson,wilson avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 223,east 223 street
+CROSS_STREET,extended,retford,retford avenue
+CROSS_STREET,extended,79,79 street
+ADDRESS,extended,98,98 place
+CROSS_STREET,extended,ocean,ocean avenue
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,wyckoff,wyckoff avenue
+ADDRESS,extended,east 35,east 35 street
+ADDRESS,extended,halletts,halletts point
+CROSS_STREET,left as is,quincy,quincy
+ADDRESS,extended,129 spencer,129 spencer street
+ADDRESS,left as is,latourette,latourette
+CROSS_STREET,extended,metropolitan,metropolitan avenue
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,1 dent,1 dent road
+CROSS_STREET,extended,west 74,west 74 street
+BOROUGH,extended,staten,staten island
+TIME,extended,since,since yesterday
+TIME,extended,since this,since this morning
+TIME,extended,since this,since this morning
+TIME,extended,right,right now
+TIME,extended,since,since yesterday
+TIME,extended,for two,for two days
+TIME,extended,all,all day
+ADDRESS,extended,palmetto,palmetto street
+CROSS_STREET,extended,east houston,east houston street
+ADDRESS,extended,east 178,east 178 street
+CROSS_STREET,extended,halletts,halletts point
+CROSS_STREET,extended,pelham parkway,pelham parkway south
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,55,55 street
+ADDRESS,extended,69,69 road
+BOROUGH,extended,the,the bronx
+CROSS_STREET,left as is,maple,maple
+TIME,extended,for two,for two days
+CROSS_STREET,extended,west 170,west 170 street
+TIME,extended,right,right now
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,mapes,mapes avenue
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,harold,harold avenue
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,west 207,west 207 street
+TIME,extended,for a week,for a week now
+ADDRESS,extended,1813 linden,1813 linden street
+TIME,extended,since last,since last night
+ADDRESS,extended,441 lenox,441 lenox avenue
+BOROUGH,extended,the,the city
+ADDRESS,extended,ft washington,ft washington avenue
+TIME,extended,right,right now
+ADDRESS,extended,49 kew gardens,49 kew gardens road
+TIME,extended,since last,since last night
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,east 163,east 163 street
+CROSS_STREET,extended,essex,essex street
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+CROSS_STREET,extended,east 19,east 19 street
+TIME,extended,right,right now
+ADDRESS,extended,seneca,seneca avenue
+ADDRESS,extended,465 seneca,465 seneca avenue
+TIME,extended,right,right now
+TIME,extended,for a week,for a week now
+ADDRESS,extended,arthur kill,arthur kill road
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,west 42,west 42 street
+TIME,extended,since this,since this morning
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,jerome,jerome avenue
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,delafield,delafield avenue
+ADDRESS,extended,457 crown,457 crown avenue
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+ADDRESS,extended,fisher,fisher avenue
+TIME,extended,for two,for two days
+ADDRESS,extended,wyckoff,wyckoff avenue
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the city
+TIME,extended,for two,for two days
+CROSS_STREET,extended,teller,teller avenue
+CROSS_STREET,extended,linden,linden boulevard
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,father capodanno,father capodanno boulevard
+ADDRESS,extended,50,50 street
+TIME,extended,all,all day
+CROSS_STREET,extended,tompkins,tompkins avenue
+ADDRESS,extended,putnam,putnam avenue
+ADDRESS,extended,391 menahan,391 menahan street
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,pelham parkway,pelham parkway south
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,1 avenue,1 avenue
+CROSS_STREET,extended,5,5 avenue
+ADDRESS,extended,86 simonson,86 simonson place
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,billiou,billiou street
+TIME,extended,for two,for two days
+ADDRESS,extended,mother gaston,mother gaston boulevard
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the city
+TIME,extended,all,all day
+TIME,extended,right,right now
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,gunther,gunther avenue
+CROSS_STREET,extended,bay ridge,bay ridge parkway
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+TIME,extended,since last,since last night
+CROSS_STREET,extended,lyvere,lyvere street
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,vanduzer,vanduzer street
+ADDRESS,extended,canal,canal street
+TIME,extended,right,right now
+TIME,extended,all,all day
+ADDRESS,left as is,henry,henry
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,eastern,eastern parkway
+CROSS_STREET,extended,bronx park,bronx park east
+BOROUGH,extended,the,the bronx
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+TIME,extended,since last,since last night
+ADDRESS,extended,rockaway,rockaway parkway
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+ADDRESS,extended,nagle,nagle avenue
+CROSS_STREET,extended,liberty,liberty avenue
+ADDRESS,extended,627 lydig,627 lydig avenue
+CROSS_STREET,extended,randall,randall avenue
+TIME,extended,all,all day
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,ocean,ocean avenue
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,ocean,ocean avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,12,12 avenue
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+ADDRESS,extended,6372 amboy,6372 amboy road
+TIME,extended,all,all day
+ADDRESS,extended,onderdonk,onderdonk avenue
+CROSS_STREET,extended,post,post avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,1,1
+CROSS_STREET,extended,andros,andros avenue
+BOROUGH,extended,staten,staten island
+HAZARD,extended,a cracked branch about to,a cracked branch about to fall
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,11,11 street
+HAZARD,extended,a tree branch fell,a tree branch fell down
+TIME,extended,for two,for two days
+ADDRESS,extended,grand,grand avenue
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,bogart,bogart avenue
+HAZARD,extended,a tree fell across the,a tree fell across the road
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,columbia,columbia place
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,ft washington,ft washington avenue
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+ADDRESS,left as is,avenue,avenue
+TIME,extended,all,all day
+TIME,extended,since,since yesterday
+ADDRESS,extended,forest,forest avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,boynton,boynton avenue
+HAZARD,extended,a cracked branch about to,a cracked branch about to fall
+HAZARD,extended,a big limb broke off the,a big limb broke off the tree
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+HAZARD,extended,a cracked branch about to,a cracked branch about to fall
+TIME,extended,right,right now
+HAZARD,extended,a big limb broke off the,a big limb broke off the tree
+CROSS_STREET,extended,essex,essex street
+TIME,extended,all,all day
+ADDRESS,extended,163 senator,163 senator street
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,park,park place
+HAZARD,extended,a big limb broke off the,a big limb broke off the tree
+TIME,extended,since this,since this morning
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,west 183,west 183 street
+CROSS_STREET,extended,amboy,amboy road
+TIME,extended,since this,since this morning
+ADDRESS,extended,dewey,dewey avenue
+CROSS_STREET,extended,st marks,st marks place
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+HAZARD,extended,a cracked branch about to,a cracked branch about to fall
+TIME,extended,since,since yesterday
+HAZARD,extended,a big limb broke off the,a big limb broke off the tree
+CROSS_STREET,extended,watkins,watkins street
+TIME,extended,since this,since this morning
+TIME,extended,right,right now
+TIME,extended,right,right now
+BOROUGH,extended,staten,staten island
+HAZARD,extended,a tree fell across the,a tree fell across the road
+CROSS_STREET,extended,5,5 avenue
+HAZARD,extended,a tree branch fell,a tree branch fell down
+HAZARD,extended,a tree branch fell,a tree branch fell down
+TIME,extended,all,all day
+ADDRESS,extended,1893 stockholm,1893 stockholm street
+TIME,extended,for a week,for a week now
+HAZARD,extended,a tree branch fell,a tree branch fell down
+TIME,extended,for two,for two days
+TIME,extended,for two,for two days
+CROSS_STREET,extended,seneca,seneca avenue
+TIME,extended,for two,for two days
+TIME,extended,since last,since last night
+ADDRESS,extended,clawson,clawson street
+CROSS_STREET,extended,rutland,rutland road
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+CROSS_STREET,extended,west 150,west 150 street
+TIME,extended,all,all day
+TIME,extended,since,since yesterday
+HAZARD,extended,a big limb broke off the,a big limb broke off the tree
+HAZARD,extended,a big limb broke off the,a big limb broke off the tree
+HAZARD,extended,a tree branch fell,a tree branch fell down
+HAZARD,extended,a fallen,a fallen tree
+HAZARD,extended,a tree branch fell,a tree branch fell down
+ADDRESS,left as is,henry,henry
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,west 176,west 176 street
+CROSS_STREET,extended,west 135,west 135 street
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,neptune,neptune avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,76,76 street
+ADDRESS,extended,130 beach 84,130 beach 84 street
+CROSS_STREET,extended,father capodanno,father capodanno boulevard
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,cornelia,cornelia street
+CROSS_STREET,extended,seneca,seneca avenue
+ADDRESS,extended,9,9 street
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 21,east 21 street
+BOROUGH,extended,staten,staten island
+BOROUGH,extended,the,the city
+TIME,extended,since,since yesterday
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+ADDRESS,extended,126,126 street
+TIME,extended,since last,since last night
+TIME,extended,right,right now
+CROSS_STREET,extended,finley,finley avenue
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,east 33,east 33 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 123,beach 123 street
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,bergen,bergen avenue
+ADDRESS,extended,west 107,west 107 street
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,1 avenue,1 avenue
+TIME,extended,all,all day
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,all,all day
+ADDRESS,left as is,184,184
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,hicksville,hicksville road
+CROSS_STREET,extended,morris,morris avenue
+TIME,extended,since this,since this morning
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+ADDRESS,extended,43,43 avenue
+ADDRESS,extended,12070 flatlands,12070 flatlands avenue
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+ADDRESS,extended,9,9 avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,west 115,west 115 street
+CROSS_STREET,extended,brook,brook avenue
+TIME,extended,right,right now
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,48,48 street
+CROSS_STREET,extended,east 82,east 82 street
+TIME,extended,all,all day
+ADDRESS,left as is,91,91
+TIME,extended,for a week,for a week now
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+ADDRESS,extended,1881 starr,1881 starr street
+ADDRESS,extended,429 beach 131,429 beach 131 street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,inwood,inwood avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,east 139,east 139 street
+ADDRESS,extended,darlington,darlington avenue
+CROSS_STREET,extended,st marks,st marks avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,southern,southern boulevard
+ADDRESS,extended,cranford,cranford avenue
+ADDRESS,left as is,81,81
+CROSS_STREET,extended,8,8 avenue
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+ADDRESS,extended,east 11,east 11 street
+ADDRESS,extended,west 143,west 143 street
+ADDRESS,extended,west 188,west 188 street
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+CROSS_STREET,extended,hendrix,hendrix street
+ADDRESS,extended,east 2,east 2 street
+BOROUGH,extended,the,the city
+TIME,extended,all,all day
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+TIME,extended,since,since yesterday
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+ADDRESS,extended,1075 castleton,1075 castleton avenue
+TIME,extended,since last,since last night
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,andrews avenue,andrews avenue
+CROSS_STREET,left as is,hopkins,hopkins
+ADDRESS,left as is,1 avenue,1 avenue
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+ADDRESS,extended,150,150 street
+ADDRESS,extended,adee,adee avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,bruckner,bruckner boulevard
+ADDRESS,extended,west 82,west 82 street
+TIME,extended,since,since yesterday
+ADDRESS,extended,77,77 street
+BOROUGH,extended,the,the bronx
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,wadsworth,wadsworth terrace
+ADDRESS,extended,richmond hill,richmond hill road
+CROSS_STREET,extended,flatbush,flatbush avenue
+TIME,extended,since this,since this morning
+CROSS_STREET,left as is,narrows,narrows
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+TIME,extended,since this,since this morning
+TIME,extended,for two,for two days
+TIME,extended,for two,for two days
+ADDRESS,extended,richmond,richmond road
+ADDRESS,left as is,leland avenue,leland avenue
+TIME,extended,since this,since this morning
+TIME,extended,right,right now
+CROSS_STREET,extended,boston,boston road
+TIME,extended,right,right now
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,all,all day
+CROSS_STREET,extended,4,4 avenue
+ADDRESS,extended,adam clayton powell jr,adam clayton powell jr boulevard
+CROSS_STREET,extended,westervelt,westervelt avenue
+CROSS_STREET,extended,aurelia,aurelia court
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+ADDRESS,extended,laconia,laconia avenue
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,rivington,rivington street
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,233,233
+BOROUGH,extended,the,the city
+TIME,extended,right,right now
+CROSS_STREET,extended,village,village lane
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,forrestal,forrestal avenue
+CROSS_STREET,extended,east 125,east 125 street
+CROSS_STREET,extended,davis,davis avenue
+TIME,extended,for two,for two days
+BOROUGH,extended,the,the city
+BOROUGH,extended,the,the bronx
+ADDRESS,left as is,1 avenue,1 avenue
+TIME,extended,right,right now
+CROSS_STREET,extended,southern,southern boulevard
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+TIME,extended,all,all day
+TIME,extended,for two,for two days
+CROSS_STREET,extended,cortlandt,cortlandt street
+ADDRESS,extended,willis,willis avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,leland,leland avenue
+CROSS_STREET,extended,kingdom,kingdom avenue
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the city
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,marcy,marcy avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,211,211
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,1792,1792
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,95,95 street
+CROSS_STREET,extended,lenhart,lenhart street
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,chauncey,chauncey street
+ADDRESS,extended,613 grandview,613 grandview avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,bruckner,bruckner boulevard
+ADDRESS,extended,1254 sherman,1254 sherman avenue
+ADDRESS,extended,56,56 avenue
+TIME,extended,since this,since this morning
+BOROUGH,extended,staten,staten island
+TIME,extended,for two,for two days
+CROSS_STREET,extended,herkimer,herkimer street
+ADDRESS,extended,bleecker,bleecker street
+CROSS_STREET,left as is,franklin,franklin
+CROSS_STREET,extended,3,3 avenue
+BOROUGH,extended,the,the city
+TIME,extended,all,all day
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,7319 lighthouse,7319 lighthouse drive
+CROSS_STREET,extended,east 72,east 72 street
+TIME,extended,since last,since last night
+TIME,extended,right,right now
+CROSS_STREET,extended,76,76 street
+TIME,extended,for two,for two days
+TIME,extended,for two,for two days
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for two,for two days
+CROSS_STREET,extended,sherman,sherman avenue
+BOROUGH,extended,the,the city
+BOROUGH,extended,the,the bronx
+TIME,extended,since this,since this morning
+ADDRESS,left as is,loring place,loring place
+CROSS_STREET,left as is,lafayette,lafayette
+BOROUGH,extended,the,the bronx
+TIME,extended,since this,since this morning
+TIME,extended,since,since yesterday
+BOROUGH,extended,staten,staten island
+TIME,extended,for two,for two days
+CROSS_STREET,extended,wyckoff,wyckoff avenue
+TIME,extended,right,right now
+TIME,extended,since,since yesterday
+ADDRESS,left as is,renwick,renwick
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,rosedale,rosedale avenue
+ADDRESS,extended,canal,canal street
+TIME,extended,since this,since this morning
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for two,for two days
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,east 189,east 189 street
+ADDRESS,extended,347 west end,347 west end avenue
+TIME,extended,for a week,for a week now
+TIME,extended,for two,for two days
+CROSS_STREET,left as is,loring,loring
+CROSS_STREET,extended,west 116,west 116 street
+CROSS_STREET,extended,troy,troy avenue
+ADDRESS,extended,ocean,ocean avenue
+TIME,extended,all,all day
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,yetman,yetman avenue
+BOROUGH,extended,the,the city
+BOROUGH,extended,staten,staten island
+TIME,extended,right,right now
+CROSS_STREET,extended,victory,victory boulevard
+TIME,extended,all,all day
+ADDRESS,extended,east 6,east 6 street
+TIME,extended,for two,for two days
+TIME,extended,since this,since this morning
+ADDRESS,extended,st marks,st marks avenue
+TIME,extended,all,all day
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,schroeders,schroeders avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,morris,morris avenue
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,lexington,lexington avenue
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,central park,central park west
+TIME,extended,since this,since this morning
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,6,6 avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,west 189,west 189 street
+TIME,extended,since last,since last night
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for two,for two days
+BOROUGH,extended,the,the bronx
+TIME,extended,right,right now
+TIME,extended,for a week,for a week now
+ADDRESS,extended,east 39,east 39 street
+ADDRESS,extended,watson,watson avenue
+ADDRESS,extended,bowdoin,bowdoin street
+ADDRESS,extended,83,83 place
+TIME,extended,for two,for two days
+TIME,extended,all,all day
+CROSS_STREET,extended,west 89,west 89 street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,east 232,east 232 street
+TIME,extended,for a week,for a week now
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+ADDRESS,extended,webster,webster avenue
+TIME,extended,since last,since last night
+TIME,extended,all,all day
+ADDRESS,extended,avenue,avenue r
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,1,1 avenue
+CROSS_STREET,extended,sleight,sleight avenue
+CROSS_STREET,extended,south railroad,south railroad avenue
+CROSS_STREET,extended,harman,harman street
+CROSS_STREET,extended,seaview,seaview avenue
+ADDRESS,extended,3955 victory,3955 victory boulevard
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,west 111,west 111 street
+ADDRESS,extended,88,88 street
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,stockholm,stockholm street
+ADDRESS,extended,1514 sedgwick,1514 sedgwick avenue
+TIME,extended,since,since yesterday
+ADDRESS,left as is,park avenue,park avenue
+TIME,extended,all,all day
+ADDRESS,extended,32,32 street
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+CROSS_STREET,extended,crossbay,crossbay boulevard
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,215,215 street
+ADDRESS,extended,south,south street
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+ADDRESS,extended,east 49,east 49 street
+ADDRESS,extended,greenpoint,greenpoint avenue
+BOROUGH,extended,the,the city
+ADDRESS,extended,haven,haven avenue
+ADDRESS,extended,brighton 7,brighton 7 street
+ADDRESS,left as is,53,53
+ADDRESS,extended,111 worth,111 worth street
+CROSS_STREET,extended,59,59 street
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,greenwich,greenwich street
+ADDRESS,left as is,2240 adam clayton powell,2240 adam clayton powell
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,jersey,jersey street
+ADDRESS,extended,56,56 avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,clinton,clinton avenue
+CROSS_STREET,extended,walton,walton avenue
+TIME,extended,for two,for two days
+ADDRESS,extended,dean,dean street
+TIME,extended,right,right now
+CROSS_STREET,extended,west 141,west 141 street
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,riverside,riverside drive
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,260 beach 81,260 beach 81 street
+TIME,extended,right,right now
+ADDRESS,extended,129,129 street
+BOROUGH,extended,the,the bronx
+ADDRESS,left as is,chester,chester
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,beach 140,beach 140 street
+CROSS_STREET,extended,bruckner,bruckner boulevard
+ADDRESS,extended,98 glover,98 glover street
+CROSS_STREET,extended,rockaway,rockaway parkway
+TIME,extended,all,all day
+CROSS_STREET,extended,8,8 avenue
+TIME,extended,since,since yesterday
+ADDRESS,extended,morris,morris avenue
+ADDRESS,extended,211 beach 116,211 beach 116 street
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 19,beach 19 street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,all,all day
+CROSS_STREET,extended,liberty,liberty avenue
+CROSS_STREET,extended,madison,madison avenue
+TIME,extended,since last,since last night
+ADDRESS,extended,1811 cornelia,1811 cornelia street
+CROSS_STREET,extended,15,15 avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the city
+ADDRESS,extended,east 14,east 14 street
+CROSS_STREET,extended,briar,briar place
+CROSS_STREET,extended,seneca,seneca avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,edgecombe,edgecombe avenue
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,hill,hill street
+CROSS_STREET,extended,targee,targee street
+CROSS_STREET,extended,carpenter,carpenter avenue
+CROSS_STREET,extended,st nicholas,st nicholas terrace
+TIME,extended,right,right now
+ADDRESS,extended,301 thornycroft,301 thornycroft avenue
+CROSS_STREET,left as is,woodbine,woodbine
+ADDRESS,extended,20,20 road
+TIME,extended,right,right now
+ADDRESS,extended,batchelder,batchelder street
+ADDRESS,extended,west 154,west 154 street
+CROSS_STREET,extended,east 170,east 170 street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,west 139,west 139 street
+ADDRESS,extended,seneca,seneca avenue
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the city
+TIME,extended,all,all day
+TIME,extended,since,since yesterday
+ADDRESS,extended,hylan,hylan boulevard
+ADDRESS,extended,135 beach 129,135 beach 129 street
+TIME,extended,right,right now
+CROSS_STREET,extended,wyckoff,wyckoff avenue
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,beach 19,beach 19 street
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+ADDRESS,extended,barnes,barnes avenue
+TIME,extended,since,since yesterday
+ADDRESS,extended,221 beach 80,221 beach 80 street
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+ADDRESS,extended,west 44,west 44 street
+ADDRESS,extended,41,41 avenue
+ADDRESS,extended,olympia,olympia boulevard
+ADDRESS,extended,wyckoff,wyckoff avenue
+ADDRESS,left as is,1 avenue,1 avenue
+CROSS_STREET,extended,spring,spring street
+CROSS_STREET,extended,merrymount,merrymount street
+ADDRESS,extended,77 spartan,77 spartan avenue
+TIME,extended,right,right now
+CROSS_STREET,extended,riverside,riverside drive
+BOROUGH,extended,the,the city
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,605 west 144,605 west 144 street
+TIME,extended,since last,since last night
+TIME,extended,all,all day
+BOROUGH,extended,the,the city
+BOROUGH,extended,the,the bronx
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,left as is,bowery,bowery
+ADDRESS,extended,beach 54,beach 54 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,1 avenue,1 avenue
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,right,right now
+ADDRESS,extended,utter,utter avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,chauncey,chauncey street
+ADDRESS,left as is,26,26
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,bainbridge,bainbridge avenue
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+TIME,extended,for two,for two days
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,willis,willis avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+TIME,extended,for two,for two days
+CROSS_STREET,extended,avenue,avenue h
+CROSS_STREET,extended,st marks,st marks avenue
+CROSS_STREET,extended,bruner,bruner avenue
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,220 mount hope,220 mount hope place
+TIME,extended,all,all day
+ADDRESS,extended,columbus,columbus avenue
+TIME,extended,right,right now
+CROSS_STREET,extended,beach 19,beach 19 street
+TIME,extended,right,right now
+ADDRESS,extended,otis,otis avenue
+CROSS_STREET,extended,ocean,ocean avenue
+CROSS_STREET,extended,hoe,hoe avenue
+ADDRESS,extended,sedgwick,sedgwick avenue
+ADDRESS,extended,east 176,east 176 street
+TIME,extended,right,right now
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since this,since this morning
+TIME,extended,since this,since this morning
+ADDRESS,extended,beach 99,beach 99 street
+ADDRESS,extended,30,30 avenue
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,halletts,halletts point
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,left as is,shore,shore
+CROSS_STREET,extended,metropolitan,metropolitan avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+BOROUGH,extended,staten,staten island
+TIME,extended,for two,for two days
+CROSS_STREET,extended,eltingville,eltingville boulevard
+CROSS_STREET,extended,mc arthur,mc arthur avenue
+ADDRESS,extended,217 pugsley,217 pugsley avenue
+ADDRESS,extended,hancock,hancock street
+TIME,extended,since,since yesterday
+TIME,extended,right,right now
+ADDRESS,extended,victory,victory boulevard
+BOROUGH,extended,the,the bronx
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,west 26,west 26 street
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,marlborough,marlborough road
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 34,east 34 street
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+ADDRESS,extended,144,144 avenue
+CROSS_STREET,extended,east 187,east 187 street
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,pelham parkway,pelham parkway south
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+TIME,extended,all,all day
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,230,230 street
+TIME,extended,for two,for two days
+CROSS_STREET,extended,madison,madison street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+ADDRESS,extended,680 8,680 8 avenue
+CROSS_STREET,extended,east 165,east 165 street
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,east 34,east 34 street
+CROSS_STREET,extended,east 45,east 45 street
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+TIME,extended,for a week,for a week now
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+TIME,extended,for two,for two days
+CROSS_STREET,extended,74,74 street
+TIME,extended,right,right now
+ADDRESS,extended,west 116,west 116 street
+ADDRESS,extended,west 164,west 164 street
+ADDRESS,left as is,terrace,terrace
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,monroe,monroe avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the city
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,1491 west,1491 west avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,all,all day
+TIME,extended,right,right now
+CROSS_STREET,extended,beach 86,beach 86 street
+TIME,extended,all,all day
+TIME,extended,all,all day
+TIME,extended,since this,since this morning
+ADDRESS,left as is,196,196
+CROSS_STREET,extended,west 150,west 150 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,5,5 avenue
+TIME,extended,since,since yesterday
+TIME,extended,for two,for two days
+ADDRESS,extended,east 169,east 169 street
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+TIME,extended,right,right now
+BOROUGH,extended,the,the city
+ADDRESS,extended,3,3 avenue
+TIME,extended,all,all day
+TIME,extended,for two,for two days
+ADDRESS,extended,22,22 avenue
+ADDRESS,extended,church,church avenue
+ADDRESS,extended,avenue,avenue i
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+TIME,extended,right,right now
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the city
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,2308 7,2308 7 avenue
+ADDRESS,extended,briggs,briggs avenue
+ADDRESS,extended,801 seneca,801 seneca avenue
+CROSS_STREET,extended,cedar grove,cedar grove avenue
+CROSS_STREET,extended,east 214,east 214 street
+TIME,extended,right,right now
+ADDRESS,extended,107,107 avenue
+TIME,extended,since last,since last night
+TIME,extended,since last,since last night
+BOROUGH,extended,staten,staten island
+TIME,extended,for a week,for a week now
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+ADDRESS,extended,26 regent,26 regent circle
+CROSS_STREET,extended,rosebank,rosebank place
+CROSS_STREET,extended,east 18,east 18 street
+CROSS_STREET,extended,stroud,stroud avenue
+TIME,extended,since,since yesterday
+ADDRESS,extended,cooper,cooper avenue
+TIME,extended,all,all day
+CROSS_STREET,extended,jefferson,jefferson avenue
+ADDRESS,extended,stockholm,stockholm street
+CROSS_STREET,extended,west 5,west 5 street
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,west 182,west 182 street
+CROSS_STREET,extended,greaves,greaves avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,right,right now
+ADDRESS,extended,seneca,seneca avenue
+TIME,extended,for two,for two days
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,the,the city
+ADDRESS,extended,white plains,white plains road
+BOROUGH,extended,the,the bronx
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the bronx
+TIME,extended,all,all day
+ADDRESS,extended,1966 gravesend neck,1966 gravesend neck road
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,seneca,seneca avenue
+CROSS_STREET,extended,first,first avenue
+CROSS_STREET,extended,pulaski,pulaski street
+CROSS_STREET,extended,ocean,ocean parkway
+ADDRESS,extended,87 71,87 71 avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the bronx
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+ADDRESS,extended,sturges,sturges street
+ADDRESS,extended,parkside,parkside avenue
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+CROSS_STREET,extended,beach 134,beach 134 street
+ADDRESS,extended,newkirk,newkirk avenue
+CROSS_STREET,extended,beach 134,beach 134 street
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,since last,since last night
+CROSS_STREET,extended,rochambeau,rochambeau avenue
+ADDRESS,extended,234 westwood,234 westwood avenue
+ADDRESS,left as is,65,65
+BOROUGH,extended,staten,staten island
+TIME,extended,right,right now
+TIME,extended,since,since yesterday
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,nagle,nagle avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,all,all day
+ADDRESS,extended,west 111,west 111 street
+ADDRESS,extended,white plains,white plains road
+TIME,extended,since this,since this morning
+ADDRESS,extended,milbank,milbank road
+ADDRESS,extended,arlo,arlo road
+TIME,extended,all,all day
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,seaman,seaman avenue
+ADDRESS,extended,east 94,east 94 street
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,boynton,boynton avenue
+TIME,extended,for a week,for a week now
+TIME,extended,for two,for two days
+ADDRESS,left as is,rockaway,rockaway
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,jewett,jewett avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,rivington,rivington street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,shore,shore parkway
+ADDRESS,extended,439 west 36,439 west 36 street
+ADDRESS,left as is,1 avenue,1 avenue
+TIME,extended,for a week,for a week now
+ADDRESS,extended,51 prol,51 prol place
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,targee,targee street
+CROSS_STREET,extended,richmond,richmond avenue
+ADDRESS,extended,grant,grant avenue
+ADDRESS,left as is,2840 ocean,2840 ocean
+TIME,extended,for two,for two days
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,father capodanno,father capodanno boulevard
+CROSS_STREET,extended,east macon,east macon avenue
+BOROUGH,extended,the,the city
+ADDRESS,extended,481 hylan,481 hylan boulevard
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,loring place,loring place
+CROSS_STREET,extended,east 9,east 9 street
+TIME,extended,since last,since last night
+ADDRESS,extended,71,71 road
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+CROSS_STREET,extended,west 165,west 165 street
+CROSS_STREET,extended,randall,randall avenue
+CROSS_STREET,extended,hicksville,hicksville road
+ADDRESS,extended,central,central avenue
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+CROSS_STREET,extended,59,59 street
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,victory,victory boulevard
+CROSS_STREET,extended,hamilton,hamilton place
+BOROUGH,extended,the,the city
+TIME,extended,since,since yesterday
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,1725 edison,1725 edison avenue
+TIME,extended,for a week,for a week now
+BOROUGH,extended,the,the city
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 129,beach 129 street
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,2751 jerome,2751 jerome avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+TIME,extended,right,right now
+ADDRESS,extended,malcolm x,malcolm x boulevard
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+BOROUGH,extended,staten,staten island
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,prospect,prospect place
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,riverside,riverside drive
+CROSS_STREET,extended,jewett,jewett avenue
+CROSS_STREET,extended,liberty,liberty avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,jewett,jewett avenue
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,15,15 avenue
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+TIME,extended,for a week,for a week now
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,beach 127,beach 127 street
+TIME,extended,right,right now
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,3411 clarendon,3411 clarendon road
+TIME,extended,all,all day
+BOROUGH,extended,staten,staten island
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,decatur,decatur street
+TIME,extended,right,right now
+ADDRESS,extended,west 132,west 132 street
+ADDRESS,extended,1635 putnam,1635 putnam avenue
+CROSS_STREET,extended,morris,morris avenue
+TIME,extended,since,since yesterday
+ADDRESS,extended,914 crossbay,914 crossbay boulevard
+CROSS_STREET,extended,union,union street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,park avenue,park avenue
+CROSS_STREET,extended,cornelia,cornelia street
+TIME,extended,all,all day
+ADDRESS,extended,fteley,fteley avenue
+TIME,extended,since this,since this morning
+ADDRESS,extended,seneca,seneca avenue
+CROSS_STREET,extended,west 47,west 47 street
+ADDRESS,extended,41,41 street
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,68,68 street
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+TIME,extended,since,since yesterday
+ADDRESS,extended,east 178,east 178 street
+TIME,extended,right,right now
+BOROUGH,extended,the,the bronx
+BOROUGH,extended,the,the bronx
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+CROSS_STREET,left as is,new dorp,new dorp
+TIME,extended,right,right now
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+CROSS_STREET,extended,west 118,west 118 street
+TIME,extended,since last,since last night
+BOROUGH,extended,the,the city
+ADDRESS,extended,23,23 avenue
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,mt morris park,mt morris park west
+ADDRESS,extended,davidson,davidson avenue
+ADDRESS,extended,hoe,hoe avenue
+CROSS_STREET,extended,church,church street
+CROSS_STREET,extended,beach 19,beach 19 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,8100 shore front,8100 shore front parkway
+TIME,extended,for a week,for a week now
+TIME,extended,right,right now
+BOROUGH,extended,staten,staten island
+BOROUGH,extended,the,the city
+ADDRESS,extended,150 merry mount,150 merry mount street
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,amsterdam,amsterdam avenue
+CROSS_STREET,extended,bedford,bedford avenue
+TIME,extended,since last,since last night
+TIME,extended,for a week,for a week now
+ADDRESS,extended,1827 cornelia,1827 cornelia street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,west 116,west 116 street
+TIME,extended,right,right now
+CROSS_STREET,extended,claremont,claremont avenue
+TIME,extended,right,right now
+ADDRESS,extended,141 beach 56,141 beach 56 place
+TIME,extended,since this,since this morning
+TIME,extended,since last,since last night
+TIME,extended,since this,since this morning
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the bronx
+CROSS_STREET,extended,adam clayton powell,adam clayton powell boulevard
+CROSS_STREET,extended,east 161,east 161 street
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,east 106,east 106 street
+CROSS_STREET,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,grand,grand street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 57,beach 57 street
+CROSS_STREET,extended,manhattan,manhattan avenue
+CROSS_STREET,extended,east 11,east 11 street
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,for two,for two days
+TIME,extended,since,since yesterday
+ADDRESS,extended,lispenard,lispenard street
+CROSS_STREET,extended,east 98,east 98 street
+TIME,extended,right,right now
+TIME,extended,since last,since last night
+ADDRESS,extended,thomas s boyland,thomas s boyland street
+CROSS_STREET,extended,audley,audley street
+BOROUGH,extended,the,the city
+BOROUGH,extended,the,the city
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+TIME,extended,right,right now
+CROSS_STREET,extended,east 178,east 178 street
+TIME,extended,since,since yesterday
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the bronx
+TIME,extended,right,right now
+CROSS_STREET,extended,olinville,olinville avenue
+CROSS_STREET,extended,woodbine,woodbine street
+ADDRESS,extended,tompkins,tompkins avenue
+TIME,extended,since,since yesterday
+TIME,extended,for a week,for a week now
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,58,58 street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,ocean,ocean avenue
+CROSS_STREET,extended,beach 66,beach 66 street
+CROSS_STREET,extended,east 11,east 11 street
+TIME,extended,since,since yesterday
+TIME,extended,since this,since this morning
+TIME,extended,since last,since last night
+CROSS_STREET,extended,beach 64,beach 64 street
+CROSS_STREET,extended,amsterdam,amsterdam avenue
+TIME,extended,all,all day
+BOROUGH,extended,the,the city
+TIME,extended,since this,since this morning
+ADDRESS,extended,32,32 street
+TIME,extended,since,since yesterday
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,richmond,richmond avenue
+TIME,extended,all,all day
+BOROUGH,extended,the,the city
+BOROUGH,extended,the,the bronx
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,all,all day
+CROSS_STREET,extended,3,3 avenue
+TIME,extended,right,right now
+ADDRESS,extended,157,157 street
+TIME,extended,all,all day
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,211 beach 116,211 beach 116 street
+TIME,extended,right,right now
+ADDRESS,extended,109,109 street
+TIME,extended,for a week,for a week now
+ADDRESS,extended,creston,creston avenue
+BOROUGH,extended,the,the bronx
+TIME,extended,for a week,for a week now
+CROSS_STREET,left as is,avenue,avenue
+BOROUGH,extended,staten,staten island
+TIME,extended,all,all day
+CROSS_STREET,extended,new utrecht,new utrecht avenue
+TIME,extended,since last,since last night
+CROSS_STREET,extended,east 137,east 137 street
+ADDRESS,extended,64,64 road
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,rossville,rossville avenue
+BOROUGH,extended,the,the city
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,south,south
+TIME,extended,for two,for two days
+TIME,extended,since last,since last night
+CROSS_STREET,extended,sandalwood,sandalwood drive
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,riedel,riedel avenue
+TIME,extended,since,since yesterday
+BOROUGH,extended,the,the bronx
+ADDRESS,extended,east 17,east 17 street
+ADDRESS,extended,pleasant plains,pleasant plains avenue
+ADDRESS,extended,206 beach 123,206 beach 123 street
+ADDRESS,extended,west 148,west 148 street
+CROSS_STREET,extended,broome,broome street
+ADDRESS,extended,100,100 street
+TIME,extended,since last,since last night
+TIME,extended,for two,for two days
+CROSS_STREET,extended,father capodanno,father capodanno boulevard
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,121 beach 56,121 beach 56 place
+TIME,extended,since,since yesterday
+ADDRESS,extended,broad,broad street
+BOROUGH,extended,staten,staten island
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,westervelt,westervelt avenue
+TIME,extended,for two,for two days
+ADDRESS,extended,1667 woodbine,1667 woodbine street
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+CROSS_STREET,extended,west 179,west 179 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,beach 122,beach 122 street
+CROSS_STREET,extended,gravesend neck,gravesend neck road
+ADDRESS,left as is,3901,3901
+ADDRESS,extended,lawton,lawton avenue
+CROSS_STREET,extended,morris,morris avenue
+TIME,extended,since this,since this morning
+TIME,extended,for a week,for a week now
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,clifton,clifton avenue
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,stratford,stratford avenue
+TIME,extended,all,all day
+TIME,extended,since last,since last night
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,west 48,west 48 street
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+TIME,extended,all,all day
+ADDRESS,extended,1640 cornelia,1640 cornelia street
+BOROUGH,extended,the,the city
+ADDRESS,extended,beach 56,beach 56 place
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,union,union avenue
+CROSS_STREET,extended,university,university avenue
+TIME,extended,since,since yesterday
+ADDRESS,left as is,park avenue,park avenue
+BOROUGH,extended,the,the city
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,vincent,vincent avenue
+TIME,extended,since last,since last night
+CROSS_STREET,left as is,bailey,bailey
+TIME,extended,right,right now
+ADDRESS,extended,union,union avenue
+ADDRESS,left as is,avenue,avenue
+BOROUGH,extended,the,the city
+CROSS_STREET,left as is,bergen,bergen
+BOROUGH,extended,staten,staten island
+ADDRESS,left as is,terrace,terrace
+TIME,extended,for two,for two days
+BOROUGH,extended,staten,staten island
+ADDRESS,extended,milford,milford street
+ADDRESS,left as is,mason,mason
+TIME,extended,for a week,for a week now
+ADDRESS,extended,7 east 6,7 east 6 road
+CROSS_STREET,extended,west 47,west 47 street
+TIME,extended,since this,since this morning
+TIME,extended,since this,since this morning
+BOROUGH,extended,the,the bronx
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,southern,southern boulevard
+ADDRESS,left as is,avenue,avenue
+TIME,extended,since,since yesterday
+TIME,extended,all,all day
+TIME,extended,all,all day
+ADDRESS,extended,yucca,yucca drive
+ADDRESS,extended,monroe,monroe street
+TIME,extended,since last,since last night
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,woodruff,woodruff avenue
+ADDRESS,extended,816 jarvis,816 jarvis avenue
+ADDRESS,extended,beach 149,beach 149 street
+TIME,extended,since,since yesterday
+CROSS_STREET,extended,erskine,erskine street
+BOROUGH,extended,the,the city
+CROSS_STREET,extended,sterling,sterling place
+BOROUGH,extended,the,the city
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,east 4,east 4 street
+TIME,extended,since this,since this morning
+CROSS_STREET,extended,east 49,east 49 street
+CROSS_STREET,extended,arthur kill,arthur kill road
+CROSS_STREET,extended,grand,grand concourse
+CROSS_STREET,extended,new york,new york avenue
+TIME,extended,since last,since last night
+ADDRESS,left as is,1 avenue,1 avenue
+ADDRESS,left as is,avenue,avenue
+TIME,extended,right,right now
+TIME,extended,for a week,for a week now
+ADDRESS,extended,169,169 place
+CROSS_STREET,extended,sherman,sherman avenue
+CROSS_STREET,left as is,avenue,avenue
+TIME,extended,for a week,for a week now
+TIME,extended,since last,since last night
+TIME,extended,since last,since last night
+ADDRESS,extended,fort george,fort george avenue
+TIME,extended,for a week,for a week now
+TIME,extended,for two,for two days
+CROSS_STREET,extended,wadsworth,wadsworth avenue
+TIME,extended,right,right now
+TIME,extended,since this,since this morning
+TIME,extended,for a week,for a week now
+ADDRESS,extended,bronx park,bronx park east
+TIME,extended,for a week,for a week now
+TIME,extended,since this,since this morning
+ADDRESS,extended,194 beach 114,194 beach 114 street
+TIME,extended,all,all day
+TIME,extended,for a week,for a week now
+CROSS_STREET,extended,west 36,west 36 street
+BOROUGH,extended,the,the city
+TIME,extended,right,right now
+TIME,extended,for two,for two days
+TIME,extended,all,all day
+ADDRESS,extended,30,30 street
+ADDRESS,extended,260 beach 81,260 beach 81 street
+TIME,extended,all,all day
+CROSS_STREET,extended,targee,targee street
+TIME,extended,since,since yesterday
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,seaview,seaview avenue
+TIME,extended,for two,for two days
+TIME,extended,since last,since last night
+CROSS_STREET,extended,bronx park,bronx park east
+TIME,extended,since,since yesterday
+CROSS_STREET,left as is,maple,maple
+ADDRESS,extended,linden,linden boulevard
+BOROUGH,extended,staten,staten island
+TIME,extended,all,all day
+CROSS_STREET,extended,drumgoole road,drumgoole road west
+CROSS_STREET,extended,ford,ford street
+ADDRESS,extended,east 167,east 167 street
+ADDRESS,extended,west 152,west 152 street
+CROSS_STREET,extended,king,king street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,601 west 151,601 west 151 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,putnam,putnam avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,1912 linden,1912 linden street
+ADDRESS,extended,north 8,north 8 street
+ADDRESS,extended,mermaid,mermaid avenue
+ADDRESS,extended,2420 prospect,2420 prospect avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,1860 woodbine,1860 woodbine street
+CROSS_STREET,extended,north railroad,north railroad avenue
+CROSS_STREET,extended,ridgewood,ridgewood avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,beach 99,beach 99 street
+CROSS_STREET,extended,palmetto,palmetto street
+CROSS_STREET,extended,byrne,byrne avenue
+CROSS_STREET,left as is,woodcrest,woodcrest
+CROSS_STREET,extended,beach 129,beach 129 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,10,10 street
+CROSS_STREET,extended,west 129,west 129 street
+CROSS_STREET,extended,harman,harman street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,van buren,van buren street
+CROSS_STREET,extended,beach sixth,beach sixth street
+ADDRESS,extended,west 104,west 104 street
+ADDRESS,extended,239 beach 149,239 beach 149 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,beach 19,beach 19 street
+ADDRESS,extended,garden,garden street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,crotona,crotona avenue
+ADDRESS,extended,university,university avenue
+ADDRESS,extended,drumgoole road,drumgoole road west
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,ludlow,ludlow street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,park avenue,park avenue
+ADDRESS,extended,100,100 avenue
+CROSS_STREET,extended,edison,edison avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,620 west 46,620 west 46 street
+ADDRESS,extended,tanglewood,tanglewood drive
+CROSS_STREET,extended,east 181,east 181 street
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,left as is,university,university
+ADDRESS,extended,cornelia,cornelia street
+ADDRESS,left as is,32,32
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,riverside,riverside drive
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,east 88,east 88 street
+ADDRESS,left as is,andrews avenue,andrews avenue
+CROSS_STREET,extended,east 188,east 188 street
+ADDRESS,left as is,1 avenue,1 avenue
+CROSS_STREET,extended,albany,albany avenue
+ADDRESS,extended,pitkin,pitkin avenue
+CROSS_STREET,extended,goethals road,goethals road north
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,left as is,219,219
+ADDRESS,extended,union,union street
+CROSS_STREET,extended,east 203,east 203 street
+CROSS_STREET,extended,seaman,seaman avenue
+CROSS_STREET,extended,pearsall,pearsall avenue
+CROSS_STREET,left as is,york,york
+CROSS_STREET,extended,west 52,west 52 street
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,left as is,avenue,avenue
+CROSS_STREET,extended,schenectady,schenectady avenue
+CROSS_STREET,extended,halletts,halletts point
+ADDRESS,extended,beach 129,beach 129 street
+ADDRESS,left as is,1 avenue,1 avenue
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,prospect park,prospect park west
+ADDRESS,left as is,avenue,avenue
+ADDRESS,extended,webb,webb avenue
+CROSS_STREET,left as is,avenue,avenue
+ADDRESS,extended,71,71 street
+ADDRESS,extended,53 rivington,53 rivington street
+ADDRESS,extended,193,193 lane
+CROSS_STREET,extended,seaman,seaman avenue
+CROSS_STREET,extended,new york,new york avenue
+ADDRESS,extended,decatur,decatur street
+CROSS_STREET,extended,east 178,east 178 street
+CROSS_STREET,extended,hobart,hobart avenue
+ADDRESS,extended,1611 jefferson,1611 jefferson avenue
+ADDRESS,left as is,avenue,avenue
+CROSS_STREET,extended,east mosholu parkway,east mosholu parkway north
+ADDRESS,extended,east 30,east 30 street
+ADDRESS,left as is,avenue,avenue
+ADDRESS,left as is,122,122
+ADDRESS,left as is,jackson,jackson
+CROSS_STREET,left as is,avenue,avenue

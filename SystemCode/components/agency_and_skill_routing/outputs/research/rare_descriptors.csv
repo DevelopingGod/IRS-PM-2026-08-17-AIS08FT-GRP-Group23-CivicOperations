@@ -1,0 +1,57 @@
+request_type_code,complaint_type,descriptor,records,referred,distinct_agencies,referral_rate
+RT003,Street Condition,Crash Cushion Defect,2,0,1,0.0
+RT003,Street Condition,Defacement,1,0,1,0.0
+RT003,Street Condition,Unsafe Worksite,1,0,1,0.0
+RT004,Street Light Condition,Bracket Arm Missing,2,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Damaged,3,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Door Open,1,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Missing,2,0,1,0.0
+RT004,Street Light Condition,Fixture/Luminaire Out Of Position,2,0,1,0.0
+RT004,Street Light Condition,Flood Light Lamp Cycling,1,0,1,0.0
+RT004,Street Light Condition,Flood Light Lamp Out,4,0,1,0.0
+RT004,Street Light Condition,Glassware Hanging,2,0,1,0.0
+RT004,Street Light Condition,Lamppost Base Door/Cover Missing,2,0,1,0.0
+RT004,Street Light Condition,Lamppost Base Door/Cover Open,4,0,1,0.0
+RT004,Street Light Condition,Lamppost Missing,2,0,1,0.0
+RT004,Street Light Condition,New Con Ed Service Request,1,0,1,0.0
+RT004,Street Light Condition,Street Light Lamp Missing,4,0,1,0.0
+RT004,Street Light Condition,Wood Pole Leaning,1,0,1,0.0
+RT005,Traffic Signal Condition,CMU Communication,1,0,1,0.0
+RT005,Traffic Signal Condition,Controller Cabinet,3,0,1,0.0
+RT005,Traffic Signal Condition,Door Lock,3,0,1,0.0
+RT005,Traffic Signal Condition,Enclosure Cap,1,0,1,0.0
+RT005,Traffic Signal Condition,Foundation,1,0,1,0.0
+RT005,Traffic Signal Condition,Mast Arm,2,0,1,0.0
+RT005,Traffic Signal Condition,On Messenger,1,0,1,0.0
+RT005,Traffic Signal Condition,On Structure,1,0,1,0.0
+RT005,Traffic Signal Condition,Ped Flasher,2,0,1,0.0
+RT005,Traffic Signal Condition,Pedestrian Sign,1,0,1,0.0
+RT005,Traffic Signal Condition,Push Button,1,0,1,0.0
+RT005,Traffic Signal Condition,Speed Board Sign,1,0,1,0.0
+RT005,Traffic Signal Condition,Street Light Feed,1,0,1,0.0
+RT005,Traffic Signal Condition,Sway Bar,1,0,1,0.0
+RT005,Traffic Signal Condition,Telco Connection Blk,1,0,1,0.0
+RT005,Traffic Signal Condition,Underground,4,0,1,0.0
+RT005,Traffic Signal Condition,Warning Signal Lamp,1,0,1,0.0
+RT006,Sidewalk Condition,Blocked - ATM,2,0,1,0.0
+RT006,Sidewalk Condition,Canopy Complaint,2,0,1,0.0
+RT006,Sidewalk Condition,Metal Protruding - Sign Stump,2,0,1,0.0
+RT006,Sidewalk Condition,Sidewalk Grating - Defective,4,1,1,0.25
+RT006,Sidewalk Condition,Sidewalk Grating - Missing,1,0,1,0.0
+RT006,Sidewalk Condition,Sidewalk Staircase,1,0,1,0.0
+RT021,Sewer,Catch Basin Grating Missing (SA4),2,0,1,0.0
+RT022,Sewer,Highway Flooding (SH),1,0,1,0.0
+RT024,Water Maintenance,Fire Hydrant Valve Box,2,0,1,0.0
+RT024,Water System,installation of hydrant side post (WHFP),2,0,1,0.0
+RT044,Snow or Ice,Bike Lane,1,0,1,0.0
+RT045,Dead Animal,Dog,2,0,1,0.0
+RT082,PLUMBING,BOILER,2,0,1,0.0
+RT082,PLUMBING,SEWER,1,0,1,0.0
+RT140,General Construction/Plumbing,Construction - Change Grade/Watercourse,2,0,1,0.0
+RT140,General Construction/Plumbing,Excavation Undermining Adjacent Building,3,1,1,0.3333
+RT140,General Construction/Plumbing,Failure to Comply with Vacate Order,2,0,1,0.0
+RT140,General Construction/Plumbing,Illegal Conversion Of Commercial Bldg/Space To Other Uses,3,1,1,0.3333
+RT140,General Construction/Plumbing,Landmark Bldg - Illegal Work,3,0,1,0.0
+RT140,General Construction/Plumbing,Safety Inspection-Retaining Walls (May 2005),2,0,1,0.0
+RT140,General Construction/Plumbing,Safety Netting/Guard Rails - Damaged/Inadequate/None (6 Stories/75 Feet Or Less),3,0,1,0.0
+RT140,General Construction/Plumbing,Structural Stability Impacted - New Building Under Construction,2,0,1,0.0

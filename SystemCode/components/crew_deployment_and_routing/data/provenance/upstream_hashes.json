@@ -1,0 +1,52 @@
+{
+  "request_catalog": {
+    "path": "C:\\Users\\engha\\Downloads\\request_catalog.csv",
+    "sha256": "b1a0519658600a1a34c36df5ece68f62cd385fdbcff519545f718c26bdae3adc",
+    "size_bytes": 3621
+  },
+  "synthetic_crews": {
+    "path": "D:\\NUS\\Projects\\IRS-Project-2026-KIMS\\data\\processed\\synthetic_crews.parquet",
+    "sha256": "cac25e2b2fed48bf8aa4535aa85b6522d91499266bcddcab3bbdb23ab9799817",
+    "size_bytes": 12019
+  },
+  "requests_real": {
+    "path": "D:\\NUS\\Projects\\IRS-Project-2026-KIMS\\data\\processed\\requests_real.parquet",
+    "sha256": "6a5ee39f87287f2ac54da50580c40dd1fdba9996f5e1b4bd2efbd5d887db2705",
+    "size_bytes": 5089839
+  },
+  "c11_prioritization": {
+    "path": "C:\\Users\\engha\\Downloads\\c11_prioritization.py",
+    "sha256": "921e36a2778f3339d1a4bdeda2a80382e3ef359f43651d83da8dd8086676f01e",
+    "size_bytes": 7684
+  },
+  "c11_final": {
+    "path": "C:\\Users\\engha\\Downloads\\c11_final.py",
+    "sha256": "8e722974960c037df1f2e4763f74b860c69fff025435253b30355989f98c167a",
+    "size_bytes": 9068
+  },
+  "osm_graphml": {
+    "path": "D:\\NUS\\Projects\\IRS-Project-2026-Agancy-Skills\\civicops_shared_osm_roads\\data\\osm\\roads\\nyc_drive.graphml",
+    "sha256": "da09f21ca166f3ff6a7426ac85f7d2485a76e34d31883af26379b9140b78fcbd",
+    "size_bytes": 80328171
+  },
+  "osm_boroughs": {
+    "path": "D:\\NUS\\Projects\\IRS-Project-2026-Agancy-Skills\\civicops_shared_osm_roads\\data\\osm\\boundaries\\nyc_boroughs.gpkg",
+    "sha256": "187412a0f88061bb4af8d21f062c02f505b8289d7067297d7658ca8af50dfc11",
+    "size_bytes": 131072
+  },
+  "osm_coverage": {
+    "path": "D:\\NUS\\Projects\\IRS-Project-2026-Agancy-Skills\\civicops_shared_osm_roads\\data\\osm\\boundaries\\nyc_coverage.gpkg",
+    "sha256": "00b8d21e1120a54e042ddd4443949b49cedd167ba8c9e57d734b9321344222d2",
+    "size_bytes": 163840
+  },
+  "osm_manifest": {
+    "path": "D:\\NUS\\Projects\\IRS-Project-2026-Agancy-Skills\\civicops_shared_osm_roads\\data\\osm\\roads_manifest.json",
+    "sha256": "b98673f3acb04abe25795919092fa6d9621498d1a3210eb11a1bf24113cc78b8",
+    "size_bytes": 3296
+  },
+  "osm_readme": {
+    "path": "D:\\NUS\\Projects\\IRS-Project-2026-Agancy-Skills\\civicops_shared_osm_roads\\README.md",
+    "sha256": "795b4b4774348f55c14bbbf7cd583a06a24ebfdd8aab80e75d649c1b99cb4122",
+    "size_bytes": 3589
+  }
+}

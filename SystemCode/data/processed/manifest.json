@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "seed": 2026,
+  "generated_at": "2026-09-18T14:59:35+00:00",
+  "tables": [
+    {
+      "file": "daily_demand_weather.parquet",
+      "rows": 97411,
+      "columns": 12,
+      "sha256_16": "06ba416685e3892c",
+      "is_synthetic": false
+    },
+    {
+      "file": "requests_real.parquet",
+      "rows": 49558,
+      "columns": 54,
+      "sha256_16": "6a5ee39f87287f2a",
+      "is_synthetic": false
+    },
+    {
+      "file": "synthetic_burst_requests.parquet",
+      "rows": 1391,
+      "columns": 16,
+      "sha256_16": "f35beb122153d58a",
+      "is_synthetic": true
+    },
+    {
+      "file": "synthetic_citizens.parquet",
+      "rows": 5000,
+      "columns": 11,
+      "sha256_16": "1382adcb251a44f7",
+      "is_synthetic": true
+    },
+    {
+      "file": "synthetic_crews.parquet",
+      "rows": 136,
+      "columns": 11,
+      "sha256_16": "cac25e2b2fed48bf",
+      "is_synthetic": true
+    },
+    {
+      "file": "synthetic_nlp_utterances.parquet",
+      "rows": 18654,
+      "columns": 11,
+      "sha256_16": "3fc9a8a37ab752a4",
+      "is_synthetic": true
+    },
+    {
+      "file": "synthetic_queue_snapshots.parquet",
+      "rows": 10348,
+      "columns": 23,
+      "sha256_16": "b4c5f93ec5e5ac3b",
+      "is_synthetic": true
+    },
+    {
+      "file": "synthetic_reporter_links.parquet",
+      "rows": 49558,
+      "columns": 3,
+      "sha256_16": "26b2a3a8039849fc",
+      "is_synthetic": true
+    },
+    {
+      "file": "synthetic_urgency_scenarios.parquet",
+      "rows": 1000,
+      "columns": 20,
+      "sha256_16": "d854ff81749f040a",
+      "is_synthetic": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "c05_label_kind": "hand",
+  "c05_provisional": false,
+  "c06_label_kind": "real_verified_outcome_proxy",
+  "c06_note": "UNFOUNDED is a crew-note proxy, not a proven fake. Inconclusive rows excluded.",
+  "c05_csv": "research/experiments/c05_benchmark.csv",
+  "c06_csv": "research/experiments/c06_benchmark.csv"
+}

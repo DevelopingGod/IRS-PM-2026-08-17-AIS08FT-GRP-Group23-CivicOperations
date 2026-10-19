@@ -1,0 +1,5 @@
+split,n,flagged_1,not_flagged_0,indeterminate_null,flagged_pct,not_flagged_pct,indeterminate_pct,robust_interval_regime_pct,boundary_sensitive_pct_of_complete
+test,7434,1907,5331,196,25.652,71.711,2.637,0.444,12.697
+train,34690,9746,24083,861,28.095,69.423,2.482,0.176,13.01
+val,7434,1900,5359,175,25.558,72.088,2.354,0.404,11.765
+all,49558,13553,34773,1232,27.348,70.166,2.486,0.25,12.776

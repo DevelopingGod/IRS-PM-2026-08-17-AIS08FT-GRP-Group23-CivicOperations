@@ -1,0 +1,113 @@
+[
+  {
+    "request_type": "RT001",
+    "confidence": 0.94,
+    "ready_to_submit": true,
+    "needs_human": false,
+    "is_emergency": false,
+    "emergency_action": "CONTINUE",
+    "emergency_category": null,
+    "slots": {
+      "incident_address": "500 GRAND CONCOURSE",
+      "cross_street": null,
+      "borough": "BRONX",
+      "landmark": null
+    },
+    "agency": "DOT",
+    "required_skills": [
+      "ROAD_REPAIR"
+    ],
+    "status": "ASSIGNED",
+    "dispatch_eligible": true,
+    "next_step": "DUPLICATE_DETECTION",
+    "explanation": "RT001 (Pothole) was resolved through the shared catalog to DOT (New York City Department of Transportation) with required skill ROAD_REPAIR. All intake, emergency and catalog checks passed, so the request continues to duplicate detection. Later components still decide priority, location and crew feasibility."
+  },
+  {
+    "request_type": "OTHER",
+    "confidence": 0.81,
+    "ready_to_submit": false,
+    "needs_human": true,
+    "is_emergency": false,
+    "emergency_action": "CONTINUE",
+    "emergency_category": null,
+    "slots": {
+      "incident_address": null,
+      "cross_street": null,
+      "borough": null,
+      "landmark": null
+    },
+    "agency": null,
+    "required_skills": [],
+    "status": "HELD",
+    "dispatch_eligible": false,
+    "next_step": "ROUTE_TO_PERSON",
+    "explanation": "OTHER is a special intake label, so no agency or crew skill applies. The request is HELD and is not dispatch-eligible: CO1 marked the request as not ready to submit (details are still being collected). [R03]; CO1 asked for a person to review this request. [R04]; Request type OTHER: a real question no crew can fix; it goes to a person. [R05]"
+  },
+  {
+    "request_type": "RT141",
+    "confidence": 0.77,
+    "ready_to_submit": true,
+    "needs_human": false,
+    "is_emergency": false,
+    "emergency_action": "CONFIRM_WITH_CITIZEN",
+    "emergency_category": null,
+    "slots": {
+      "incident_address": "75 WEST END AVENUE",
+      "cross_street": null,
+      "borough": "MANHATTAN",
+      "landmark": null
+    },
+    "agency": "DOB",
+    "required_skills": [
+      "BUILDING_INSPECTION"
+    ],
+    "status": "HELD",
+    "dispatch_eligible": false,
+    "next_step": "CONFIRM_WITH_CITIZEN",
+    "explanation": "RT141 (Elevator not working) was resolved through the shared catalog to DOB (New York City Department of Buildings) with required skill BUILDING_INSPECTION. The request is HELD and is not dispatch-eligible: The emergency check asked to confirm with the citizen before anything moves on. [R02]"
+  },
+  {
+    "request_type": "RT060",
+    "confidence": null,
+    "ready_to_submit": true,
+    "needs_human": false,
+    "is_emergency": false,
+    "emergency_action": "CONTINUE",
+    "emergency_category": null,
+    "slots": {
+      "incident_address": null,
+      "cross_street": null,
+      "borough": "BROOKLYN",
+      "landmark": null
+    },
+    "agency": "DPR",
+    "required_skills": [
+      "FORESTRY"
+    ],
+    "status": "INVALID",
+    "dispatch_eligible": false,
+    "next_step": "FIX_INPUT",
+    "explanation": "RT060 (Fallen tree or branch) was resolved through the shared catalog to DPR (New York City Department of Parks and Recreation) with required skill FORESTRY. The input is INVALID and is not dispatch-eligible: confidence 1.7 is outside [0, 1]. [R01]"
+  },
+  {
+    "request_type": "SMALLTALK",
+    "confidence": 0.99,
+    "ready_to_submit": false,
+    "needs_human": false,
+    "is_emergency": false,
+    "emergency_action": "CONTINUE",
+    "emergency_category": null,
+    "slots": {
+      "incident_address": null,
+      "cross_street": null,
+      "borough": null,
+      "landmark": null
+    },
+    "agency": null,
+    "required_skills": [],
+    "status": "HELD",
+    "dispatch_eligible": false,
+    "next_step": "NO_REQUEST_CREATED",
+    "explanation": "SMALLTALK is a special intake label, so no agency or crew skill applies. The request is HELD and is not dispatch-eligible: CO1 marked the request as not ready to submit (details are still being collected). [R03]; Request type SMALLTALK: no service request is created. [R05]"
+  }
+]

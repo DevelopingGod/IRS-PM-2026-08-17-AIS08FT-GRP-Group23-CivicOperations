@@ -1,0 +1,840 @@
+{
+  "artifact": "civicops_agency.referral_knowledge",
+  "schema_version": 1,
+  "generated_by": "research/method_comparison.py",
+  "generated_at_utc": "2026-10-14T22:58:41Z",
+  "purpose": "Informational referral-risk advisory per RT code. It never changes the catalog agency, the required skills or dispatch eligibility unless a reviewer threshold is configured.",
+  "fitted_on_split": "train",
+  "train_window": [
+    "2025-09-24 04:00:17",
+    "2026-05-20 06:43:24"
+  ],
+  "train_records": 34690,
+  "global_train_referral_rate": 0.0207,
+  "estimator": "m-estimate P(referred | RT, borough): cell m=100 shrunk to P(referred | RT) m=5",
+  "uses_borough_slot": true,
+  "selected_on": "val log-loss (model) and val F1 (threshold)",
+  "elevated_threshold": 0.15,
+  "min_support": 30,
+  "catalog_sha256": "776e339e4b102ef0818355d0cbc9e7934eef613b88f352dc47c882d93e059b5c",
+  "history_sha256": "6a5ee39f87287f2ac54da50580c40dd1fdba9996f5e1b4bd2efbd5d887db2705",
+  "codes": {
+    "RT001": {
+      "catalog_agency": "DOT",
+      "train_records": 1178,
+      "train_referred": 49,
+      "referral_rate_raw": 0.0416,
+      "referral_rate_smoothed": 0.0415,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DOT"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0267,
+        "BROOKLYN": 0.0175,
+        "MANHATTAN": 0.0228,
+        "QUEENS": 0.1086,
+        "STATEN ISLAND": 0.0147
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT002": {
+      "catalog_agency": "DOT",
+      "train_records": 162,
+      "train_referred": 85,
+      "referral_rate_raw": 0.5247,
+      "referral_rate_smoothed": 0.5096,
+      "risk_level": "ELEVATED",
+      "matrix_relationship": "CONSISTENT_CAUSE_DEPENDENT",
+      "matrix_agencies": [
+        "DOT"
+      ],
+      "context_dimension": "Underlying cause (sewer/water defect vs road defect)",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.5203,
+        "BROOKLYN": 0.5583,
+        "MANHATTAN": 0.4751,
+        "QUEENS": 0.5275,
+        "STATEN ISLAND": 0.4766
+      },
+      "observed_referral_destinations": {
+        "DEP": 85
+      },
+      "matrix_note": "Matrix lists street defects under DOT but sewers and street water leaks under DEP; the cause of a cave-in is only known after inspection."
+    },
+    "RT003": {
+      "catalog_agency": "DOT",
+      "train_records": 322,
+      "train_referred": 57,
+      "referral_rate_raw": 0.177,
+      "referral_rate_smoothed": 0.1746,
+      "risk_level": "ELEVATED",
+      "matrix_relationship": "CONSISTENT_WITH_BLOCKED_STREET_OVERLAP",
+      "matrix_agencies": [
+        "DOT"
+      ],
+      "context_dimension": "Cause of a blocked street (construction/debris/vehicle)",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.1539,
+        "BROOKLYN": 0.1744,
+        "MANHATTAN": 0.1567,
+        "QUEENS": 0.1885,
+        "STATEN ISLAND": 0.1957
+      },
+      "observed_referral_destinations": {
+        "DEP": 47,
+        "DSNY": 7,
+        "NYPD": 1,
+        "DOB": 1,
+        "MTA": 1
+      },
+      "matrix_note": "Matrix row 'Blocked street or sidewalk' lists DOT, DSNY, DOB or NYPD depending on cause; catalog RT003 absorbs 'Blocked - Construction' descriptors."
+    },
+    "RT004": {
+      "catalog_agency": "DOT",
+      "train_records": 534,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0002,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DOT"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0001,
+        "BROOKLYN": 0.0001,
+        "MANHATTAN": 0.0001,
+        "QUEENS": 0.0001,
+        "STATEN ISLAND": 0.0001
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT005": {
+      "catalog_agency": "DOT",
+      "train_records": 814,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0001,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DOT"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0001,
+        "BROOKLYN": 0.0,
+        "MANHATTAN": 0.0,
+        "QUEENS": 0.0,
+        "STATEN ISLAND": 0.0
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT006": {
+      "catalog_agency": "DOT",
+      "train_records": 384,
+      "train_referred": 14,
+      "referral_rate_raw": 0.0365,
+      "referral_rate_smoothed": 0.0363,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT_WITH_BLOCKED_STREET_OVERLAP",
+      "matrix_agencies": [
+        "DOT"
+      ],
+      "context_dimension": "Cause of a blocked sidewalk",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0477,
+        "BROOKLYN": 0.0177,
+        "MANHATTAN": 0.0522,
+        "QUEENS": 0.0474,
+        "STATEN ISLAND": 0.0242
+      },
+      "observed_referral_destinations": {
+        "DEP": 4,
+        "MTA": 4,
+        "DSNY": 2,
+        "DOB": 2,
+        "DPR": 2
+      },
+      "matrix_note": "Sidewalks are DOT, but 'Blocked street or sidewalk' is multi-agency in the matrix."
+    },
+    "RT020": {
+      "catalog_agency": "DEP",
+      "train_records": 355,
+      "train_referred": 15,
+      "referral_rate_raw": 0.0423,
+      "referral_rate_smoothed": 0.042,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DEP"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0382,
+        "BROOKLYN": 0.0348,
+        "MANHATTAN": 0.0433,
+        "QUEENS": 0.04,
+        "STATEN ISLAND": 0.0506
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT021": {
+      "catalog_agency": "DEP",
+      "train_records": 140,
+      "train_referred": 4,
+      "referral_rate_raw": 0.0286,
+      "referral_rate_smoothed": 0.0283,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DEP"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0248,
+        "BROOKLYN": 0.0205,
+        "MANHATTAN": 0.0507,
+        "QUEENS": 0.0204,
+        "STATEN ISLAND": 0.0286
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT022": {
+      "catalog_agency": "DEP",
+      "train_records": 63,
+      "train_referred": 4,
+      "referral_rate_raw": 0.0635,
+      "referral_rate_smoothed": 0.0603,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DEP"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.058,
+        "BROOKLYN": 0.067,
+        "MANHATTAN": 0.0592,
+        "QUEENS": 0.0516,
+        "STATEN ISLAND": 0.067
+      },
+      "observed_referral_destinations": {
+        "DOT": 4
+      },
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT023": {
+      "catalog_agency": "DEP",
+      "train_records": 182,
+      "train_referred": 8,
+      "referral_rate_raw": 0.044,
+      "referral_rate_smoothed": 0.0433,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DEP"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0444,
+        "BROOKLYN": 0.0617,
+        "MANHATTAN": 0.0643,
+        "QUEENS": 0.0285,
+        "STATEN ISLAND": 0.0269
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT024": {
+      "catalog_agency": "DEP",
+      "train_records": 230,
+      "train_referred": 1,
+      "referral_rate_raw": 0.0043,
+      "referral_rate_smoothed": 0.0047,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "NOT_EXPLICIT",
+      "matrix_agencies": [
+        "DEP"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0032,
+        "BROOKLYN": 0.0031,
+        "MANHATTAN": 0.0035,
+        "QUEENS": 0.0033,
+        "STATEN ISLAND": 0.0093
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Hydrants are not named in the matrix; DEP is the closest family (street water system). Treated as consistent but not explicit."
+    },
+    "RT025": {
+      "catalog_agency": "DEP",
+      "train_records": 218,
+      "train_referred": 22,
+      "referral_rate_raw": 0.1009,
+      "referral_rate_smoothed": 0.0991,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DEP"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.078,
+        "BROOKLYN": 0.1096,
+        "MANHATTAN": 0.0785,
+        "QUEENS": 0.0942,
+        "STATEN ISLAND": 0.128
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT040": {
+      "catalog_agency": "DSNY",
+      "train_records": 491,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0002,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DSNY"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0002,
+        "BROOKLYN": 0.0001,
+        "MANHATTAN": 0.0001,
+        "QUEENS": 0.0001,
+        "STATEN ISLAND": 0.0001
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT041": {
+      "catalog_agency": "DSNY",
+      "train_records": 381,
+      "train_referred": 22,
+      "referral_rate_raw": 0.0577,
+      "referral_rate_smoothed": 0.0573,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DSNY"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0604,
+        "BROOKLYN": 0.0637,
+        "MANHATTAN": 0.059,
+        "QUEENS": 0.037,
+        "STATEN ISLAND": 0.0666
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT042": {
+      "catalog_agency": "DSNY",
+      "train_records": 833,
+      "train_referred": 37,
+      "referral_rate_raw": 0.0444,
+      "referral_rate_smoothed": 0.0443,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DSNY"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0347,
+        "BROOKLYN": 0.0267,
+        "MANHATTAN": 0.0579,
+        "QUEENS": 0.0224,
+        "STATEN ISLAND": 0.0792
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT043": {
+      "catalog_agency": "DSNY",
+      "train_records": 366,
+      "train_referred": 146,
+      "referral_rate_raw": 0.3989,
+      "referral_rate_smoothed": 0.3938,
+      "risk_level": "ELEVATED",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "DSNY",
+        "NYPD"
+      ],
+      "context_dimension": "License plates attached and location",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.4056,
+        "BROOKLYN": 0.3842,
+        "MANHATTAN": 0.3814,
+        "QUEENS": 0.427,
+        "STATEN ISLAND": 0.373
+      },
+      "observed_referral_destinations": {
+        "NYPD": 146
+      },
+      "matrix_note": "Matrix: DSNY or NYPD depending on plates and location. Catalog splits the family into RT043 (DSNY, derelict) and RT124 (NYPD, abandoned)."
+    },
+    "RT044": {
+      "catalog_agency": "DSNY",
+      "train_records": 1671,
+      "train_referred": 7,
+      "referral_rate_raw": 0.0042,
+      "referral_rate_smoothed": 0.0042,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DSNY"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0029,
+        "BROOKLYN": 0.0078,
+        "MANHATTAN": 0.0076,
+        "QUEENS": 0.0013,
+        "STATEN ISLAND": 0.0017
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT045": {
+      "catalog_agency": "DSNY",
+      "train_records": 149,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0007,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "NOT_EXPLICIT",
+      "matrix_agencies": [
+        "DOHMH",
+        "NYPD",
+        "ACC"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0006,
+        "BROOKLYN": 0.0005,
+        "MANHATTAN": 0.0006,
+        "QUEENS": 0.0005,
+        "STATEN ISLAND": 0.0004
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Dead animals on the street are not listed in the matrix. The nearest 'animal' row names DOHMH, NYPD or ACC; the catalog assigns DSNY. Recorded as an unexplained catalog/matrix gap, not as a conflict."
+    },
+    "RT060": {
+      "catalog_agency": "DPR",
+      "train_records": 393,
+      "train_referred": 24,
+      "referral_rate_raw": 0.0611,
+      "referral_rate_smoothed": 0.0606,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DPR"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0518,
+        "BROOKLYN": 0.0457,
+        "MANHATTAN": 0.0477,
+        "QUEENS": 0.042,
+        "STATEN ISLAND": 0.1015
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT061": {
+      "catalog_agency": "DPR",
+      "train_records": 183,
+      "train_referred": 10,
+      "referral_rate_raw": 0.0546,
+      "referral_rate_smoothed": 0.0537,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DPR"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0647,
+        "BROOKLYN": 0.0417,
+        "MANHATTAN": 0.0507,
+        "QUEENS": 0.067,
+        "STATEN ISLAND": 0.0483
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT062": {
+      "catalog_agency": "DPR",
+      "train_records": 114,
+      "train_referred": 9,
+      "referral_rate_raw": 0.0789,
+      "referral_rate_smoothed": 0.0765,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DPR"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0729,
+        "BROOKLYN": 0.0683,
+        "MANHATTAN": 0.0743,
+        "QUEENS": 0.0698,
+        "STATEN ISLAND": 0.0921
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT080": {
+      "catalog_agency": "HPD",
+      "train_records": 5236,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "HPD",
+        "NYCHA"
+      ],
+      "context_dimension": "Private building vs public housing",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0,
+        "BROOKLYN": 0.0,
+        "MANHATTAN": 0.0,
+        "QUEENS": 0.0,
+        "STATEN ISLAND": 0.0
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+    },
+    "RT081": {
+      "catalog_agency": "HPD",
+      "train_records": 490,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0002,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "HPD",
+        "NYCHA"
+      ],
+      "context_dimension": "Private building vs public housing",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0001,
+        "BROOKLYN": 0.0001,
+        "MANHATTAN": 0.0001,
+        "QUEENS": 0.0001,
+        "STATEN ISLAND": 0.0001
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+    },
+    "RT082": {
+      "catalog_agency": "HPD",
+      "train_records": 905,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0001,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "HPD",
+        "NYCHA"
+      ],
+      "context_dimension": "Private building vs public housing",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0,
+        "BROOKLYN": 0.0,
+        "MANHATTAN": 0.0,
+        "QUEENS": 0.0001,
+        "STATEN ISLAND": 0.0001
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+    },
+    "RT083": {
+      "catalog_agency": "HPD",
+      "train_records": 1512,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0001,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "HPD",
+        "NYCHA"
+      ],
+      "context_dimension": "Private building vs public housing",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0,
+        "BROOKLYN": 0.0,
+        "MANHATTAN": 0.0,
+        "QUEENS": 0.0,
+        "STATEN ISLAND": 0.0
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+    },
+    "RT084": {
+      "catalog_agency": "HPD",
+      "train_records": 401,
+      "train_referred": 0,
+      "referral_rate_raw": 0.0,
+      "referral_rate_smoothed": 0.0003,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "HPD",
+        "NYCHA"
+      ],
+      "context_dimension": "Private building vs public housing",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0001,
+        "BROOKLYN": 0.0001,
+        "MANHATTAN": 0.0001,
+        "QUEENS": 0.0002,
+        "STATEN ISLAND": 0.0002
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Matrix sends public-housing maintenance to NYCHA. NYCHA is not a catalog agency."
+    },
+    "RT100": {
+      "catalog_agency": "DOHMH",
+      "train_records": 238,
+      "train_referred": 6,
+      "referral_rate_raw": 0.0252,
+      "referral_rate_smoothed": 0.0251,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DOHMH"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0309,
+        "BROOKLYN": 0.0282,
+        "MANHATTAN": 0.027,
+        "QUEENS": 0.0195,
+        "STATEN ISLAND": 0.0185
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT120": {
+      "catalog_agency": "NYPD",
+      "train_records": 4577,
+      "train_referred": 43,
+      "referral_rate_raw": 0.0094,
+      "referral_rate_smoothed": 0.0094,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "NYPD"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0135,
+        "BROOKLYN": 0.0023,
+        "MANHATTAN": 0.0117,
+        "QUEENS": 0.0034,
+        "STATEN ISLAND": 0.0064
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT121": {
+      "catalog_agency": "NYPD",
+      "train_records": 2561,
+      "train_referred": 6,
+      "referral_rate_raw": 0.0023,
+      "referral_rate_smoothed": 0.0024,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "NYPD",
+        "DEP"
+      ],
+      "context_dimension": "Noise subtype (commercial equipment/construction vs street/bar)",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0005,
+        "BROOKLYN": 0.0006,
+        "MANHATTAN": 0.0047,
+        "QUEENS": 0.0004,
+        "STATEN ISLAND": 0.001
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Matrix: business noise is NYPD and/or DEP depending on subtype; construction and machinery noise is DEP."
+    },
+    "RT122": {
+      "catalog_agency": "NYPD",
+      "train_records": 1952,
+      "train_referred": 7,
+      "referral_rate_raw": 0.0036,
+      "referral_rate_smoothed": 0.0036,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "NYPD"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0034,
+        "BROOKLYN": 0.0066,
+        "MANHATTAN": 0.0089,
+        "QUEENS": 0.0017,
+        "STATEN ISLAND": 0.0009
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT123": {
+      "catalog_agency": "NYPD",
+      "train_records": 6186,
+      "train_referred": 66,
+      "referral_rate_raw": 0.0107,
+      "referral_rate_smoothed": 0.0107,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "NYPD"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0144,
+        "BROOKLYN": 0.0085,
+        "MANHATTAN": 0.01,
+        "QUEENS": 0.0141,
+        "STATEN ISLAND": 0.0061
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT124": {
+      "catalog_agency": "NYPD",
+      "train_records": 821,
+      "train_referred": 68,
+      "referral_rate_raw": 0.0828,
+      "referral_rate_smoothed": 0.0824,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "MULTI_AGENCY_CONTEXTUAL",
+      "matrix_agencies": [
+        "DSNY",
+        "NYPD"
+      ],
+      "context_dimension": "License plates attached and location",
+      "context_in_co1_contract": false,
+      "referral_rate_by_borough": {
+        "BRONX": 0.1622,
+        "BROOKLYN": 0.0485,
+        "MANHATTAN": 0.0887,
+        "QUEENS": 0.1217,
+        "STATEN ISLAND": 0.023
+      },
+      "observed_referral_destinations": {},
+      "matrix_note": "Matrix: DSNY or NYPD depending on plates and location. Catalog splits the family into RT043 (DSNY, derelict) and RT124 (NYPD, abandoned)."
+    },
+    "RT140": {
+      "catalog_agency": "DOB",
+      "train_records": 424,
+      "train_referred": 5,
+      "referral_rate_raw": 0.0118,
+      "referral_rate_smoothed": 0.0119,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DOB"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0081,
+        "BROOKLYN": 0.0101,
+        "MANHATTAN": 0.0117,
+        "QUEENS": 0.0071,
+        "STATEN ISLAND": 0.0202
+      },
+      "observed_referral_destinations": {
+        "DOT": 2,
+        "DPR": 2,
+        "DSNY": 1
+      },
+      "matrix_note": "Single responsible agency in matrix."
+    },
+    "RT141": {
+      "catalog_agency": "DOB",
+      "train_records": 224,
+      "train_referred": 4,
+      "referral_rate_raw": 0.0179,
+      "referral_rate_smoothed": 0.0179,
+      "risk_level": "TYPICAL",
+      "matrix_relationship": "CONSISTENT",
+      "matrix_agencies": [
+        "DOB"
+      ],
+      "context_dimension": null,
+      "context_in_co1_contract": null,
+      "referral_rate_by_borough": {
+        "BRONX": 0.0101,
+        "BROOKLYN": 0.012,
+        "MANHATTAN": 0.0285,
+        "QUEENS": 0.0153,
+        "STATEN ISLAND": 0.0249
+      },
+      "observed_referral_destinations": {
+        "NYCHA": 3,
+        "DPR": 1
+      },
+      "matrix_note": "Single responsible agency in matrix."
+    }
+  }
+}

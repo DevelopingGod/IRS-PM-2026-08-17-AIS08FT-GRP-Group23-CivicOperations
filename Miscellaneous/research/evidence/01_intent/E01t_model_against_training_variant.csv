@@ -1,0 +1,5 @@
+arm,D0 uniform,D1 realistic,D2 uniform+noise,D3 realistic+noise
+A1 tfidf+svm,0.7174,0.7254,0.7328,0.7249
+A2 minilm+logreg,0.8308,0.8499,0.8388,0.8466
+A3 distilbert-base-uncased,0.7339,0.8092,0.8032,0.8031
+A3 roberta-base,0.7802,0.7768,0.8022,0.8085

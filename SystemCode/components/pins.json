@@ -1,0 +1,41 @@
+{
+  "exported_at": "2026-10-19T11:20:51",
+  "khalid": {
+    "owner": "Khalid",
+    "components": [
+      "Urgency",
+      "Prioritisation"
+    ],
+    "source": "origin/khalid_code",
+    "pinned": "906b77a",
+    "files": 23,
+    "path": "components/urgency_and_prioritisation"
+  },
+  "mohammad_agency": {
+    "owner": "Mohammad",
+    "components": [
+      "Agency and skill routing"
+    ],
+    "source": "delivered package",
+    "pinned": "v1.1.0, civicops_agency 370862a5acc4",
+    "path": "components/agency_and_skill_routing"
+  },
+  "mohammad_external": {
+    "owner": "Mohammad",
+    "components": [
+      "External factors"
+    ],
+    "source": "delivered package",
+    "pinned": "v1.0.0, civicops_external_factors ff4c9addc62e",
+    "path": "components/external_factors"
+  },
+  "mohammad_crew": {
+    "owner": "Mohammad",
+    "components": [
+      "Crew deployment and routing"
+    ],
+    "source": "delivered package",
+    "pinned": "v1.0.0, crew_dispatch b25253120a69",
+    "path": "components/crew_deployment_and_routing"
+  }
+}

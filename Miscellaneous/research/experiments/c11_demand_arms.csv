@@ -1,0 +1,4 @@
+arm,mae,poisson_deviance,mae_storm_days,mae_water_sewer
+"B0 weekday baseline, no weather",72.278,67.3043,88.132,30.865
+B1 Poisson regression + weather,83.053,88.0148,97.824,35.376
+"B2 gradient boosting, Poisson loss",60.399,46.6838,73.738,25.435

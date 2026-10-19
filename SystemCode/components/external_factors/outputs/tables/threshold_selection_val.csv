@@ -1,0 +1,12 @@
+threshold_m,admissible_H1,trigger_rate_val_pct,trigger_rate_train_pct,trigger_rate_val_unique_locations_pct,decision_agreement_pct,positive_stability_pct,temporal_shift_pp,borough_max_min_ratio,MANHATTAN_rate_val_pct,BROOKLYN_rate_val_pct,QUEENS_rate_val_pct,BRONX_rate_val_pct,STATEN ISLAND_rate_val_pct,C1,C2,C3,C4,C5,meets_all
+50,False,11.369,12.251,10.68,97.869,89.903,-0.882,3.568,19.346,13.718,9.21,12.864,5.422,True,True,True,True,False,False
+75,True,16.758,18.673,16.234,97.374,93.601,-1.915,3.301,28.065,19.886,13.03,19.758,8.503,True,True,True,True,False,False
+100,True,26.217,28.83,25.29,96.522,92.606,-2.614,2.955,40.599,30.763,20.513,33.12,13.74,True,True,True,True,True,True
+150,True,42.205,48.395,40.926,97.443,96.84,-6.19,2.304,60.036,48.133,32.705,54.584,26.063,True,True,False,True,True,False
+200,False,56.901,63.283,55.742,97.354,97.27,-6.382,2.192,78.202,64.367,48.875,69.083,35.675,True,True,False,False,True,False
+250,False,67.336,73.774,66.456,98.392,98.704,-6.438,1.943,87.738,75.893,59.759,79.744,45.163,True,True,False,False,True,False
+300,False,75.997,81.761,75.154,98.742,99.24,-5.764,1.793,95.459,85.552,68.132,89.339,53.235,True,True,False,False,True,False
+400,False,87.668,90.619,87.474,99.168,99.537,-2.951,1.398,99.637,96.023,83.098,96.091,71.288,True,True,True,False,True,False
+500,False,93.071,94.974,93.267,99.677,99.793,-1.903,1.237,99.909,98.377,92.517,98.01,80.776,True,True,True,False,True,False
+750,False,98.323,99.014,98.65,99.931,99.951,-0.691,1.057,100.0,99.351,99.006,99.502,94.578,True,True,True,False,True,False
+1000,False,99.808,99.829,99.846,99.973,99.979,-0.021,1.007,100.0,100.0,99.843,100.0,99.322,True,True,True,False,True,False

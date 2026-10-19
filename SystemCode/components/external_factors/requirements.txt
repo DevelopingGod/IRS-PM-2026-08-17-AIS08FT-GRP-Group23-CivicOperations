@@ -1,0 +1,19 @@
+﻿# Tested with Python 3.14.7 on Windows 11 (2026-10-15). Runtime needs only the first block.
+numpy==2.5.4
+pandas==3.0.6
+pyarrow==23.0.1   # 26.0.0's _compute DLL was blocked by Windows Application Control on the dev machine
+shapely==2.2.0
+pyproj==3.8.0
+geopandas==1.2.0
+pyogrio==0.13.0
+PyYAML==6.0.3
+# Data preparation (internet, one-off)
+osmnx==2.1.1
+networkx==3.7
+requests==2.34.2
+# Research, maps, report, benchmarks
+matplotlib==3.11.2
+scipy==1.18.1
+psutil==7.2.2
+# Tests
+pytest==9.1.1

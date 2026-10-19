@@ -1,0 +1,37 @@
+{
+  "train_requests_geolocated": 33867,
+  "val_requests_geolocated": 7274,
+  "train_quantiles_d_core": {
+    "n": 33867,
+    "p05": 17.1,
+    "p10": 40.9,
+    "p25": 91.6,
+    "p50": 155.3,
+    "p75": 255.9,
+    "p90": 387.8,
+    "p95": 500.2,
+    "mean": 194.0
+  },
+  "train_within_radius_pct": {
+    "50": 12.25,
+    "75": 18.67,
+    "100": 28.83,
+    "150": 48.4,
+    "200": 63.28,
+    "250": 73.77,
+    "300": 81.76,
+    "400": 90.62,
+    "500": 94.97,
+    "750": 99.01,
+    "1000": 99.83
+  },
+  "nearest_core_category_share_train": {
+    "SCHOOL": 72.62,
+    "CHILDCARE": 9.35,
+    "FIRE_STATION": 7.45,
+    "SENIOR_CARE": 4.03,
+    "POLICE": 3.62,
+    "HOSPITAL": 2.93
+  },
+  "requests_inside_a_facility_polygon_train_pct": 0.04
+}

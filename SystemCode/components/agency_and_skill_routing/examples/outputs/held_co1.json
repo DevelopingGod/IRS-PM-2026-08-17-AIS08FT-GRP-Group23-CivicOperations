@@ -1,0 +1,23 @@
+{
+  "request_type": "RT080",
+  "confidence": 0.71,
+  "ready_to_submit": false,
+  "needs_human": true,
+  "is_emergency": false,
+  "emergency_action": "CONTINUE",
+  "emergency_category": null,
+  "slots": {
+    "incident_address": null,
+    "cross_street": null,
+    "borough": "BRONX",
+    "landmark": null
+  },
+  "agency": "HPD",
+  "required_skills": [
+    "HOUSING_INSPECTION"
+  ],
+  "status": "HELD",
+  "dispatch_eligible": false,
+  "next_step": "HUMAN_REVIEW",
+  "explanation": "RT080 (No heat or hot water) was resolved through the shared catalog to HPD (New York City Department of Housing Preservation and Development) with required skill HOUSING_INSPECTION. The request is HELD and is not dispatch-eligible: CO1 marked the request as not ready to submit (details are still being collected). [R03]; CO1 asked for a person to review this request. [R04]"
+}

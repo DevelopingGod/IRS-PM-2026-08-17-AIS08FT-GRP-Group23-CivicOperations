@@ -1,0 +1,38 @@
+request_type,label,f1,test_lines
+RT140,Unsafe building or illegal construction,0.5,8
+RT003,Other street surface defect,0.571,8
+RT002,Street cave-in or sinkhole,0.615,8
+RT062,Dead or dying tree,0.737,8
+RT060,Fallen tree or branch,0.75,8
+RT083,"Pests, mold or unsanitary condition",0.75,8
+RT020,Water main break or street water leak,0.75,8
+RT100,Rats or rodents,0.769,8
+RT045,Dead animal on street,0.8,8
+RT023,Sewer backup or manhole overflow,0.8,8
+RT042,Dirty street or litter,0.824,8
+RT041,Illegal dumping,0.824,8
+RT123,Illegal parking or blocked hydrant,0.842,8
+RT004,Street light out or dim,0.842,9
+RT043,Derelict vehicle,0.857,8
+RT061,Overgrown tree or branches on wires,0.857,8
+RT082,Plumbing problem in apartment,0.857,8
+RT124,Abandoned vehicle,0.875,8
+RT121,"Noise from street, business or vehicle",0.875,8
+RT084,Electrical problem in building,0.875,8
+EMERGENCY,EMERGENCY,0.884,19
+RT025,Dirty water or low water pressure,0.889,8
+RT120,Noise from a residence,0.889,8
+RT122,Blocked driveway,0.933,8
+RT005,Traffic or pedestrian signal not working,0.933,8
+RT022,Street flooding,0.933,8
+RT021,Catch basin clogged or flooding,0.941,8
+RT024,Fire hydrant running or damaged,0.941,8
+RT080,No heat or hot water,0.941,8
+RT044,Snow or ice not cleared,0.941,8
+RT006,Broken sidewalk or curb,0.941,8
+RT040,Missed garbage or recycling collection,1.0,8
+RT081,Water leak inside building,1.0,8
+RT001,Pothole,1.0,8
+OTHER,OTHER,1.0,8
+RT141,Elevator not working,1.0,8
+SMALLTALK,SMALLTALK,1.0,8

@@ -1,0 +1,13 @@
+text,real_type,action
+theres water shooting up from a crack in the road,RT020,STOP_CALL_911
+disgusting smell and sewage bubbling out of the manhole,RT023,CONFIRM_WITH_CITIZEN
+branches are touching the electric wires on my street,RT061,CONFIRM_WITH_CITIZEN
+tree fall down on car on my street,RT060,CONFIRM_WITH_CITIZEN
+the gas station on the corner has a broken street light in front,RT004,CONFIRM_WITH_CITIZEN
+limbs are growing right into the power lines on my corner,RT061,CONFIRM_WITH_CITIZEN
+the trunk is hollow and theres mushrooms growing out of the bottom,RT062,CONFIRM_WITH_CITIZEN
+theres black spots spreading on the bathroom ceiling and it smells damp,RT083,CONFIRM_WITH_CITIZEN
+sewage smell in the hallway and the floor is damp by the wall,RT083,CONFIRM_WITH_CITIZEN
+theres a damp patch on my bedroom wall thats getting bigger,RT081,CONFIRM_WITH_CITIZEN
+heavy leak in the hallway ceiling water is running down the wall,RT081,CONFIRM_WITH_CITIZEN
+dead squirrel in the gutter on my street,RT045,CONFIRM_WITH_CITIZEN

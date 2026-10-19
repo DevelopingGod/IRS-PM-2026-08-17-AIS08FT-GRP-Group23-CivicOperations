@@ -1,0 +1,15 @@
+{
+  "request_type": "RT020",
+  "confidence": 0.88,
+  "ready_to_submit": true,
+  "needs_human": false,
+  "is_emergency": true,
+  "emergency_action": "STOP_CALL_911",
+  "emergency_category": "GAS_OR_FIRE",
+  "slots": {
+    "incident_address": "300 ATLANTIC AVENUE",
+    "cross_street": null,
+    "borough": "BROOKLYN",
+    "landmark": null
+  }
+}

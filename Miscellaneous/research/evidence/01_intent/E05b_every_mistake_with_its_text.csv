@@ -1,0 +1,43 @@
+text,expected,got
+the asphalt collapsed and theres a big gap under it,RT002,RT003
+all the lights on my block went out,RT004,RT084
+theres water shooting up from a crack in the road,RT020,EMERGENCY
+a limb is cracked and hanging over the bus stop,RT060,RT123
+the whole building shakes from the demolition next door,RT140,EMERGENCY
+the fire escape on my building is rusted and falling apart,RT140,EMERGENCY
+silver minivan parked in the same spot all summer nobody ever drives it,RT124,RT123
+theres a rusted out van with no wheels behind the warehouse,RT043,RT123
+someone dumped a smashed up honda with no tags on my corner,RT043,RT041
+the switch in my bedroom sparks a little when i turn it on,RT084,EMERGENCY
+they repaved this block last month and its already breaking apart,RT003,RT006
+construction has the roadway torn up and nobody has worked on it for weeks,RT003,RT140
+the patch they laid down has sunk and now theres a dip in the road,RT003,RT002
+theres a plate in the street that shifted and cars bang over it,RT003,RT124
+theres a lot of dead branches up in the tree over the sidewalk,RT061,RT062
+overgrown tree is covering the street lamp so the whole corner is dark,RT061,RT004
+theres droppings all over the alley behind the restaurant,RT100,EMERGENCY
+mouse in my kitchen cabinets i can hear them at night,RT100,RT083
+the empty lot next door has food waste piled up and its full of rodents,RT100,RT083
+that old tree on the corner is split and the bark is falling off,RT062,RT060
+guys hang out on the corner with a speaker every night till 3,RT121,RT120
+my neighbors guest blocks my entrance every weekend,RT122,RT120
+the trash area in the basement is overflowing and the whole hall smells,RT083,RT042
+sewage smell in the hallway and the floor is damp by the wall,RT083,RT023
+no water coming out of the kitchen tap since yesterday,RT082,RT025
+the shower only runs cold and the super hasnt come,RT082,RT080
+dog mess all over the pavement and nobody picks it up,RT042,RT045
+the road has dropped down about a foot near the bus stop,RT002,RT060
+the ground gave way by the hydrant and you can see down into it,RT002,RT024
+big depression in the roadway and cars are swerving around it,RT002,RT121
+theres a dead possum on the curb outside 19 pine,RT045,RT062
+something dead under the bush by the parking lot and it smells,RT045,RT062
+tree is down across the road and nobody can get through,RT060,RT062
+the sidewalk shed outside has planks missing off the top,RT140,RT041
+they put a fence right across the sidewalk with no notice,RT140,RT044
+theres a crack running up the side of the building since the digging started,RT140,RT020
+people keep leaving bags of garbage at the end of the alley,RT041,RT042
+theres a constant stream along the gutter and it hasnt rained in days,RT020,RT021
+manhole cover is missing and you can see straight down the shaft,RT023,RT003
+foul smell and dark water coming up by the drain outside the store,RT023,RT025
+water across the road is up past the curb and cars are turning around,RT022,RT020
+all the lights at this junction went dark about an hour ago,RT005,RT004

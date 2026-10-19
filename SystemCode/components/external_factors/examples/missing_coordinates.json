@@ -1,0 +1,11 @@
+{
+  "_note": "SYNTHETIC example request (illustrative; real NYC coordinates, invented request).",
+  "request_id": "EX-MISSING-001",
+  "request_type": "RT022",
+  "latitude": null,
+  "longitude": null,
+  "geolocation_status": "UNRESOLVED",
+  "location_precision": null,
+  "borough": "QUEENS",
+  "original_location_text": "flooding near the corner by the park"
+}

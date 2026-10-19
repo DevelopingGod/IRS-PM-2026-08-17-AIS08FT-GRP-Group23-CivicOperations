@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "civicops-agency"
+version = "1.1.0"
+description = "CivicOps AI - agency assignment and required crew skills (catalog + business rules)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "For CivicOps AI course project use" }
+authors = [{ name = "CivicOps Group 23 - Agency and skill routing" }]
+# The runtime router uses only the Python standard library.
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+research = ["pandas>=2.0", "pyarrow>=12"]
+
+[project.scripts]
+civicops-agency = "civicops_agency.cli:main"
+
+[tool.setuptools]
+packages = ["civicops_agency"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,14 @@
+# Data pipeline + notebooks (run locally; Mohammad's GPU machine for 02 full run)
+pandas>=2.2
+pyarrow>=15
+numpy>=1.26
+scikit-learn>=1.5
+matplotlib>=3.8
+seaborn>=0.13
+nbformat>=5.10
+jupyterlab>=4
+# NLP evaluation (notebook 02). For CUDA install torch from https://pytorch.org first.
+torch>=2.3
+transformers>=4.44
+sentence-transformers>=3.0
+# Component owners add what they need, for example: lightgbm, osmnx, networkx, hdbscan, ortools

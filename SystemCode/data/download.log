@@ -1,0 +1,62 @@
+[A] MANHATTAN: ~56 catalog rows/hour, window = 3 h
+[A] MANHATTAN: 10000 rows from 67 windows
+[A] BROOKLYN: ~109 catalog rows/hour, window = 2 h
+[A] BROOKLYN: 10000 rows from 41 windows
+[A] QUEENS: ~89 catalog rows/hour, window = 2 h
+[A] QUEENS: 10000 rows from 56 windows
+[A] BRONX: ~80 catalog rows/hour, window = 2 h
+[A] BRONX: 10000 rows from 66 windows
+[A] STATEN ISLAND: ~15 catalog rows/hour, window = 11 h
+[A] STATEN ISLAND: 10000 rows from 63 windows
+[A] wrote 50,000 rows -> D:\NUS-Projects\IRS-Project-Details\data\raw\nyc311_sample_5boroughs.csv
+[B] MANHATTAN 2020: 8,879 day x type cells
+[B] MANHATTAN 2021: 9,491 day x type cells
+[B] MANHATTAN 2022: 10,759 day x type cells
+[B] MANHATTAN 2023: 10,756 day x type cells
+[B] MANHATTAN 2024: 10,775 day x type cells
+[B] MANHATTAN 2025: 10,818 day x type cells
+Traceback (most recent call last):
+  File "D:\NUS-Projects\IRS-Project-Details\data\pipeline\download.py", line 38, in _get
+    with urllib.request.urlopen(full, timeout=180) as resp:
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 1352, in do_open
+    r = h.getresponse()
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1375, in getresponse
+    response.begin()
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\Sankalp Indish\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "D:\NUS-Projects\IRS-Project-Details\data\pipeline\download.py", line 168, in <module>
+    main()
+  File "D:\NUS-Projects\IRS-Project-Details\data\pipeline\download.py", line 164, in main
+    fn(force=a.force)
+  File "D:\NUS-Projects\IRS-Project-Details\data\pipeline\download.py", line 114, in download_daily_counts
+    page = _get(SOCRATA, {
+  File "D:\NUS-Projects\IRS-Project-Details\data\pipeline\download.py", line 42, in _get
+    raise RuntimeError(f"GET failed after {attempts} attempts: {full[:200]}") from exc
+RuntimeError: GET failed after 5 attempts: https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=date_trunc_ymd%28created_date%29+as+day%2C+complaint_type%2C+count%28%2A%29+as+n&%24where=borough%3D%27MANHATTAN%27+AND+complaint_type+i

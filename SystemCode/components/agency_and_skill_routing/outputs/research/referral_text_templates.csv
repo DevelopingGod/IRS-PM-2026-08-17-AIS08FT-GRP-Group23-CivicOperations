@@ -1,0 +1,26 @@
+agency,resolution_description,text_author_agency,destination_class,destination_agency,records
+DOT,The Department of Transportation inspected and has requested the Department of Environmental Protection address the issue. The condition will be re-inspected in 60 days.,DOT,EXPLICIT_CATALOG_AGENCY,DEP,278
+NYPD,"Your complaint has been received but does not fall under the jurisdiction of the New York City Police Department.  Please contact your local precinct for more information, including which City agency your request was referred to. We count on New Yorkers like yourself to maintain a safe City, so please let us know if you see other conditions that require our attention.",NYPD,UNSPECIFIED_OTHER_AGENCY,,264
+DSNY,The Department of Sanitation does NOT have jurisdiction over vehicles (abandoned or otherwise) that have license plates affixed to them. Your request will be referred to the NYPD for further action.,DSNY,EXPLICIT_CATALOG_AGENCY,NYPD,127
+DSNY,The Department of Sanitation investigated this complaint and no DSNY related conditions/violations were observed. Location will be referred to the appropriate agency for further action.,DSNY,UNSPECIFIED_OTHER_AGENCY,,109
+DSNY,The vehicle you reported exceeds the monetary value eligible for collection as junk. The Department of Sanitation has forwarded the request to the NYPD for further action.,DSNY,EXPLICIT_CATALOG_AGENCY,NYPD,87
+DPR,No action was taken because NYC Parks determined that the issue is out of its jurisdiction. The condition may be on private property or in an area serviced by another organization.,DPR,NO_DESTINATION_STATED,,57
+DEP,The Department of Environmental Protection investigated this complaint and determined it is an inside condition within the complainant's property.,DEP,NO_DESTINATION_STATED,,49
+DOT,The Department of Transportation referred this complaint to the Inspections Unit for further action.,DOT,INTERNAL_UNIT_SAME_AGENCY,DOT,42
+DEP,"The Department of Environmental Protection inspected your complaint and referred it to the Department of Transportation for further action. If the problem persists, please call 311 (or 212-639-9675 if calling from a non-New York City area code) to submit a new complaint.",DEP,EXPLICIT_CATALOG_AGENCY,DOT,20
+NYPD,This complaint does not fall under the Police Department's jurisdiction.,NYPD,NO_DESTINATION_STATED,,19
+DPR,NYC Parks inspected and determined the issue was out of its jurisdiction. The condition may be on private property or in an area serviced by another organization.,DPR,NO_DESTINATION_STATED,,19
+DEP,The Department of Environmental Protection investigated this complaint and referred it to another agency or utility for further action.,DEP,UNSPECIFIED_OTHER_AGENCY,,16
+DOT,The Department of Transportation has determined that this issue is not within its jurisdiction. It has been referred to the Department of Sanitation.,DOT,EXPLICIT_CATALOG_AGENCY,DSNY,14
+DOT,The Department of Transportation inspected this complaint and referred it to the Arterial Division for further action.,DOT,INTERNAL_UNIT_SAME_AGENCY,DOT,12
+DOT,The Department of Transportation inspected this complaint and referred it to the Bridge Division for further action.,DOT,INTERNAL_UNIT_SAME_AGENCY,DOT,9
+DOHMH,The Department of Health and Mental Hygiene closed this complaint and referred it to another agency because it was not within its jurisdiction.,DOHMH,UNSPECIFIED_OTHER_AGENCY,,8
+DOB,The Department of Buildings reviewed this complaint and referred it to the New York City Housing Authority for further action.,DOB,EXPLICIT_NON_CATALOG_AGENCY,NYCHA,6
+DOT,The Department of Transportation has determined that this issue is not within its jurisdiction. It has been referred to the Metropolitan Transportation Authority.,DOT,EXPLICIT_NON_CATALOG_AGENCY,MTA,6
+DOT,The Department of Transportation has determined that this issue is not within its jurisdiction. It has been referred to the Department of Parks and Recreation.,DOT,EXPLICIT_CATALOG_AGENCY,DPR,5
+DOB,The Department of Buildings reviewed this complaint and referred it to the Department of Parks and Recreation for further action.,DOB,EXPLICIT_CATALOG_AGENCY,DPR,4
+DOB,The Department of Buildings reviewed this complaint and referred it to the Department of Transportation for further action.,DOB,EXPLICIT_CATALOG_AGENCY,DOT,4
+DOT,The Department of Transportation has determined that this issue is not within its jurisdiction. It has been referred to the New York City Police Department.,DOT,EXPLICIT_CATALOG_AGENCY,NYPD,4
+DOT,The Department of Transportation has determined that this issue is not within its jurisdiction. It has been referred to the Department of Buildings.,DOT,EXPLICIT_CATALOG_AGENCY,DOB,3
+DOB,The Department of Buildings reviewed this complaint and referred it to the New York Police Department for further action.,DOB,EXPLICIT_CATALOG_AGENCY,NYPD,1
+DOB,The Department of Buildings reviewed this complaint and referred it to the Department of Sanitation for further action.,DOB,EXPLICIT_CATALOG_AGENCY,DSNY,1

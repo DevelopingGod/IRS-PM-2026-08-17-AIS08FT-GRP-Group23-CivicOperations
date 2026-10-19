@@ -1,0 +1,4 @@
+split,n_geolocated,trigger_rate_pct,median_nearest_core_m,decision_agreement_15m_pct,positive_stability_15m_pct,borough_max_min_ratio,MANHATTAN_rate_pct,BROOKLYN_rate_pct,QUEENS_rate_pct,BRONX_rate_pct,STATEN ISLAND_rate_pct
+train,33867,28.83,155.35,96.209,92.477,2.23,41.255,32.164,21.028,28.118,18.497
+val,7274,26.217,176.287,96.522,92.606,2.955,40.599,30.763,20.513,33.12,13.74
+test,7260,26.336,173.646,96.219,92.338,2.624,40.857,34.557,20.536,26.397,15.571

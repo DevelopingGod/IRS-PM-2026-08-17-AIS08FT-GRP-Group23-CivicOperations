@@ -1,0 +1,15 @@
+{
+  "request_type": "RT999",
+  "confidence": 0.9,
+  "ready_to_submit": true,
+  "needs_human": false,
+  "is_emergency": false,
+  "emergency_action": "CONTINUE",
+  "emergency_category": null,
+  "slots": {
+    "incident_address": "1 CENTRE STREET",
+    "cross_street": null,
+    "borough": "MANHATTAN",
+    "landmark": "MUNICIPAL BUILDING"
+  }
+}

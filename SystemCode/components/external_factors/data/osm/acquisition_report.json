@@ -1,0 +1,170 @@
+{
+  "data_version": "nyc-osm-2026-10-15",
+  "osmnx_version": "2.1.1",
+  "overpass_endpoint": "https://overpass-api.de/api",
+  "boundaries": {
+    "boroughs": [
+      {
+        "borough": "MANHATTAN",
+        "osm_id": 8398124,
+        "display_name": "Manhattan, New York County, New York, United States",
+        "area_km2": 86.8006852810616
+      },
+      {
+        "borough": "BROOKLYN",
+        "osm_id": 9691750,
+        "display_name": "Brooklyn, Kings County, New York, United States",
+        "area_km2": 252.28212340779194
+      },
+      {
+        "borough": "QUEENS",
+        "osm_id": 9691819,
+        "display_name": "Queens, Queens County, New York, United States",
+        "area_km2": 465.3288722642983
+      },
+      {
+        "borough": "BRONX",
+        "osm_id": 9691916,
+        "display_name": "The Bronx, Bronx County, New York, United States",
+        "area_km2": 148.95208906435164
+      },
+      {
+        "borough": "STATEN ISLAND",
+        "osm_id": 9691948,
+        "display_name": "Staten Island, Richmond County, New York, United States",
+        "area_km2": 265.5865226622018
+      }
+    ]
+  },
+  "facilities": {
+    "query_tags": {
+      "amenity": [
+        "childcare",
+        "fire_station",
+        "hospital",
+        "kindergarten",
+        "nursing_home",
+        "police",
+        "school",
+        "social_facility"
+      ],
+      "healthcare": [
+        "hospital",
+        "nursing_home"
+      ],
+      "social_facility": [
+        "assisted_living",
+        "nursing_home"
+      ],
+      "railway": [
+        "station"
+      ],
+      "public_transport": [
+        "station"
+      ]
+    },
+    "overpass_endpoint_used": "https://overpass-api.de/api",
+    "download_seconds": 131.7,
+    "acquired_at": "2026-10-15T19:53:55+00:00",
+    "raw_features": 4825,
+    "unclassified": 245,
+    "missing_or_empty_geometry": 0,
+    "repaired_geometry": 0,
+    "unclassified_examples": [
+      {
+        "id": "node/357612039",
+        "amenity": "social_facility",
+        "name": "Concourse House",
+        "website": "https://www.concoursehouse.org/",
+        "addr:city": "Bronx",
+        "addr:street": "Grand Concourse",
+        "addr:postcode": "10468"
+      },
+      {
+        "id": "node/357622057",
+        "amenity": "social_facility",
+        "name": "Community Kitchen and Pantry",
+        "operator": "Food Bank for NYC",
+        "website": "https://www.foodbanknyc.org/community-kitchen/",
+        "addr:city": "New York",
+        "addr:state": "NY"
+      },
+      {
+        "id": "node/368044167",
+        "amenity": "social_facility",
+        "name": "Madison Square Boys & Girls Club",
+        "old_name": "Flatbush Boys Club",
+        "website": "https://www.madisonsquare.org",
+        "addr:state": "NY",
+        "addr:street": "Bedford Avenue"
+      },
+      {
+        "id": "node/368044332",
+        "amenity": "social_facility",
+        "name": "Richmond Welfare Center",
+        "source": "USGS Geonames",
+        "addr:state": "NY",
+        "ele": "15",
+        "gnis:feature_id": "2100470"
+      },
+      {
+        "id": "node/368054696",
+        "amenity": "social_facility",
+        "name": "Volunteers of America Childrens Home",
+        "operator": "Volunteers of America",
+        "operator:wikidata": "Q7941085",
+        "source": "USGS Geonames",
+        "addr:state": "NY"
+      },
+      {
+        "id": "node/368062423",
+        "amenity": "social_facility",
+        "name": "Mount Loretto Boys Home",
+        "source": "USGS Geonames",
+        "addr:state": "NY",
+        "ele": "13",
+        "gnis:feature_id": "970373"
+      },
+      {
+        "id": "node/410401521",
+        "amenity": "social_facility",
+        "name": "Staten Island Developmental Disabilities Services Office"
+      },
+      {
+        "id": "node/419364438",
+        "amenity": "social_facility",
+        "name": "Blossom Home Care",
+        "website": "https://blossomhc.net",
+        "addr:street": "Nostrand Avenue",
+        "addr:postcode": "11225",
+        "addr:housenumber": "846"
+      },
+      {
+        "id": "node/2523787370",
+        "amenity": "social_facility",
+        "name": "Blue Ridge Labs @Robin Hood",
+        "level": "1",
+        "website": "https://labs.robinhood.org",
+        "social_facility": "technology",
+        "social_facility:for": "underprivileged"
+      },
+      {
+        "id": "node/2547000489",
+        "amenity": "social_facility",
+        "name": "BRC",
+        "addr:street": "Bowery",
+        "addr:postcode": "10003",
+        "addr:housenumber": "315",
+        "social_facility": "outreach"
+      }
+    ],
+    "facilities": 4580,
+    "duplicates": {
+      "D1_point_in_polygon": 119,
+      "D2_polygon_in_polygon": 14,
+      "D3_point_point": 2,
+      "total_duplicates": 135
+    },
+    "category_catalog_version": "1.0"
+  }
+}

@@ -1,0 +1,8 @@
+# Runtime: the civicops_agency router needs only the Python standard library (>= 3.9).
+#
+# Tests:
+pytest>=7
+#
+# Research scripts (research/, benchmarks/ historical part, report builder) - optional:
+pandas>=2.0
+pyarrow>=12

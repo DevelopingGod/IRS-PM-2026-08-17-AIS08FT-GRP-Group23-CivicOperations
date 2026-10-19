@@ -1,0 +1,24 @@
+catalog_rows: 34
+catalog_columns: ['request_type_code', 'citizen_label', 'complaint_family', 'complaint_type', 'descriptor_regex', 'agency', 'required_skill', 'default_urgency', 'est_service_minutes', 'dispatchable']
+distinct_codes: 34
+duplicate_codes: []
+conflicting_codes: []
+malformed_codes: []
+missing_agency_codes: []
+missing_skill_codes: []
+multi_skill_codes: []
+every_code_uniquely_determined: True
+catalog_agencies: ['DEP', 'DOB', 'DOHMH', 'DOT', 'DPR', 'DSNY', 'HPD', 'NYPD']
+catalog_skills: ['BUILDING_INSPECTION', 'FORESTRY', 'HOUSING_INSPECTION', 'NOISE_PATROL', 'PARKING_ENFORCEMENT', 'PEST_CONTROL', 'ROAD_REPAIR', 'SANITATION_COLLECTION', 'SEWER_DRAINAGE', 'SIDEWALK_REPAIR', 'SNOW_ICE', 'STREET_CLEANING', 'STREET_LIGHTING', 'TRAFFIC_SIGNALS', 'VEHICLE_REMOVAL', 'WATER_MAINS']
+agencies_match_shared_reference: True
+skills_match_shared_reference: True
+dispatchable_values: ['TRUE']
+matrix_family_rows: 23
+matrix_glossary_rows: 19
+matrix_multi_agency_families: ['Abandoned vehicles', 'Bar, restaurant, or business noise', 'Blocked street or sidewalk', 'Animal facility, nuisance, or stray-animal complaints', 'Child-care and child-welfare complaints']
+matrix_agencies_not_in_catalog: ['ACC', 'ACS', 'CCHR', 'DCWP', 'DHS', 'DOE', 'DOF', 'DSS/HRA', 'FDNY', 'NYCHA', 'TLC']
+catalog_agencies_missing_from_glossary: []
+relationship_counts: {'CONSISTENT': 21, 'MULTI_AGENCY_CONTEXTUAL': 8, 'CONSISTENT_WITH_BLOCKED_STREET_OVERLAP': 2, 'NOT_EXPLICIT': 2, 'CONSISTENT_CAUSE_DEPENDENT': 1}
+catalog_agency_not_named_in_matrix: ['RT045']
+multi_agency_contextual_codes: ['RT043', 'RT080', 'RT081', 'RT082', 'RT083', 'RT084', 'RT121', 'RT124']
+context_available_in_co1: ['NO']

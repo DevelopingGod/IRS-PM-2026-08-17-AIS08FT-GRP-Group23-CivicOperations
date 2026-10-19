@@ -1,0 +1,55 @@
+component,strategy,n_pairs,precision_duplicate,recall_duplicate,f1_duplicate,false_merge_rate,ari,latency_ms_mean,label_kind,slice
+C05,dbscan,295,0.4868,1.0,0.6549,0.5132,0.466,0.432,hand,
+C05,dbscan,277,0.5068,1.0,0.6727,,,0.445,hand,address_type=ADDRESS
+C05,dbscan,17,0.0,0.0,0.0,,,0.24,hand,address_type=INTERSECTION
+C05,dbscan,63,0.9,1.0,0.9474,,,1.156,hand,borough=BRONX
+C05,dbscan,16,0.0,0.0,0.0,,,0.261,hand,borough=MANHATTAN
+C05,dbscan,206,0.2439,1.0,0.3922,,,0.234,hand,borough=STATEN ISLAND
+C05,exact_key,295,0.9211,0.9459,0.9333,0.0789,0.9206,0.01,hand,
+C05,exact_key,277,0.9211,0.9459,0.9333,,,0.01,hand,address_type=ADDRESS
+C05,exact_key,17,0.0,0.0,0.0,,,0.004,hand,address_type=INTERSECTION
+C05,exact_key,63,0.9643,1.0,0.9818,,,0.023,hand,borough=BRONX
+C05,exact_key,16,0.0,0.0,0.0,,,0.006,hand,borough=MANHATTAN
+C05,exact_key,206,0.8889,0.8,0.8421,,,0.006,hand,borough=STATEN ISLAND
+C05,fuzzy_address,295,0.5211,1.0,0.6852,0.4789,0.4998,0.023,hand,
+C05,fuzzy_address,277,0.5286,1.0,0.6916,,,0.023,hand,address_type=ADDRESS
+C05,fuzzy_address,17,0.0,0.0,0.0,,,0.022,hand,address_type=INTERSECTION
+C05,fuzzy_address,63,0.9,1.0,0.9474,,,0.018,hand,borough=BRONX
+C05,fuzzy_address,16,0.0,0.0,0.0,,,0.025,hand,borough=MANHATTAN
+C05,fuzzy_address,206,0.2703,1.0,0.4255,,,0.024,hand,borough=STATEN ISLAND
+C05,graph,295,0.5211,1.0,0.6852,0.4789,0.4998,0.161,hand,
+C05,graph,277,0.5286,1.0,0.6916,,,0.17,hand,address_type=ADDRESS
+C05,graph,17,0.0,0.0,0.0,,,0.023,hand,address_type=INTERSECTION
+C05,graph,63,0.9,1.0,0.9474,,,0.653,hand,borough=BRONX
+C05,graph,16,0.0,0.0,0.0,,,0.027,hand,borough=MANHATTAN
+C05,graph,206,0.2703,1.0,0.4255,,,0.028,hand,borough=STATEN ISLAND
+C05,hdbscan,295,0.5211,1.0,0.6852,0.4789,0.4998,0.4,hand,
+C05,hdbscan,277,0.5286,1.0,0.6916,,,0.405,hand,address_type=ADDRESS
+C05,hdbscan,17,0.0,0.0,0.0,,,0.32,hand,address_type=INTERSECTION
+C05,hdbscan,63,0.9,1.0,0.9474,,,0.336,hand,borough=BRONX
+C05,hdbscan,16,0.0,0.0,0.0,,,1.502,hand,borough=MANHATTAN
+C05,hdbscan,206,0.2703,1.0,0.4255,,,0.337,hand,borough=STATEN ISLAND
+C05,hybrid_evidence,295,0.8974,0.9459,0.9211,0.1026,0.9062,0.023,hand,
+C05,hybrid_evidence,277,0.8974,0.9459,0.9211,,,0.023,hand,address_type=ADDRESS
+C05,hybrid_evidence,17,0.0,0.0,0.0,,,0.021,hand,address_type=INTERSECTION
+C05,hybrid_evidence,63,0.9643,1.0,0.9818,,,0.02,hand,borough=BRONX
+C05,hybrid_evidence,16,0.0,0.0,0.0,,,0.024,hand,borough=MANHATTAN
+C05,hybrid_evidence,206,0.8,0.8,0.8,,,0.024,hand,borough=STATEN ISLAND
+C05,hybrid_legacy,295,0.5211,1.0,0.6852,0.4789,0.4998,0.031,hand,
+C05,hybrid_legacy,277,0.5286,1.0,0.6916,,,0.032,hand,address_type=ADDRESS
+C05,hybrid_legacy,17,0.0,0.0,0.0,,,0.021,hand,address_type=INTERSECTION
+C05,hybrid_legacy,63,0.9,1.0,0.9474,,,0.035,hand,borough=BRONX
+C05,hybrid_legacy,16,0.0,0.0,0.0,,,0.027,hand,borough=MANHATTAN
+C05,hybrid_legacy,206,0.2703,1.0,0.4255,,,0.03,hand,borough=STATEN ISLAND
+C05,hybrid_no_fuzzy,295,0.8974,0.9459,0.9211,0.1026,0.9062,0.022,hand,
+C05,hybrid_no_fuzzy,277,0.8974,0.9459,0.9211,,,0.022,hand,address_type=ADDRESS
+C05,hybrid_no_fuzzy,17,0.0,0.0,0.0,,,0.02,hand,address_type=INTERSECTION
+C05,hybrid_no_fuzzy,63,0.9643,1.0,0.9818,,,0.018,hand,borough=BRONX
+C05,hybrid_no_fuzzy,16,0.0,0.0,0.0,,,0.023,hand,borough=MANHATTAN
+C05,hybrid_no_fuzzy,206,0.8,0.8,0.8,,,0.023,hand,borough=STATEN ISLAND
+C05,radius_time,295,0.5211,1.0,0.6852,0.4789,0.4998,0.027,hand,
+C05,radius_time,277,0.5286,1.0,0.6916,,,0.027,hand,address_type=ADDRESS
+C05,radius_time,17,0.0,0.0,0.0,,,0.027,hand,address_type=INTERSECTION
+C05,radius_time,63,0.9,1.0,0.9474,,,0.019,hand,borough=BRONX
+C05,radius_time,16,0.0,0.0,0.0,,,0.032,hand,borough=MANHATTAN
+C05,radius_time,206,0.2703,1.0,0.4255,,,0.029,hand,borough=STATEN ISLAND

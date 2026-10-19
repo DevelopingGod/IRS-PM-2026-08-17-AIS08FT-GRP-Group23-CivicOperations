@@ -1,0 +1,35 @@
+request_type_code,request_type_label,complaint_family,n,median_m,p25_m,within_100m_pct,within_250m_pct
+RT120,Noise from a residence,NOISE_PARKING,4577,122.1,95.0,27.1,84.4
+RT141,Elevator not working,BUILDINGS,224,127.6,77.9,36.6,83.5
+RT082,Plumbing problem in apartment,HOUSING,905,133.1,88.0,32.8,83.9
+RT083,"Pests, mold or unsanitary condition",HOUSING,1512,133.8,87.6,32.7,82.7
+RT121,"Noise from street, business or vehicle",NOISE_PARKING,2545,136.4,83.5,34.1,85.0
+RT081,Water leak inside building,HOUSING,490,136.5,87.5,32.7,81.2
+RT080,No heat or hot water,HOUSING,5236,137.0,85.5,34.5,80.7
+RT100,Rats or rodents,HEALTH,238,140.7,86.0,33.6,80.3
+RT084,Electrical problem in building,HOUSING,401,143.8,92.3,28.7,82.8
+RT123,Illegal parking or blocked hydrant,NOISE_PARKING,6151,160.5,87.1,31.4,71.0
+RT021,Catch basin clogged or flooding,WATER_SEWER,135,162.4,99.8,25.2,72.6
+RT140,Unsafe building or illegal construction,BUILDINGS,422,171.3,97.6,26.3,70.6
+RT042,Dirty street or litter,SANITATION,826,173.5,91.2,28.0,68.8
+RT005,Traffic or pedestrian signal not working,STREETS,783,173.7,88.0,28.4,64.6
+RT024,Fire hydrant running or damaged,WATER_SEWER,223,177.0,91.8,30.5,66.8
+RT006,Broken sidewalk or curb,STREETS,383,180.9,92.9,29.0,66.8
+RT122,Blocked driveway,NOISE_PARKING,1952,186.6,108.0,22.6,67.2
+RT002,Street cave-in or sinkhole,STREETS,161,186.8,98.2,25.5,70.2
+RT044,Snow or ice not cleared,SANITATION,1634,187.1,94.8,27.0,64.0
+RT043,Derelict vehicle,SANITATION,344,187.2,100.4,25.0,64.8
+RT041,Illegal dumping,SANITATION,377,189.9,110.9,22.5,66.0
+RT003,Other street surface defect,STREETS,312,192.4,109.6,22.8,62.8
+RT023,Sewer backup or manhole overflow,WATER_SEWER,182,199.8,107.8,22.5,62.6
+RT025,Dirty water or low water pressure,WATER_SEWER,218,200.8,112.2,21.6,63.8
+RT045,Dead animal on street,SANITATION,142,209.8,112.3,22.5,57.0
+RT022,Street flooding,WATER_SEWER,62,215.4,138.7,17.7,61.3
+RT040,Missed garbage or recycling collection,SANITATION,491,217.5,127.1,16.9,56.2
+RT060,Fallen tree or branch,PARKS_TREES,390,218.0,134.5,16.2,55.6
+RT004,Street light out or dim,STREETS,524,224.1,113.3,22.9,54.4
+RT001,Pothole,STREETS,564,228.6,128.1,17.0,53.5
+RT124,Abandoned vehicle,NOISE_PARKING,815,232.6,129.7,18.2,55.5
+RT020,Water main break or street water leak,WATER_SEWER,351,237.6,135.0,17.7,53.3
+RT061,Overgrown tree or branches on wires,PARKS_TREES,183,253.4,133.8,15.8,48.6
+RT062,Dead or dying tree,PARKS_TREES,114,276.5,153.7,17.5,44.7

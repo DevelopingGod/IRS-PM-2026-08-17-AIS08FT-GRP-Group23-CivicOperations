@@ -1,0 +1,21 @@
+{
+  "request_type": "RT999",
+  "confidence": 0.9,
+  "ready_to_submit": true,
+  "needs_human": false,
+  "is_emergency": false,
+  "emergency_action": "CONTINUE",
+  "emergency_category": null,
+  "slots": {
+    "incident_address": "1 CENTRE STREET",
+    "cross_street": null,
+    "borough": "MANHATTAN",
+    "landmark": "MUNICIPAL BUILDING"
+  },
+  "agency": null,
+  "required_skills": [],
+  "status": "UNRESOLVED",
+  "dispatch_eligible": false,
+  "next_step": "HUMAN_REVIEW",
+  "explanation": "No agency was assigned to RT999. The assignment is UNRESOLVED and is not dispatch-eligible: RT999 is not in the shared request catalog (version 776e339e4b10); no agency is assigned. [R07]"
+}

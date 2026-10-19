@@ -1,0 +1,213 @@
+request_type_code,feature,available_at_runtime,value,records,referred,referral_rate
+RT001,descriptor,False,Pothole,1529,61,0.0399
+RT002,descriptor,False,Cave-in,301,186,0.6179
+RT003,descriptor,False,Blocked - Construction,98,13,0.1327
+RT003,descriptor,False,Crash Cushion Defect,2,0,0.0
+RT003,descriptor,False,Defacement,1,0,0.0
+RT003,descriptor,False,Defective Hardware,131,68,0.5191
+RT003,descriptor,False,Depression Maintenance,7,2,0.2857
+RT003,descriptor,False,Dumpster - Construction Waste,13,1,0.0769
+RT003,descriptor,False,Failed Street Repair,78,14,0.1795
+RT003,descriptor,False,Guard Rail - Street,8,0,0.0
+RT003,descriptor,False,Line/Marking - After Repaving,12,0,0.0
+RT003,descriptor,False,Line/Marking - Faded,21,0,0.0
+RT003,descriptor,False,Plate Condition - Noisy,44,4,0.0909
+RT003,descriptor,False,Plate Condition - Shifted,10,0,0.0
+RT003,descriptor,False,"Rough, Pitted or Cracked Roads",94,1,0.0106
+RT003,descriptor,False,Unsafe Worksite,1,0,0.0
+RT003,descriptor,False,Wear & Tear,11,0,0.0
+RT006,descriptor,False,Blocked - ATM,2,0,0.0
+RT006,descriptor,False,Blocked - Construction,64,7,0.1094
+RT006,descriptor,False,Broken Curb,102,4,0.0392
+RT006,descriptor,False,Broken Sidewalk,148,4,0.027
+RT006,descriptor,False,Canopy Complaint,2,0,0.0
+RT006,descriptor,False,Curb Defect-Metal Protruding,14,1,0.0714
+RT006,descriptor,False,Defacement,40,0,0.0
+RT006,descriptor,False,Defective Hardware,12,2,0.1667
+RT006,descriptor,False,Dumpster - Construction Waste,6,1,0.1667
+RT006,descriptor,False,Metal Protruding - Sign Stump,2,0,0.0
+RT006,descriptor,False,Pedestrian Ramp Defective,14,0,0.0
+RT006,descriptor,False,Sidewalk Collapsed,12,3,0.25
+RT006,descriptor,False,Sidewalk Grating - Defective,4,1,0.25
+RT006,descriptor,False,Sidewalk Grating - Missing,1,0,0.0
+RT006,descriptor,False,Sidewalk Staircase,1,0,0.0
+RT006,descriptor,False,Sidewalk Violation,151,0,0.0
+RT020,descriptor,False,Fire Hydrant Leaking,27,0,0.0
+RT020,descriptor,False,Hydrant Leaking (WC1),141,0,0.0
+RT020,descriptor,False,Leak,30,1,0.0333
+RT020,descriptor,False,Leak (Use Comments) (WA2),195,15,0.0769
+RT020,descriptor,False,Possible Water Main Break (Use Comments) (WA1),98,4,0.0408
+RT020,descriptor,False,Water Main Break,10,0,0.0
+RT025,descriptor,False,Dirty Water (WE),155,1,0.0065
+RT025,descriptor,False,LOW WATER PRESSURE - WLWP,31,7,0.2258
+RT025,descriptor,False,No Water (WNW),65,20,0.3077
+RT041,descriptor,False,Chronic Dumping,69,4,0.058
+RT041,descriptor,False,Removal Request,542,26,0.048
+RT042,descriptor,False,Broken Glass,24,0,0.0
+RT042,descriptor,False,Debris from Car Accident,6,0,0.0
+RT042,descriptor,False,Dirt or Gravel,28,4,0.1429
+RT042,descriptor,False,Dog Waste,85,1,0.0118
+RT042,descriptor,False,Inadequate Sweeping,55,0,0.0
+RT042,descriptor,False,Street Not Swept,29,0,0.0
+RT042,descriptor,False,Syringes,23,1,0.0435
+RT042,descriptor,False,Trash,1072,63,0.0588
+RT043,descriptor,False,Derelict Vehicles,533,214,0.4015
+RT060,descriptor,False,Branch Cracked and Will Fall,165,4,0.0242
+RT060,descriptor,False,Branch or Limb Has Fallen Down,404,19,0.047
+RT060,descriptor,False,Entire Tree Has Fallen Down,159,7,0.044
+RT060,descriptor,False,Tree Alive - in Poor Condition,75,2,0.0267
+RT060,descriptor,False,Tree Leaning/Uprooted,97,9,0.0928
+RT060,descriptor,False,Tree Trunk Split,15,4,0.2667
+RT120,descriptor,False,Banging/Pounding,2252,45,0.02
+RT120,descriptor,False,Loud Music/Party,3380,10,0.003
+RT120,descriptor,False,Loud Talking,463,1,0.0022
+RT120,descriptor,False,Loud Television,120,4,0.0333
+RT123,descriptor,False,Blocked Bike Lane,240,0,0.0
+RT123,descriptor,False,Blocked Crosswalk,552,1,0.0018
+RT123,descriptor,False,Blocked Hydrant,2326,18,0.0077
+RT123,descriptor,False,Blocked Sidewalk,1132,4,0.0035
+RT123,descriptor,False,Commercial Overnight Parking,684,10,0.0146
+RT123,descriptor,False,Detached Trailer,40,5,0.125
+RT123,descriptor,False,Double Parked Blocking Traffic,602,3,0.005
+RT123,descriptor,False,Double Parked Blocking Vehicle,279,0,0.0
+RT123,descriptor,False,License Plate Obscured,189,3,0.0159
+RT123,descriptor,False,Overnight Commercial Storage,58,1,0.0172
+RT123,descriptor,False,Paper License Plates,77,0,0.0
+RT123,descriptor,False,Parking Permit Improper Use,408,4,0.0098
+RT123,descriptor,False,Posted Parking Sign Violation,2312,48,0.0208
+RT123,descriptor,False,Unauthorized Bus Layover,72,2,0.0278
+RT124,descriptor,False,With License Plate,1292,105,0.0813
+RT001,location_type,False,<missing>,1529,61,0.0399
+RT002,location_type,False,Street,301,186,0.6179
+RT003,location_type,False,<missing>,18,2,0.1111
+RT003,location_type,False,Crosswalk,14,0,0.0
+RT003,location_type,False,Speed Reducer,2,0,0.0
+RT003,location_type,False,Street,492,101,0.2053
+RT003,location_type,False,Vehicle Lane,5,0,0.0
+RT006,location_type,False,Curb,40,0,0.0
+RT006,location_type,False,Sidewalk,535,23,0.043
+RT020,location_type,False,<missing>,464,20,0.0431
+RT020,location_type,False,Sidewalk,27,0,0.0
+RT020,location_type,False,Street,10,0,0.0
+RT025,location_type,False,<missing>,251,28,0.1116
+RT041,location_type,False,Sidewalk,415,15,0.0361
+RT041,location_type,False,Street,196,15,0.0765
+RT042,location_type,False,Alley,23,1,0.0435
+RT042,location_type,False,Gutter,28,0,0.0
+RT042,location_type,False,Sidewalk,915,45,0.0492
+RT042,location_type,False,Street,207,9,0.0435
+RT042,location_type,False,Traffic Island or Median,4,1,0.25
+RT042,location_type,False,Yard,145,13,0.0897
+RT043,location_type,False,Street,533,214,0.4015
+RT060,location_type,False,Park,11,0,0.0
+RT060,location_type,False,Street,904,45,0.0498
+RT120,location_type,False,Residential Building/House,6215,60,0.0097
+RT123,location_type,False,Street/Sidewalk,8971,99,0.011
+RT124,location_type,False,Highway,1,0,0.0
+RT124,location_type,False,Street/Sidewalk,1288,105,0.0815
+RT124,location_type,False,Vacant Lot,3,0,0.0
+RT001,borough,True,BRONX,103,3,0.0291
+RT001,borough,True,BROOKLYN,176,0,0.0
+RT001,borough,True,MANHATTAN,223,10,0.0448
+RT001,borough,True,QUEENS,464,42,0.0905
+RT001,borough,True,STATEN ISLAND,563,6,0.0107
+RT002,borough,True,BRONX,33,23,0.697
+RT002,borough,True,BROOKLYN,68,51,0.75
+RT002,borough,True,MANHATTAN,42,22,0.5238
+RT002,borough,True,QUEENS,104,62,0.5962
+RT002,borough,True,STATEN ISLAND,54,28,0.5185
+RT003,borough,True,BRONX,29,1,0.0345
+RT003,borough,True,BROOKLYN,73,13,0.1781
+RT003,borough,True,MANHATTAN,125,18,0.144
+RT003,borough,True,QUEENS,93,19,0.2043
+RT003,borough,True,STATEN ISLAND,211,52,0.2464
+RT006,borough,True,BRONX,66,5,0.0758
+RT006,borough,True,BROOKLYN,125,1,0.008
+RT006,borough,True,MANHATTAN,82,6,0.0732
+RT006,borough,True,QUEENS,143,9,0.0629
+RT006,borough,True,STATEN ISLAND,159,2,0.0126
+RT020,borough,True,BRONX,43,1,0.0233
+RT020,borough,True,BROOKLYN,100,3,0.03
+RT020,borough,True,MANHATTAN,38,2,0.0526
+RT020,borough,True,QUEENS,112,3,0.0268
+RT020,borough,True,STATEN ISLAND,208,11,0.0529
+RT025,borough,True,BRONX,32,1,0.0312
+RT025,borough,True,BROOKLYN,37,5,0.1351
+RT025,borough,True,MANHATTAN,44,1,0.0227
+RT025,borough,True,QUEENS,42,3,0.0714
+RT025,borough,True,STATEN ISLAND,96,18,0.1875
+RT041,borough,True,BRONX,93,4,0.043
+RT041,borough,True,BROOKLYN,118,7,0.0593
+RT041,borough,True,MANHATTAN,90,6,0.0667
+RT041,borough,True,QUEENS,149,3,0.0201
+RT041,borough,True,STATEN ISLAND,161,10,0.0621
+RT042,borough,True,BRONX,193,7,0.0363
+RT042,borough,True,BROOKLYN,295,10,0.0339
+RT042,borough,True,MANHATTAN,262,20,0.0763
+RT042,borough,True,QUEENS,257,4,0.0156
+RT042,borough,True,STATEN ISLAND,315,28,0.0889
+RT043,borough,True,BRONX,104,44,0.4231
+RT043,borough,True,BROOKLYN,101,41,0.4059
+RT043,borough,True,MANHATTAN,29,10,0.3448
+RT043,borough,True,QUEENS,172,73,0.4244
+RT043,borough,True,STATEN ISLAND,127,46,0.3622
+RT060,borough,True,BRONX,39,1,0.0256
+RT060,borough,True,BROOKLYN,209,4,0.0191
+RT060,borough,True,MANHATTAN,57,1,0.0175
+RT060,borough,True,QUEENS,225,5,0.0222
+RT060,borough,True,STATEN ISLAND,385,34,0.0883
+RT120,borough,True,BRONX,2160,36,0.0167
+RT120,borough,True,BROOKLYN,914,2,0.0022
+RT120,borough,True,MANHATTAN,1501,17,0.0113
+RT120,borough,True,QUEENS,912,1,0.0011
+RT120,borough,True,STATEN ISLAND,728,4,0.0055
+RT123,borough,True,BRONX,1285,19,0.0148
+RT123,borough,True,BROOKLYN,2332,21,0.009
+RT123,borough,True,MANHATTAN,1411,12,0.0085
+RT123,borough,True,QUEENS,2559,42,0.0164
+RT123,borough,True,STATEN ISLAND,1384,5,0.0036
+RT124,borough,True,BRONX,135,31,0.2296
+RT124,borough,True,BROOKLYN,242,11,0.0455
+RT124,borough,True,MANHATTAN,53,5,0.0943
+RT124,borough,True,QUEENS,419,58,0.1384
+RT124,borough,True,STATEN ISLAND,443,0,0.0
+RT001,channel,False,UNKNOWN,1529,61,0.0399
+RT002,channel,False,ONLINE,159,108,0.6792
+RT002,channel,False,PHONE,102,46,0.451
+RT002,channel,False,UNKNOWN,40,32,0.8
+RT003,channel,False,ONLINE,315,65,0.2063
+RT003,channel,False,PHONE,187,34,0.1818
+RT003,channel,False,UNKNOWN,29,4,0.1379
+RT006,channel,False,MOBILE,92,6,0.0652
+RT006,channel,False,ONLINE,256,10,0.0391
+RT006,channel,False,PHONE,223,5,0.0224
+RT006,channel,False,UNKNOWN,4,2,0.5
+RT020,channel,False,MOBILE,46,0,0.0
+RT020,channel,False,ONLINE,203,7,0.0345
+RT020,channel,False,OTHER,5,0,0.0
+RT020,channel,False,PHONE,247,13,0.0526
+RT025,channel,False,ONLINE,105,10,0.0952
+RT025,channel,False,PHONE,146,18,0.1233
+RT041,channel,False,MOBILE,189,11,0.0582
+RT041,channel,False,ONLINE,171,6,0.0351
+RT041,channel,False,PHONE,247,13,0.0526
+RT041,channel,False,UNKNOWN,4,0,0.0
+RT042,channel,False,MOBILE,483,30,0.0621
+RT042,channel,False,ONLINE,585,30,0.0513
+RT042,channel,False,PHONE,253,9,0.0356
+RT042,channel,False,UNKNOWN,1,0,0.0
+RT043,channel,False,PHONE,533,214,0.4015
+RT060,channel,False,MOBILE,173,10,0.0578
+RT060,channel,False,ONLINE,249,13,0.0522
+RT060,channel,False,PHONE,358,15,0.0419
+RT060,channel,False,UNKNOWN,135,7,0.0519
+RT120,channel,False,MOBILE,2023,9,0.0044
+RT120,channel,False,ONLINE,3445,45,0.0131
+RT120,channel,False,PHONE,747,6,0.008
+RT123,channel,False,MOBILE,3946,47,0.0119
+RT123,channel,False,ONLINE,4319,42,0.0097
+RT123,channel,False,PHONE,705,10,0.0142
+RT123,channel,False,UNKNOWN,1,0,0.0
+RT124,channel,False,MOBILE,374,34,0.0909
+RT124,channel,False,ONLINE,740,57,0.077
+RT124,channel,False,PHONE,178,14,0.0787

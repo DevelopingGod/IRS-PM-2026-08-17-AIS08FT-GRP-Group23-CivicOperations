@@ -1,0 +1,28 @@
+{
+  "c01_intent_tfidf_svm.joblib": "499970ed6f7fd60f",
+  "c02_emergency_tfidf_lr.joblib": "aa7fdc41b707d4bd",
+  "_trained_at": "2026-10-06T00:29:14",
+  "_quick": false,
+  "_device": "cuda",
+  "_seeds": [
+    2026,
+    7,
+    13,
+    42,
+    99
+  ],
+  "_best_variant": "D1 realistic",
+  "_best_config": {
+    "lr": 5e-05,
+    "epochs": 4,
+    "batch": 32,
+    "max_len": 64,
+    "warmup": 0.0,
+    "weight_decay": 0.1,
+    "label_smoothing": 0.0,
+    "loss": "ce"
+  },
+  "_emergency_threshold": 0.35,
+  "_emergency_lexicon": "emergency_lexicon.csv + immobility patch",
+  "_abstain_threshold": "see section F"
+}

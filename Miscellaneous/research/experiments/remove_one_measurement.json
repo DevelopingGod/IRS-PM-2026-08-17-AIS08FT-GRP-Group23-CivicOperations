@@ -1,0 +1,108 @@
+{
+  "title": "34 evaluation scenarios and 9 second reports, one component at a time on its safe default",
+  "second_reports": 9,
+  "baseline_filed": 43,
+  "cases": 43,
+  "scenarios": 34,
+  "rows": [
+    {
+      "unit": "Intake bot + Emergency check",
+      "filed": 0,
+      "not_filed": 43,
+      "dispatch_changed": 0,
+      "agency_changed": 0,
+      "urgency_changed": 0,
+      "duplicate_changed": 0,
+      "fake_action_changed": 0,
+      "queue_tau_b": null,
+      "queue_compared": 0
+    },
+    {
+      "unit": "Agency and skill routing",
+      "filed": 43,
+      "not_filed": 0,
+      "dispatch_changed": 40,
+      "agency_changed": 0,
+      "urgency_changed": 0,
+      "duplicate_changed": 0,
+      "fake_action_changed": 0,
+      "queue_tau_b": 1.0,
+      "queue_compared": 43
+    },
+    {
+      "unit": "Duplicate detection",
+      "filed": 43,
+      "not_filed": 0,
+      "dispatch_changed": 0,
+      "agency_changed": 0,
+      "urgency_changed": 0,
+      "duplicate_changed": 9,
+      "fake_action_changed": 4,
+      "queue_tau_b": 0.637,
+      "queue_compared": 43
+    },
+    {
+      "unit": "External factors",
+      "filed": 43,
+      "not_filed": 0,
+      "dispatch_changed": 0,
+      "agency_changed": 0,
+      "urgency_changed": 0,
+      "duplicate_changed": 0,
+      "fake_action_changed": 0,
+      "queue_tau_b": 0.969,
+      "queue_compared": 43
+    },
+    {
+      "unit": "Credibility and escalation",
+      "filed": 43,
+      "not_filed": 0,
+      "dispatch_changed": 0,
+      "agency_changed": 0,
+      "urgency_changed": 0,
+      "duplicate_changed": 0,
+      "fake_action_changed": 23,
+      "queue_tau_b": 1.0,
+      "queue_compared": 43
+    },
+    {
+      "unit": "Fake request detection",
+      "filed": 43,
+      "not_filed": 0,
+      "dispatch_changed": 0,
+      "agency_changed": 0,
+      "urgency_changed": 0,
+      "duplicate_changed": 0,
+      "fake_action_changed": 29,
+      "queue_tau_b": 1.0,
+      "queue_compared": 43
+    },
+    {
+      "unit": "Urgency + Prioritisation",
+      "filed": 43,
+      "not_filed": 0,
+      "dispatch_changed": 0,
+      "agency_changed": 0,
+      "urgency_changed": 0,
+      "duplicate_changed": 0,
+      "fake_action_changed": 0,
+      "queue_tau_b": 0.358,
+      "queue_compared": 43
+    }
+  ],
+  "not_measurable": [
+    "Crew deployment and routing"
+  ],
+  "baseline_priority_score_ties": 8,
+  "conditions": [
+    "Each scenario is filed in two turns: the message, then its address.",
+    "Every scenario uses the same reporter, whose real 311 record has the median confirmation rate.",
+    "Coordinates come from the 311 address index where the address is in it.",
+    "Every 4th scenario is reported again 40 minutes later by a second resident, so Duplicate detection has real duplicates to link.",
+    "A dispatcher's sign offs are applied: every escalation Credibility recommends is approved, and every school or hospital External factors finds is confirmed. Prioritisation counts both only once a person does.",
+    "Nobody in danger is already confirmed, so the emergency path is not exercised by this run.",
+    "The tech team's live switches are ignored here: this measures the design, not today's settings.",
+    "Intake bot + Emergency check, and Urgency + Prioritisation, are switched off as pairs because each calls the other inside its owner's code."
+  ],
+  "measured_at": "2026-10-19T03:31:38-04:00"
+}

@@ -1,0 +1,177 @@
+{
+  "method": "crews(agency,borough) = max(1, round(cf * mean_train_episodes(demand_min / per_crew_min)))",
+  "travel_allowance_min_per_job": 15.0,
+  "work_time_budget_min": 420.0,
+  "capacity_factors": [
+    0.6,
+    0.8,
+    1.0,
+    1.2
+  ],
+  "train_episodes": 202,
+  "skill_combinations_allowed": {
+    "DEP": [
+      [
+        "SEWER_DRAINAGE",
+        "WATER_MAINS"
+      ]
+    ],
+    "NYPD": [
+      [
+        "NOISE_PATROL",
+        "PARKING_ENFORCEMENT"
+      ],
+      [
+        "PARKING_ENFORCEMENT",
+        "VEHICLE_REMOVAL"
+      ]
+    ],
+    "DOT": [
+      [
+        "ROAD_REPAIR",
+        "SIDEWALK_REPAIR"
+      ],
+      [
+        "STREET_LIGHTING",
+        "TRAFFIC_SIGNALS"
+      ]
+    ],
+    "DSNY": [
+      [
+        "SNOW_ICE",
+        "STREET_CLEANING"
+      ]
+    ]
+  },
+  "rosters": {
+    "0.6": {
+      "file": "crews_v2_cf0.6.parquet",
+      "crews": 91,
+      "by_agency": {
+        "HPD": 25,
+        "NYPD": 21,
+        "DOT": 13,
+        "DSNY": 11,
+        "DEP": 6,
+        "DOB": 5,
+        "DOHMH": 5,
+        "DPR": 5
+      },
+      "by_borough": {
+        "BROOKLYN": 25,
+        "QUEENS": 18,
+        "MANHATTAN": 17,
+        "BRONX": 16,
+        "STATEN ISLAND": 15
+      },
+      "multi_skill_crews": 13,
+      "uncovered_agency_borough_skill": [
+        "DOT/BRONX/STREET_LIGHTING",
+        "DOT/BRONX/TRAFFIC_SIGNALS",
+        "DSNY/BRONX/SANITATION_COLLECTION",
+        "DSNY/BRONX/VEHICLE_REMOVAL",
+        "DSNY/MANHATTAN/SANITATION_COLLECTION",
+        "DSNY/MANHATTAN/VEHICLE_REMOVAL",
+        "DSNY/QUEENS/SANITATION_COLLECTION",
+        "DSNY/QUEENS/VEHICLE_REMOVAL",
+        "DSNY/STATEN ISLAND/SANITATION_COLLECTION",
+        "DSNY/STATEN ISLAND/VEHICLE_REMOVAL"
+      ]
+    },
+    "0.8": {
+      "file": "crews_v2_cf0.8.parquet",
+      "crews": 113,
+      "by_agency": {
+        "HPD": 32,
+        "NYPD": 28,
+        "DOT": 16,
+        "DSNY": 14,
+        "DEP": 8,
+        "DOB": 5,
+        "DOHMH": 5,
+        "DPR": 5
+      },
+      "by_borough": {
+        "BROOKLYN": 32,
+        "QUEENS": 24,
+        "MANHATTAN": 20,
+        "BRONX": 19,
+        "STATEN ISLAND": 18
+      },
+      "multi_skill_crews": 7,
+      "uncovered_agency_borough_skill": [
+        "DOT/BRONX/STREET_LIGHTING",
+        "DOT/BRONX/TRAFFIC_SIGNALS",
+        "DSNY/BRONX/SANITATION_COLLECTION",
+        "DSNY/BRONX/VEHICLE_REMOVAL",
+        "DSNY/MANHATTAN/SANITATION_COLLECTION",
+        "DSNY/MANHATTAN/VEHICLE_REMOVAL",
+        "DSNY/QUEENS/SANITATION_COLLECTION"
+      ]
+    },
+    "1.0": {
+      "file": "crews_v2_cf1.0.parquet",
+      "crews": 139,
+      "by_agency": {
+        "HPD": 41,
+        "NYPD": 34,
+        "DOT": 22,
+        "DSNY": 16,
+        "DEP": 9,
+        "DPR": 7,
+        "DOB": 5,
+        "DOHMH": 5
+      },
+      "by_borough": {
+        "BROOKLYN": 39,
+        "QUEENS": 27,
+        "STATEN ISLAND": 25,
+        "BRONX": 24,
+        "MANHATTAN": 24
+      },
+      "multi_skill_crews": 6,
+      "uncovered_agency_borough_skill": [
+        "DOT/BRONX/STREET_LIGHTING",
+        "DOT/BRONX/TRAFFIC_SIGNALS",
+        "DSNY/BRONX/SANITATION_COLLECTION",
+        "DSNY/BRONX/VEHICLE_REMOVAL",
+        "DSNY/MANHATTAN/SANITATION_COLLECTION",
+        "DSNY/MANHATTAN/VEHICLE_REMOVAL",
+        "DSNY/QUEENS/SANITATION_COLLECTION"
+      ]
+    },
+    "1.2": {
+      "file": "crews_v2_cf1.2.parquet",
+      "crews": 162,
+      "by_agency": {
+        "HPD": 47,
+        "NYPD": 41,
+        "DOT": 25,
+        "DSNY": 21,
+        "DEP": 11,
+        "DPR": 7,
+        "DOB": 5,
+        "DOHMH": 5
+      },
+      "by_borough": {
+        "BROOKLYN": 45,
+        "QUEENS": 32,
+        "BRONX": 29,
+        "MANHATTAN": 28,
+        "STATEN ISLAND": 28
+      },
+      "multi_skill_crews": 3,
+      "uncovered_agency_borough_skill": [
+        "DOT/BRONX/STREET_LIGHTING",
+        "DOT/BRONX/TRAFFIC_SIGNALS",
+        "DSNY/BRONX/SANITATION_COLLECTION",
+        "DSNY/MANHATTAN/SANITATION_COLLECTION",
+        "DSNY/MANHATTAN/VEHICLE_REMOVAL"
+      ]
+    }
+  },
+  "legacy_roster": {
+    "file": "crews_legacy_v1_budget.parquet",
+    "crews": 136
+  }
+}

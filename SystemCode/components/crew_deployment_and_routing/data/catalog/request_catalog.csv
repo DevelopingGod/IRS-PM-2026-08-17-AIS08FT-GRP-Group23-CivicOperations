@@ -1,0 +1,35 @@
+request_type_code,citizen_label,complaint_family,complaint_type,descriptor_regex,agency,required_skill,default_urgency,est_service_minutes,dispatchable
+RT001,Pothole,STREETS,Street Condition,^Pothole,DOT,ROAD_REPAIR,MEDIUM,60,TRUE
+RT002,Street cave-in or sinkhole,STREETS,Street Condition,Cave-in,DOT,ROAD_REPAIR,HIGH,120,TRUE
+RT003,Other street surface defect,STREETS,Street Condition,,DOT,ROAD_REPAIR,LOW,60,TRUE
+RT004,Street light out or dim,STREETS,Street Light Condition,,DOT,STREET_LIGHTING,MEDIUM,45,TRUE
+RT005,Traffic or pedestrian signal not working,STREETS,Traffic Signal Condition,,DOT,TRAFFIC_SIGNALS,HIGH,60,TRUE
+RT006,Broken sidewalk or curb,STREETS,Sidewalk Condition|Curb Condition,,DOT,SIDEWALK_REPAIR,LOW,90,TRUE
+RT020,Water main break or street water leak,WATER_SEWER,Water System|Water Maintenance,Main Break|Leak,DEP,WATER_MAINS,HIGH,120,TRUE
+RT021,Catch basin clogged or flooding,WATER_SEWER,Sewer|Sewer Maintenance,Catch Basin,DEP,SEWER_DRAINAGE,MEDIUM,45,TRUE
+RT022,Street flooding,WATER_SEWER,Sewer|Sewer Maintenance,Flooding,DEP,SEWER_DRAINAGE,HIGH,60,TRUE
+RT023,Sewer backup or manhole overflow,WATER_SEWER,Sewer|Sewer Maintenance,Backup|Manhole,DEP,SEWER_DRAINAGE,HIGH,90,TRUE
+RT024,Fire hydrant running or damaged,WATER_SEWER,Water System|Water Maintenance,Hydrant,DEP,WATER_MAINS,MEDIUM,45,TRUE
+RT025,Dirty water or low water pressure,WATER_SEWER,Water System,Dirty Water|Pressure|No Water|Taste,DEP,WATER_MAINS,MEDIUM,45,TRUE
+RT040,Missed garbage or recycling collection,SANITATION,Missed Collection,,DSNY,SANITATION_COLLECTION,LOW,20,TRUE
+RT041,Illegal dumping,SANITATION,Illegal Dumping,,DSNY,STREET_CLEANING,MEDIUM,40,TRUE
+RT042,Dirty street or litter,SANITATION,Dirty Condition|Street Sweeping Complaint,,DSNY,STREET_CLEANING,LOW,30,TRUE
+RT043,Derelict vehicle,SANITATION,Derelict Vehicles,,DSNY,VEHICLE_REMOVAL,LOW,60,TRUE
+RT044,Snow or ice not cleared,SANITATION,Snow or Ice,,DSNY,SNOW_ICE,MEDIUM,45,TRUE
+RT045,Dead animal on street,SANITATION,Dead Animal,,DSNY,STREET_CLEANING,LOW,20,TRUE
+RT060,Fallen tree or branch,PARKS_TREES,Damaged Tree,,DPR,FORESTRY,MEDIUM,90,TRUE
+RT061,Overgrown tree or branches on wires,PARKS_TREES,Overgrown Tree/Branches,,DPR,FORESTRY,MEDIUM,60,TRUE
+RT062,Dead or dying tree,PARKS_TREES,Dead/Dying Tree,,DPR,FORESTRY,LOW,60,TRUE
+RT080,No heat or hot water,HOUSING,HEAT/HOT WATER,,HPD,HOUSING_INSPECTION,HIGH,45,TRUE
+RT081,Water leak inside building,HOUSING,WATER LEAK,,HPD,HOUSING_INSPECTION,MEDIUM,45,TRUE
+RT082,Plumbing problem in apartment,HOUSING,PLUMBING,,HPD,HOUSING_INSPECTION,MEDIUM,45,TRUE
+RT083,"Pests, mold or unsanitary condition",HOUSING,UNSANITARY CONDITION,,HPD,HOUSING_INSPECTION,LOW,45,TRUE
+RT084,Electrical problem in building,HOUSING,ELECTRIC,,HPD,HOUSING_INSPECTION,MEDIUM,45,TRUE
+RT100,Rats or rodents,HEALTH,Rodent,,DOHMH,PEST_CONTROL,LOW,40,TRUE
+RT120,Noise from a residence,NOISE_PARKING,Noise - Residential,,NYPD,NOISE_PATROL,LOW,20,TRUE
+RT121,"Noise from street, business or vehicle",NOISE_PARKING,Noise - Street/Sidewalk|Noise - Commercial|Noise - Vehicle,,NYPD,NOISE_PATROL,LOW,20,TRUE
+RT122,Blocked driveway,NOISE_PARKING,Blocked Driveway,,NYPD,PARKING_ENFORCEMENT,MEDIUM,20,TRUE
+RT123,Illegal parking or blocked hydrant,NOISE_PARKING,Illegal Parking,,NYPD,PARKING_ENFORCEMENT,LOW,20,TRUE
+RT124,Abandoned vehicle,NOISE_PARKING,Abandoned Vehicle,,NYPD,VEHICLE_REMOVAL,LOW,30,TRUE
+RT140,Unsafe building or illegal construction,BUILDINGS,General Construction/Plumbing,,DOB,BUILDING_INSPECTION,MEDIUM,60,TRUE
+RT141,Elevator not working,BUILDINGS,Elevator,,DOB,BUILDING_INSPECTION,MEDIUM,45,TRUE

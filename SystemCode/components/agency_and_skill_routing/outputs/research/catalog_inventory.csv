@@ -1,0 +1,35 @@
+request_type_code,citizen_label,complaint_family,agency,required_skill,dispatchable,code_well_formed,n_catalog_rows,uniquely_determined
+RT001,Pothole,STREETS,DOT,ROAD_REPAIR,TRUE,True,1,True
+RT002,Street cave-in or sinkhole,STREETS,DOT,ROAD_REPAIR,TRUE,True,1,True
+RT003,Other street surface defect,STREETS,DOT,ROAD_REPAIR,TRUE,True,1,True
+RT004,Street light out or dim,STREETS,DOT,STREET_LIGHTING,TRUE,True,1,True
+RT005,Traffic or pedestrian signal not working,STREETS,DOT,TRAFFIC_SIGNALS,TRUE,True,1,True
+RT006,Broken sidewalk or curb,STREETS,DOT,SIDEWALK_REPAIR,TRUE,True,1,True
+RT020,Water main break or street water leak,WATER_SEWER,DEP,WATER_MAINS,TRUE,True,1,True
+RT021,Catch basin clogged or flooding,WATER_SEWER,DEP,SEWER_DRAINAGE,TRUE,True,1,True
+RT022,Street flooding,WATER_SEWER,DEP,SEWER_DRAINAGE,TRUE,True,1,True
+RT023,Sewer backup or manhole overflow,WATER_SEWER,DEP,SEWER_DRAINAGE,TRUE,True,1,True
+RT024,Fire hydrant running or damaged,WATER_SEWER,DEP,WATER_MAINS,TRUE,True,1,True
+RT025,Dirty water or low water pressure,WATER_SEWER,DEP,WATER_MAINS,TRUE,True,1,True
+RT040,Missed garbage or recycling collection,SANITATION,DSNY,SANITATION_COLLECTION,TRUE,True,1,True
+RT041,Illegal dumping,SANITATION,DSNY,STREET_CLEANING,TRUE,True,1,True
+RT042,Dirty street or litter,SANITATION,DSNY,STREET_CLEANING,TRUE,True,1,True
+RT043,Derelict vehicle,SANITATION,DSNY,VEHICLE_REMOVAL,TRUE,True,1,True
+RT044,Snow or ice not cleared,SANITATION,DSNY,SNOW_ICE,TRUE,True,1,True
+RT045,Dead animal on street,SANITATION,DSNY,STREET_CLEANING,TRUE,True,1,True
+RT060,Fallen tree or branch,PARKS_TREES,DPR,FORESTRY,TRUE,True,1,True
+RT061,Overgrown tree or branches on wires,PARKS_TREES,DPR,FORESTRY,TRUE,True,1,True
+RT062,Dead or dying tree,PARKS_TREES,DPR,FORESTRY,TRUE,True,1,True
+RT080,No heat or hot water,HOUSING,HPD,HOUSING_INSPECTION,TRUE,True,1,True
+RT081,Water leak inside building,HOUSING,HPD,HOUSING_INSPECTION,TRUE,True,1,True
+RT082,Plumbing problem in apartment,HOUSING,HPD,HOUSING_INSPECTION,TRUE,True,1,True
+RT083,"Pests, mold or unsanitary condition",HOUSING,HPD,HOUSING_INSPECTION,TRUE,True,1,True
+RT084,Electrical problem in building,HOUSING,HPD,HOUSING_INSPECTION,TRUE,True,1,True
+RT100,Rats or rodents,HEALTH,DOHMH,PEST_CONTROL,TRUE,True,1,True
+RT120,Noise from a residence,NOISE_PARKING,NYPD,NOISE_PATROL,TRUE,True,1,True
+RT121,"Noise from street, business or vehicle",NOISE_PARKING,NYPD,NOISE_PATROL,TRUE,True,1,True
+RT122,Blocked driveway,NOISE_PARKING,NYPD,PARKING_ENFORCEMENT,TRUE,True,1,True
+RT123,Illegal parking or blocked hydrant,NOISE_PARKING,NYPD,PARKING_ENFORCEMENT,TRUE,True,1,True
+RT124,Abandoned vehicle,NOISE_PARKING,NYPD,VEHICLE_REMOVAL,TRUE,True,1,True
+RT140,Unsafe building or illegal construction,BUILDINGS,DOB,BUILDING_INSPECTION,TRUE,True,1,True
+RT141,Elevator not working,BUILDINGS,DOB,BUILDING_INSPECTION,TRUE,True,1,True

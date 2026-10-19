@@ -1,0 +1,12 @@
+{
+  "c01_intent_minilm_logreg.joblib": "59fa6205f614096a",
+  "_trained_at": "2026-10-07T23:41:44",
+  "_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "_variant": "D1 realistic (post-stratified) + out-of-scope x4",
+  "_training_rows": 16622,
+  "_seed": 2026,
+  "_gold_macro_f1": 0.8541,
+  "_gold_macro_f1_v1": 0.9496,
+  "_gold_macro_f1_v2": 0.7313,
+  "_abstain_threshold": 0.5
+}

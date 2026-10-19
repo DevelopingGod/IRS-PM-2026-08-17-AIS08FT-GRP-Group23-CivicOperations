@@ -1,0 +1,104 @@
+# Critical / sensitive facility categories and the OSM tags used to acquire them.
+#
+# status:
+#   core         - acquired, cached and eligible for the proximity ruleset
+#   exploratory  - acquired and cached for research/comparison only; not used by the default ruleset
+# Excluded categories (not acquired) are documented at the bottom and in DECISIONS.md.
+#
+# Tag conventions follow the OSM wiki (amenity=*, healthcare=*, social_facility=*, railway=*),
+# checked on 2026-10-15. A feature is assigned to the FIRST category (in `precedence` order)
+# whose `match` rules it satisfies.
+
+version: "1.0"
+
+precedence: [HOSPITAL, FIRE_STATION, POLICE, SENIOR_CARE, CHILDCARE, SCHOOL, TRANSIT_STATION]
+
+categories:
+  HOSPITAL:
+    status: core
+    label: "Hospital"
+    rationale: >-
+      Essential emergency service. Street-level hazards near a hospital can affect
+      ambulance and patient access.
+    query_tags: {amenity: [hospital], healthcare: [hospital]}
+    match:
+      - {amenity: hospital}
+      - {healthcare: hospital}
+
+  SCHOOL:
+    status: core
+    label: "School (K-12)"
+    rationale: >-
+      Vulnerable population (children) with concentrated pedestrian activity. In OSM
+      amenity=school is primary/secondary education. Colleges and universities are excluded.
+    query_tags: {amenity: [school]}
+    match:
+      - {amenity: school}
+
+  CHILDCARE:
+    status: core
+    label: "Kindergarten / childcare"
+    rationale: >-
+      Vulnerable population (young children). amenity=kindergarten is pre-school and
+      amenity=childcare is day care.
+    query_tags: {amenity: [kindergarten, childcare]}
+    match:
+      - {amenity: kindergarten}
+      - {amenity: childcare}
+
+  SENIOR_CARE:
+    status: core
+    label: "Nursing home / senior care"
+    rationale: >-
+      Vulnerable population (older adults with limited mobility). Only residential care for
+      older people is kept. Other social facilities, such as shelters and food banks, are not
+      senior care.
+    query_tags:
+      amenity: [nursing_home, social_facility]
+      healthcare: [nursing_home]
+      social_facility: [nursing_home, assisted_living]
+    match:
+      - {amenity: nursing_home}
+      - {healthcare: nursing_home}
+      - {social_facility: nursing_home}
+      - {social_facility: assisted_living}
+      - {amenity: social_facility, "social_facility:for": [senior, elderly]}
+
+  FIRE_STATION:
+    status: core
+    label: "Fire station"
+    rationale: >-
+      Essential emergency service. Hazards near a firehouse can affect apparatus egress.
+    query_tags: {amenity: [fire_station]}
+    match:
+      - {amenity: fire_station}
+
+  POLICE:
+    status: core
+    label: "Police station"
+    rationale: >-
+      Essential public-safety service. Hazards near a station can affect emergency-vehicle
+      egress.
+    query_tags: {amenity: [police]}
+    match:
+      - {amenity: police}
+
+  TRANSIT_STATION:
+    status: exploratory
+    label: "Rail / subway station"
+    rationale: >-
+      Concentrated pedestrian activity and essential public service. Treated as exploratory
+      because NYC's ~470 subway stations are so dense that a transit rule acts more like a
+      density indicator than a "sensitive facility" signal. See the threshold research.
+    query_tags: {railway: [station], public_transport: [station]}
+    match:
+      - {railway: station}
+      - {public_transport: station}
+
+excluded:
+  - {tags: "amenity=clinic, amenity=doctors, healthcare=clinic", reason: "Outpatient services. No emergency-access or residential vulnerability argument comparable to hospitals."}
+  - {tags: "amenity=college, amenity=university", reason: "Adult population. Campuses are large and would act as a land-use proxy."}
+  - {tags: "amenity=place_of_worship, amenity=library, amenity=community_centre", reason: "Not public-safety facilities. Inclusion would be a value judgement without team agreement."}
+  - {tags: "leisure=park, leisure=playground", reason: "Area land use rather than a facility. Playground mapping in OSM is inconsistent."}
+  - {tags: "emergency=ambulance_station", reason: "Very sparse and inconsistent in OSM NYC. Ambulances mostly operate from hospitals and FDNY EMS stations."}
+  - {tags: "amenity=social_facility (shelters, food banks)", reason: "Not clearly a critical facility for street-level hazards. Would need team agreement."}

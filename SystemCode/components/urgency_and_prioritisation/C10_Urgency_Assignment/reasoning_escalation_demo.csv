@@ -1,0 +1,4 @@
+scenario_id,request_type_code,description,expected_baseline,expected_urgency
+DEMO-REASON-01,RT060,Falling branch over playground with children underneath right now,MEDIUM,HIGH
+DEMO-REASON-02,RT003,A sinkhole is opening beside a school and children are walking past it right now,LOW,HIGH
+DEMO-REASON-03,RT042,Raw sewage is flowing into a playground with children nearby right now,LOW,HIGH

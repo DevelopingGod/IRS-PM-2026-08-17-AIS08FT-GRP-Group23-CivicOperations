@@ -1,0 +1,5 @@
+configuration,definition,trigger_rate_val_pct,agreement_with_A_pct,flags_added_vs_A,flags_removed_vs_A,n_rules,uses_request_type,double_counting_risk_with_urgency
+A_universal_pure_geographic,all core categories <= 100 m,26.217,100.0,0,0,6,False,low
+B1_category_specific,"vulnerable sites <= 100 m, emergency sites <= 150 m",28.925,97.292,197,0,6,False,low
+B2_core_plus_transit,core + transit stations <= 100 m,29.42,96.797,233,0,7,False,low
+B3_context_aware_interior_gating,"A, but 0 for RT080, RT081, RT082, RT083, RT084, RT141",22.01,95.793,0,306,7,True,yes - request type also drives Urgency

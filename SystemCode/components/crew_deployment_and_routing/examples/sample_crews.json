@@ -1,0 +1,38 @@
+[
+  {
+    "crew_id": "V2-DOT-MAN-01",
+    "agency": "DOT",
+    "skills": [
+      "ROAD_REPAIR",
+      "SIDEWALK_REPAIR"
+    ],
+    "depot_lat": 40.824016,
+    "depot_lon": -73.940719,
+    "work_time_budget_min": 420.0,
+    "home_borough": "MANHATTAN"
+  },
+  {
+    "crew_id": "V2-DOT-MAN-02",
+    "agency": "DOT",
+    "skills": [
+      "STREET_LIGHTING",
+      "TRAFFIC_SIGNALS"
+    ],
+    "depot_lat": 40.768615,
+    "depot_lon": -73.99144,
+    "work_time_budget_min": 420.0,
+    "home_borough": "MANHATTAN"
+  },
+  {
+    "crew_id": "V2-DSNY-MAN-01",
+    "agency": "DSNY",
+    "skills": [
+      "SNOW_ICE",
+      "STREET_CLEANING"
+    ],
+    "depot_lat": 40.7997,
+    "depot_lon": -73.945067,
+    "work_time_budget_min": 420.0,
+    "home_borough": "MANHATTAN"
+  }
+]

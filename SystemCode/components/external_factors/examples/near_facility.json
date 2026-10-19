@@ -1,0 +1,14 @@
+{
+  "_note": "SYNTHETIC example request (illustrative; real NYC coordinates, invented request).",
+  "request_id": "EX-NEAR-001",
+  "request_type": "RT005",
+  "latitude": 40.79,
+  "longitude": -73.953,
+  "geolocation_status": "RESOLVED",
+  "location_precision": "ADDRESS_POINT",
+  "location_source": "SYNTHETIC_EXAMPLE",
+  "borough": "MANHATTAN",
+  "ready_to_submit": true,
+  "needs_human": false,
+  "emergency_action": "CONTINUE"
+}

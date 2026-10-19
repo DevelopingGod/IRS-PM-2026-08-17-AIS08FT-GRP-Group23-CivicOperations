@@ -1,0 +1,23 @@
+{
+  "request_type": "RT020",
+  "confidence": 0.88,
+  "ready_to_submit": true,
+  "needs_human": false,
+  "is_emergency": true,
+  "emergency_action": "STOP_CALL_911",
+  "emergency_category": "GAS_OR_FIRE",
+  "slots": {
+    "incident_address": "300 ATLANTIC AVENUE",
+    "cross_street": null,
+    "borough": "BROOKLYN",
+    "landmark": null
+  },
+  "agency": "DEP",
+  "required_skills": [
+    "WATER_MAINS"
+  ],
+  "status": "BLOCKED",
+  "dispatch_eligible": false,
+  "next_step": "CITIZEN_TOLD_TO_CALL_911",
+  "explanation": "RT020 (Water main break or street water leak) was resolved through the shared catalog to DEP (New York City Department of Environmental Protection) with required skill WATER_MAINS. The request is BLOCKED and is not dispatch-eligible: The emergency check returned STOP_CALL_911: the citizen is directed to 911 and nothing is dispatched. [R02]"
+}

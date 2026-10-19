@@ -1,0 +1,77 @@
+# CivicOps AI - Crew Dispatch and Route Optimization: default configuration.
+# Every number below is a research assumption unless stated otherwise (research/assumptions.md).
+component_version: "1.0.0"
+mode: proposal_only            # never claims operational authorisation
+
+paths:                          # relative to the component root
+  network: data/road_network/derived/nyc_drive_enriched.npz
+  catalog: data/catalog/request_catalog.csv
+  outputs: outputs
+
+upstream:
+  # Shared-root layout: <root>/C11_Prioritization next to <root>/Crew_Dispatch_Route_Optimization.
+  c11_path: ../C11_Prioritization          # env override: CIVICOPS_C11_PATH
+  c11_entry: c11_final:prioritize_from_c10
+  allow_vendored_fallback: true            # vendored, unmodified c11_prioritization.py (research replay only)
+
+routing:
+  speed_factor: 0.6             # effective travel speed = posted speed x factor (A-SPD-4; sensitivity 0.5/0.75/1.0)
+  max_snap_m: 500               # request/crew farther than this from the main SCC -> UNROUTABLE
+  heuristic: alt                # alt | haversine (both admissible; validated against Dijkstra)
+  landmarks: 8
+  matrix_backend: dijkstra      # dijkstra (one-to-many, scipy) | astar (pairwise)
+
+capacity:
+  work_time_budget_min: 420     # productive minutes of a nominal 480-minute day (A-CAP-1; 360/450 scenarios)
+  return_to_depot: true         # return leg counts against the budget (A-CAP-2)
+  default_service_min: 45       # only if neither the record nor the catalog gives est_service_minutes
+
+operating_hours:                # Option C (A-TIME-1): agency-level hours, no per-crew shifts
+  default: {open: "07:00", close: "19:00"}
+  NYPD: {open: "00:00", close: "24:00", duty_minutes: 480}
+  min_service_period_min: 120   # if less remains before closing, plan for the next opening instead
+  timezone: America/New_York
+
+objective:
+  # FROZEN after validation (outputs/benchmarks/analysis/tuning_selection.json, rule in research/experiments.md):
+  # lexicographic priority (rank-weighted backlog first, then travel/delay/stability) with log rank weights.
+  mode: lexicographic           # weighted_sum | lexicographic (lexicographic = lambda_backlog 1e6)
+  rank_weight: {transform: log, param: 25}   # w(r) = 1/log2(r+1); param unused for log
+  lambda_backlog: 240           # used only in weighted_sum mode (best weighted-sum value on the pre-registered grid)
+  lambda_delay: 10              # minutes-equivalent per weighted start-hour
+  lambda_change: 5              # minutes-equivalent per moved/dropped previously planned request
+
+ga:                             # FROZEN after validation: "small" size within 0.5 % of the best at < half the runtime
+  population: 24
+  generations: 80
+  stall_generations: 20
+  time_limit_s: 60
+  tournament_k: 3
+  elite: 2
+  crossover_rate: 0.9
+  mutation_rate: 0.7
+  polish_every: 10
+  init_noise_sigma: 0.5
+  ruin_fraction: 0.15
+
+dynamic:
+  replan_policy: hybrid         # hybrid (periodic + forced events) | periodic | event
+  replan_interval_min: 15
+  debounce_min: 2
+  # A non-forced replan is published only if it lowers the rank-weighted backlog, or improves the
+  # secondary objective (travel + delay + change penalty) by >= max(min_improvement_abs, rel * secondary).
+  min_improvement_rel: 0.01
+  min_improvement_abs: 5.0
+  overdue_buffer_min: 15        # planning assumption when a job's estimated finish passed unconfirmed
+  warm_start: true
+  ga_generations_replan: 40    # warm-started rolling replans
+
+maps:
+  enabled: true
+  max_maps_per_run: 40
+  dpi: 170
+
+simulation:                     # used ONLY by the research replay; every generated event is simulated
+  service_time_cv: 0.30         # lognormal coefficient of variation around est_service_minutes (A-SIM-1)
+  travel_time_cv: 0.15          # lognormal CV of actual vs estimated travel (A-SIM-2)
+  approval_delay_min: 0         # simulated staff approval at departure

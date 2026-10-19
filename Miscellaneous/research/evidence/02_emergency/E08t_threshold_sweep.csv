@@ -1,0 +1,17 @@
+lexicon,threshold,recall,precision,f1,missed,false_alarms,false_alarms_named
+rules only,rules only,0.684,0.867,0.765,6,2,0
+rules only,0.5,0.895,0.63,0.739,2,10,1
+rules only,0.45,0.947,0.562,0.706,1,14,1
+rules only,0.4,0.947,0.5,0.655,1,18,1
+rules only,0.35,0.947,0.462,0.621,1,21,1
+rules only,0.3,0.947,0.409,0.571,1,26,1
+rules only,0.25,0.947,0.375,0.537,1,30,2
+rules only,0.2,0.947,0.316,0.474,1,39,3
+rules + immobility patch,rules only,0.737,0.875,0.8,5,2,0
+rules + immobility patch,0.5,0.947,0.643,0.766,1,10,1
+rules + immobility patch,0.45,1.0,0.576,0.731,0,14,1
+rules + immobility patch,0.4,1.0,0.514,0.679,0,18,1
+rules + immobility patch,0.35,1.0,0.475,0.644,0,21,1
+rules + immobility patch,0.3,1.0,0.422,0.594,0,26,1
+rules + immobility patch,0.25,1.0,0.388,0.559,0,30,2
+rules + immobility patch,0.2,1.0,0.328,0.494,0,39,3

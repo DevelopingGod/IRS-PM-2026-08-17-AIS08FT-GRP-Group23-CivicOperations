@@ -1,0 +1,78 @@
+request_type_code,location_type,records,referred,distinct_agencies,referral_rate
+RT001,<missing>,1529,61,1,0.0399
+RT002,Street,301,186,1,0.6179
+RT003,<missing>,18,2,1,0.1111
+RT003,Crosswalk,14,0,1,0.0
+RT003,Speed Reducer,2,0,1,0.0
+RT003,Street,492,101,2,0.2053
+RT003,Vehicle Lane,5,0,1,0.0
+RT004,<missing>,858,0,1,0.0
+RT005,<missing>,1208,0,1,0.0
+RT006,Curb,40,0,1,0.0
+RT006,Sidewalk,535,23,2,0.043
+RT020,<missing>,464,20,1,0.0431
+RT020,Sidewalk,27,0,1,0.0
+RT020,Street,10,0,1,0.0
+RT021,<missing>,205,6,1,0.0293
+RT021,Sewer,81,5,1,0.0617
+RT022,<missing>,88,10,1,0.1136
+RT022,Street,53,6,1,0.1132
+RT023,<missing>,225,9,1,0.04
+RT023,Sewer,89,0,1,0.0
+RT024,<missing>,723,1,1,0.0014
+RT024,Sidewalk,99,0,1,0.0
+RT024,Street,2,0,1,0.0
+RT025,<missing>,251,28,1,0.1116
+RT040,Street,835,0,1,0.0
+RT041,Sidewalk,415,15,1,0.0361
+RT041,Street,196,15,1,0.0765
+RT042,Alley,23,1,1,0.0435
+RT042,Gutter,28,0,1,0.0
+RT042,Sidewalk,915,45,1,0.0492
+RT042,Street,207,9,1,0.0435
+RT042,Traffic Island or Median,4,1,1,0.25
+RT042,Yard,145,13,1,0.0897
+RT043,Street,533,214,1,0.4015
+RT044,Highway,7,0,1,0.0
+RT044,Sidewalk,936,6,1,0.0064
+RT044,Street,728,1,1,0.0014
+RT045,Highway,5,2,1,0.4
+RT045,Sidewalk,99,0,1,0.0
+RT045,Street,136,1,1,0.0074
+RT060,Park,11,0,1,0.0
+RT060,Street,904,45,1,0.0498
+RT061,Park,5,0,1,0.0
+RT061,Street,468,16,1,0.0342
+RT062,Park,4,1,1,0.25
+RT062,Street,247,14,1,0.0567
+RT080,RESIDENTIAL BUILDING,5462,0,1,0.0
+RT081,RESIDENTIAL BUILDING,741,0,1,0.0
+RT082,RESIDENTIAL BUILDING,1328,0,1,0.0
+RT083,RESIDENTIAL BUILDING,2225,0,1,0.0
+RT084,RESIDENTIAL BUILDING,601,0,1,0.0
+RT100,1-2 Family Dwelling,93,0,1,0.0
+RT100,1-2 Family Mixed Use Building,9,0,1,0.0
+RT100,3+ Family Apt. Building,176,7,1,0.0398
+RT100,3+ Family Mixed Use Building,31,0,1,0.0
+RT100,Catch Basin or Sewer,1,0,1,0.0
+RT100,Commercial Building,21,0,1,0.0
+RT100,Government Building,1,0,1,0.0
+RT100,Hospital,1,0,1,0.0
+RT100,Office Building,1,0,1,0.0
+RT100,Parking Lot or Garage,6,0,1,0.0
+RT100,School,1,0,1,0.0
+RT100,Sidewalk,36,0,1,0.0
+RT100,Street,17,0,1,0.0
+RT100,Vacant Building,7,1,1,0.1429
+RT100,Vacant Lot,6,0,1,0.0
+RT120,Residential Building/House,6215,60,1,0.0097
+RT121,Club/Bar/Restaurant,372,1,1,0.0027
+RT121,Store/Commercial,467,2,1,0.0043
+RT121,Street/Sidewalk,3448,6,1,0.0017
+RT122,Street/Sidewalk,2805,10,1,0.0036
+RT123,Street/Sidewalk,8971,99,1,0.011
+RT124,Highway,1,0,1,0.0
+RT124,Street/Sidewalk,1288,105,1,0.0815
+RT124,Vacant Lot,3,0,1,0.0
+RT140,<missing>,669,9,1,0.0135
+RT141,<missing>,385,7,1,0.0182

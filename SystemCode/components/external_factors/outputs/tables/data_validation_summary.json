@@ -1,0 +1,64 @@
+{
+  "rows": 49558,
+  "columns": 54,
+  "request_id_unique": true,
+  "source_values": {
+    "REAL_311": 49558
+  },
+  "is_synthetic_true": 0,
+  "leakage_fields_dropped": [
+    "closed_date",
+    "status",
+    "resolution_description",
+    "resolution_action_updated_date",
+    "resolution_hours",
+    "outcome_class",
+    "verified_outcome",
+    "resolution_valid",
+    "log_resolution_hours"
+  ],
+  "weather_fields_ignored": [
+    "wx_precip_mm",
+    "wx_rain_mm",
+    "wx_snow_cm",
+    "wx_tmax_c",
+    "wx_tmin_c",
+    "wx_gust_kmh"
+  ],
+  "catalog_request_types": 34,
+  "request_types_in_data": 34,
+  "request_types_not_in_catalog": [],
+  "catalog_types_absent_from_data": [],
+  "split_boundaries_chronological_non_overlapping": true,
+  "split_ranges": {
+    "train": [
+      "2025-09-24 04:00:17",
+      "2026-05-20 06:43:24"
+    ],
+    "val": [
+      "2026-05-20 06:44:36",
+      "2026-07-17 19:53:36"
+    ],
+    "test": [
+      "2026-07-17 19:54:00",
+      "2026-09-16 01:48:51"
+    ]
+  },
+  "valid_coordinates": 48401,
+  "valid_coordinates_outside_nyc_union": 3,
+  "borough_label_vs_coordinate_mismatch": 58,
+  "borough_mismatch_pairs": [
+    {
+      "borough": "BRONX",
+      "borough_from_coords": "MANHATTAN",
+      "n": "53"
+    },
+    {
+      "borough": "BROOKLYN",
+      "borough_from_coords": "QUEENS",
+      "n": "5"
+    }
+  ],
+  "duplicate_coordinates_share": 0.3238,
+  "sampling_note": "Rows come in borough-stratified sample windows (sample_window_id); each borough has ~10k rows, so per-borough rates are comparable but citywide rates are NOT volume-weighted to real 311 traffic."
+}

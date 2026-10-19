@@ -1,0 +1,11 @@
+{
+  "_note": "SYNTHETIC example request (illustrative; real NYC coordinates, invented request).",
+  "request_id": "EX-UNCERTAIN-001",
+  "request_type": "RT060",
+  "latitude": 40.713,
+  "longitude": -73.957,
+  "geolocation_status": "APPROXIMATE",
+  "location_precision": "BLOCKFACE",
+  "location_source": "SYNTHETIC_EXAMPLE",
+  "borough": "BROOKLYN"
+}

@@ -1,0 +1,71 @@
+component,metric,value,note
+C01,macro_f1 [A1 tfidf+svm on D0 uniform],0.7174,
+C01,macro_f1 [A1 tfidf+svm on D1 realistic],0.7254,
+C01,macro_f1 [A1 tfidf+svm on D2 uniform+noise],0.7328,
+C01,macro_f1 [A1 tfidf+svm on D3 realistic+noise],0.7249,
+C01,macro_f1 [A2 minilm+logreg on D0 uniform],0.8308,
+C01,macro_f1 [A2 minilm+logreg on D1 realistic],0.8499,
+C01,macro_f1 [A2 minilm+logreg on D2 uniform+noise],0.8388,
+C01,macro_f1 [A2 minilm+logreg on D3 realistic+noise],0.8466,
+C01,macro_f1 [A3 distilbert-base-uncased on D0 uniform],0.7339,
+C01,macro_f1 [A3 distilbert-base-uncased on D1 realistic],0.8092,
+C01,macro_f1 [A3 distilbert-base-uncased on D2 uniform+noise],0.8032,
+C01,macro_f1 [A3 distilbert-base-uncased on D3 realistic+noise],0.8031,
+C01,macro_f1 [A3 roberta-base on D0 uniform],0.7802,
+C01,macro_f1 [A3 roberta-base on D1 realistic],0.7768,
+C01,macro_f1 [A3 roberta-base on D2 uniform+noise],0.8022,
+C01,macro_f1 [A3 roberta-base on D3 realistic+noise],0.8085,
+C01,macro_f1 v1 slice [A0 keywords],0.7198,
+C01,macro_f1 v2 slice [A0 keywords],0.3594,
+C01,macro_f1 v1 slice [A1 tfidf+svm],0.8831,
+C01,macro_f1 v2 slice [A1 tfidf+svm],0.5365,
+C01,macro_f1 v1 slice [A3 distilbert-base-uncased],0.9055,
+C01,macro_f1 v2 slice [A3 distilbert-base-uncased],0.6345,
+C01,macro_f1 v1 slice [A3 roberta-base],0.8963,
+C01,macro_f1 v2 slice [A3 roberta-base],0.6405,
+C01,macro_f1 v1 slice [A5 final distilbert-base-uncased],0.9246,
+C01,macro_f1 v2 slice [A5 final distilbert-base-uncased],0.6543,
+C01,macro_f1 v1 slice [A4 sweep distilbert-base-uncased],0.9094,
+C01,macro_f1 v2 slice [A4 sweep distilbert-base-uncased],0.6548,
+C01,macro_f1 v1 slice [A2 minilm+logreg],0.9389,
+C01,macro_f1 v2 slice [A2 minilm+logreg],0.7083,
+C01,macro_f1 mean over 5 seeds,0.8111,
+C01,macro_f1 sd over 5 seeds,0.0124,
+C01,shipped model macro_f1 [overall],0.8578,
+C01,shipped model macro_f1 [v1],0.9596,
+C01,shipped model macro_f1 [v2],0.7313,
+C01,test lines wrong,42,of 308
+C01,abstain threshold,0.5,
+C01,"ms per message, whole component",29.02,
+C01,"slot span F1 on hand labelled messages, word tagger",0.723,"address, cross street, borough and time. Exact match on both ends"
+C01,"slot span F1 on hand labelled messages, pattern baseline",0.434,"address, cross street, borough and time. Exact match on both ends"
+C01,slot span F1 on the synthetic template text,0.985,kept on the record only to show how misleading it is
+C01,"slot span F1, address only",0.836,29 real cases in the hand labelled set
+C01,"slot span F1, time only",0.65,45 real cases in the hand labelled set
+C01,"slot span F1, hazard only",0.263,34 real cases in the hand labelled set
+C02,recall,1.0,
+C02,precision,0.6129,
+C02,emergencies missed,0,
+C02,false alarms,12,of 289 non-emergencies
+C02,false alarms on hydrant/fire-escape lines,0,
+C06,spearman vs hidden honesty (10+ reports),0.9144,
+C06,"unfair gap, hard vs easy types",0.28,"target under 2.0, was 4.0 before the fix"
+C06,new citizen score,50.0,
+C11,"MAE [B0 weekday baseline, no weather]",72.28,
+C11,"MAE on storm days [B0 weekday baseline, no weather]",88.13,
+C11,MAE [B1 Poisson regression + weather],83.05,
+C11,MAE on storm days [B1 Poisson regression + weather],97.82,
+C11,"MAE [B2 gradient boosting, Poisson loss]",60.4,
+C11,"MAE on storm days [B2 gradient boosting, Poisson loss]",73.74,
+C11,spike recall on storm days,0.87,23 spikes
+data,real requests,49558,
+data,test lines,308,
+data,class imbalance ratio,64:1,
+data,inconclusive outcome share,27.7%,
+C05,f1_duplicate [hybrid_evidence],0.9211,295 hand-checked real pairs
+C05,false_merge_rate [hybrid_evidence],0.1026,295 hand-checked real pairs
+C05,f1_duplicate [exact_key],0.9333,295 hand-checked real pairs
+C05,false_merge_rate [exact_key],0.0789,295 hand-checked real pairs
+C06 fake,auc [hybrid_rules_logreg],0.6133,"real test split, UNFOUNDED is a crew-note proxy"
+C06 fake,brier [hybrid_rules_logreg],0.2372,"real test split, UNFOUNDED is a crew-note proxy"
+C06 fake,fpr_first_time_action [hybrid_rules_logreg],0.325,"real test split, UNFOUNDED is a crew-note proxy"

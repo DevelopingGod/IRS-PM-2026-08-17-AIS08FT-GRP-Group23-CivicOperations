@@ -1,0 +1,169 @@
+{
+  "data_version": "nyc-osm-2026-10-15",
+  "manifest_created_at": "2026-10-15T21:29:04+00:00",
+  "source": "OpenStreetMap contributors, (c) OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+  "acquisition_method": {
+    "library": "OSMnx 2.1.1 (Overpass API + Nominatim)",
+    "boundaries": "ox.geocode_to_gdf by OSM relation id",
+    "facilities": "ox.features_from_polygon(facility_search_area, tags=<config/facility_categories.yaml>)",
+    "roads": "ox.graph_from_polygon(road_area, network_type='drive', simplify=True, retain_all=False)",
+    "facilities_overpass_endpoint": "https://overpass-api.de/api",
+    "roads_overpass_endpoint": null
+  },
+  "acquired_at": {
+    "boundaries": "2026-10-15T19:50:08+00:00",
+    "facilities": "2026-10-15T19:53:55+00:00",
+    "roads": null
+  },
+  "crs": {
+    "storage": "EPSG:4326",
+    "metric": "EPSG:32118"
+  },
+  "borough_coverage": [
+    {
+      "borough": "MANHATTAN",
+      "osm_relation": 8398124,
+      "area_km2_incl_water": 86.8,
+      "display_name": "Manhattan, New York County, New York, United States"
+    },
+    {
+      "borough": "BROOKLYN",
+      "osm_relation": 9691750,
+      "area_km2_incl_water": 252.3,
+      "display_name": "Brooklyn, Kings County, New York, United States"
+    },
+    {
+      "borough": "QUEENS",
+      "osm_relation": 9691819,
+      "area_km2_incl_water": 465.3,
+      "display_name": "Queens, Queens County, New York, United States"
+    },
+    {
+      "borough": "BRONX",
+      "osm_relation": 9691916,
+      "area_km2_incl_water": 149.0,
+      "display_name": "The Bronx, Bronx County, New York, United States"
+    },
+    {
+      "borough": "STATEN ISLAND",
+      "osm_relation": 9691948,
+      "area_km2_incl_water": 265.6,
+      "display_name": "Staten Island, Richmond County, New York, United States"
+    }
+  ],
+  "boroughs_present": [
+    "BRONX",
+    "BROOKLYN",
+    "MANHATTAN",
+    "QUEENS",
+    "STATEN ISLAND"
+  ],
+  "buffers_m": {
+    "facility_search_area": 2000,
+    "road_area": 1000
+  },
+  "facilities": {
+    "total_features": 4580,
+    "duplicates_flagged": 135,
+    "unique_facilities": 4445,
+    "by_category": {
+      "CHILDCARE": 482,
+      "FIRE_STATION": 348,
+      "HOSPITAL": 97,
+      "POLICE": 151,
+      "SCHOOL": 2555,
+      "SENIOR_CARE": 170,
+      "TRANSIT_STATION": 642
+    },
+    "by_category_status": {
+      "CHILDCARE": "core",
+      "FIRE_STATION": "core",
+      "HOSPITAL": "core",
+      "POLICE": "core",
+      "SCHOOL": "core",
+      "SENIOR_CARE": "core",
+      "TRANSIT_STATION": "exploratory"
+    },
+    "geometry_types": {
+      "CHILDCARE": {
+        "MultiPolygon": 0,
+        "Point": 422,
+        "Polygon": 61
+      },
+      "FIRE_STATION": {
+        "MultiPolygon": 0,
+        "Point": 171,
+        "Polygon": 180
+      },
+      "HOSPITAL": {
+        "MultiPolygon": 1,
+        "Point": 21,
+        "Polygon": 76
+      },
+      "POLICE": {
+        "MultiPolygon": 0,
+        "Point": 76,
+        "Polygon": 76
+      },
+      "SCHOOL": {
+        "MultiPolygon": 7,
+        "Point": 1194,
+        "Polygon": 1472
+      },
+      "SENIOR_CARE": {
+        "MultiPolygon": 0,
+        "Point": 79,
+        "Polygon": 94
+      },
+      "TRANSIT_STATION": {
+        "MultiPolygon": 0,
+        "Point": 619,
+        "Polygon": 31
+      }
+    },
+    "outside_nyc_in_buffer": 404,
+    "unclassified_features_dropped": 245,
+    "repaired_geometries": 0,
+    "duplicate_rules": {
+      "D1_point_in_polygon": 119,
+      "D2_polygon_in_polygon": 14,
+      "D3_point_point": 2,
+      "total_duplicates": 135
+    }
+  },
+  "roads": {
+    "present": false
+  },
+  "files": [
+    {
+      "path": "acquisition_report.json",
+      "size_bytes": 4979,
+      "sha256": "b425914247f09f0ea750fc954fd08ae70ea2e639a1b512e657479d95e969f37e",
+      "required_for": "documentation"
+    },
+    {
+      "path": "boundaries/nyc_boroughs.gpkg",
+      "size_bytes": 131072,
+      "sha256": "187412a0f88061bb4af8d21f062c02f505b8289d7067297d7658ca8af50dfc11",
+      "required_for": "runtime"
+    },
+    {
+      "path": "boundaries/nyc_coverage.gpkg",
+      "size_bytes": 163840,
+      "sha256": "00b8d21e1120a54e042ddd4443949b49cedd167ba8c9e57d734b9321344222d2",
+      "required_for": "runtime"
+    },
+    {
+      "path": "facilities/critical_facilities.gpkg",
+      "size_bytes": 3592192,
+      "sha256": "c2d60244ec9cb9098084cd5012059e5f9864e73bc17ca7d36395582f5b843d0c",
+      "required_for": "runtime"
+    },
+    {
+      "path": "facilities/critical_facilities.parquet",
+      "size_bytes": 1131581,
+      "sha256": "1fdf12c442a262dd78e93aac53bd00faea4d59100ba3f888bc4f2af4a07143d5",
+      "required_for": "runtime"
+    }
+  ]
+}

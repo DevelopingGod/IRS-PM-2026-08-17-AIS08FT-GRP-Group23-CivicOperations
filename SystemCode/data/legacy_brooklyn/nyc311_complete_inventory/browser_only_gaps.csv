@@ -1,0 +1,16 @@
+url,error
+https://a069-access.nyc.gov/accesshra/,HTTPError: HTTP Error 403: Forbidden
+https://a810-dobnow.nyc.gov/publish/,HTTPError: HTTP Error 403: Forbidden
+https://a860-openrecords.nyc.gov/request/view_all,HTTPError: HTTP Error 403: Forbidden
+https://a860-openrecords.nyc.gov/,HTTPError: HTTP Error 403: Forbidden
+https://mta-nyc.custhelp.com/app/ask,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://health.ny.gov/facilities/adult_care/,HTTPError: HTTP Error 403: Forbidden
+https://process.dmv.ny.gov/documentguide/dmv_license/DisplayPages/pwizlicensePermitNDID.cfm,ConnectionResetError: [Errno 54] Connection reset by peer
+https://rent.hcr.ny.gov/RentConnect/Owner/OwnerOverview,ConnectionResetError: [Errno 54] Connection reset by peer
+https://usdaoig.oversight.gov/hotline,HTTPError: HTTP Error 403: Forbidden
+https://www.health.ny.gov/facilities/nursing/complaints.htm,HTTPError: HTTP Error 403: Forbidden
+https://www.health.ny.gov/health_care/child_health_plus/contact.htm,HTTPError: HTTP Error 403: Forbidden
+https://www.health.ny.gov/health_care/managed_care/complaints/,HTTPError: HTTP Error 403: Forbidden
+https://www.fcc.gov/consumers/guides/prepaid-phone-cards-what-consumers-should-know,HTTPError: HTTP Error 403: Forbidden
+https://www.newamericans.ny.gov/Hotline/hotline.html,"URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+https://www.health.ny.gov/professionals/doctors/conduct/file_a_complaint.htm,HTTPError: HTTP Error 403: Forbidden

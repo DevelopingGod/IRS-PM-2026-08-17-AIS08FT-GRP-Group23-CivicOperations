@@ -1,0 +1,12 @@
+{
+  "_note": "SYNTHETIC example request (illustrative; real NYC coordinates, invented request).",
+  "request_id": "EX-FAR-001",
+  "request_type": "RT001",
+  "latitude": 40.59,
+  "longitude": -74.17,
+  "geolocation_status": "RESOLVED",
+  "location_precision": "INTERSECTION",
+  "location_source": "SYNTHETIC_EXAMPLE",
+  "borough": "STATEN ISLAND",
+  "emergency_action": "CONTINUE"
+}

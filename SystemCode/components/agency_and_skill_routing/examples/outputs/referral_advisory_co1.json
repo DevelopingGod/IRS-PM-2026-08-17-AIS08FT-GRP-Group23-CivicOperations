@@ -1,0 +1,23 @@
+{
+  "request_type": "RT043",
+  "confidence": 0.9,
+  "ready_to_submit": true,
+  "needs_human": false,
+  "is_emergency": false,
+  "emergency_action": "CONTINUE",
+  "emergency_category": null,
+  "slots": {
+    "incident_address": "2100 RICHMOND AVENUE",
+    "cross_street": null,
+    "borough": "STATEN ISLAND",
+    "landmark": null
+  },
+  "agency": "DSNY",
+  "required_skills": [
+    "VEHICLE_REMOVAL"
+  ],
+  "status": "ASSIGNED",
+  "dispatch_eligible": true,
+  "next_step": "DUPLICATE_DETECTION",
+  "explanation": "RT043 (Derelict vehicle) was resolved through the shared catalog to DSNY (New York City Department of Sanitation) with required skill VEHICLE_REMOVAL. All intake, emergency and catalog checks passed, so the request continues to duplicate detection. Later components still decide priority, location and crew feasibility. Historical note [R14]: In the training period, about 37% of RT043 requests in STATEN ISLAND were referred onward by DSNY. The most common recorded destination was NYPD. The agency matrix says the responsible agency depends on: License plates attached and location, which the CO1 contract does not capture. The catalog assignment is unchanged."
+}
