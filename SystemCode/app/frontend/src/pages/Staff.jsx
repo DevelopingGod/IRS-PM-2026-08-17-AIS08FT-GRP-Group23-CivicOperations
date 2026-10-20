@@ -59,7 +59,9 @@ function Queue() {
   const shown = useMemo(() => {
     const f = FILTERS[filter]?.test || (() => true)
     const needle = query.trim().toLowerCase()
-    return items.filter(f).filter((q) => !needle || `${q.request_id} ${q.label} ${q.slots?.incident_address} ${q.agency}`.toLowerCase().includes(needle))
+    // A search looks at every request, linked duplicates included, so a reference is always found.
+    if (needle) return items.filter((q) => `${q.request_id} ${q.label} ${q.slots?.incident_address} ${q.agency} ${q.duplicate_of || ''}`.toLowerCase().includes(needle))
+    return items.filter(f)
   }, [items, filter, query])
   const points = useMemo(() => shown.filter((q) => !q.on_hold).map((q) => ({
     id: q.request_id, lat: q.slots?.latitude, lon: q.slots?.longitude, tone: levelTone(q.urgency_level),

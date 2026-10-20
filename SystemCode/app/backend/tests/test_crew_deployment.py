@@ -135,3 +135,26 @@ def test_prioritisation_finds_official_sla_targets(world):
     team = [q for q in items if any(r.startswith("Team SLA target") for r in q["priority_reasons"])]
     assert len(official) >= len(items) * 0.6
     assert len(official) + len(team) == len(items)
+
+
+def test_a_linked_duplicate_follows_its_original_to_closure(world):
+    """Regression: a second report of the same pothole was held as a duplicate and never moved on,
+    so its reporter saw no crew and no closure. Now it shows the original's crew and closes with it."""
+    api, staff = world
+    text = "there is a deep pothole on atlantic avenue near 4th avenue in brooklyn, a cyclist nearly fell"
+    tokens, ids = [], []
+    for n in range(2):
+        t = api.post("/api/auth/register", json={"email": f"dup.{n}@example.org"}).json()["token"]
+        r = api.post("/api/chat", json={"text": text}, headers={"Authorization": f"Bearer {t}"}).json()
+        assert r["state"] == "FILED"
+        tokens.append({"Authorization": f"Bearer {t}"}); ids.append(r["request_id"])
+    first, second = ids
+    dup = api.get(f"/api/staff/requests/{second}", headers=staff).json()
+    assert dup["duplicate_relation"] == "DUPLICATE" and dup["duplicate_of"] == first
+    crew = next(c for c in api.get("/api/staff/crews?agency=DOT&borough=BROOKLYN", headers=staff).json())
+    assert api.post(f"/api/staff/requests/{first}/assign", json={"crew_id": crew["crew_id"]}, headers=staff).status_code == 200
+    assert api.get(f"/api/me/requests/{second}", headers=tokens[1]).json()["crew_assigned"] is True
+    service.close_job(first, "VALID_RESOLVED", crew["crew_id"])
+    mine = api.get(f"/api/me/requests/{second}", headers=tokens[1]).json()
+    assert mine["status"] == "CLOSED" and mine["outcome"] == "VALID_RESOLVED"
+    assert [r["request_id"] for r in api.get("/api/me/requests", headers=tokens[1]).json()] == [second]

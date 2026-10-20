@@ -239,6 +239,9 @@ def tracker(rid: str) -> dict | None:
     with db.conn() as c:
         row = c.execute("select status from requests where id = ?", (rid,)).fetchone()
         job = c.execute("select * from crew_jobs where request_id = ?", (rid,)).fetchone()
+        if not job and q.get("duplicate_relation") == "DUPLICATE" and q.get("duplicate_of"):
+            # One crew handles the original, so a linked report shows the original's crew.
+            job = c.execute("select * from crew_jobs where request_id = ?", (q["duplicate_of"],)).fetchone()
     slots = q.get("slots") or {}
     return {"request_id": rid, "label": q.get("label"), "status": row["status"], "stage": STAGES.get(row["status"]),
             "created_at": q.get("created_at"), "address": slots.get("incident_address"),
@@ -702,7 +705,29 @@ def close_job(rid: str, crew_outcome: str, crew_id: str) -> dict:
     q["why"] = (q.get("why") or []) + _why([call])
     db.save_json("requests", rid, q, created_at=q["created_at"], status="CLOSED")
     _record_calls(rid, [call])
+    _close_linked(rid, q["closure"], crew_id, now)
     return {**tracker(rid), "closure": q["closure"]}
+
+
+def _close_linked(rid: str, closure: dict, crew_id: str, now: datetime) -> int:
+    """Reports linked to this one as duplicates close with it, so everyone who reported the problem
+    sees what the crew found. A reporter whose report the crew confirmed is credited too."""
+    with db.conn() as c:
+        rows = c.execute("select id, data from requests where status != 'CLOSED'").fetchall()
+    linked = [r["id"] for r in rows if (d := json.loads(r["data"])).get("duplicate_relation") == "DUPLICATE"
+              and d.get("duplicate_of") == rid]
+    for lid in linked:
+        d = db.load_json("requests", lid) or {}
+        key = d.get("citizen_key")
+        d["closure"] = {"crew_outcome": closure.get("crew_outcome"), "verified_outcome": closure.get("verified_outcome"),
+                        "closed_with": rid, "reasons": [f"Closed with {rid}, the same problem, by {crew_id}"]}
+        with db.conn() as conn:
+            if key and closure.get("verified_outcome") == "GENUINE":
+                conn.execute("insert into citizen_outcomes values (?,?,?,?)", (key, "GENUINE", _iso(now), d.get("request_type")))
+            conn.execute("update requests set status = 'CLOSED' where id = ?", (lid,))
+        db.save_json("requests", lid, d, created_at=d["created_at"], status="CLOSED")
+        add_note(lid, crew_id, f"Closed with {rid}, the same problem")
+    return len(linked)
 
 
 # ------------------------------------------------------------------------ tech team
