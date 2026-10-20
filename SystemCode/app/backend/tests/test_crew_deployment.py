@@ -1,6 +1,6 @@
-"""Crew deployment and route optimisation over a real backlog, through the HTTP API: a proposal
-only, approval by city staff locks a route, the crew works it in that order, and switching the
-component off falls back to hand assignment."""
+"""Crew deployment and route optimisation over a real backlog, through the HTTP API: routes go to
+the crews automatically, the crew works its route in that order, staff can pull a job back or give
+it to another crew, and switching the component off falls back to hand assignment."""
 import json
 import os
 
@@ -30,48 +30,73 @@ def world(tmp_path_factory):
     mp.undo()
 
 
-def test_the_plan_is_a_proposal_over_plannable_requests_only(world):
-    api, staff = world
-    r = api.get("/api/staff/plan?wait=15", headers=staff).json()
-    assert r["outcome"] == "LIVE" and not r["planning"]
-    plan = r["plan"]
-    assert plan["proposal_only"] is True
-    assert plan["planned"] > 0 and plan["crews"]
-    queue = {q["request_id"]: q for q in api.get("/api/staff/queue", headers=staff).json()["items"]}
-    for rid in plan["proposed"]:
-        assert queue[rid]["queue_status"] == "provisional"       # review and held requests are never planned
-    stop = plan["crews"][0]["stops"][0]
-    assert stop["est_start"] and stop["travel_min"] >= 0 and stop["label"]
-    assert plan["crews"][0]["roads"]                             # the road it drives, for the map
+def _open_jobs():
     with db.conn() as c:
-        assert c.execute("select count(*) n from crew_jobs").fetchone()["n"] == 0   # nothing assigned by itself
+        return [dict(r) for r in c.execute("select request_id, crew_id, assigned_at from crew_jobs where outcome is null order by assigned_at")]
 
 
-def test_approving_a_route_locks_it_and_the_crew_works_it_in_that_order(world):
+def test_routes_go_to_the_crews_automatically(world):
     api, staff = world
-    plan = api.get("/api/staff/plan?wait=15", headers=staff).json()["plan"]
-    route = max(plan["crews"], key=lambda c: len(c["stops"]))
-    ids = [s["request_id"] for s in route["stops"]]
-    ok = api.post("/api/staff/plan/approve", json={"crew_id": route["crew_id"], "request_ids": ids}, headers=staff)
-    assert ok.status_code == 200 and ok.json()["approved"] == len(ids)
-    jobs = service.crew_jobs(route["crew_id"])
-    assert [j["request_id"] for j in jobs["jobs"]] == ids
-    assert "Crew deployment" in jobs["order_source"]
-    after = api.get("/api/staff/plan?wait=15", headers=staff).json()["plan"]
-    assert not set(ids) & set(after["proposed"])                 # locked jobs are never planned again
-    wrong = api.post("/api/staff/plan/approve", json={"crew_id": "CRW-DOT-001", "request_ids": ids[:1]}, headers=staff)
-    assert wrong.status_code == 400
+    r = api.get("/api/staff/plan?wait=30", headers=staff).json()
+    assert r["outcome"] == "LIVE"
+    jobs = _open_jobs()
+    assert jobs                                                  # assigned without anyone approving
+    queue = {q["request_id"]: q for q in api.get("/api/staff/queue", headers=staff).json()["items"]}
+    for j in jobs:
+        assert queue[j["request_id"]]["queue_status"] == "provisional"   # held or review requests are never sent
+    plan = api.get("/api/staff/plan?wait=30", headers=staff).json()["plan"]
+    crew = next(c for c in plan["crews"] if c["approved"])
+    assert crew["depot"]["lat"] and crew["position"]["lat"]      # the start and where it is, for the map
+    assert crew["roads"]
 
 
-def test_switched_off_it_falls_back_to_hand_assignment(world):
+def test_the_crew_works_its_route_in_the_planned_order(world):
+    jobs = _open_jobs()
+    crew_id = max({j["crew_id"] for j in jobs}, key=lambda c: sum(j["crew_id"] == c for j in jobs))
+    mine = service.crew_jobs(crew_id)
+    assert [j["request_id"] for j in mine["jobs"]] == [j["request_id"] for j in jobs if j["crew_id"] == crew_id]
+    assert "assigned automatically" in mine["order_source"]
+    assert mine["depot"]["lat"] is not None and mine["position"]["lat"] is not None
+
+
+def test_pulling_a_job_back_keeps_it_from_automatic_assignment(world):
+    api, staff = world
+    job = _open_jobs()[0]
+    r = api.post(f"/api/staff/requests/{job['request_id']}/unassign", headers=staff)
+    assert r.status_code == 200
+    d = api.get(f"/api/staff/requests/{job['request_id']}", headers=staff).json()
+    assert d["status"] == "OPEN" and d["dispatch_hold"] is True and d["crew_job"] is None
+    api.get("/api/staff/plan?wait=30", headers=staff)
+    api.get("/api/staff/plan?wait=30", headers=staff)
+    assert job["request_id"] not in {j["request_id"] for j in _open_jobs()}   # not given back by itself
+    other = next(c for c in api.get("/api/staff/crews", headers=staff).json() if c["crew_id"] != job["crew_id"])
+    ok = api.post(f"/api/staff/requests/{job['request_id']}/assign", json={"crew_id": other["crew_id"]}, headers=staff)
+    assert ok.status_code == 200
+    d = api.get(f"/api/staff/requests/{job['request_id']}", headers=staff).json()
+    assert d["crew_job"]["crew_id"] == other["crew_id"] and not d.get("dispatch_hold")
+    assert api.post("/api/staff/requests/CO-NOPE00/unassign", headers=staff).status_code == 400
+
+
+def test_switched_off_nothing_is_assigned_automatically(world):
     api, staff = world
     switches.set_switch(dispatch.NAME, False, "test", set(SWITCHABLE))
     try:
-        r = api.get("/api/staff/plan", headers=staff).json()
+        before = len(_open_jobs())
+        r = api.get("/api/staff/plan?wait=5", headers=staff).json()
         assert r["outcome"] == "OFF" and r["plan"] is None
         assert all(q["proposed"] is None for q in api.get("/api/staff/queue", headers=staff).json()["items"])
+        assert len(_open_jobs()) == before
     finally:
         switches.set_switch(dispatch.NAME, True, "test", set(SWITCHABLE))
+
+
+def test_real_streets_for_a_zoomed_map(world):
+    api, staff = world
+    r = api.get("/api/map/streets?south=40.66&west=-73.99&north=40.70&east=-73.94", headers=staff)
+    assert r.status_code == 200
+    streets = r.json()
+    assert len(streets) > 100 and {"k", "p"} <= set(streets[0]) and len(streets[0]["p"]) >= 2
+    assert api.get("/api/map/streets?south=40.4&west=-74.3&north=40.95&east=-73.6", headers=staff).status_code == 400
 
 
 def test_each_request_opens_its_own_incident_group(world):
@@ -101,21 +126,12 @@ def test_a_confirmed_impact_on_a_school_moves_the_request_up(world):
     assert after["queue_position"] <= before["queue_position"]
 
 
-def test_approve_all_routes_sends_every_proposed_stop(world):
-    api, staff = world
-    plan = api.get("/api/staff/plan?wait=15", headers=staff).json()["plan"]
-    expected = sum(len(c["stops"]) for c in plan["crews"])
-    r = api.post("/api/staff/plan/approve-all", headers=staff)
-    assert r.status_code == 200 and r.json()["approved"] == expected
-    with db.conn() as c:
-        assert c.execute("select count(*) n from crew_jobs where outcome is null").fetchone()["n"] >= expected
-    after = api.get("/api/staff/plan?wait=15", headers=staff).json()["plan"]
-    assert after["planned"] == 0 or not set(after["proposed"]) & {s["request_id"] for c in plan["crews"] for s in c["stops"]}
-
-
 def test_prioritisation_finds_official_sla_targets(world):
-    """Khalid's SLA table reaches the ranking through the mapping in data/reference/sla."""
+    """Khalid's SLA table reaches the ranking through the mapping in data/reference/sla. Every
+    request type has a target: the official NYC SLA, or a labelled team target where NYC has none."""
     api, staff = world
-    items = api.get("/api/staff/queue", headers=staff).json()["items"]
-    with_sla = [q for q in items if any(r.startswith("Official NYC SLA") for r in q["priority_reasons"])]
-    assert len(with_sla) >= len(items) * 0.6
+    items = [q for q in api.get("/api/staff/queue", headers=staff).json()["items"] if not q.get("on_hold")]
+    official = [q for q in items if any(r.startswith("Official NYC SLA") for r in q["priority_reasons"])]
+    team = [q for q in items if any(r.startswith("Team SLA target") for r in q["priority_reasons"])]
+    assert len(official) >= len(items) * 0.6
+    assert len(official) + len(team) == len(items)

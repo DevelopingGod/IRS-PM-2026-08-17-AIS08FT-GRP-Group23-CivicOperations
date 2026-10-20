@@ -10,6 +10,7 @@ const Track = lazy(() => import('./pages/Track.jsx'))
 const Staff = lazy(() => import('./pages/Staff.jsx'))
 const CrewPortal = lazy(() => import('./pages/CrewPortal.jsx'))
 const Tech = lazy(() => import('./pages/Tech.jsx'))
+const Features = lazy(() => import('./pages/Features.jsx'))
 import { ResidentAuth, WorkSignIn } from './pages/Auth.jsx'
 
 // Each role has its own home. A page outside your role is never shown, and the server refuses it too.
@@ -66,13 +67,14 @@ export default function App() {
   if (page === '' ) body = <Landing onStart={() => (role === 'resident' ? go('#/report') : setAuth('#/report'))} />
   else if (page === 'report') body = role === 'resident' ? <Report goTrack={(id) => go(`#/track/${id}`)} /> : <Gate onSignIn={() => setAuth('#/report')} />
   else if (page === 'track') body = role === 'resident' ? <Track initial={sub || null} onReport={() => go('#/report')} /> : <Gate onSignIn={() => setAuth(`#/track${sub ? `/${sub}` : ''}`)} />
+  else if (page === 'features') body = <Features />
   else if (page === 'work') body = <WorkSignIn onDone={(r) => go(HOME[r.role])} />
   else if (page === 'staff' && role === 'staff') body = <Staff view={sub || 'queue'} go={(v) => go(`#/staff/${v}`)} />
   else if (page === 'crew' && role === 'crew') body = <CrewPortal />
   else if (page === 'tech' && role === 'tech') body = <Tech view={sub || 'components'} go={(v) => go(`#/tech/${v}`)} />
   else body = <NotFound />
 
-  const residentNav = [['#/', 'Home', ''], ['#/report', 'Report', 'report'], ['#/track', 'Track', 'track']]
+  const residentNav = [['#/', 'Home', ''], ['#/report', 'Report', 'report'], ['#/track', 'Track', 'track'], ['#/features', 'Features', 'features']]
   const portalName = { staff: 'City staff', crew: 'Crew', tech: 'Tech team' }[role]
 
   return (
@@ -104,11 +106,12 @@ export default function App() {
       <footer className="foot">
         <div>
           <strong>Civic Operations</strong>
-          <span>NUS ISS Intelligent Reasoning Systems · Group 23 · 2026</span>
+          <span>NUS ISS Intelligent Reasoning Systems · Team MANTIS · 2026</span>
           <span>{TEAM}</span>
         </div>
         <div>
           <span>Every decision is explained. Nothing is filed during an emergency: call 911.</span>
+          <a href="#/features">What it does</a>
           {!role && <a href="#/work">City staff, crew and tech team sign in</a>}
         </div>
       </footer>

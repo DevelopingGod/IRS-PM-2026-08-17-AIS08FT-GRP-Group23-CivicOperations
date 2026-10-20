@@ -86,7 +86,7 @@ test('resident emergency stop', async ({ page }) => {
   await settle(page); await shot(page, 's05_emergency_stop')
 })
 
-test('city staff: queue, request reasoning, crew plan', async ({ page }) => {
+test('city staff: queue, request reasoning, crew routes', async ({ page }) => {
   await workSignIn(page, 'staff')
   await expect(page.locator('.queue-item .aiwhy').first()).toBeVisible({ timeout: 30_000 })
   await expect(page.locator('.toast')).toHaveCount(0, { timeout: 15_000 })   // the sign in message has gone
@@ -97,14 +97,15 @@ test('city staff: queue, request reasoning, crew plan', async ({ page }) => {
   await expect(drawer.locator('.journey li').first()).toBeVisible()
   await settle(page); await shot(page, 's07_request_why')
   await drawer.getByRole('button', { name: 'Close' }).click()
-  await page.getByRole('tab', { name: /Crew plan/ }).click()
-  await expect(page.locator('.kpi', { hasText: 'Stops planned' })).toBeVisible({ timeout: 40_000 })
+  await page.getByRole('tab', { name: /Crew routes/ }).click()
+  await expect(page.locator('.job').filter({ hasText: 'sent to the crew' }).first()).toBeVisible({ timeout: 60_000 })
   // The crew with the longest route shows the planner best.
   const counts = await page.locator('.job .jobhead .bullet').allInnerTexts()
   const best = counts.map(Number).reduce((b, n, i, a) => (n > a[b] ? i : b), 0)
   const first = page.locator('.job').nth(best)
   await first.locator('.jobhead').click()
   await expect(first.locator('.citymap .road').first()).toBeAttached({ timeout: 15_000 })
+  await expect(first.locator('.citymap .street').first()).toBeAttached({ timeout: 15_000 })
   await page.waitForTimeout(4000)
   await first.scrollIntoViewIfNeeded()
   await shot(page, 's08_crew_plan')

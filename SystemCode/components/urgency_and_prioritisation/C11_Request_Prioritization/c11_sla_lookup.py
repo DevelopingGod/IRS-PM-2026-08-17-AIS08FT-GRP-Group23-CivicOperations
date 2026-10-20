@@ -37,6 +37,16 @@ def lookup(request, official, review):
     base = {'request_type_code': code or None, 'sla_status': 'SLA_UNKNOWN',
             'sla_target_hours': None, 'sla_original': None, 'sla_source': 'NYC 311 published SLA reference',
             'sla_match_count': 0}
+    # Team extension (19 Oct 2026): NYC publishes no SLA for some request types, such as street
+    # potholes and street lights. For those the team sets a target, the median time NYC took to
+    # close that type in our 311 sample, and it is labelled as a team target, never as official.
+    team = [r for r in review if normalize(r.get('request_type_code')).upper() == code
+            and normalize(r.get('mapping_status')).upper() == 'TEAM_TARGET']
+    if team and hours(team[0].get('official_sla')):
+        return dict(base, sla_status='TEAM_TARGET', sla_target_hours=hours(team[0]['official_sla']),
+                    sla_original=team[0]['official_sla'], sla_match_count=0,
+                    sla_source='Team target: median close time in the NYC 311 sample',
+                    sla_reason='No published NYC SLA for this type, team target used')
     if not all((code, agency, problem, detail)):
         return dict(base, sla_reason='Need code and official agency/problem/problem details')
     candidates = [r for r in review if normalize(r.get('request_type_code')).upper() == code

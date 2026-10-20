@@ -65,6 +65,20 @@ def _worked_today(now: datetime) -> dict[str, float]:
     return worked
 
 
+def _positions(now: datetime) -> dict[str, tuple[float, float]]:
+    """Where each crew is now: the place of the last job it closed today. Before that, its depot."""
+    day = now.strftime("%Y-%m-%d")
+    with db.conn() as c:
+        rows = c.execute("select j.crew_id, r.data from crew_jobs j join requests r on r.id = j.request_id "
+                         "where j.closed_at like ? order by j.closed_at", (f"{day}%",)).fetchall()
+    out: dict[str, tuple[float, float]] = {}
+    for r in rows:
+        s = (json.loads(r["data"]).get("slots") or {})
+        if s.get("latitude") is not None:
+            out[r["crew_id"]] = (float(s["latitude"]), float(s["longitude"]))
+    return out
+
+
 def _service_min(q: dict) -> float:
     try:
         return float(data.catalog().get(q.get("request_type") or "", {}).get("est_service_minutes") or 45)
@@ -81,7 +95,9 @@ def _inputs(items: list[dict], now: datetime) -> tuple[list[dict], list[dict], d
         records.append({
             "request_id": q["request_id"], "agency": q.get("agency"),
             # The fallback queue has no status of its own: every ranked request is plannable then.
-            "c11_queue_status": q.get("queue_status") or ("hold" if q.get("on_hold") else "provisional"),
+            # A job staff pulled back from a crew is held, so it is not planned again by itself.
+            "c11_queue_status": "hold" if d.get("dispatch_hold") else
+                                q.get("queue_status") or ("hold" if q.get("on_hold") else "provisional"),
             "overall_queue_position": None if q.get("on_hold") else q.get("queue_position"),
             "required_skills": d.get("required_skills") or [],
             "latitude": s.get("latitude"), "longitude": s.get("longitude"),
@@ -94,7 +110,8 @@ def _inputs(items: list[dict], now: datetime) -> tuple[list[dict], list[dict], d
     status, states = {}, {}
     worked = _worked_today(now)
     locked = _locked()
-    for crew_id in set(locked) | set(worked):
+    where = _positions(now)
+    for crew_id in set(locked) | set(worked) | set(where):
         jobs = []
         for j in locked.get(crew_id, []):
             r = by_id.get(j["request_id"])
@@ -103,7 +120,8 @@ def _inputs(items: list[dict], now: datetime) -> tuple[list[dict], list[dict], d
             jobs.append(LockedJob(j["request_id"], crew_id, DispatchState.APPROVED_NOT_STARTED, r["latitude"],
                                   r["longitude"], r["est_service_minutes"], approval_ref=j["assigned_at"]))
             states[j["request_id"]] = DispatchState.APPROVED_NOT_STARTED
-        status[crew_id] = CrewStatus(crew_id, worked_min=worked.get(crew_id, 0.0), locked=jobs)
+        lat, lon = where.get(crew_id, (None, None))     # plans start from where the crew is now
+        status[crew_id] = CrewStatus(crew_id, lat=lat, lon=lon, worked_min=worked.get(crew_id, 0.0), locked=jobs)
     return records, crews, status, states
 
 
@@ -137,6 +155,7 @@ def _summary(doc: dict, items: list[dict], ms: float) -> dict:
         if not planned and not locked:
             continue
         crews.append({"crew_id": c["crew_id"], "agency": c.get("agency"), "depot": c.get("depot"),
+                      "position": c.get("current_position") or c.get("depot"),
                       "available_at": c.get("available_at"), "duty_end": c.get("duty_end"),
                       "travel_min": round(c.get("planned_travel_min") or 0, 1),
                       "work_min": round(c.get("planned_work_min") or 0, 1),
@@ -179,10 +198,25 @@ def _make(items: list[dict], now: datetime, key: str, inputs: tuple) -> None:
         ms = (time.perf_counter() - t0) * 1000
         plan, call = None, Call(NAME, ERROR, round(ms, 2), [], note=f"{type(e).__name__}: {e}"[:300])
     _record_calls("PLAN", [call])
+    assigned = _auto_assign(plan, now) if plan else 0
     with _lock:
         if plan is not None or _state["key"] != key:
             _state.update(plan=plan, made_at=now)
-        _state.update(key=key, running=False, call=call)
+        # Jobs just assigned are now locked to their crews, so the next look plans again from there.
+        _state.update(key=None if assigned else key, running=False, call=call)
+
+
+def _auto_assign(plan: dict, now: datetime) -> int:
+    """With Crew deployment on, its routes go to the crews at once, in the planned order. Staff
+    can still give a job to another crew or pull it back. Switched off, nothing is assigned."""
+    from .service import assign, _status_of
+    n = 0
+    for c in plan.get("crews", []):
+        for s in sorted(c.get("stops") or [], key=lambda x: x.get("sequence") or 0):
+            if _status_of(s["request_id"]) == "OPEN":
+                assign(s["request_id"], c["crew_id"], NAME, at=now + timedelta(milliseconds=n))
+                n += 1
+    return n
 
 
 def current(items: list[dict], wait: float = 0.0) -> dict:

@@ -38,7 +38,7 @@
       "urgency_changed": 0,
       "duplicate_changed": 9,
       "fake_action_changed": 4,
-      "queue_tau_b": 0.637,
+      "queue_tau_b": 0.63,
       "queue_compared": 43
     },
     {
@@ -50,7 +50,7 @@
       "urgency_changed": 0,
       "duplicate_changed": 0,
       "fake_action_changed": 0,
-      "queue_tau_b": 0.969,
+      "queue_tau_b": 0.982,
       "queue_compared": 43
     },
     {
@@ -86,7 +86,7 @@
       "urgency_changed": 0,
       "duplicate_changed": 0,
       "fake_action_changed": 0,
-      "queue_tau_b": 0.358,
+      "queue_tau_b": 0.364,
       "queue_compared": 43
     }
   ],
@@ -104,5 +104,5 @@
     "The tech team's live switches are ignored here: this measures the design, not today's settings.",
     "Intake bot + Emergency check, and Urgency + Prioritisation, are switched off as pairs because each calls the other inside its owner's code."
   ],
-  "measured_at": "2026-10-19T03:31:38-04:00"
+  "measured_at": "2026-10-20T09:13:15-04:00"
 }

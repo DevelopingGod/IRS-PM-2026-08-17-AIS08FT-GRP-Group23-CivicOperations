@@ -12,6 +12,7 @@ Config comes only from environment variables, so it deploys unchanged.
 from __future__ import annotations
 
 import contextlib
+import json
 import io
 import os
 import threading
@@ -279,6 +280,23 @@ def approve_route(body: RouteIn, u: dict = Depends(staff)):
         raise HTTPException(400, str(e))
 
 
+@app.get("/api/map/streets")
+def map_streets(south: float, west: float, north: float, east: float, u: dict = Depends(role("staff", "crew", "tech"))):
+    """Real streets for a zoomed map window, from the NYC road network. Windows larger than a borough are refused."""
+    if not (0 < north - south <= 0.35 and 0 < east - west <= 0.45):
+        raise HTTPException(400, "Zoom in to a borough or smaller to see streets.")
+    from . import maps
+    return maps.streets(south, west, north, east)
+
+
+@app.post("/api/staff/requests/{rid}/unassign")
+def unassign(rid: str, u: dict = Depends(staff)):
+    try:
+        return jsonable(service.unassign(rid, u["id"]))
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+
+
 @app.post("/api/staff/plan/approve-all")
 def approve_all_routes(u: dict = Depends(staff)):
     try:
@@ -451,4 +469,6 @@ def all_crews(u: dict = Depends(tech)):
 
 @app.get("/api/tech/system")
 def system(u: dict = Depends(tech)):
-    return jsonable({"backlog": backlog.status(), "pins": service.pins()})
+    cards = data.REF / "experiment_cards.json"      # built by 06_Workspace_Tools/build_experiment_cards.py
+    experiments = json.loads(cards.read_text(encoding="utf-8")) if cards.exists() else []
+    return jsonable({"backlog": backlog.status(), "pins": service.pins(), "experiments": experiments})

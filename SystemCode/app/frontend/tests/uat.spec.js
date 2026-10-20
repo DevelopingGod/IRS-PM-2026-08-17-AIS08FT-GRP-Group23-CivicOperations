@@ -233,8 +233,8 @@ test('staff: every headline number filters and stays visible, the drawer, notes'
   await expect(drawer).toContainText('Checked by the UAT run')
   await drawer.getByRole('button', { name: 'Close' }).click()
   await expect(drawer).toBeHidden()
-  await page.getByLabel('Search the queue').fill('Pothole')
-  await expect(page.locator('.queue-item').first()).toContainText('Pothole')
+  await page.getByLabel('Search the queue').fill('Noise')        // the real backlog always has noise reports
+  await expect(page.locator('.queue-item').first()).toContainText('Noise')
 })
 
 test('staff: a dot on the map opens its request', async ({ page }) => {
@@ -271,20 +271,23 @@ test('staff: busy day alerts for a recorded storm', async ({ page }) => {
   await audit(page, 'busy day alerts')
 })
 
-test('staff: Crew deployment proposes routes on the road map, and approving one sends it', async ({ page }) => {
+test('staff: crews get their routes automatically, shown on a street map, and a job can be pulled back', async ({ page }, info) => {
   await workSignIn(page, 'staff')
-  await page.getByRole('tab', { name: /Crew plan/ }).click()
-  await expect(page.locator('.kpi', { hasText: 'Stops planned' })).toBeVisible({ timeout: 40_000 })
-  await expect(page.getByText('A proposal.')).toBeVisible()
-  await audit(page, 'crew plan')
-  const first = page.locator('.job').first()
+  await page.getByRole('tab', { name: /Crew routes/ }).click()
+  await expect(page.locator('.kpi', { hasText: 'Jobs with a crew' })).toBeVisible({ timeout: 40_000 })
+  await expect(page.getByText('Assigned automatically.')).toBeVisible()
+  await audit(page, 'crew routes')
+  const first = page.locator('.job').filter({ hasText: 'sent to the crew' }).first()
+  await expect(first).toBeVisible({ timeout: 40_000 })
   const crewId = (await first.locator('.plate').first().textContent()).trim()
   await first.locator('.jobhead').click()
-  await expect(first.locator('.citymap .road').first()).toBeAttached({ timeout: 10_000 })
-  await expect(first.locator('.stoplist li').first()).toContainText('About')
-  await audit(page, 'crew plan, a route open')
-  await first.getByRole('button', { name: /Approve this route/ }).click()
-  await expect(page.locator('.toast').last()).toContainText(`sent to ${crewId}`)
+  await expect(first.locator('.citymap.zoomed')).toBeVisible()
+  await expect(first.locator('.citymap .street').first()).toBeAttached({ timeout: 15_000 })
+  await expect(first.locator('.citymap .depotc')).toBeAttached()
+  await audit(page, 'crew routes, a route open on its streets')
+  if (info.project.name !== 'desktop') return          // keep the jobs for the other screen sizes' tests
+  await first.getByRole('button', { name: 'Pull back' }).first().click()
+  await expect(page.locator('.toast').last()).toContainText(`pulled back from ${crewId}`)
 })
 
 // ------------------------------------------------------------------ crews
@@ -349,7 +352,11 @@ test('tech: create an account, see its PIN once, give a new PIN, switch it off',
   await expect(row).toContainText('Off')
   await audit(page, 'accounts')
   await page.getByRole('tab', { name: /System/ }).click()
-  await expect(page.locator('main')).toContainText('real NYC 311 requests')
+  await expect(page.locator('main')).toContainText('How each component was chosen')
+  const card = page.locator('.expcard').first()
+  await card.getByRole('button', { name: 'Show every method compared' }).click()
+  await expect(card.locator('.explist li.shipped').first()).toBeVisible()
+  await page.mouse.move(0, 0)            // the button's hover shine is clipped, but would count as overflow
   await audit(page, 'system')
 })
 
@@ -376,18 +383,20 @@ test('staff: each card says why the AI ranked it, and a school can be confirmed'
   await audit(page, 'request drawer, impact confirmed')
 })
 
-test('staff: approve all routes asks first, then sends every route', async ({ page }, info) => {
+test('staff: the queue map zooms into a borough with its real streets', async ({ page }) => {
   await workSignIn(page, 'staff')
-  await page.getByRole('tab', { name: /Crew plan/ }).click()
-  await page.getByRole('button', { name: 'Approve all routes' }).click({ timeout: 40_000 })
-  const ask = page.getByRole('dialog')
-  await expect(ask).toContainText(/Send \d+ stops to \d+ crews\?/)
-  await audit(page, 'approve all routes, asked')
-  if (info.project.name !== 'desktop') {           // keep routes for the other screen sizes' tests
-    await ask.getByRole('button', { name: 'Cancel' }).click()
-    await expect(ask).toBeHidden()
-    return
-  }
-  await ask.getByRole('button', { name: 'Yes, approve all' }).click()
-  await expect(page.locator('.toast').last()).toContainText(/stops sent to \d+ crews/)
+  await expect(page.locator('.queue-item').first()).toBeVisible({ timeout: 30_000 })
+  await page.locator('.mapzoom').getByRole('button', { name: 'Brooklyn' }).click()
+  await expect(page.locator('.mapcard .citymap.zoomed')).toBeVisible()
+  await expect(page.locator('.mapcard .citymap .street').first()).toBeAttached({ timeout: 15_000 })
+  await audit(page, 'queue map, Brooklyn')
+  await page.locator('.mapzoom').getByRole('button', { name: 'All of NYC' }).click()
+  await expect(page.locator('.mapcard .citymap.zoomed')).toHaveCount(0)
+})
+
+test('everyone: the Features page says what the product does', async ({ page }) => {
+  await page.goto('/#/features')
+  await expect(page.locator('main')).toContainText('The twelve components')
+  await expect(page.locator('.part')).toHaveCount(12)
+  await audit(page, 'features')
 })

@@ -7,6 +7,7 @@
   py -m app.backend.manage list-users
   py -m app.backend.manage import-backlog --count 150
   py -m app.backend.manage team-accounts > credentials.txt   (one tech, one staff, and the crews with a route)
+  py -m app.backend.manage demo-accounts      (the fixed demo IDs and PINs in demo_accounts.local.json, kept off git)
   py -m app.backend.manage reset --yes        (empties every request; accounts are kept)
 
 The first tech account has to come from here; after that the tech portal creates the others.
@@ -38,6 +39,8 @@ def main(argv: list[str] | None = None) -> int:
     ib.add_argument("--force", action="store_true")
     ta = sub.add_parser("team-accounts")
     ta.add_argument("--crews", type=int, default=6)
+    da = sub.add_parser("demo-accounts")
+    da.add_argument("--file", default="demo_accounts.local.json", help="the file with the fixed accounts, or - to read it from standard input")
     rs = sub.add_parser("reset")
     rs.add_argument("--yes", action="store_true")
     a = p.parse_args(argv)
@@ -68,6 +71,8 @@ def main(argv: list[str] | None = None) -> int:
                   "recorded requests, replayed so each borough's newest is a few minutes old.")
         elif a.cmd == "team-accounts":
             team_accounts(a.crews)
+        elif a.cmd == "demo-accounts":
+            demo_accounts(a.file)
         elif a.cmd == "reset":
             if not a.yes:
                 print("This empties every request, job and outcome. Run again with --yes to confirm.")
@@ -99,6 +104,31 @@ def team_accounts(crews: int) -> None:
         print(f"{u['role']:<6} {u['user_id']:<16} {u['pin']:<7} {u['crew_id'] or ''}")
     if routed:
         print("\nTo see a crew's stops: as staff, open Crew plan and approve that crew's route, then sign in as the crew.")
+
+
+def demo_accounts(path: str) -> None:
+    """The same IDs and PINs every time, so a demo can be rehearsed and run from one sheet.
+    The first run writes the file with new PINs; later runs, here or in Docker, reuse it."""
+    import json
+    import secrets
+    from pathlib import Path
+    if path == "-":
+        spec = json.load(sys.stdin)
+    else:
+        f = Path(path)
+        if not f.exists():
+            pin = lambda: f"{secrets.randbelow(10 ** 6):06d}"
+            spec = {"note": "Fixed demo accounts. Keep this file private: it is not in git.",
+                    "accounts": [{"user_id": "TEC-DEMO-0001", "role": "tech", "name": "Tech lead", "pin": pin()},
+                                 {"user_id": "STF-DEMO-0001", "role": "staff", "name": "Dispatcher", "pin": pin()}]
+                    + [{"user_id": f"CRW-DEMO-{n:04d}", "role": "crew", "name": f"Crew CRW-DOT-{n:03d}",
+                        "crew_id": f"CRW-DOT-{n:03d}", "pin": pin()} for n in range(27, 33)]}
+            f.write_text(json.dumps(spec, indent=2) + "\n", encoding="utf-8")
+            print(f"Wrote {f} with new PINs.")
+        spec = json.loads(f.read_text(encoding="utf-8"))
+    for u in spec["accounts"]:
+        accounts.set_fixed(u["user_id"], u["role"], u["name"], str(u["pin"]), "command line", u.get("crew_id"))
+    print(f"{len(spec['accounts'])} demo accounts are ready. Their IDs and PINs are in the file.")
 
 
 if __name__ == "__main__":

@@ -186,6 +186,24 @@ def create_user(role: str, name: str, created_by: str, crew_id: str | None = Non
     return {"user_id": uid, "role": role, "name": name, "crew_id": crew_id, "pin": pin}
 
 
+def set_fixed(user_id: str, role: str, name: str, pin: str, created_by: str, crew_id: str | None = None) -> dict:
+    """An account with an ID and PIN chosen beforehand, for a rehearsed demo. Made again with the
+    same values it only refreshes them. Never used by the portals, only by the command line."""
+    uid = normalise_id(user_id)
+    if role not in ("staff", "crew", "tech") or not uid.startswith(PREFIX[role] + "-"):
+        raise AuthError(f"{user_id}: a {role} ID starts with {PREFIX.get(role, '?')}-.")
+    if not (pin.isdigit() and len(pin) == 6):
+        raise AuthError(f"{uid}: the PIN must be 6 digits.")
+    if role == "crew" and crew_id not in data.crews():
+        raise AuthError(f"{uid}: no crew {crew_id}.")
+    with db.conn() as c:
+        c.execute("insert into users (id, role, pin_hash, name, crew_id, created_at, created_by) values (?,?,?,?,?,?,?) "
+                  "on conflict(id) do update set role = excluded.role, pin_hash = excluded.pin_hash, name = excluded.name, "
+                  "crew_id = excluded.crew_id, failed = 0, locked_until = null",
+                  (uid, role, _pin_hash(pin), name, crew_id if role == "crew" else None, _iso(_now()), created_by))
+    return {"user_id": uid, "role": role, "name": name, "crew_id": crew_id, "pin": pin}
+
+
 def reset_pin(user_id: str, by: str) -> dict:
     uid = normalise_id(user_id)
     pin = f"{secrets.randbelow(10 ** 6):06d}"

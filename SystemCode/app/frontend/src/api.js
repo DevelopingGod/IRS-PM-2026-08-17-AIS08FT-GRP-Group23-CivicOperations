@@ -60,6 +60,7 @@ export const api = {
   detail: (id) => call(`/api/staff/requests/${q(id)}`),
   crews: (agency, borough) => call(`/api/staff/crews?agency=${q(agency || '')}&borough=${q(borough || '')}`),
   assign: (id, crew_id) => post(`/api/staff/requests/${q(id)}/assign`, { crew_id }),
+  unassign: (id) => post(`/api/staff/requests/${q(id)}/unassign`),
   approveEscalation: (id) => post(`/api/staff/requests/${q(id)}/approve-escalation`),
   plan: (wait) => call(`/api/staff/plan?wait=${wait || 0}`),
   approveRoute: (crew_id, request_ids) => post('/api/staff/plan/approve', { crew_id, request_ids }),
@@ -69,6 +70,7 @@ export const api = {
   ask: (question) => post('/api/staff/ask', { question }),
   alerts: (borough, day) => call(`/api/staff/alerts?borough=${q(borough)}${day ? `&day=${q(day)}` : ''}`),
   stormDays: (borough) => call(`/api/staff/storm-days?borough=${q(borough)}`),
+  streets: (b) => call(`/api/map/streets?south=${b.south}&west=${b.west}&north=${b.north}&east=${b.east}`),
   // crew
   crewJobs: () => call('/api/crew/jobs'),
   close: (id, outcome) => post(`/api/crew/jobs/${q(id)}/close`, { outcome }),

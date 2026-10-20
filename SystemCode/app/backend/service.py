@@ -557,6 +557,9 @@ def detail(rid: str) -> dict | None:
     if q:
         q["tracker"] = tracker(rid)
         q["status"] = _status_of(rid)
+        with db.conn() as c:
+            job = c.execute("select crew_id, assigned_at from crew_jobs where request_id = ? and outcome is null", (rid,)).fetchone()
+        q["crew_job"] = dict(job) if job else None
     return q
 
 
@@ -571,7 +574,28 @@ def assign(rid: str, crew_id: str, by: str, at: datetime | None = None) -> dict:
         c.execute("insert or replace into crew_jobs values (?,?,?,?,?)",
                   (rid, crew_id, _iso(at or data.now_new_york()), None, None))
         c.execute("update requests set status = 'ASSIGNED' where id = ?", (rid,))
+    if by != dispatch.NAME:
+        q = db.load_json("requests", rid) or {}
+        if q.pop("dispatch_hold", None):
+            _save(rid, q)
     add_note(rid, by, f"Assigned to {crew_id}")
+    return tracker(rid)
+
+
+def unassign(rid: str, by: str) -> dict:
+    """Staff pull a job back from its crew. It is held from automatic assignment until a person
+    assigns it again, so Crew deployment does not simply give it back."""
+    with db.conn() as c:
+        job = c.execute("select crew_id, outcome from crew_jobs where request_id = ?", (rid,)).fetchone()
+    if not job or job["outcome"]:
+        raise ValueError("This request has no open crew job.")
+    with db.conn() as c:
+        c.execute("delete from crew_jobs where request_id = ?", (rid,))
+        c.execute("update requests set status = 'OPEN' where id = ?", (rid,))
+    q = db.load_json("requests", rid) or {}
+    q["dispatch_hold"] = True
+    _save(rid, q)
+    add_note(rid, by, f"Pulled back from {job['crew_id']}")
     return tracker(rid)
 
 
@@ -621,14 +645,28 @@ def crew_jobs(crew_id: str) -> dict:
     route = next((c for c in (planned.get("plan") or {}).get("crews", []) if c["crew_id"] == crew_id), None)
     jobs = [tracker(i) for i in ids]
     if planned.get("outcome") == LIVE and planned.get("plan"):
-        source = "Crew deployment and route optimisation, in the order city staff approved"
+        source = "Crew deployment and route optimisation, assigned automatically in route order"
     else:
         order = {q["request_id"]: q.get("queue_position") or 999 for q in items}
         jobs.sort(key=lambda t: order.get(t["request_id"], 999))
         source = "The ranked queue (Crew deployment is " + ("switched off)" if planned.get("outcome") == OFF else "not available)")
-    return {"crew": data.crews().get(crew_id), "jobs": jobs, "order_source": source,
+    crew = data.crews().get(crew_id) or {}
+    now = data.now_new_york()
+    where = dispatch._positions(now).get(crew_id)
+    with db.conn() as c:
+        rows = c.execute("select j.request_id, r.data from crew_jobs j join requests r on r.id = j.request_id "
+                         "where j.crew_id = ? and j.closed_at like ? order by j.closed_at",
+                         (crew_id, f"{now.strftime('%Y-%m-%d')}%")).fetchall()
+    done = [{"request_id": r["request_id"], "lat": (json.loads(r["data"]).get("slots") or {}).get("latitude"),
+             "lon": (json.loads(r["data"]).get("slots") or {}).get("longitude"),
+             "address": (json.loads(r["data"]).get("slots") or {}).get("incident_address")} for r in rows]
+    return {"crew": crew, "jobs": jobs, "order_source": source,
             "roads": (route or {}).get("roads", []), "proposed_next": (route or {}).get("stops", []),
-            "duty_end": (route or {}).get("duty_end")}
+            "duty_end": (route or {}).get("duty_end"),
+            "done_today": done,
+            "depot": {"lat": crew.get("depot_lat"), "lon": crew.get("depot_lon")},
+            "position": {"lat": where[0], "lon": where[1]} if where else
+                        {"lat": crew.get("depot_lat"), "lon": crew.get("depot_lon")}}
 
 
 CREW_OUTCOMES = ("VALID_RESOLVED", "SUBSIDED", "INVALID_NOT_FOUND", "NO_ACCESS", "WRONG_AGENCY")

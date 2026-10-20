@@ -25,7 +25,7 @@ service, and the tech team can switch any component off and measure the effect.
 
 | Official Full Name | Student ID | Work Items (Who Did What) |
 | :--- | :---: | :--- |
-| Khalid Alhazmi | A0361128J | Urgency (forward chaining rules over hazard knowledge bases) and Prioritisation (weighted multi criteria ranking with ageing, the official NYC SLA table and duplicate rules), and an urgency learning experiment across four model families |
+| Khalid Alhazmi | A0361128J | Urgency (forward chaining rules over hazard knowledge bases) and Prioritisation (weighted multi criteria ranking with ageing, the official NYC SLA table and duplicate rules), the Prioritisation guardrails (starvation floor, ageing, holds, approval only escalation), and an urgency learning experiment across four model families |
 | Mohammad Alharthi | A0354097W | Agency and skill routing, External factors (OpenStreetMap proximity) and Crew deployment and route optimisation (genetic algorithm with A* routing), each with its own research report and tests, the GPU run of the language model experiments and the independent label check |
 | Nabeel Taresh | A0352296X | Duplicate detection (evidence hybrid matcher), Fake request detection (calibrated rules and logistic regression) and Admin questions (natural language questions over the live queue), and the first data flow diagram |
 | Indish Sankalp Sandeep | A0351383E | Intake bot, Emergency check, Credibility and escalation and Predictive alerting, the data pipeline, the component specification, the application (backend, four portals, integration of all twelve components, Docker), testing, measurement and the group report |
@@ -44,9 +44,9 @@ Links to the two videos are added here when they are uploaded.
 
 ### To run the system on any computer with Docker
 
-> git clone https://github.com/DevelopingGod/IRS-PM-2026-08-17-AIS08FT-GRP-Group23-CivicOperations
+> git clone https://github.com/DevelopingGod/IRS-PM-2026-08-17-AIS08FT-GRP-MANTIS-CivicOperations
 
-> cd IRS-PM-2026-08-17-AIS08FT-GRP-Group23-CivicOperations/SystemCode
+> cd IRS-PM-2026-08-17-AIS08FT-GRP-MANTIS-CivicOperations/SystemCode
 
 > docker compose up --build -d
 

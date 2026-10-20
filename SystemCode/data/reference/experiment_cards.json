@@ -1,0 +1,440 @@
+[
+  {
+    "component": "Intake bot",
+    "owner": "Sankalp",
+    "methods_compared": 6,
+    "runs": 64,
+    "test_set": "308 hand written messages, two slices",
+    "shipped": "MiniLM embeddings + logistic regression",
+    "headline": "macro F1 0.854",
+    "methods": [
+      {
+        "method": "Keyword rules (baseline)",
+        "runs": 1,
+        "result": "macro F1 0.543, the floor everything else has to beat",
+        "shipped": false
+      },
+      {
+        "method": "TF IDF with a linear SVM",
+        "runs": 4,
+        "result": "macro F1 0.733 best, purely lexical, no sense of meaning",
+        "shipped": false
+      },
+      {
+        "method": "MiniLM embeddings + logistic regression",
+        "runs": 28,
+        "result": "macro F1 0.854",
+        "shipped": true
+      },
+      {
+        "method": "DistilBERT fine tuned",
+        "runs": 27,
+        "result": "macro F1 0.811 mean, best validation score, worst gold score",
+        "shipped": false
+      },
+      {
+        "method": "RoBERTa fine tuned",
+        "runs": 4,
+        "result": "macro F1 0.808 best, no better than DistilBERT for twice the size",
+        "shipped": false
+      },
+      {
+        "method": "DeBERTa v3 small",
+        "runs": 0,
+        "result": "skipped: sentencepiece was missing on the GPU machine",
+        "shipped": false
+      }
+    ],
+    "source": "03_Research/evidence/00_register"
+  },
+  {
+    "component": "Intake bot (address and time)",
+    "owner": "Sankalp",
+    "methods_compared": 3,
+    "runs": 4,
+    "test_set": "308 messages marked by hand",
+    "shipped": "DistilBERT word tagger, labels repaired and gold spans hand labelled",
+    "headline": "span F1 0.723 on location and time, 0.984 on the synthetic split",
+    "methods": [
+      {
+        "method": "Regex patterns (the original)",
+        "runs": 1,
+        "result": "span F1 0.434 on location and time, the floor to beat",
+        "shipped": false
+      },
+      {
+        "method": "DistilBERT word tagger, on the original labels",
+        "runs": 2,
+        "result": "span F1 0.999, on template text, so it measured nothing",
+        "shipped": false
+      },
+      {
+        "method": "DistilBERT word tagger, labels repaired and gold spans hand labelled",
+        "runs": 1,
+        "result": "span F1 0.723 on location and time, 0.984 on the synthetic split",
+        "shipped": true
+      }
+    ],
+    "source": "03_Research/evidence/00_register"
+  },
+  {
+    "component": "Emergency check",
+    "owner": "Sankalp",
+    "methods_compared": 2,
+    "runs": 18,
+    "test_set": "Hand written emergency and look alike lines",
+    "shipped": "TF IDF with logistic regression",
+    "headline": "recall 1.000 at 0.45",
+    "methods": [
+      {
+        "method": "Weighted lexicon with negation",
+        "runs": 2,
+        "result": "recall 0.737 alone",
+        "shipped": false
+      },
+      {
+        "method": "TF IDF with logistic regression",
+        "runs": 16,
+        "result": "recall 1.000 at 0.45",
+        "shipped": true
+      }
+    ],
+    "source": "03_Research/evidence/00_register"
+  },
+  {
+    "component": "Credibility and escalation",
+    "owner": "Sankalp",
+    "methods_compared": 2,
+    "runs": 2,
+    "test_set": "1,121 synthetic reporters with hidden honesty",
+    "shipped": "Decaying Beta, centred on the base rate for the types reported",
+    "headline": "Spearman 0.926, unfairness 2.2",
+    "methods": [
+      {
+        "method": "Decaying Beta, fixed neutral prior",
+        "runs": 1,
+        "result": "unfair by 4.0 points across report types",
+        "shipped": false
+      },
+      {
+        "method": "Decaying Beta, centred on the base rate for the types reported",
+        "runs": 1,
+        "result": "Spearman 0.926, unfairness 2.2",
+        "shipped": true
+      }
+    ],
+    "source": "03_Research/evidence/00_register"
+  },
+  {
+    "component": "Predictive alerting",
+    "owner": "Sankalp",
+    "methods_compared": 3,
+    "runs": 19,
+    "test_set": "Daily demand with weather, held out days",
+    "shipped": "Gradient boosting with a Poisson loss",
+    "headline": "MAE 60.4, storm 73.7",
+    "methods": [
+      {
+        "method": "Weekday and season baseline, no weather",
+        "runs": 1,
+        "result": "MAE 72.3, the honest floor",
+        "shipped": false
+      },
+      {
+        "method": "Poisson regression with weather",
+        "runs": 1,
+        "result": "MAE 83.1, WORSE than using no weather",
+        "shipped": false
+      },
+      {
+        "method": "Gradient boosting with a Poisson loss",
+        "runs": 17,
+        "result": "MAE 60.4, storm 73.7",
+        "shipped": true
+      }
+    ],
+    "source": "03_Research/evidence/00_register"
+  },
+  {
+    "component": "Duplicate detection",
+    "owner": "Nabeel",
+    "methods_compared": 7,
+    "runs": 222,
+    "test_set": "295 real pairs checked by hand",
+    "shipped": "Hybrid evidence (BBL + radius + fuzzy + graph)",
+    "headline": ": 25 m / 6 h + per-type table, F1 0.92 hand, 0.76 Feb silver",
+    "methods": [
+      {
+        "method": "Exact BBL + type key",
+        "runs": 1,
+        "result": "F1 0.93, false merge 0.08 on 295 hand pairs",
+        "shipped": false
+      },
+      {
+        "method": "Radius + time window (150 m / 48 h)",
+        "runs": 1,
+        "result": "F1 0.69, false merge 0.48, 150 m is too wide",
+        "shipped": false
+      },
+      {
+        "method": "Fuzzy address (SequenceMatcher)",
+        "runs": 1,
+        "result": "F1 0.69, only helps weak-location rows (synthetic test)",
+        "shipped": false
+      },
+      {
+        "method": "DBSCAN in metres + scaled hours",
+        "runs": 1,
+        "result": "F1 0.65",
+        "shipped": false
+      },
+      {
+        "method": "HDBSCAN, min_cluster_size 2",
+        "runs": 1,
+        "result": "F1 0.69, crash on many candidates fixed",
+        "shipped": false
+      },
+      {
+        "method": "NetworkX connected components",
+        "runs": 1,
+        "result": "F1 0.69, transitivity chains over-merge",
+        "shipped": false
+      },
+      {
+        "method": "Hybrid evidence (BBL + radius + fuzzy + graph)",
+        "runs": 216,
+        "result": ": 25 m / 6 h + per-type table, F1 0.92 hand, 0.76 Feb silver",
+        "shipped": true
+      }
+    ],
+    "source": "03_Research/evidence/00_register"
+  },
+  {
+    "component": "Fake request detection",
+    "owner": "Nabeel",
+    "methods_compared": 4,
+    "runs": 5,
+    "test_set": "5,390 held out real requests",
+    "shipped": "Hybrid rules + logreg",
+    "headline": "AUC 0.613 / Brier 0.237,, cold-start floor",
+    "methods": [
+      {
+        "method": "Rules (type base rate, burst, corroboration)",
+        "runs": 1,
+        "result": "AUC 0.573 / Brier 0.247 on real test",
+        "shipped": false
+      },
+      {
+        "method": "Calibrated logistic regression",
+        "runs": 1,
+        "result": "AUC 0.629 / Brier 0.236",
+        "shipped": false
+      },
+      {
+        "method": "Histogram gradient boosting",
+        "runs": 1,
+        "result": "AUC 0.633 / Brier 0.233, first-time FPR 0.85",
+        "shipped": false
+      },
+      {
+        "method": "Hybrid rules + logreg",
+        "runs": 2,
+        "result": "AUC 0.613 / Brier 0.237,, cold-start floor",
+        "shipped": true
+      }
+    ],
+    "source": "03_Research/evidence/00_register"
+  },
+  {
+    "component": "Admin questions",
+    "owner": "Nabeel",
+    "methods_compared": 3,
+    "runs": 6,
+    "test_set": "74 gold questions written before any strategy ran",
+    "shipped": "Hybrid: intent rules with a TF IDF classifier fallback",
+    "headline": "Intent accuracy 0.959, every answer grounded, 12 of 12 unsafe requests refused, 3.6 ms",
+    "methods": [
+      {
+        "method": "Intent rules",
+        "runs": 2,
+        "result": "intent accuracy 0.959",
+        "shipped": false
+      },
+      {
+        "method": "TF IDF and logistic regression intent",
+        "runs": 2,
+        "result": "intent accuracy 0.932",
+        "shipped": false
+      },
+      {
+        "method": "Hybrid, rules then the classifier",
+        "runs": 2,
+        "result": "intent accuracy 0.959, safety 12 of 12",
+        "shipped": true
+      }
+    ],
+    "source": "components/admin_questions/docs/RESULTS.md"
+  },
+  {
+    "component": "Agency and skill routing",
+    "owner": "Mohammad",
+    "methods_compared": 4,
+    "runs": 4,
+    "test_set": "49,558 historical NYC 311 records",
+    "shipped": "Catalog rules plus a referral advisory",
+    "headline": "Catalog agency matched history in 99.996% of records, learned classifiers changed 0 assignments",
+    "methods": [
+      {
+        "method": "Catalog lookup by request type",
+        "runs": 1,
+        "result": "99.996% agreement with history",
+        "shipped": true
+      },
+      {
+        "method": "Majority classifier per code",
+        "runs": 1,
+        "result": "0 assignments changed",
+        "shipped": false
+      },
+      {
+        "method": "Majority classifier per code and borough",
+        "runs": 1,
+        "result": "0 assignments changed",
+        "shipped": false
+      },
+      {
+        "method": "Referral advisory learned from training data",
+        "runs": 1,
+        "result": "503 of 1,164 referrals in 3 codes",
+        "shipped": true
+      }
+    ],
+    "source": "components/agency_and_skill_routing/reports"
+  },
+  {
+    "component": "External factors",
+    "owner": "Mohammad",
+    "methods_compared": 2,
+    "runs": 5,
+    "test_set": "Historical requests and 4,445 OpenStreetMap facilities, train, validation and holdout",
+    "shipped": "Pure distance rule, 100 m, all six core facility categories",
+    "headline": "27.3% of requests flagged, 2.5% returned as unknown, 90 of 90 tests, 0.14 ms",
+    "methods": [
+      {
+        "method": "Pure distance rule",
+        "runs": 3,
+        "result": "100 m chosen under a protocol declared before testing",
+        "shipped": true
+      },
+      {
+        "method": "Context aware gating",
+        "runs": 2,
+        "result": "available as an option, not the default",
+        "shipped": false
+      }
+    ],
+    "source": "components/external_factors/reports"
+  },
+  {
+    "component": "Urgency",
+    "owner": "Khalid",
+    "methods_compared": 5,
+    "runs": 5,
+    "test_set": "672,041 policy labelled rows",
+    "shipped": "Forward chaining rules over hazard knowledge bases",
+    "headline": "Learned models reached macro F1 up to 1.000 by imitating the labelling policy, so the explainable rules ship",
+    "methods": [
+      {
+        "method": "Majority baseline",
+        "runs": 1,
+        "result": "macro F1 0.281",
+        "shipped": false
+      },
+      {
+        "method": "Logistic regression",
+        "runs": 1,
+        "result": "macro F1 0.993",
+        "shipped": false
+      },
+      {
+        "method": "Multinomial naive Bayes",
+        "runs": 1,
+        "result": "macro F1 0.988",
+        "shipped": false
+      },
+      {
+        "method": "Linear SVM",
+        "runs": 1,
+        "result": "macro F1 1.000",
+        "shipped": false
+      },
+      {
+        "method": "Random forest",
+        "runs": 1,
+        "result": "macro F1 1.000",
+        "shipped": false
+      }
+    ],
+    "source": "models/c10_comparison.json"
+  },
+  {
+    "component": "Prioritisation",
+    "owner": "Khalid",
+    "methods_compared": 1,
+    "runs": 15,
+    "test_set": "15 behaviour tests",
+    "shipped": "Weighted score with SLA, waiting time, escalation, sensitive sites, reporters and ageing guardrails",
+    "headline": "All 15 tests pass, every request type has an SLA target, switching it off reshuffles the queue most (tau b 0.36)",
+    "methods": [
+      {
+        "method": "Weighted multi criteria score with guardrails",
+        "runs": 15,
+        "result": "15 of 15 behaviour tests",
+        "shipped": true
+      }
+    ],
+    "source": "components/urgency_and_prioritisation"
+  },
+  {
+    "component": "Crew deployment and routing",
+    "owner": "Mohammad",
+    "methods_compared": 5,
+    "runs": 1310,
+    "test_set": "50 held out episodes x 5 rosters x 5 seeds, 60 small exact cases, 500 routing pairs",
+    "shipped": "Genetic algorithm with A* routing (ALT landmarks)",
+    "headline": "9 to 18% more requests served and 38 to 48% less travel than rank first greedy, optimal on 60 of 60 small cases",
+    "methods": [
+      {
+        "method": "Rank first greedy",
+        "runs": 250,
+        "result": "the baseline",
+        "shipped": false
+      },
+      {
+        "method": "Travel aware greedy",
+        "runs": 250,
+        "result": "least travel, breaks priority order",
+        "shipped": false
+      },
+      {
+        "method": "Genetic algorithm",
+        "runs": 1250,
+        "result": "best coverage with priority kept",
+        "shipped": true
+      },
+      {
+        "method": "Exact solver",
+        "runs": 60,
+        "result": "the optimum on small cases, GA matched 60 of 60",
+        "shipped": false
+      },
+      {
+        "method": "Warm start insertion for replanning",
+        "runs": 50,
+        "result": "rolling replans 7.6% less travel",
+        "shipped": true
+      }
+    ],
+    "source": "components/crew_deployment_and_routing/research/results.md"
+  }
+]

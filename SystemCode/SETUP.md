@@ -22,7 +22,7 @@ git clone https://github.com/DevelopingGod/IRS-Project-2026-KIMS.git
 ```
 
 ```bash
-cd IRS-PM-2026-08-17-AIS08FT-GRP-Group23-CivicOperations/SystemCode
+cd IRS-PM-2026-08-17-AIS08FT-GRP-MANTIS-CivicOperations/SystemCode
 ```
 
 Every command below runs inside `SystemCode`, the folder that holds the app.

@@ -2,6 +2,7 @@
 // street sign plates name the problem, subway bullets mark places in a line, the subway
 // line shows progress, and a MetroCard holds the reference. Everything else stays calm.
 import { useEffect, useMemo, useState } from 'react'
+import { api } from './api.js'
 import { BOROUGHS, VIEW, project } from './nycOutline.js'
 
 export const FAMILIES = {
@@ -119,36 +120,91 @@ export function Journey({ steps, delay = 420 }) {
  * real latitude and longitude. A route is drawn as an animated line with the place names:
  * along the real roads when Crew deployment planned it, otherwise straight from stop to stop.
  */
-export function CityMap({ points = [], route = [], roads = [], selected, onPick, label = 'Map of New York City', compact }) {
+// Each borough's own window, for zooming the map in. South, west, north, east in degrees.
+export const BOROUGH_BOXES = {
+  MANHATTAN: { south: 40.698, west: -74.03, north: 40.882, east: -73.905 },
+  BROOKLYN: { south: 40.568, west: -74.045, north: 40.74, east: -73.83 },
+  QUEENS: { south: 40.54, west: -73.965, north: 40.805, east: -73.70 },
+  BRONX: { south: 40.785, west: -73.935, north: 40.917, east: -73.765 },
+  'STATEN ISLAND': { south: 40.495, west: -74.26, north: 40.652, east: -74.05 },
+}
+
+// A window around a set of places, with a margin, never smaller than a few streets.
+export function boxAround(places, pad = 0.012) {
+  const ok = places.filter((p) => p && p.lat != null && p.lon != null)
+  if (!ok.length) return null
+  const lats = ok.map((p) => +p.lat)
+  const lons = ok.map((p) => +p.lon)
+  const grow = (lo, hi, min) => (hi - lo < min ? [(lo + hi) / 2 - min / 2, (lo + hi) / 2 + min / 2] : [lo, hi])
+  const [south, north] = grow(Math.min(...lats) - pad, Math.max(...lats) + pad, 0.03)
+  const [west, east] = grow(Math.min(...lons) - pad, Math.max(...lons) + pad, 0.04)
+  return { south, west, north, east }
+}
+
+// The real streets inside a zoomed window, from the city's road network.
+function useStreets(box, on) {
+  const [streets, setStreets] = useState([])
+  const key = box && on ? [box.south, box.west, box.north, box.east].map((x) => x.toFixed(4)).join(',') : ''
+  useEffect(() => {
+    if (!key) { setStreets([]); return undefined }
+    let live = true
+    api.streets(box).then((r) => { if (live) setStreets(r) }).catch(() => { if (live) setStreets([]) })
+    return () => { live = false }
+  }, [key]) // eslint-disable-line react-hooks/exhaustive-deps
+  return streets
+}
+
+// The map. With `focus` it zooms to that window and, with `streets`, draws the real streets.
+// `start` marks where a crew set out from and `now` where it is as it works through its stops.
+export function CityMap({ points = [], route = [], roads = [], selected, onPick, label = 'Map of New York City', compact, focus, streets: wantStreets, start, now }) {
   const proj = useMemo(() => points
     .filter((p) => p.lat != null && p.lon != null)
     .map((p) => ({ ...p, xy: project(p.lat, p.lon) })), [points])
   const stops = useMemo(() => route.filter((p) => p.lat != null).map((p) => ({ ...p, xy: project(p.lat, p.lon) })), [route])
   const line = roads.length ? '' : stops.map((s) => s.xy.join(',')).join(' ')
   const drawn = useMemo(() => roads.map((r) => ({ ...r, d: r.points.map(([lon, lat]) => project(lat, lon).join(',')).join(' ') })), [roads])
-  const k = compact ? 2.2 : 1.5           // the drawing is 1000 wide and shown much smaller
+  const street = useStreets(focus, wantStreets)
+  const streetLines = useMemo(() => street.map((r) => ({ k: r.k, d: r.p.map(([lon, lat]) => project(lat, lon).join(',')).join(' ') })), [street])
+  // The window in drawing units, widened to the map's own shape so nothing is stretched.
+  const vb = useMemo(() => {
+    if (!focus) return [0, 0, VIEW.width, VIEW.height]
+    const [x0, y0] = project(focus.north, focus.west)
+    const [x1, y1] = project(focus.south, focus.east)
+    let x = x0, y = y0, w = x1 - x0, h = y1 - y0
+    const ratio = VIEW.width / VIEW.height
+    if (w / h < ratio) { const nw = h * ratio; x -= (nw - w) / 2; w = nw } else { const nh = w / ratio; y -= (nh - h) / 2; h = nh }
+    return [x, y, w, h]
+  }, [focus])
+  const s = vb[2] / VIEW.width                  // how far in we are: 1 is the whole city
+  const m = s * (focus ? 1.45 : 1)               // markers and labels a little larger when zoomed in
+  const k = compact ? 2.2 : 1.5
+  const at = (p) => (p && p.lat != null ? project(p.lat, p.lon) : null)
+  const startXY = at(start)
+  const nowXY = at(now)
+  const moved = startXY && nowXY && Math.hypot(startXY[0] - nowXY[0], startXY[1] - nowXY[1]) > 0.5 * s
   return (
-    <figure className={`citymap ${compact ? 'compact' : ''}`}>
-      <svg viewBox={`0 0 ${VIEW.width} ${VIEW.height}`} role="img" aria-label={label}>
+    <figure className={`citymap ${compact ? 'compact' : ''} ${focus ? 'zoomed' : ''}`}>
+      <svg viewBox={vb.join(' ')} role="img" aria-label={label}>
         <defs>
           <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
             <path d="M22 0H0V22" fill="none" stroke="var(--grid)" strokeWidth="1" />
           </pattern>
         </defs>
-        <rect width={VIEW.width} height={VIEW.height} fill="var(--water)" />
+        <rect x={vb[0] - 50} y={vb[1] - 50} width={vb[2] + 100} height={vb[3] + 100} fill="var(--water)" />
         {Object.entries(BOROUGHS).map(([name, b]) => (
           <g key={name}>
-            <path d={b.d} className="land" />
-            <path d={b.d} fill="url(#grid)" opacity=".7" />
-            {!compact && <text x={b.label[0]} y={b.label[1]} className="boro">{name}</text>}
+            <path d={b.d} className="land" vectorEffect="non-scaling-stroke" />
+            {!focus && <path d={b.d} fill="url(#grid)" opacity=".7" />}
+            {!compact && !focus && <text x={b.label[0]} y={b.label[1]} className="boro">{name}</text>}
           </g>
         ))}
-        {line && <polyline points={line} className="route" />}
-        {drawn.map((r, i) => <polyline key={i} points={r.d} pathLength="1" className={`road ${r.kind || 'leg'}`} style={{ '--i': i }} />)}
+        {streetLines.map((r, i) => <polyline key={i} points={r.d} className={`street k${r.k}`} vectorEffect="non-scaling-stroke" />)}
+        {line && <polyline points={line} className="route" vectorEffect="non-scaling-stroke" />}
+        {drawn.map((r, i) => <polyline key={i} points={r.d} pathLength="1" className={`road ${r.kind || 'leg'}`} style={{ '--i': i }} vectorEffect="non-scaling-stroke" />)}
         {proj.map((p, i) => (
           // The position is on the outer group; the inner one animates. A CSS transform on the
           // same element would replace the SVG translate and stack every dot in the corner.
-          <g key={p.id ?? `${p.lat}${p.lon}`} transform={`translate(${p.xy[0]} ${p.xy[1]})`}>
+          <g key={p.id ?? `${p.lat}${p.lon}`} transform={`translate(${p.xy[0]} ${p.xy[1]}) scale(${m})`}>
             <g className={`pt ${p.tone || 'grey'} ${p.pulse ? 'pulse' : ''} ${selected === p.id ? 'sel' : ''}`}
               style={{ '--i': Math.min(i, 40) }}
               onClick={onPick && p.id ? () => onPick(p.id) : undefined}
@@ -159,15 +215,30 @@ export function CityMap({ points = [], route = [], roads = [], selected, onPick,
             </g>
           </g>
         ))}
-        {stops.map((s, i) => (
-          <g key={s.id ?? i} transform={`translate(${s.xy[0]} ${s.xy[1]})`}>
-            <g className="stopmark" style={{ '--i': i }}>
+        {startXY && (
+          <g transform={`translate(${startXY[0]} ${startXY[1]}) scale(${m})`}>
+            <title>Where the crew started</title>
+            <rect x="-13" y="-13" width="26" height="26" rx="5" className="depotc" />
+            <text className="depotl" x="20" dy="6">Start</text>
+          </g>
+        )}
+        {stops.map((st, i) => (
+          <g key={st.id ?? i} transform={`translate(${st.xy[0]} ${st.xy[1]}) scale(${m})`}>
+            <g className={`stopmark ${st.done ? 'done' : ''}`} style={{ '--i': i }}>
               <circle r="15" className="stopc" />
-              <text className="stopn" dy="6">{i + 1}</text>
-              <text className="stopl" x="22" dy="6">{s.name}</text>
+              <text className="stopn" dy="6">{st.done ? '✓' : i + 1 - stops.slice(0, i).filter((x) => x.done).length}</text>
+              {!compact && <text className="stopl" x="22" dy="6">{st.name}</text>}
             </g>
           </g>
         ))}
+        {nowXY && (moved || !startXY) && (
+          <g transform={`translate(${nowXY[0]} ${nowXY[1]}) scale(${m})`}>
+            <title>Where the crew is now</title>
+            <circle r="26" className="nowring" />
+            <circle r="11" className="nowc" />
+            <text className="depotl" x="20" dy="-14">Crew is here</text>
+          </g>
+        )}
       </svg>
     </figure>
   )

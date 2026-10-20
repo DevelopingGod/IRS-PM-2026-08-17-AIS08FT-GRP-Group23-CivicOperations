@@ -211,20 +211,49 @@ function System() {
   const { data, error, reload } = useAsync(() => api.system(), [])
   if (error) return <ErrorNote error={error} onRetry={reload} />
   if (!data) return <div className="card"><Skeleton lines={5} /></div>
-  const b = data.backlog
+  const cards = data.experiments || []
+  const total = (k) => cards.reduce((n, c) => n + (c[k] || 0), 0)
   return (
     <div className="stack">
       <div className="card stack">
-        <h2>Starting backlog</h2>
-        {b ? <p>{b.imported} real NYC 311 requests, the most recent {b.per_borough} recorded in each borough (filed between {b.from} and {b.to}), were run through every component on {b.at.slice(0, 10)}. Each borough was replayed so its newest request is a few minutes old, keeping the real spacing between requests. Each is marked as a 311 replay with its original key.</p>
-          : <p className="muted">Not imported yet. Run <code>py -m app.backend.manage import-backlog</code>.</p>}
+        <h2>How each component was chosen</h2>
+        <p className="muted">Every component was built by comparing methods on test data it never trained on. These cards show what was compared, how many runs it took and what shipped. Full detail is in the group report, section 4.</p>
+        <div className="kpis three">
+          <div className="kpi"><strong>{cards.length}</strong><span>Components and parts tested</span></div>
+          <div className="kpi"><strong>{total('methods_compared')}</strong><span>Methods compared</span></div>
+          <div className="kpi"><strong>{total('runs').toLocaleString()}</strong><span>Experiment runs</span></div>
+        </div>
       </div>
-      <div className="card stack">
-        <h2>Teammates' code in use</h2>
-        <div className="tablewrap"><table><thead><tr><th>Owner</th><th>Components</th><th>Pinned</th></tr></thead>
-          <tbody>{Object.entries(data.pins || {}).filter(([k]) => k !== 'exported_at').map(([k, p]) => (
-            <tr key={k}><td>{p.owner}</td><td>{(p.components || []).join(', ')}</td><td className="num">{p.pinned || 'not found'}</td></tr>))}</tbody></table></div>
+      <div className="expcards">
+        {cards.map((c) => <ExperimentCard key={c.component} c={c} />)}
       </div>
     </div>
+  )
+}
+
+function ExperimentCard({ c }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <article className="card expcard stack">
+      <div className="row"><h3 style={{ flex: 1, margin: 0 }}>{c.component}</h3><span className="pill">{c.owner}</span></div>
+      <div className="expstats">
+        <div><strong>{c.methods_compared}</strong><span>methods compared</span></div>
+        <div><strong>{c.runs.toLocaleString()}</strong><span>runs</span></div>
+      </div>
+      <p className="small"><strong>Shipped:</strong> {c.shipped}</p>
+      <p className="small"><strong>Result:</strong> {c.headline}</p>
+      <p className="small muted"><strong>Tested on:</strong> {c.test_set}</p>
+      <button className="btn ghost small" onClick={() => setOpen(!open)} aria-expanded={open}>{open ? 'Hide the methods' : 'Show every method compared'}</button>
+      {open && (
+        <ul className="explist">
+          {c.methods.map((m) => (
+            <li key={m.method} className={m.shipped ? 'shipped' : ''}>
+              <span><strong>{m.method}</strong>{m.shipped ? ' · shipped' : ''}</span>
+              <span className="muted small">{m.runs} run{m.runs === 1 ? '' : 's'} · {m.result}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </article>
   )
 }

@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { api, BAND_WORDS, BOROUGH_LIST, clock, label, LEVEL_WORDS, OUTCOME_WORDS, since, STATUS_WORDS, titleCase } from '../api.js'
 import { CountUp, Drawer, ErrorNote, Modal, Skeleton, Tilt, toast, TypeOut, useAsync, useReveal } from '../motion.jsx'
-import { bandTone, Bullet, CityMap, Icon, levelTone } from '../ui.jsx'
+import { bandTone, BOROUGH_BOXES, boxAround, Bullet, CityMap, Icon, levelTone } from '../ui.jsx'
 
-const VIEWS = [{ id: 'queue', name: 'Queue', icon: 'layers' }, { id: 'plan', name: 'Crew plan', icon: 'route' }, { id: 'ask', name: 'Admin questions', icon: 'sparkle' },
+const VIEWS = [{ id: 'queue', name: 'Queue', icon: 'layers' }, { id: 'plan', name: 'Crew routes', icon: 'route' }, { id: 'ask', name: 'Admin questions', icon: 'sparkle' },
   { id: 'alerts', name: 'Busy day alerts', icon: 'gauge' }]
 
 export default function Staff({ view = 'queue', go }) {
@@ -51,6 +51,7 @@ function Queue() {
   const [filter, setFilter] = useState('all')
   const [open, setOpen] = useState(null)
   const [query, setQuery] = useState('')
+  const [zoom, setZoom] = useState('ALL')
   useReveal(data)
   useEffect(() => { const t = setInterval(reload, 30000); return () => clearInterval(t) }, [reload])
 
@@ -85,7 +86,12 @@ function Queue() {
       <div className="queue-layout">
         <section className="card mapcard reveal" aria-label="Map of the queue">
           <div className="row"><h2>{FILTERS[filter].name}</h2><span className={`pill ${p?.outcome}`}>Prioritisation: {OUTCOME_WORDS[p?.outcome] || 'not run'}</span></div>
-          <CityMap points={points} selected={open} onPick={setOpen} label="Open requests on the map of New York City" />
+          <div className="mapzoom" role="group" aria-label="Zoom the map">
+            {['ALL', ...Object.keys(BOROUGH_BOXES)].map((b) => (
+              <button key={b} className="chip" aria-pressed={zoom === b} onClick={() => setZoom(b)}>{b === 'ALL' ? 'All of NYC' : titleCase(b)}</button>))}
+          </div>
+          <CityMap points={points} selected={open} onPick={setOpen} focus={BOROUGH_BOXES[zoom]} streets
+            label={`Open requests on the map of ${zoom === 'ALL' ? 'New York City' : titleCase(zoom)}`} />
           <p className="muted small">Click a dot to open it. Larger, pulsing dots are next in line.</p>
         </section>
         <section className="stack" aria-label="Ranked queue">
@@ -191,18 +197,25 @@ function Detail({ id, proposed, onChanged }) {
           )}
           {d.status !== 'CLOSED' && d.agency && (
             <div className="stack assign">
-              <h3>Assign a crew</h3>
-              <p className="muted small">{proposed ? `Crew deployment proposes ${proposed.crew_id}, as stop ${proposed.sequence} of its route, arriving about ${clock(proposed.est_start)}. Approve it, or choose another crew.`
-                : 'Crew deployment has not planned this request, for example while it waits for review. Choose a crew: those with fewer open jobs are listed first.'}</p>
+              <h3>{d.crew_job ? 'Crew' : 'Assign a crew'}</h3>
+              {d.crew_job ? (
+                <div className="row">
+                  <p className="muted small" style={{ flex: 1 }}>With {d.crew_job.crew_id} since {since(d.crew_job.assigned_at)}. Give it to another crew below, or pull it back to the queue.</p>
+                  <button className="btn ghost" onClick={async () => { try { await api.unassign(d.request_id); toast(`Pulled back from ${d.crew_job.crew_id}`); load(); onChanged() } catch (e) { toast(e.message, 'bad') } }}>Pull back</button>
+                </div>
+              ) : (
+                <p className="muted small">{d.dispatch_hold ? 'Pulled back by staff, so Crew deployment leaves it alone. Choose a crew: those with fewer open jobs are listed first.'
+                  : proposed ? `Crew deployment is sending it to ${proposed.crew_id}, as stop ${proposed.sequence} of its route. Choose another crew to change that.`
+                    : 'Crew deployment has not planned this request, for example while it waits for review. Choose a crew: those with fewer open jobs are listed first.'}</p>
+              )}
               {crews.length ? (
                 <div className="row">
                   <select className="input" style={{ flex: 1 }} value={crew} onChange={(e) => setCrew(e.target.value)} aria-label="Crew">
                     {crews.map((c) => <option key={c.crew_id} value={c.crew_id}>{c.crew_id} · {titleCase(c.borough)} · {c.open_jobs} open</option>)}
                   </select>
-                  <button className="btn primary" onClick={async () => { await api.assign(d.request_id, crew); toast(`Assigned to ${crew}`); load(); onChanged() }}>Assign</button>
+                  <button className="btn primary" onClick={async () => { try { await api.assign(d.request_id, crew); toast(`Assigned to ${crew}`); load(); onChanged() } catch (e) { toast(e.message, 'bad') } }}>{d.crew_job ? 'Give to this crew' : 'Assign'}</button>
                 </div>
               ) : <p className="muted">No {d.agency} crew in this borough.</p>}
-              {d.tracker?.crew_assigned && <p className="muted">A crew is assigned.</p>}
             </div>
           )}
         </div>
@@ -252,7 +265,6 @@ function Plan() {
   const [error, setError] = useState(null)
   const [open, setOpen] = useState(null)
   const [busy, setBusy] = useState(null)
-  const [askAll, setAskAll] = useState(false)
   const alive = useRef(true)
   const load = useCallback(async () => {
     try {
@@ -262,24 +274,19 @@ function Plan() {
       if (r.planning) setTimeout(() => alive.current && load(), 3000)
     } catch (e) { if (alive.current) setError(e) }
   }, [])
-  useEffect(() => { alive.current = true; load(); return () => { alive.current = false } }, [load])
+  useEffect(() => {
+    alive.current = true; load()
+    const t = setInterval(() => alive.current && load(), 30000)   // crews move on as they close jobs
+    return () => { alive.current = false; clearInterval(t) }
+  }, [load])
   useReveal(state)
 
-  async function approve(c) {
-    setBusy(c.crew_id)
+  async function pullBack(rid, crewId) {
+    setBusy(rid)
     try {
-      const r = await api.approveRoute(c.crew_id, c.stops.map((s) => s.request_id))
-      toast(`${r.approved} stop${r.approved > 1 ? 's' : ''} sent to ${c.crew_id}`)
-      setOpen(null); load()
-    } catch (e) { toast(e.message, 'bad'); load() } finally { setBusy(null) }
-  }
-
-  async function approveAll() {
-    setBusy('all')
-    try {
-      const r = await api.approveAllRoutes()
-      toast(`${r.approved} stops sent to ${r.crews} crews`)
-      setAskAll(false); setOpen(null); load()
+      await api.unassign(rid)
+      toast(`${rid} pulled back from ${crewId}. Assign it by hand from the queue.`)
+      load()
     } catch (e) { toast(e.message, 'bad'); load() } finally { setBusy(null) }
   }
 
@@ -289,15 +296,18 @@ function Plan() {
   if (!plan) {
     return (
       <div className="card empty stack">
-        <h2>{state.planning ? 'Planning the crews...' : 'No crew plan'}</h2>
-        <p className="muted">{state.planning ? 'Crew deployment is working through the queue. This takes a few seconds.'
-          : state.outcome === 'OFF' ? 'The tech team switched Crew deployment off. Assign crews by hand from the queue.'
-            : 'Crew deployment is not available right now. Assign crews by hand from the queue.'}</p>
+        <h2>{state.planning ? 'Planning the crews...' : 'No crew routes'}</h2>
+        <p className="muted">{state.planning ? 'Crew deployment is working through the queue and will send each route to its crew. This takes a few seconds.'
+          : state.outcome === 'OFF' ? 'The tech team switched Crew deployment off, so nothing is assigned automatically. Assign crews by hand from the queue.'
+            : 'Crew deployment is not available right now, so nothing is assigned automatically. Assign crews by hand from the queue.'}</p>
         {state.planning && <Skeleton lines={3} />}
       </div>
     )
   }
-  const kpis = [['Stops planned', plan.planned, 'green'], ['Crews with a route', plan.crews.length, 'blue'],
+  const crews = plan.crews.map((c) => ({ ...c, jobs: [...c.approved, ...c.stops] })).filter((c) => c.jobs.length)
+  crews.sort((a, b) => Math.min(...a.jobs.map((j) => j.queue_position || 999)) - Math.min(...b.jobs.map((j) => j.queue_position || 999)))
+  const assigned = crews.reduce((n, c) => n + c.approved.length, 0)
+  const kpis = [['Jobs with a crew', assigned + plan.planned, 'green'], ['Crews out', crews.length, 'blue'],
     ['Waiting for review', plan.pending_review, 'orange'], ['On hold', plan.held, 'grey'], ['Minutes of driving', Math.round(plan.travel_min), '']]
   return (
     <div className="stack">
@@ -308,55 +318,45 @@ function Plan() {
       </div>
       <div className="card row reveal">
         <Icon name="route" />
-        <p style={{ flex: 1 }}><strong>A proposal.</strong> <span className="muted">Nothing goes to a crew until you approve its route. Requests waiting for review or on hold are never planned. The plan is made again when the queue changes.</span></p>
-        <span className={`pill ${state.outcome}`}>{state.planning ? 'Updating...' : `Made ${since(plan.made_at)}`}</span>
-        {plan.crews.some((c) => c.stops.length) && (
-          <button className="btn primary" disabled={!!busy || state.planning} onClick={() => setAskAll(true)}><Icon name="check" size={18} /> Approve all routes</button>)}
+        <p style={{ flex: 1 }}><strong>Assigned automatically.</strong> <span className="muted">Crew deployment sends each route to its crew as soon as it is planned, in the order shown. Requests waiting for review or on hold are never sent. To change one, pull it back and assign it by hand from the queue, or give it to another crew from the request itself.</span></p>
+        <span className={`pill ${state.outcome}`}>{state.planning ? 'Updating...' : `Planned ${since(plan.made_at)}`}</span>
       </div>
-      <Modal open={askAll} onClose={() => setAskAll(false)} title="Approve all routes">
-        <div className="stack">
-          <p className="eyebrow">Crew deployment's proposal</p>
-          <h2>Send {plan.planned} stops to {plan.crews.filter((c) => c.stops.length).length} crews?</h2>
-          <p className="muted">Each crew gets its stops in the planned order. You can still open any route first to check it. Approved jobs are never planned again.</p>
-          <div className="row"><button className="btn primary" disabled={busy === 'all'} onClick={approveAll}>{busy === 'all' ? 'Sending...' : 'Yes, approve all'}</button><button className="btn ghost" onClick={() => setAskAll(false)}>Cancel</button></div>
-        </div>
-      </Modal>
-      {!plan.crews.length && <div className="card empty">No request is ready to plan. Requests appear here once they are ranked and need no review.</div>}
+      {!crews.length && <div className="card empty">No request is ready for a crew. Requests appear here once they are ranked and need no review.</div>}
       <div className="joblist">
-        {plan.crews.map((c, i) => {
+        {crews.map((c, i) => {
           const isOpen = open === c.crew_id
-          const route = c.stops.map((s) => ({ id: s.request_id, lat: s.lat, lon: s.lon, name: titleCase(s.address) || s.request_id }))
+          const route = c.jobs.map((s) => ({ id: s.request_id, lat: s.lat, lon: s.lon, name: titleCase(s.address) || s.request_id }))
+          const focus = isOpen ? boxAround([c.depot, c.position, ...route]) : null
           return (
             <Tilt as="article" key={c.crew_id} className={`card job reveal ${isOpen ? 'open' : ''}`} style={{ '--i': Math.min(i, 12) }}>
               <button className="jobhead" onClick={() => setOpen(isOpen ? null : c.crew_id)} aria-expanded={isOpen}>
-                <Bullet tone="blue" size={38}>{c.stops.length}</Bullet>
+                <Bullet tone="blue" size={38}>{c.jobs.length}</Bullet>
                 <span className="stack" style={{ gap: 4 }}>
                   <span className="row"><span className="plate">{c.crew_id}</span><span className="pill">{c.agency}</span>
-                    {c.approved.length > 0 && <span className="pill LIVE">{c.approved.length} already approved</span>}</span>
-                  <strong className="addrline">{c.stops.map((s) => label(s.label)).join(', then ')}</strong>
-                  <span className="muted small num">{c.travel_min} min driving · {c.work_min} min of work · starts {clock(c.stops[0]?.est_start)} · {Math.round(c.remaining_min)} min free after</span>
+                    <span className="pill LIVE">{c.approved.length} sent to the crew</span>
+                    {c.stops.length > 0 && <span className="pill">{c.stops.length} being sent</span>}</span>
+                  <strong className="addrline">{c.jobs.map((s) => label(s.label)).join(', then ')}</strong>
+                  <span className="muted small num">{c.travel_min ? `${c.travel_min} min more driving · ` : ''}{Math.round(c.remaining_min)} min free in its day</span>
                 </span>
                 <Icon name="arrow" size={20} />
               </button>
               {isOpen && (
                 <div className="jobbody pop stack">
-                  <CityMap route={route} roads={c.roads} label={`Route for ${c.crew_id}: ${route.map((r) => r.name).join(', then ')}`} />
+                  <CityMap route={route} roads={c.roads} focus={focus} streets start={c.depot} now={c.position}
+                    label={`Route for ${c.crew_id} from its depot: ${route.map((r) => r.name).join(', then ')}`} />
+                  <p className="muted small"><span className="legend depot" /> Start, the crew's depot · <span className="legend now" /> where the crew is now, its last closed job · numbers are its stops in order</p>
                   <ol className="stoplist">
-                    {c.stops.map((s, j) => (
+                    {c.jobs.map((s, j) => (
                       <li key={s.request_id} className="row">
                         <Bullet tone={levelTone(s.urgency)} size={30}>{j + 1}</Bullet>
                         <span className="stack" style={{ gap: 2, flex: 1 }}>
                           <span><strong>{label(s.label)}</strong> <span className="muted">· {[titleCase(s.address), titleCase(s.borough)].filter(Boolean).join(', ')}</span></span>
-                          <span className="muted small num">About {clock(s.est_start)} to {clock(s.est_finish)} · {s.travel_min} min drive, {s.distance_km} km · queue position {s.queue_position} · {s.request_id}</span>
+                          <span className="muted small num">{s.approved ? 'With the crew' : `About ${clock(s.est_start)} · ${s.travel_min} min drive, ${s.distance_km} km`} · queue position {s.queue_position ?? 'n/a'} · {s.request_id}</span>
                         </span>
+                        {s.approved && <button className="btn ghost small" disabled={busy === s.request_id} onClick={() => pullBack(s.request_id, c.crew_id)}>{busy === s.request_id ? 'Pulling back...' : 'Pull back'}</button>}
                       </li>
                     ))}
                   </ol>
-                  <div className="row">
-                    <button className="btn primary" disabled={busy === c.crew_id} onClick={() => approve(c)}>
-                      <Icon name="check" size={18} /> {busy === c.crew_id ? 'Sending...' : `Approve this route (${c.stops.length} stop${c.stops.length > 1 ? 's' : ''})`}</button>
-                    <span className="muted small">The crew then sees these stops in this order.</span>
-                  </div>
                 </div>
               )}
             </Tilt>
@@ -365,7 +365,7 @@ function Plan() {
       </div>
       {plan.unplanned.length > 0 && (
         <section className="card stack reveal">
-          <h3>Not planned this time ({plan.unplanned.length})</h3>
+          <h3>Not given to a crew this time ({plan.unplanned.length})</h3>
           {plan.unplanned.map((u) => (
             <p key={u.request_id} className="row"><span className="plate">{label(u.label)}</span>
               <span className="muted">{u.reasons.map((r) => REASONS[r] || r).join('. ')} · {u.request_id}</span></p>

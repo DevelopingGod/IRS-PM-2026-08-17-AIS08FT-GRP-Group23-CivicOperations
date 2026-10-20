@@ -19,12 +19,16 @@ RT025,Dirty water or low water pressure,Department of Environmental Protection,W
 RT025,Dirty water or low water pressure,Department of Environmental Protection,Water Quality,Odor/Taste,Chemical,4 days,CONDITIONAL_DETAIL_MATCH,Choose only if request descriptor matches this exact official variant; no single SLA for the whole RT code.
 RT025,Dirty water or low water pressure,Department of Environmental Protection,Water Quality,Odor/Taste,Bitter/Metallic,4 days,CONDITIONAL_DETAIL_MATCH,Choose only if request descriptor matches this exact official variant; no single SLA for the whole RT code.
 RT025,Dirty water or low water pressure,Department of Environmental Protection,Water Quality,Odor/Taste,Musty/Stale,4 days,CONDITIONAL_DETAIL_MATCH,Choose only if request descriptor matches this exact official variant; no single SLA for the whole RT code.
+RT001,Pothole,,,,,43 hours,TEAM_TARGET,No published NYC SLA for this type. Median close time of valid requests in the NYC 311 sample.
 RT002,Street cave-in or sinkhole,Department of Transportation,Street Condition,Cave-in,,10 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT003,Other street surface defect,Department of Transportation,Street Condition,Defective Hardware,,10 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
+RT004,Street light out or dim,,,,,239 hours,TEAM_TARGET,No published NYC SLA for this type. Median close time of valid requests in the NYC 311 sample.
+RT005,Traffic or pedestrian signal not working,,,,,3 hours,TEAM_TARGET,No published NYC SLA for this type. Median close time of valid requests in the NYC 311 sample.
 RT006,Broken sidewalk or curb,Department of Transportation,Sidewalk Condition,Sidewalk Violation,Dismiss Violation City Fixed,30 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT040,Missed garbage or recycling collection,Department of Sanitation,Missed Collection,Trash,,5 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT041,Illegal dumping,Department of Sanitation,Illegal Dumping,Removal Request,,5 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT042,Dirty street or litter,Department of Sanitation,Dirty Condition,Trash,Littering,7 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
+RT043,Derelict vehicle,,,,,22 hours,TEAM_TARGET,No published NYC SLA for this type. Median close time of valid requests in the NYC 311 sample.
 RT044,Snow or ice not cleared,Department of Sanitation,Snow or Ice,Sidewalk,,1 day,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT045,Dead animal on street,Department of Sanitation,Dead Animal,Cat,Highway,2 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT060,Fallen tree or branch,Department of Parks and Recreation,Damaged Tree,Branch or Limb Has Fallen Down,Blocking Driveway,4 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
@@ -41,3 +45,5 @@ RT121,"Noise from street, business or vehicle",New York City Police Department,N
 RT122,Blocked driveway,New York City Police Department,Blocked Driveway,No Access,,8 hours,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT123,Illegal parking or blocked hydrant,New York City Police Department,Illegal Parking,Blocked Hydrant,,8 hours,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
 RT124,Abandoned vehicle,New York City Police Department,Abandoned Vehicle,With License Plate,,8 hours,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 
+RT140,Unsafe building or illegal construction,,,,,107 hours,TEAM_TARGET,No published NYC SLA for this type. Median close time of valid requests in the NYC 311 sample.
+RT141,Elevator not working,Department of Buildings,Elevator,Not Working,Bldg w/ One Device,40 days,TEAM_DEFAULT_FROM_311_DATA,Most common real descriptor for this type with one official SLA. 

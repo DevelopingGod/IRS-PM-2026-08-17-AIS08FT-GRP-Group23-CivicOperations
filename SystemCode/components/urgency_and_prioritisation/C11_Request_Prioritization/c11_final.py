@@ -132,8 +132,9 @@ def prioritize_from_c10(requests, now, root=ROOT):
         if item['sla_status'] == 'SLA_UNKNOWN':
             item['priority_reasons'].append('Official SLA unknown: no SLA-risk points assigned; ' + item['sla_reason'])
         elif item['sla_utilization_pct'] is not None:
+            label = 'Team SLA target' if item['sla_status'] == 'TEAM_TARGET' else 'Official NYC SLA'
             item['priority_reasons'].append(
-                f"Official NYC SLA: {item['sla_original']}; utilization {item['sla_utilization_pct']:.1f}%")
+                f"{label}: {item['sla_original']}; utilization {item['sla_utilization_pct']:.1f}%")
             if item['sla_overdue']:
                 item['priority_reasons'].append('Official SLA deadline overdue')
         band, applied, rule, reason = scheduling_band(item)

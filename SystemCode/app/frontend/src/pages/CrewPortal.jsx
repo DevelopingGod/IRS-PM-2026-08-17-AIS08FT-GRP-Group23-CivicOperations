@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { api, clock, label, LEVEL_WORDS, since, titleCase } from '../api.js'
 import { ErrorNote, Modal, Skeleton, Tilt, toast, useAsync, useReveal } from '../motion.jsx'
-import { Bullet, CityMap, Icon, levelTone } from '../ui.jsx'
+import { boxAround, Bullet, CityMap, Icon, levelTone } from '../ui.jsx'
 
 const OUTCOMES = [
   { value: 'VALID_RESOLVED', text: 'Fixed, the problem was there', tone: 'primary' },
@@ -19,7 +19,11 @@ export default function CrewPortal() {
   const [busy, setBusy] = useState(false)
   useReveal(data)
   const jobs = data?.jobs || []
-  const route = useMemo(() => jobs.map((j) => ({ id: j.request_id, lat: j.latitude, lon: j.longitude, name: titleCase(j.address) || j.request_id })), [jobs])
+  const route = useMemo(() => [
+    ...(data?.done_today || []).map((j) => ({ id: j.request_id, lat: j.lat, lon: j.lon, name: titleCase(j.address) || j.request_id, done: true })),
+    ...jobs.map((j) => ({ id: j.request_id, lat: j.latitude, lon: j.longitude, name: titleCase(j.address) || j.request_id })),
+  ], [jobs, data])
+  const focus = useMemo(() => boxAround([data?.depot, data?.position, ...route]), [data, route])
 
   async function close() {
     setBusy(true)
@@ -40,7 +44,9 @@ export default function CrewPortal() {
         {data && <p className="muted"><Icon name="route" size={16} /> Order: {data.order_source}.</p>}
       </header>
       {loading && !data && <div className="card"><Skeleton lines={6} /></div>}
-      {route.some((r) => r.lat != null) && <div className="reveal"><CityMap route={route} roads={(data?.roads || []).filter((r) => r.kind === 'locked_leg')} label={`Today's stops: ${route.map((r) => r.name).join(', then ')}`} /></div>}
+      {route.some((r) => r.lat != null) && <div className="reveal"><CityMap route={route} roads={(data?.roads || []).filter((r) => r.kind === 'locked_leg')} focus={focus} streets start={data?.depot} now={data?.position}
+        label={`Today's route from the depot: ${route.map((r) => r.name).join(', then ')}`} />
+        <p className="muted small"><span className="legend depot" /> Start, your depot · <span className="legend now" /> you, at your last closed job · ticked stops are done</p></div>}
       <div className="joblist">
         {jobs.map((j, i) => (
           <Tilt as="article" key={j.request_id} className={`card lane ${j.urgency} job reveal ${open === j.request_id ? 'open' : ''}`} style={{ '--i': i }}>

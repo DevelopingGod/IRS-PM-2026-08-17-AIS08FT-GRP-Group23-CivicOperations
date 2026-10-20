@@ -1,15 +1,20 @@
 request_type_code,official_agency,official_problem,official_problem_details,official_additional_details,official_sla
+RT001,,,,,43 hours (team target)
 RT002,Department of Transportation,Street Condition,Cave-in,,10 days
 RT003,Department of Transportation,Street Condition,Defective Hardware,,10 days
+RT004,,,,,239 hours (team target)
+RT005,,,,,3 hours (team target)
 RT006,Department of Transportation,Sidewalk Condition,Sidewalk Violation,Dismiss Violation City Fixed,30 days
 RT020,Department of Environmental Protection,Water Maintenance,Leak,,16 hours
 RT021,Department of Environmental Protection,Sewer Maintenance,Catch Basin Clogged,,6 days
 RT022,Department of Environmental Protection,Sewer Maintenance,Flooding on Street,,1 day
 RT023,Department of Environmental Protection,Sewer Maintenance,Backup,,6 hours
 RT024,Department of Environmental Protection,Water Maintenance,Fire Hydrant Running,,2 days
+RT025,Department of Environmental Protection,Water Maintenance,Dirty Water,,2 days
 RT040,Department of Sanitation,Missed Collection,Trash,,5 days
 RT041,Department of Sanitation,Illegal Dumping,Removal Request,,5 days
 RT042,Department of Sanitation,Dirty Condition,Trash,Littering,7 days
+RT043,,,,,22 hours (team target)
 RT044,Department of Sanitation,Snow or Ice,Sidewalk,,1 day
 RT045,Department of Sanitation,Dead Animal,Cat,Highway,2 days
 RT060,Department of Parks and Recreation,Damaged Tree,Branch or Limb Has Fallen Down,Blocking Driveway,4 days
@@ -26,3 +31,5 @@ RT121,New York City Police Department,Noise - Street/Sidewalk,Loud Music/Party,,
 RT122,New York City Police Department,Blocked Driveway,No Access,,8 hours
 RT123,New York City Police Department,Illegal Parking,Blocked Hydrant,,8 hours
 RT124,New York City Police Department,Abandoned Vehicle,With License Plate,,8 hours
+RT140,,,,,107 hours (team target)
+RT141,Department of Buildings,Elevator,Not Working,Bldg w/ One Device,40 days
