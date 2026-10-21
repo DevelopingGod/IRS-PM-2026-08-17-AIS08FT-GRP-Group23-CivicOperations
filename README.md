@@ -46,7 +46,8 @@ Links to the two videos are added here when they are uploaded.
 
 > http://157.230.191.175/
 
-Plain HTTP, no certificate. On a laptop or desktop it opens as typed. Some phone browsers switch to https on their own and
+Plain HTTP, no certificate. It may be taken down by January to February 2027, as the server costs compute. The steps
+below still run the same system on any computer. On a laptop or desktop it opens as typed. Some phone browsers switch to https on their own and
 show an error: type the address with http:// in full, and accept if the browser offers to continue without a secure
 connection.
 

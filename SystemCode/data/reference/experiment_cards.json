@@ -6,7 +6,7 @@
     "runs": 64,
     "test_set": "308 hand written messages, two slices",
     "shipped": "MiniLM embeddings + logistic regression",
-    "headline": "macro F1 0.854",
+    "headline": "macro F1 0.854 on all 308 lines in this comparison. Shipped: 0.960 on the team's lines, 0.731 on keyword avoiding lines",
     "methods": [
       {
         "method": "Keyword rules (baseline)",
@@ -23,7 +23,7 @@
       {
         "method": "MiniLM embeddings + logistic regression",
         "runs": 28,
-        "result": "macro F1 0.854",
+        "result": "macro F1 0.854 on all 308 lines in this comparison. Shipped: 0.960 on the team's lines, 0.731 on keyword avoiding lines",
         "shipped": true
       },
       {
@@ -83,19 +83,19 @@
     "methods_compared": 2,
     "runs": 18,
     "test_set": "Hand written emergency and look alike lines",
-    "shipped": "TF IDF with logistic regression",
-    "headline": "recall 1.000 at 0.45",
+    "shipped": "Lexicon plus TF IDF logistic regression",
+    "headline": "recall 1.000 at threshold 0.45, allowed only to add a detection to the lexicon, never to remove one",
     "methods": [
       {
         "method": "Weighted lexicon with negation",
         "runs": 2,
-        "result": "recall 0.737 alone",
+        "result": "recall 0.737 on its own, too many emergencies missed",
         "shipped": false
       },
       {
-        "method": "TF IDF with logistic regression",
+        "method": "Lexicon plus TF IDF logistic regression",
         "runs": 16,
-        "result": "recall 1.000 at 0.45",
+        "result": "recall 1.000 at threshold 0.45, allowed only to add a detection to the lexicon, never to remove one",
         "shipped": true
       }
     ],
@@ -108,7 +108,7 @@
     "runs": 2,
     "test_set": "1,121 synthetic reporters with hidden honesty",
     "shipped": "Decaying Beta, centred on the base rate for the types reported",
-    "headline": "Spearman 0.926, unfairness 2.2",
+    "headline": "Spearman 0.914 over 1,121 reporters, unfair gap 0.3 points (an earlier tuning gave 0.926 with a gap of 2.2)",
     "methods": [
       {
         "method": "Decaying Beta, fixed neutral prior",
@@ -119,7 +119,7 @@
       {
         "method": "Decaying Beta, centred on the base rate for the types reported",
         "runs": 1,
-        "result": "Spearman 0.926, unfairness 2.2",
+        "result": "Spearman 0.914 over 1,121 reporters, unfair gap 0.3 points (an earlier tuning gave 0.926 with a gap of 2.2)",
         "shipped": true
       }
     ],
@@ -132,7 +132,7 @@
     "runs": 19,
     "test_set": "Daily demand with weather, held out days",
     "shipped": "Gradient boosting with a Poisson loss",
-    "headline": "MAE 60.4, storm 73.7",
+    "headline": "MAE 60.4 on all days, 73.7 on storm days, 87% of 23 storm spikes caught",
     "methods": [
       {
         "method": "Weekday and season baseline, no weather",
@@ -143,13 +143,13 @@
       {
         "method": "Poisson regression with weather",
         "runs": 1,
-        "result": "MAE 83.1, WORSE than using no weather",
+        "result": "MAE 83.1, worse than using no weather at all",
         "shipped": false
       },
       {
         "method": "Gradient boosting with a Poisson loss",
         "runs": 17,
-        "result": "MAE 60.4, storm 73.7",
+        "result": "MAE 60.4 on all days, 73.7 on storm days, 87% of 23 storm spikes caught",
         "shipped": true
       }
     ],
@@ -162,12 +162,12 @@
     "runs": 222,
     "test_set": "295 real pairs checked by hand",
     "shipped": "Hybrid evidence (BBL + radius + fuzzy + graph)",
-    "headline": ": 25 m / 6 h + per-type table, F1 0.92 hand, 0.76 Feb silver",
+    "headline": "F1 0.92 on the 295 hand pairs, 0.76 on a larger February sample labelled automatically, 25 m and 6 h with a per type table, works without a BBL",
     "methods": [
       {
         "method": "Exact BBL + type key",
         "runs": 1,
-        "result": "F1 0.93, false merge 0.08 on 295 hand pairs",
+        "result": "F1 0.93, false merge 0.08, but only works when the city's building lot number (BBL) is present, which resident reports lack",
         "shipped": false
       },
       {
@@ -179,7 +179,7 @@
       {
         "method": "Fuzzy address (SequenceMatcher)",
         "runs": 1,
-        "result": "F1 0.69, only helps weak-location rows (synthetic test)",
+        "result": "F1 0.69, only helps weak location rows (synthetic test)",
         "shipped": false
       },
       {
@@ -197,13 +197,13 @@
       {
         "method": "NetworkX connected components",
         "runs": 1,
-        "result": "F1 0.69, transitivity chains over-merge",
+        "result": "F1 0.69, transitivity chains over merge",
         "shipped": false
       },
       {
         "method": "Hybrid evidence (BBL + radius + fuzzy + graph)",
         "runs": 216,
-        "result": ": 25 m / 6 h + per-type table, F1 0.92 hand, 0.76 Feb silver",
+        "result": "F1 0.92 on the 295 hand pairs, 0.76 on a larger February sample labelled automatically, 25 m and 6 h with a per type table, works without a BBL",
         "shipped": true
       }
     ],
@@ -216,7 +216,7 @@
     "runs": 5,
     "test_set": "5,390 held out real requests",
     "shipped": "Hybrid rules + logreg",
-    "headline": "AUC 0.613 / Brier 0.237,, cold-start floor",
+    "headline": "AUC 0.613, Brier 0.237, first time reporters flagged at 0.33",
     "methods": [
       {
         "method": "Rules (type base rate, burst, corroboration)",
@@ -233,13 +233,13 @@
       {
         "method": "Histogram gradient boosting",
         "runs": 1,
-        "result": "AUC 0.633 / Brier 0.233, first-time FPR 0.85",
+        "result": "AUC 0.633, Brier 0.233, but flags 85% of first time reporters",
         "shipped": false
       },
       {
         "method": "Hybrid rules + logreg",
         "runs": 2,
-        "result": "AUC 0.613 / Brier 0.237,, cold-start floor",
+        "result": "AUC 0.613, Brier 0.237, first time reporters flagged at 0.33",
         "shipped": true
       }
     ],
