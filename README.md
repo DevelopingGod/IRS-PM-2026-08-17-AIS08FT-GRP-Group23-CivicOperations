@@ -42,6 +42,14 @@ Links to the two videos are added here when they are uploaded.
 
 `Refer to appendix B, Installation and User Guide, in the project report at GitHub Folder: ProjectReport`
 
+### Try it live
+
+> http://157.230.191.175/
+
+Plain HTTP, no certificate. On a laptop or desktop it opens as typed. Some phone browsers switch to https on their own and
+show an error: type the address with http:// in full, and accept if the browser offers to continue without a secure
+connection.
+
 ### To run the system on any computer with Docker
 
 > git clone https://github.com/DevelopingGod/IRS-PM-2026-08-17-AIS08FT-GRP-MANTIS-CivicOperations
