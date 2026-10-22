@@ -33,6 +33,9 @@ Every component is already in the repository, Khalid's included, at the versions
 tested with. (Only to move to a newer version of Khalid's code does anyone run
 `py -m app.backend.vendor_export`.)
 
+One trained model is too large for a git file: the Intake bot's address and time tagger (245 MB).
+It is on the repository's release page, and the Docker build downloads and checks it for you.
+
 ## 4. Start the app
 
 ```bash
@@ -97,6 +100,10 @@ Go to **http://localhost:8080**.
 ## For developers: run without Docker
 
 Use this to change the code with live reload. You also need **Node.js 22 or newer** (https://nodejs.org).
+
+Without Docker, download `c01_slot_tagger.tar.gz` from the repository's Releases page (Trained models)
+and unpack it into the `models` folder, so you have `models/c01_slot_tagger`. Without it the Intake bot
+still works, but reads addresses with its simpler fallback patterns.
 
 Install once, from the project folder:
 

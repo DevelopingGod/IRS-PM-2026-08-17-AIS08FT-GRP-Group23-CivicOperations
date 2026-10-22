@@ -18,6 +18,11 @@ RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTr
 COPY data/__init__.py data/__init__.py
 COPY data/reference data/reference
 COPY models models
+# The Intake bot's address and time tagger is 245 MB, too large for a git file, so it lives on the
+# repository's release page. Fetched once, checked by SHA-256, skipped if it is already here.
+ARG SLOT_TAGGER_URL=https://github.com/DevelopingGod/IRS-PM-2026-08-17-AIS08FT-GRP-MANTIS-CivicOperations/releases/download/models-v1/c01_slot_tagger.tar.gz
+ARG SLOT_TAGGER_SHA256=051b8220e84d50523a77f68f0238c385f1f5a54da04d7a2b8c2e2d62c68b4b17
+RUN python -c "import hashlib, os, tarfile, urllib.request; p = 'models/c01_slot_tagger'; os.path.isdir(p) or (urllib.request.urlretrieve(os.environ['SLOT_TAGGER_URL'], '/tmp/t.tgz'), hashlib.sha256(open('/tmp/t.tgz', 'rb').read()).hexdigest() == os.environ['SLOT_TAGGER_SHA256'] or exit('slot tagger checksum mismatch'), tarfile.open('/tmp/t.tgz').extractall('models'), os.remove('/tmp/t.tgz'))"
 COPY components components
 COPY app/__init__.py app/__init__.py
 COPY app/backend app/backend
